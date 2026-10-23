@@ -1,0 +1,4 @@
+source = "fixtures/amount-dash-model-v1.pdf"
+medium = "printed-amount-dash"
+content_group = "amount-dash-model-v1"
+expected_routes = ["A", "A"]

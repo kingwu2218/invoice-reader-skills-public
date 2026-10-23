@@ -1,0 +1,4 @@
+source = "fixtures/diverse-terms-v1.pdf"
+medium = "synthetic-native"
+content_group = "diverse-terms-v1"
+expected_routes = ["A"]

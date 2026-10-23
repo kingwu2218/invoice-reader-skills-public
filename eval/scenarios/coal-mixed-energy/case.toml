@@ -1,0 +1,4 @@
+source = "fixtures/coal-mixed.pdf"
+medium = "pdf-mixed"
+content_group = "coal-pack"
+expected_routes = ["A", "B"]

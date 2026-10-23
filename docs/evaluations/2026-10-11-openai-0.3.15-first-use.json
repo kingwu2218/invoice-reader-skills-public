@@ -1,0 +1,404 @@
+{
+  "protocol": "first-use-v1",
+  "workflow_grader": "workflow-audit-v2",
+  "planned_chats": 3,
+  "planned_batches": 4,
+  "completed_batches": 4,
+  "package_version": "0.3.15",
+  "package_sha256": "dbadd0982cb76f54bcbe2b2141996a6ead202878c0854de591c225fd8b75f7b2",
+  "requested_model": "gpt-6.1-sol",
+  "provider": "OpenAI via existing Codex ChatGPT login",
+  "tool_version": "codex-cli 0.162.0-alpha.17.2",
+  "plan_sha256": "e493f26935eb880c3268863b347951990612de49e505ea53773c434eb3dda2e6",
+  "fixture_hashes": {
+    "eval/fixtures/coal-ocr.pdf": "db7de8fcda64b87888a4437feafa3f7046ee3d51ae8358321e5a4dadc8eed2b2",
+    "eval/fixtures/coal-scan.pdf": "2efbfd0f62a7d1b79cf7d11bf611c73dd111166f9223d73b66c5d33d4a7f313b",
+    "eval/workflows/first-use-v1/payment.json": "bbe0a6e6bb6bf5d2346eeb0d8a6105fb870c3f9fdd5ac4dfc6dc00ad78caba9b",
+    "eval/workflows/first-use-v1/energy.json": "e19f5f93ecef73d80622090c671a1c642ae62f3c0d374baea250965f45c99f7b"
+  },
+  "execution_harness_hashes": {
+    "eval/runner/first_use.py": "b57e5510dea87b9e2ac879278b3701738e75b2ca9946d965957cb3183813d767",
+    "eval/runner/workflow_audit.py": "0d630f9d4fc4297648b1836a5e94c3e45fec3009a9072bd56bd53661878de282",
+    "eval/runner/raw.py": "452ad52c5e8d35a8def0dcf1a8605e8b3621c73fd5ca7a4e5c1c88c5b708d257",
+    "eval/runner/score.py": "82ec5ed8a7aa15b4e2c6a31ec0b7c3f678413a35585fe8a683f4a71c7a54c430",
+    "eval/runner/conversation.py": "b0008a745f2b338e9f799aca7efa53ae8d5e99d86b3df7bdeb331b1f46f72f64",
+    "adapters/codex/eval_adapter.py": "e07de8328babd263db3102d77541c94b3100aaac7857258aaf445dd17fee5a62"
+  },
+  "reporter_sha256": "e0042fee80eede0bff44a3069f9eb1338195c3e03f327b9d8f81f5f84359a5c1",
+  "openings": [
+    {
+      "trial": 1,
+      "completed": true,
+      "legacy_status": "invalid",
+      "opening_v3": null,
+      "exact_question_once": true,
+      "both_exact_choices_once": true,
+      "format_status": "requires_review",
+      "observed_pause": true,
+      "automatic_pass": false,
+      "installed_instruction_reads_observed": true,
+      "evidence_sha256": "3f008c8f06a48648fc83bd894d0f6803b8583be1a2fdb103cb8d299903c31aeb"
+    },
+    {
+      "trial": 2,
+      "completed": true,
+      "legacy_status": "invalid",
+      "opening_v3": null,
+      "exact_question_once": true,
+      "both_exact_choices_once": true,
+      "format_status": "requires_review",
+      "observed_pause": true,
+      "automatic_pass": false,
+      "installed_instruction_reads_observed": true,
+      "evidence_sha256": "7b3a16f80a5c2d94d5ab9c0bd95f7f73e01c17881626050b234bbcd1a0f8f9f0"
+    },
+    {
+      "trial": 3,
+      "completed": true,
+      "legacy_status": "invalid",
+      "opening_v3": null,
+      "exact_question_once": true,
+      "both_exact_choices_once": true,
+      "format_status": "requires_review",
+      "observed_pause": true,
+      "automatic_pass": false,
+      "installed_instruction_reads_observed": true,
+      "evidence_sha256": "6e4643c9ae1aa9b9da30ad1fd9f8aa9666b4607adf7c77619d2a04644b1a895c"
+    }
+  ],
+  "rows": [
+    {
+      "trial": 1,
+      "phase": "reply",
+      "purpose": "payment",
+      "source": "coal-ocr.pdf",
+      "status": "recorded",
+      "core_delivery_complete": true,
+      "same_session": true,
+      "policy_questions_after_reply": 0,
+      "coverage_matches_request": true,
+      "custom_matches_requested_labels": true,
+      "custom_reused_unchanged": null,
+      "prior_outputs_unchanged": true,
+      "package_unchanged": true,
+      "source_unchanged": true,
+      "new_tool_returned_images": 2,
+      "elapsed_seconds": 153.49,
+      "model_reported": "Unknown",
+      "result_sha256": "05c0a0f7a328b1572e3f9505100767268a77da903600a0c3a318b9b7bd455203",
+      "workbook_sha256": "e03c3c8e65a1876bd15d32ef9b82052c379392259dbaf92d4f49d3338c0b0f33",
+      "trace_sha256": "62ff322f5fa6b44429e43661c3db9bcc94ae902bd3340f4fa91b3a59d065eab6",
+      "raw_correct": 15,
+      "raw_denominator": 15,
+      "raw_correct_blank": 17,
+      "raw_checks": {},
+      "raw_tables": {
+        "Raw documents": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Raw requested values": {
+          "expected": 4,
+          "actual": 4,
+          "matched": 4,
+          "extra": 0
+        }
+      },
+      "workbook_correct": 21,
+      "workbook_denominator": 21,
+      "workbook_correct_blank": 14,
+      "workbook_checks": {
+        "unprocessed_inputs": 0
+      },
+      "workbook_tables": {
+        "Billing documents": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Other": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Line items": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested values": {
+          "expected": 4,
+          "actual": 4,
+          "matched": 4,
+          "extra": 0
+        }
+      }
+    },
+    {
+      "trial": 1,
+      "phase": "followup",
+      "purpose": "payment",
+      "source": "coal-scan.pdf",
+      "status": "recorded",
+      "core_delivery_complete": true,
+      "same_session": true,
+      "policy_questions_after_reply": 0,
+      "coverage_matches_request": true,
+      "custom_matches_requested_labels": true,
+      "custom_reused_unchanged": true,
+      "prior_outputs_unchanged": true,
+      "package_unchanged": true,
+      "source_unchanged": true,
+      "new_tool_returned_images": 2,
+      "elapsed_seconds": 115.92,
+      "model_reported": "Unknown",
+      "result_sha256": "3dce369dc555f5dd4e7d6532379b09d91da9081b7d9ed057d1683f19c24bf62e",
+      "workbook_sha256": "41d13fbce9fca6dae8d33e1eee338dcaafa2b2e9c941ce59b844afc37ed39a70",
+      "trace_sha256": "39460a90f3e66d732b7863e27d5093771ffbfb905de1f8fcab0fbb0f859e8596",
+      "raw_correct": 15,
+      "raw_denominator": 15,
+      "raw_correct_blank": 17,
+      "raw_checks": {},
+      "raw_tables": {
+        "Raw documents": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Raw requested values": {
+          "expected": 4,
+          "actual": 4,
+          "matched": 4,
+          "extra": 0
+        }
+      },
+      "workbook_correct": 21,
+      "workbook_denominator": 21,
+      "workbook_correct_blank": 14,
+      "workbook_checks": {
+        "unprocessed_inputs": 0
+      },
+      "workbook_tables": {
+        "Billing documents": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Other": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Line items": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested values": {
+          "expected": 4,
+          "actual": 4,
+          "matched": 4,
+          "extra": 0
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "phase": "reply",
+      "purpose": "energy",
+      "source": "coal-ocr.pdf",
+      "status": "recorded",
+      "core_delivery_complete": true,
+      "same_session": true,
+      "policy_questions_after_reply": 0,
+      "coverage_matches_request": true,
+      "custom_matches_requested_labels": true,
+      "custom_reused_unchanged": null,
+      "prior_outputs_unchanged": true,
+      "package_unchanged": true,
+      "source_unchanged": true,
+      "new_tool_returned_images": 2,
+      "elapsed_seconds": 230.12,
+      "model_reported": "Unknown",
+      "result_sha256": "35dbc688d2506b4b08795b45a6bd290ec37e772ea0af81444059c1e2efa52116",
+      "workbook_sha256": "c0aec1f62de4340b37250803cf20202f4eb9a3af212bfd4b4596d1d59c2c9627",
+      "trace_sha256": "7b63a243dca49b48783a23bd45836e49ca6651fab816764f4970a6ab780bd9cb",
+      "raw_correct": 20,
+      "raw_denominator": 20,
+      "raw_correct_blank": 17,
+      "raw_checks": {},
+      "raw_tables": {
+        "Raw documents": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Raw requested values": {
+          "expected": 5,
+          "actual": 5,
+          "matched": 5,
+          "extra": 0
+        }
+      },
+      "workbook_correct": 25,
+      "workbook_denominator": 25,
+      "workbook_correct_blank": 15,
+      "workbook_checks": {
+        "unprocessed_inputs": 0
+      },
+      "workbook_tables": {
+        "Billing documents": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Other": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Line items": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested values": {
+          "expected": 5,
+          "actual": 5,
+          "matched": 5,
+          "extra": 0
+        }
+      }
+    },
+    {
+      "trial": 3,
+      "phase": "reply",
+      "purpose": "payment",
+      "source": "coal-ocr.pdf",
+      "status": "recorded",
+      "core_delivery_complete": true,
+      "same_session": true,
+      "policy_questions_after_reply": 0,
+      "coverage_matches_request": true,
+      "custom_matches_requested_labels": true,
+      "custom_reused_unchanged": null,
+      "prior_outputs_unchanged": true,
+      "package_unchanged": true,
+      "source_unchanged": true,
+      "new_tool_returned_images": 2,
+      "elapsed_seconds": 203.45,
+      "model_reported": "Unknown",
+      "result_sha256": "d3f15e35ceb5fe3f2458560e2a0b9747bedc8592e99c10892a72c74409d3fffc",
+      "workbook_sha256": "4320efc8e4fa587f17977ef21e4deae1a024f447dd353ce86751c8e0511044b3",
+      "trace_sha256": "b54b48c2778f3a6dae6aa2089b2096d4674e2ca84f075a65fd27b4ed4bfd99a4",
+      "raw_correct": 15,
+      "raw_denominator": 15,
+      "raw_correct_blank": 17,
+      "raw_checks": {},
+      "raw_tables": {
+        "Raw documents": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Raw requested values": {
+          "expected": 4,
+          "actual": 4,
+          "matched": 4,
+          "extra": 0
+        }
+      },
+      "workbook_correct": 21,
+      "workbook_denominator": 21,
+      "workbook_correct_blank": 14,
+      "workbook_checks": {
+        "unprocessed_inputs": 0
+      },
+      "workbook_tables": {
+        "Billing documents": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Other": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Line items": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested values": {
+          "expected": 4,
+          "actual": 4,
+          "matched": 4,
+          "extra": 0
+        }
+      }
+    }
+  ],
+  "totals": {
+    "raw": {
+      "scored_batches": 4,
+      "correct": 65,
+      "denominator": 65,
+      "correct_blank": 68
+    },
+    "workbook": {
+      "scored_batches": 4,
+      "correct": 88,
+      "denominator": 88,
+      "correct_blank": 57
+    }
+  },
+  "scope": "Three fresh CLI sessions; public known sources, model-created settings, no prefilled profile/extraction, no answer files in model workspaces. Existing host tooling/auth retained; global host instructions may remain visible.",
+  "limitations": [
+    "Known synthetic content; same source reused across purposes/formats.",
+    "Opening text requiring review remains separate from core delivery completion.",
+    "Image returns are observed tool evidence, not proof of attention.",
+    "Requested model is not verified runtime identity."
+  ]
+}

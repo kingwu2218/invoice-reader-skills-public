@@ -1,0 +1,884 @@
+{
+  "evaluation": "public image-only PDF workflow, known content in continued session",
+  "package_version": "0.3.4",
+  "unit_tests_passed": 124,
+  "reference_correction": "v1 incorrectly equated Other sheet with open-vocabulary certificate type. v2 removes that key for single-document pages; fresh v2 runs used separately frozen answers.",
+  "limitations": [
+    "Two unique public pages, repeated purposes and previously known content.",
+    "Same exact policy-acknowledged chat; not independent runs or a holdout.",
+    "No raw statement lines in this PDF. No handwriting or new local OCR recognition.",
+    "Correct values and page artifacts do not prove image attention."
+  ],
+  "pre_run_locks": {
+    "1": {
+      "files": {
+        "eval/fixtures/coal-scan.pdf": "2efbfd0f62a7d1b79cf7d11bf611c73dd111166f9223d73b66c5d33d4a7f313b",
+        "eval/scenarios/coal-scan-payment-lines-v1/case.toml": "24f36cffd7f2359657609c270de2556897785aedaffe20b2a6ecd7b7d964e3fd",
+        "eval/scenarios/coal-scan-payment-lines-v1/custom.md": "322c1af6253b1d00e801af84c65179e1a96fcc251acface61c64d157cc51cd95",
+        "eval/scenarios/coal-scan-payment-lines-v1/expected.json": "0959ed62e8316a186518556e689c4faefe19644c7f1422433645f8d2e0182388",
+        "eval/scenarios/coal-scan-energy-lines-v1/case.toml": "24f36cffd7f2359657609c270de2556897785aedaffe20b2a6ecd7b7d964e3fd",
+        "eval/scenarios/coal-scan-energy-lines-v1/custom.md": "2ce715e21f532e03fc948ce5e13713d418265f3b3e15a622f42c2eb725a89ef6",
+        "eval/scenarios/coal-scan-energy-lines-v1/expected.json": "700d8d013a778bd4ff158e77b117ed0ded5860b6d776a29711da9822224f0910"
+      },
+      "package_hash": "ef249d1898c70f819adf4a29e4a8b11cd195395dacda5391225439e7bd8aef36",
+      "model_requested": "gpt-6.1-sol",
+      "reference_status": "agent-reviewed provisional; existing public source"
+    },
+    "2": {
+      "files": {
+        "eval/fixtures/coal-scan.pdf": "2efbfd0f62a7d1b79cf7d11bf611c73dd111166f9223d73b66c5d33d4a7f313b",
+        "eval/scenarios/coal-scan-payment-lines-v2/case.toml": "24f36cffd7f2359657609c270de2556897785aedaffe20b2a6ecd7b7d964e3fd",
+        "eval/scenarios/coal-scan-payment-lines-v2/custom.md": "322c1af6253b1d00e801af84c65179e1a96fcc251acface61c64d157cc51cd95",
+        "eval/scenarios/coal-scan-payment-lines-v2/expected.json": "91cc4aeabf222f56666c487fdb6b26a4567afaf4f439a3196be604aec6a2727d",
+        "eval/scenarios/coal-scan-energy-lines-v2/case.toml": "24f36cffd7f2359657609c270de2556897785aedaffe20b2a6ecd7b7d964e3fd",
+        "eval/scenarios/coal-scan-energy-lines-v2/custom.md": "2ce715e21f532e03fc948ce5e13713d418265f3b3e15a622f42c2eb725a89ef6",
+        "eval/scenarios/coal-scan-energy-lines-v2/expected.json": "37f3c2ee8381de89382560ff781559c56b6274e094bc3c8f261ffb3b664ce73c"
+      },
+      "package_hash": "ef249d1898c70f819adf4a29e4a8b11cd195395dacda5391225439e7bd8aef36",
+      "reference_revision": "v2 removes bucket/type confusion before v2 live execution; v1 retained",
+      "reference_status": "agent-reviewed provisional; public known content"
+    }
+  },
+  "runs": [
+    {
+      "case": "coal-scan-energy-lines-v1",
+      "reference_version": 1,
+      "valid": true,
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "package_hash": "ef249d1898c70f819adf4a29e4a8b11cd195395dacda5391225439e7bd8aef36",
+      "dataset_hash": "057a6d1bd01cca55084219f82b0d94b897b7aa0f75fa17217ab7b4a60a8ee02b",
+      "model_requested": "gpt-6.1-sol",
+      "model_reported": "Unknown",
+      "provider": "OpenAI via current Codex ChatGPT login",
+      "tool_version": "codex-cli 0.162.0-alpha.2",
+      "elapsed_seconds": 160.64,
+      "workbook_metrics": {
+        "field_accuracy": {
+          "numerator": 25,
+          "denominator": 25,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 25,
+          "denominator": 25,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 25,
+          "denominator": 25,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        }
+      },
+      "raw_metrics": {
+        "field_accuracy": {
+          "numerator": 10,
+          "denominator": 34,
+          "rate": 0.29411764705882354
+        },
+        "field_precision": {
+          "numerator": 10,
+          "denominator": 22,
+          "rate": 0.45454545454545453
+        },
+        "printed_value_recall": {
+          "numerator": 10,
+          "denominator": 22,
+          "rate": 0.45454545454545453
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "line_item_recall": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "line_item_precision": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "statement_line_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "statement_line_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "workbook_cells": {
+        "correct": 25,
+        "correct_blank": 15
+      },
+      "raw_cells": {
+        "correct": 10,
+        "correct_blank": 16,
+        "miss": 12,
+        "invented": 12
+      },
+      "document_tables": {
+        "Billing documents": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Other": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        }
+      },
+      "raw_tables": {
+        "Raw documents": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 1,
+          "missing": 1,
+          "extra": 1
+        },
+        "Raw line items": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Raw requested values": {
+          "expected": 5,
+          "actual": 5,
+          "matched": 2,
+          "missing": 3,
+          "extra": 3
+        }
+      },
+      "review_flags": {
+        "true_positive": 2
+      },
+      "workbook_details": [],
+      "raw_details": [
+        {
+          "where": "Raw documents/1/fields.document_title",
+          "outcome": "miss",
+          "expected": "LAB CERTIFICATE",
+          "got": "None"
+        },
+        {
+          "where": "Raw documents/extra/1",
+          "outcome": "extra_row",
+          "got": {
+            "File": "coal-scan.pdf",
+            "Pages": "2",
+            "Document type": "Lab certificate",
+            "Document occurrence": "1",
+            "fields.document_title": "LAB CERTIFICATE",
+            "fields.document_date": "1 Oct 2026"
+          }
+        },
+        {
+          "where": "Raw requested values/2/observation.status",
+          "outcome": "miss",
+          "expected": "printed",
+          "got": "None"
+        },
+        {
+          "where": "Raw requested values/2/observation.value",
+          "outcome": "miss",
+          "expected": "6,200",
+          "got": "None"
+        },
+        {
+          "where": "Raw requested values/2/observation.unit",
+          "outcome": "miss",
+          "expected": "kcal/kg",
+          "got": "None"
+        },
+        {
+          "where": "Raw requested values/2/observation.context",
+          "outcome": "miss",
+          "expected": "Sample C-01",
+          "got": "None"
+        },
+        {
+          "where": "Raw requested values/2/observation.pages",
+          "outcome": "miss",
+          "expected": "2",
+          "got": "None"
+        },
+        {
+          "where": "Raw requested values/3/observation.status",
+          "outcome": "miss",
+          "expected": "printed",
+          "got": "None"
+        },
+        {
+          "where": "Raw requested values/3/observation.value",
+          "outcome": "miss",
+          "expected": "6,100",
+          "got": "None"
+        },
+        {
+          "where": "Raw requested values/3/observation.unit",
+          "outcome": "miss",
+          "expected": "kcal/kg",
+          "got": "None"
+        },
+        {
+          "where": "Raw requested values/3/observation.context",
+          "outcome": "miss",
+          "expected": "Sample C-02",
+          "got": "None"
+        },
+        {
+          "where": "Raw requested values/3/observation.pages",
+          "outcome": "miss",
+          "expected": "2",
+          "got": "None"
+        },
+        {
+          "where": "Raw requested values/4/observation.status",
+          "outcome": "miss",
+          "expected": "absent",
+          "got": "None"
+        },
+        {
+          "where": "Raw requested values/extra/2",
+          "outcome": "extra_row",
+          "got": {
+            "File": "coal-scan.pdf",
+            "Pages": "2",
+            "Document type": "Lab certificate",
+            "Document occurrence": "1",
+            "Field key": "coal_energy",
+            "Occurrence": "1",
+            "observation.status": "printed",
+            "observation.value": "6,200",
+            "observation.unit": "kcal/kg",
+            "observation.context": "Sample C-01",
+            "observation.pages": "2",
+            "observation.evidence": "Sample C-01; Energy Level of Coal: 6,200 kcal/kg"
+          }
+        },
+        {
+          "where": "Raw requested values/extra/3",
+          "outcome": "extra_row",
+          "got": {
+            "File": "coal-scan.pdf",
+            "Pages": "2",
+            "Document type": "Lab certificate",
+            "Document occurrence": "1",
+            "Field key": "coal_energy",
+            "Occurrence": "2",
+            "observation.status": "printed",
+            "observation.value": "6,100",
+            "observation.unit": "kcal/kg",
+            "observation.context": "Sample C-02",
+            "observation.pages": "2",
+            "observation.evidence": "Sample C-02; Energy Level of Coal: 6,100 kcal/kg"
+          }
+        },
+        {
+          "where": "Raw requested values/extra/4",
+          "outcome": "extra_row",
+          "got": {
+            "File": "coal-scan.pdf",
+            "Pages": "2",
+            "Document type": "Lab certificate",
+            "Document occurrence": "1",
+            "Field key": "moisture",
+            "Occurrence": "1",
+            "observation.status": "absent"
+          }
+        }
+      ],
+      "route_pages": [
+        {
+          "page": 1,
+          "route": "B",
+          "ocr_status": "not_requested",
+          "text_layer_characters": 0,
+          "image_hash": "5805ee48e8940fbdffc6334bac431b5d264aa5129e9033525bcb01fe2da15d1e",
+          "matches_end_of_turn_snapshot": true
+        },
+        {
+          "page": 2,
+          "route": "B",
+          "ocr_status": "not_requested",
+          "text_layer_characters": 0,
+          "image_hash": "00c0df1d90a95882c50fe73d31af91f174685ab0e338b0ba461452e51aa7a0b6",
+          "matches_end_of_turn_snapshot": true
+        }
+      ],
+      "route_report_hash": "cd5a4020da1c8b11133c00526d3825bd4bb84a68a7dc07619eb41711ab6cfcd5",
+      "turn_stream_hash": "480abc90f470a1be5847bebf159c84dad84d14216f93adfd62d9b3c91e462266",
+      "snapshot_hash": "51dc57b7e7fa237fd7fd0112b6db7c436abfecee962e51cd23cc02fcc5bc51bb",
+      "raw_output_hash": "91a141d6a42482601e2f987ad3c6f4f6fbaa53520497d98cc1c3a06ff6340c93",
+      "workbook_output_hash": "5c7d490ead617478529bd10daa4449f91003a2a1c1e62b2a416b719529647ed2",
+      "policy_question_repeated": false,
+      "trace_limit": "Route artifacts match saved final snapshots; no CLI page-attachment receipt or verified model image attention."
+    },
+    {
+      "case": "coal-scan-payment-lines-v1",
+      "reference_version": 1,
+      "valid": true,
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "package_hash": "ef249d1898c70f819adf4a29e4a8b11cd195395dacda5391225439e7bd8aef36",
+      "dataset_hash": "e7969cea701c23e8bf70633ab9c87f00922e5bb81b3bafe29d2d1916e9d36ed5",
+      "model_requested": "gpt-6.1-sol",
+      "model_reported": "Unknown",
+      "provider": "OpenAI via current Codex ChatGPT login",
+      "tool_version": "codex-cli 0.162.0-alpha.2",
+      "elapsed_seconds": 164.53,
+      "workbook_metrics": {
+        "field_accuracy": {
+          "numerator": 21,
+          "denominator": 21,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 21,
+          "denominator": 21,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 21,
+          "denominator": 21,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        }
+      },
+      "raw_metrics": {
+        "field_accuracy": {
+          "numerator": 14,
+          "denominator": 20,
+          "rate": 0.7
+        },
+        "field_precision": {
+          "numerator": 14,
+          "denominator": 17,
+          "rate": 0.8235294117647058
+        },
+        "printed_value_recall": {
+          "numerator": 14,
+          "denominator": 17,
+          "rate": 0.8235294117647058
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "line_item_recall": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "line_item_precision": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "statement_line_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "statement_line_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "workbook_cells": {
+        "correct": 21,
+        "correct_blank": 14
+      },
+      "raw_cells": {
+        "correct": 14,
+        "correct_blank": 16,
+        "miss": 3,
+        "invented": 3
+      },
+      "document_tables": {
+        "Billing documents": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Other": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        }
+      },
+      "raw_tables": {
+        "Raw documents": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 1,
+          "missing": 1,
+          "extra": 1
+        },
+        "Raw line items": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Raw requested values": {
+          "expected": 4,
+          "actual": 4,
+          "matched": 2,
+          "missing": 2,
+          "extra": 2
+        }
+      },
+      "review_flags": {
+        "true_positive": 2
+      },
+      "workbook_details": [],
+      "raw_details": [
+        {
+          "where": "Raw documents/1/fields.document_title",
+          "outcome": "miss",
+          "expected": "LAB CERTIFICATE",
+          "got": "None"
+        },
+        {
+          "where": "Raw documents/extra/1",
+          "outcome": "extra_row",
+          "got": {
+            "File": "coal-scan.pdf",
+            "Pages": "2",
+            "Document type": "Lab certificate",
+            "Document occurrence": "1",
+            "fields.document_title": "LAB CERTIFICATE",
+            "fields.document_date": "1 Oct 2026"
+          }
+        },
+        {
+          "where": "Raw requested values/2/observation.status",
+          "outcome": "miss",
+          "expected": "absent",
+          "got": "None"
+        },
+        {
+          "where": "Raw requested values/3/observation.status",
+          "outcome": "miss",
+          "expected": "absent",
+          "got": "None"
+        },
+        {
+          "where": "Raw requested values/extra/2",
+          "outcome": "extra_row",
+          "got": {
+            "File": "coal-scan.pdf",
+            "Pages": "2",
+            "Document type": "Lab certificate",
+            "Document occurrence": "1",
+            "Field key": "invoice_ref",
+            "Occurrence": "1",
+            "observation.status": "absent"
+          }
+        },
+        {
+          "where": "Raw requested values/extra/3",
+          "outcome": "extra_row",
+          "got": {
+            "File": "coal-scan.pdf",
+            "Pages": "2",
+            "Document type": "Lab certificate",
+            "Document occurrence": "1",
+            "Field key": "payment_due",
+            "Occurrence": "1",
+            "observation.status": "absent"
+          }
+        }
+      ],
+      "route_pages": [
+        {
+          "page": 1,
+          "route": "B",
+          "ocr_status": "not_requested",
+          "text_layer_characters": 0,
+          "image_hash": "5805ee48e8940fbdffc6334bac431b5d264aa5129e9033525bcb01fe2da15d1e",
+          "matches_end_of_turn_snapshot": true
+        },
+        {
+          "page": 2,
+          "route": "B",
+          "ocr_status": "not_requested",
+          "text_layer_characters": 0,
+          "image_hash": "00c0df1d90a95882c50fe73d31af91f174685ab0e338b0ba461452e51aa7a0b6",
+          "matches_end_of_turn_snapshot": true
+        }
+      ],
+      "route_report_hash": "729551196db3dd84637d02c29049fb190de6eea0ae4861a9265c9cf605211f2c",
+      "turn_stream_hash": "4f54a7a2e7ed073d0c2dd6d77dbf0aac820f752425f72ea2bcfa48df782a0123",
+      "snapshot_hash": "2df105a3584e4eeaf6ef485fab7a1d2b4b6edc58bd1d0cd06710bef66f02dc52",
+      "raw_output_hash": "79f9ed0e3c19751ec4806145a0e3f72c00c804bb6dca19b4e8bdc7398511baf1",
+      "workbook_output_hash": "075c28d2973b5bc51973698eda9a778925e6828bcf6b523c207be2ba22772e3b",
+      "policy_question_repeated": false,
+      "trace_limit": "Route artifacts match saved final snapshots; no CLI page-attachment receipt or verified model image attention."
+    },
+    {
+      "case": "coal-scan-energy-lines-v2",
+      "reference_version": 2,
+      "valid": true,
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "package_hash": "ef249d1898c70f819adf4a29e4a8b11cd195395dacda5391225439e7bd8aef36",
+      "dataset_hash": "82bac0cc827d8440d652fd3d5167b6237570b67778d2d02acbf469d805ddaf69",
+      "model_requested": "gpt-6.1-sol",
+      "model_reported": "Unknown",
+      "provider": "OpenAI via current Codex ChatGPT login",
+      "tool_version": "codex-cli 0.162.0-alpha.2",
+      "elapsed_seconds": 160.51,
+      "workbook_metrics": {
+        "field_accuracy": {
+          "numerator": 25,
+          "denominator": 25,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 25,
+          "denominator": 25,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 25,
+          "denominator": 25,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        }
+      },
+      "raw_metrics": {
+        "field_accuracy": {
+          "numerator": 22,
+          "denominator": 22,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 22,
+          "denominator": 22,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 22,
+          "denominator": 22,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "line_item_recall": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "line_item_precision": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "statement_line_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "statement_line_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "workbook_cells": {
+        "correct": 25,
+        "correct_blank": 15
+      },
+      "raw_cells": {
+        "correct": 22,
+        "correct_blank": 16
+      },
+      "document_tables": {
+        "Billing documents": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Other": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        }
+      },
+      "raw_tables": {
+        "Raw documents": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Raw line items": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Raw requested values": {
+          "expected": 5,
+          "actual": 5,
+          "matched": 5,
+          "extra": 0
+        }
+      },
+      "review_flags": {
+        "true_positive": 2
+      },
+      "workbook_details": [],
+      "raw_details": [],
+      "route_pages": [
+        {
+          "page": 1,
+          "route": "B",
+          "ocr_status": "not_requested",
+          "text_layer_characters": 0,
+          "image_hash": "5805ee48e8940fbdffc6334bac431b5d264aa5129e9033525bcb01fe2da15d1e",
+          "matches_end_of_turn_snapshot": true
+        },
+        {
+          "page": 2,
+          "route": "B",
+          "ocr_status": "not_requested",
+          "text_layer_characters": 0,
+          "image_hash": "00c0df1d90a95882c50fe73d31af91f174685ab0e338b0ba461452e51aa7a0b6",
+          "matches_end_of_turn_snapshot": true
+        }
+      ],
+      "route_report_hash": "9eb32a33d32b72bcb98247cf3135ffc05d2b6951b09b3af4c14f8f76328a53a1",
+      "turn_stream_hash": "b50941436186e3d238d5e210a32fbe943f5692633c0d0d8fdf0d2f8080adfcf7",
+      "snapshot_hash": "5a4a2909404e4c9ea57fcc059aadf6c7d1f719c207aaf0e569419fa440e01342",
+      "raw_output_hash": "73064f8e2a9dc5dcd71bd67ddd072339950a5aaa833bfba92612dfcf2b40a36b",
+      "workbook_output_hash": "65dde37dce58e4bd0469c7cff9552c33903e5105932dc5e46892f52307276bac",
+      "policy_question_repeated": false,
+      "trace_limit": "Route artifacts match saved final snapshots; no CLI page-attachment receipt or verified model image attention."
+    },
+    {
+      "case": "coal-scan-payment-lines-v2",
+      "reference_version": 2,
+      "valid": true,
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "package_hash": "ef249d1898c70f819adf4a29e4a8b11cd195395dacda5391225439e7bd8aef36",
+      "dataset_hash": "39f40d564892ab198c7c592757c0028d3d0d1d642b9f7f9c5dd14856e7dc8630",
+      "model_requested": "gpt-6.1-sol",
+      "model_reported": "Unknown",
+      "provider": "OpenAI via current Codex ChatGPT login",
+      "tool_version": "codex-cli 0.162.0-alpha.2",
+      "elapsed_seconds": 160.31,
+      "workbook_metrics": {
+        "field_accuracy": {
+          "numerator": 21,
+          "denominator": 21,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 21,
+          "denominator": 21,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 21,
+          "denominator": 21,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        }
+      },
+      "raw_metrics": {
+        "field_accuracy": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "line_item_recall": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "line_item_precision": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "statement_line_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "statement_line_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "workbook_cells": {
+        "correct": 21,
+        "correct_blank": 14
+      },
+      "raw_cells": {
+        "correct": 17,
+        "correct_blank": 16
+      },
+      "document_tables": {
+        "Billing documents": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Other": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        }
+      },
+      "raw_tables": {
+        "Raw documents": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Raw line items": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Raw requested values": {
+          "expected": 4,
+          "actual": 4,
+          "matched": 4,
+          "extra": 0
+        }
+      },
+      "review_flags": {
+        "true_positive": 2
+      },
+      "workbook_details": [],
+      "raw_details": [],
+      "route_pages": [
+        {
+          "page": 1,
+          "route": "B",
+          "ocr_status": "not_requested",
+          "text_layer_characters": 0,
+          "image_hash": "5805ee48e8940fbdffc6334bac431b5d264aa5129e9033525bcb01fe2da15d1e",
+          "matches_end_of_turn_snapshot": true
+        },
+        {
+          "page": 2,
+          "route": "B",
+          "ocr_status": "not_requested",
+          "text_layer_characters": 0,
+          "image_hash": "00c0df1d90a95882c50fe73d31af91f174685ab0e338b0ba461452e51aa7a0b6",
+          "matches_end_of_turn_snapshot": true
+        }
+      ],
+      "route_report_hash": "062d375521327de4d35aeac0d1b20a36c6a4ceb9df8a50890bcef8c84775c0fc",
+      "turn_stream_hash": "d06113f1fcdba00f2a8a7d968b56785a297fad815c860d50edd5a241984e55d0",
+      "snapshot_hash": "88aaaeb003fa6e27bd5a1a453014a1044bf88d8c37a21679d1886787e1bd2254",
+      "raw_output_hash": "1abbcc5d0e11358fde98b5850301648c1c7560521f21454e60c0f6c8b882ee22",
+      "workbook_output_hash": "d50c792851313aaaa6631f836b1cf79612a7802b6209e95513bbdb002d881275",
+      "policy_question_repeated": false,
+      "trace_limit": "Route artifacts match saved final snapshots; no CLI page-attachment receipt or verified model image attention."
+    }
+  ],
+  "tool_version_observed": "codex-cli 0.162.0-alpha.2"
+}

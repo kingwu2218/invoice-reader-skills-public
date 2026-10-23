@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "evaluation_kind": "post-run-owner-adjudication",
+  "date": "2026-10-10",
+  "package_version": "0.3.9",
+  "original_report_sha256": "1fafbd8bf9d611adc3822309ca41351755079ea36156ec8ca3c6c4ff48ee2edd",
+  "private_owner_review_sha256": "b39aaeb5b56568f0fbfa49ff00f82b1f23d6ef64e1632d4863002bcfdf56d1df",
+  "scope": "case-004 first invoice Total, raw and workbook only",
+  "decision": "Original reference confirmed; model prediction is an extraction error. Values and predictions unchanged.",
+  "new_model_execution": false,
+  "aggregate_after_scope_review": {
+    "raw": {
+      "all": {
+        "correct": 23,
+        "correct_blank": 4,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 2,
+        "invented": 0,
+        "numerator": 23,
+        "denominator": 25,
+        "rate": 0.92
+      },
+      "owner": {
+        "correct": 20,
+        "correct_blank": 1,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 2,
+        "invented": 0,
+        "numerator": 20,
+        "denominator": 22,
+        "rate": 0.9090909090909091
+      },
+      "provisional": {
+        "correct": 3,
+        "correct_blank": 3,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0,
+        "numerator": 3,
+        "denominator": 3,
+        "rate": 1.0
+      }
+    },
+    "workbook": {
+      "all": {
+        "correct": 25,
+        "correct_blank": 4,
+        "miss": 0,
+        "wrong_flagged": 2,
+        "silent_error": 0,
+        "invented": 0,
+        "numerator": 25,
+        "denominator": 27,
+        "rate": 0.9259259259259259
+      },
+      "owner": {
+        "correct": 22,
+        "correct_blank": 1,
+        "miss": 0,
+        "wrong_flagged": 2,
+        "silent_error": 0,
+        "invented": 0,
+        "numerator": 22,
+        "denominator": 24,
+        "rate": 0.9166666666666666
+      },
+      "provisional": {
+        "correct": 3,
+        "correct_blank": 3,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0,
+        "numerator": 3,
+        "denominator": 3,
+        "rate": 1.0
+      }
+    }
+  },
+  "limitations": [
+    "Post-run review moves only two configured checks from provisional to owner-confirmed scope.",
+    "Payer source-alternate review remains a separate maintainer judgement; strict comparison retained.",
+    "Neither repeated sources nor this review establish general handwriting accuracy."
+  ]
+}

@@ -1,0 +1,12 @@
+* text=auto eol=lf
+*.xlsx binary
+*.pdf binary
+*.png binary
+*.jpg binary
+
+# Copied runtime references retain the exact bytes used by package/eval hashes.
+# Keep source and generated references aligned when building a fresh checkout.
+core/references/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+adapters/**/resources/references/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+skills/**/references/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+dist/**/references/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

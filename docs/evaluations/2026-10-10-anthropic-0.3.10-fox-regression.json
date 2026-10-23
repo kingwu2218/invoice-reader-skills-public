@@ -1,0 +1,1875 @@
+{
+  "runs": [
+    {
+      "model_family_run": "sonnet-v3",
+      "case": "anthropic-fox-001",
+      "run": "run-1",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-sonnet-5-5",
+      "model_reported": "claude-sonnet-5-5",
+      "session_harness": "claude-session-v3",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "owner-verified",
+      "policy_reply_actor": "human",
+      "permission_denials": 2,
+      "elapsed_seconds": 168.56,
+      "workbook": {
+        "correct": 4,
+        "correct_blank": 0,
+        "denominator": 5,
+        "miss": 0,
+        "wrong_flagged": 1,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 4,
+        "correct_blank": 0,
+        "denominator": 5,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 1,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 1,
+        "matched": 1,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 0,
+        "kept_unclear_and_blank": 0,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": [
+        {
+          "layer": "workbook",
+          "field": "Payer",
+          "outcome": "wrong_flagged",
+          "kind": "casing_only"
+        },
+        {
+          "layer": "raw",
+          "field": "fields.payer",
+          "outcome": "silent_error",
+          "kind": "casing_only"
+        }
+      ]
+    },
+    {
+      "model_family_run": "sonnet-v3",
+      "case": "anthropic-fox-001",
+      "run": "run-2",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-sonnet-5-5",
+      "model_reported": "claude-sonnet-5-5",
+      "session_harness": "claude-session-v3",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "owner-verified",
+      "policy_reply_actor": "human",
+      "permission_denials": 2,
+      "elapsed_seconds": 163.95,
+      "workbook": {
+        "correct": 5,
+        "correct_blank": 0,
+        "denominator": 5,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 5,
+        "correct_blank": 0,
+        "denominator": 5,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 1,
+        "matched": 1,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 0,
+        "kept_unclear_and_blank": 0,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": []
+    },
+    {
+      "model_family_run": "sonnet-v3",
+      "case": "anthropic-fox-001",
+      "run": "run-3",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-sonnet-5-5",
+      "model_reported": "claude-sonnet-5-5",
+      "session_harness": "claude-session-v3",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "owner-verified",
+      "policy_reply_actor": "human",
+      "permission_denials": 2,
+      "elapsed_seconds": 140.94,
+      "workbook": {
+        "correct": 5,
+        "correct_blank": 0,
+        "denominator": 5,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 5,
+        "correct_blank": 0,
+        "denominator": 5,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 1,
+        "matched": 1,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 0,
+        "kept_unclear_and_blank": 0,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": []
+    },
+    {
+      "model_family_run": "sonnet-v3",
+      "case": "anthropic-fox-003",
+      "run": "run-1",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-sonnet-5-5",
+      "model_reported": "claude-sonnet-5-5",
+      "session_harness": "claude-session-v3",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "owner-verified",
+      "policy_reply_actor": "human",
+      "permission_denials": 2,
+      "elapsed_seconds": 137.84,
+      "workbook": {
+        "correct": 7,
+        "correct_blank": 0,
+        "denominator": 8,
+        "miss": 0,
+        "wrong_flagged": 1,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 7,
+        "correct_blank": 0,
+        "denominator": 8,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 1,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 1,
+        "matched": 1,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 0,
+        "kept_unclear_and_blank": 0,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": [
+        {
+          "layer": "workbook",
+          "field": "Payer",
+          "outcome": "wrong_flagged",
+          "kind": "casing_only"
+        },
+        {
+          "layer": "raw",
+          "field": "fields.payer",
+          "outcome": "silent_error",
+          "kind": "casing_only"
+        }
+      ]
+    },
+    {
+      "model_family_run": "sonnet-v3",
+      "case": "anthropic-fox-003",
+      "run": "run-2",
+      "valid": false,
+      "phase": "awaiting_user",
+      "model_requested": "claude-sonnet-5-5",
+      "model_reported": "claude-sonnet-5-5",
+      "session_harness": "claude-session-v3",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "owner-verified",
+      "policy_reply_actor": "human",
+      "permission_denials": 2,
+      "elapsed_seconds": 95.06
+    },
+    {
+      "model_family_run": "sonnet-v3",
+      "case": "anthropic-fox-003",
+      "run": "run-3",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-sonnet-5-5",
+      "model_reported": "claude-sonnet-5-5",
+      "session_harness": "claude-session-v3",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "owner-verified",
+      "policy_reply_actor": "human",
+      "permission_denials": 2,
+      "elapsed_seconds": 117.75,
+      "workbook": {
+        "correct": 7,
+        "correct_blank": 0,
+        "denominator": 8,
+        "miss": 0,
+        "wrong_flagged": 1,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 6,
+        "correct_blank": 0,
+        "denominator": 8,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 2,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 1,
+        "matched": 1,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 0,
+        "kept_unclear_and_blank": 0,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": [
+        {
+          "layer": "workbook",
+          "field": "Payer",
+          "outcome": "wrong_flagged",
+          "kind": "casing_only"
+        },
+        {
+          "layer": "raw",
+          "field": "fields.amount",
+          "outcome": "silent_error",
+          "kind": "spacing_or_punctuation_only"
+        },
+        {
+          "layer": "raw",
+          "field": "fields.payer",
+          "outcome": "silent_error",
+          "kind": "casing_only"
+        }
+      ]
+    },
+    {
+      "model_family_run": "sonnet-v3",
+      "case": "anthropic-fox-004",
+      "run": "run-1",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-sonnet-5-5",
+      "model_reported": "claude-sonnet-5-5",
+      "session_harness": "claude-session-v3",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "mixed-owner-and-provisional",
+      "policy_reply_actor": "human",
+      "permission_denials": 2,
+      "elapsed_seconds": 187.16,
+      "workbook": {
+        "correct": 5,
+        "correct_blank": 3,
+        "denominator": 7,
+        "miss": 1,
+        "wrong_flagged": 0,
+        "silent_error": 1,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 3,
+        "correct_blank": 3,
+        "denominator": 5,
+        "miss": 1,
+        "wrong_flagged": 0,
+        "silent_error": 1,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 2,
+        "matched": 2,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 1,
+        "kept_unclear_and_blank": 0,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": [
+        {
+          "layer": "workbook",
+          "field": "Status",
+          "outcome": "silent_error",
+          "kind": "different"
+        },
+        {
+          "layer": "workbook",
+          "field": "Pages",
+          "outcome": "miss",
+          "kind": "blank"
+        },
+        {
+          "layer": "raw",
+          "field": "observation.status",
+          "outcome": "silent_error",
+          "kind": "different"
+        },
+        {
+          "layer": "raw",
+          "field": "observation.pages",
+          "outcome": "miss",
+          "kind": "blank"
+        }
+      ]
+    },
+    {
+      "model_family_run": "sonnet-v3",
+      "case": "anthropic-fox-004",
+      "run": "run-2",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-sonnet-5-5",
+      "model_reported": "claude-sonnet-5-5",
+      "session_harness": "claude-session-v3",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "mixed-owner-and-provisional",
+      "policy_reply_actor": "human",
+      "permission_denials": 2,
+      "elapsed_seconds": 142.47,
+      "workbook": {
+        "correct": 6,
+        "correct_blank": 3,
+        "denominator": 7,
+        "miss": 1,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 4,
+        "correct_blank": 3,
+        "denominator": 5,
+        "miss": 1,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 2,
+        "matched": 2,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 1,
+        "kept_unclear_and_blank": 1,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": [
+        {
+          "layer": "workbook",
+          "field": "Total",
+          "outcome": "miss",
+          "kind": "blank"
+        },
+        {
+          "layer": "raw",
+          "field": "fields.total",
+          "outcome": "miss",
+          "kind": "blank"
+        }
+      ]
+    },
+    {
+      "model_family_run": "sonnet-v3",
+      "case": "anthropic-fox-004",
+      "run": "run-3",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-sonnet-5-5",
+      "model_reported": "claude-sonnet-5-5",
+      "session_harness": "claude-session-v3",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "mixed-owner-and-provisional",
+      "policy_reply_actor": "human",
+      "permission_denials": 1,
+      "elapsed_seconds": 290.78,
+      "workbook": {
+        "correct": 7,
+        "correct_blank": 3,
+        "denominator": 7,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 4,
+        "correct_blank": 3,
+        "denominator": 5,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 1,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 2,
+        "matched": 2,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 1,
+        "kept_unclear_and_blank": 1,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": [
+        {
+          "layer": "raw",
+          "field": "fields.total",
+          "outcome": "silent_error",
+          "kind": "spacing_or_punctuation_only"
+        }
+      ]
+    },
+    {
+      "model_family_run": "sonnet-v3",
+      "case": "anthropic-fox-005",
+      "run": "run-1",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-sonnet-5-5",
+      "model_reported": "claude-sonnet-5-5",
+      "session_harness": "claude-session-v3",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "owner-verified",
+      "policy_reply_actor": "human",
+      "permission_denials": 2,
+      "elapsed_seconds": 124.08,
+      "workbook": {
+        "correct": 7,
+        "correct_blank": 1,
+        "denominator": 7,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 7,
+        "correct_blank": 1,
+        "denominator": 7,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 1,
+        "matched": 1,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 1,
+        "kept_unclear_and_blank": 1,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": []
+    },
+    {
+      "model_family_run": "sonnet-v3",
+      "case": "anthropic-fox-005",
+      "run": "run-2",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-sonnet-5-5",
+      "model_reported": "claude-sonnet-5-5",
+      "session_harness": "claude-session-v3",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "owner-verified",
+      "policy_reply_actor": "human",
+      "permission_denials": 2,
+      "elapsed_seconds": 120.53,
+      "workbook": {
+        "correct": 6,
+        "correct_blank": 1,
+        "denominator": 7,
+        "miss": 1,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 6,
+        "correct_blank": 1,
+        "denominator": 7,
+        "miss": 1,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 1,
+        "matched": 1,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 1,
+        "kept_unclear_and_blank": 1,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": [
+        {
+          "layer": "workbook",
+          "field": "Date",
+          "outcome": "miss",
+          "kind": "blank"
+        },
+        {
+          "layer": "raw",
+          "field": "fields.payment_date",
+          "outcome": "miss",
+          "kind": "blank"
+        }
+      ]
+    },
+    {
+      "model_family_run": "sonnet-v3",
+      "case": "anthropic-fox-005",
+      "run": "run-3",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-sonnet-5-5",
+      "model_reported": "claude-sonnet-5-5",
+      "session_harness": "claude-session-v3",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "owner-verified",
+      "policy_reply_actor": "human",
+      "permission_denials": 2,
+      "elapsed_seconds": 101.87,
+      "workbook": {
+        "correct": 7,
+        "correct_blank": 1,
+        "denominator": 7,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 7,
+        "correct_blank": 1,
+        "denominator": 7,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 1,
+        "matched": 1,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 1,
+        "kept_unclear_and_blank": 1,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": []
+    },
+    {
+      "model_family_run": "opus-v3",
+      "case": "anthropic-fox-001",
+      "run": "run-1",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "session_harness": "claude-session-v3",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "owner-verified",
+      "policy_reply_actor": "human",
+      "permission_denials": 1,
+      "elapsed_seconds": 302.55,
+      "workbook": {
+        "correct": 4,
+        "correct_blank": 0,
+        "denominator": 5,
+        "miss": 0,
+        "wrong_flagged": 1,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 4,
+        "correct_blank": 0,
+        "denominator": 5,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 1,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 1,
+        "matched": 1,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 0,
+        "kept_unclear_and_blank": 0,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": [
+        {
+          "layer": "workbook",
+          "field": "Payer",
+          "outcome": "wrong_flagged",
+          "kind": "casing_only"
+        },
+        {
+          "layer": "raw",
+          "field": "fields.payer",
+          "outcome": "silent_error",
+          "kind": "casing_only"
+        }
+      ]
+    },
+    {
+      "model_family_run": "opus-v3",
+      "case": "anthropic-fox-001",
+      "run": "run-2",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "session_harness": "claude-session-v3",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "owner-verified",
+      "policy_reply_actor": "human",
+      "permission_denials": 1,
+      "elapsed_seconds": 228.36,
+      "workbook": {
+        "correct": 4,
+        "correct_blank": 0,
+        "denominator": 5,
+        "miss": 0,
+        "wrong_flagged": 1,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 4,
+        "correct_blank": 0,
+        "denominator": 5,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 1,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 1,
+        "matched": 1,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 0,
+        "kept_unclear_and_blank": 0,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": [
+        {
+          "layer": "workbook",
+          "field": "Payer",
+          "outcome": "wrong_flagged",
+          "kind": "casing_only"
+        },
+        {
+          "layer": "raw",
+          "field": "fields.payer",
+          "outcome": "silent_error",
+          "kind": "casing_only"
+        }
+      ]
+    },
+    {
+      "model_family_run": "opus-v3",
+      "case": "anthropic-fox-001",
+      "run": "run-3",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "session_harness": "claude-session-v3",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "owner-verified",
+      "policy_reply_actor": "human",
+      "permission_denials": 1,
+      "elapsed_seconds": 245.1,
+      "workbook": {
+        "correct": 5,
+        "correct_blank": 0,
+        "denominator": 5,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 5,
+        "correct_blank": 0,
+        "denominator": 5,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 1,
+        "matched": 1,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 0,
+        "kept_unclear_and_blank": 0,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": []
+    },
+    {
+      "model_family_run": "opus-v3",
+      "case": "anthropic-fox-003",
+      "run": "run-1",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "session_harness": "claude-session-v3",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "owner-verified",
+      "policy_reply_actor": "human",
+      "permission_denials": 0,
+      "elapsed_seconds": 174.5,
+      "workbook": {
+        "correct": 8,
+        "correct_blank": 0,
+        "denominator": 8,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 8,
+        "correct_blank": 0,
+        "denominator": 8,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 1,
+        "matched": 1,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 0,
+        "kept_unclear_and_blank": 0,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": []
+    },
+    {
+      "model_family_run": "opus-v3",
+      "case": "anthropic-fox-003",
+      "run": "run-2",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "session_harness": "claude-session-v3",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "owner-verified",
+      "policy_reply_actor": "human",
+      "permission_denials": 1,
+      "elapsed_seconds": 202.79,
+      "workbook": {
+        "correct": 7,
+        "correct_blank": 0,
+        "denominator": 8,
+        "miss": 0,
+        "wrong_flagged": 1,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 7,
+        "correct_blank": 0,
+        "denominator": 8,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 1,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 1,
+        "matched": 1,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 0,
+        "kept_unclear_and_blank": 0,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": [
+        {
+          "layer": "workbook",
+          "field": "Payer",
+          "outcome": "wrong_flagged",
+          "kind": "casing_only"
+        },
+        {
+          "layer": "raw",
+          "field": "fields.payer",
+          "outcome": "silent_error",
+          "kind": "casing_only"
+        }
+      ]
+    },
+    {
+      "model_family_run": "opus-v3",
+      "case": "anthropic-fox-003",
+      "run": "run-3",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "session_harness": "claude-session-v3",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "owner-verified",
+      "policy_reply_actor": "human",
+      "permission_denials": 0,
+      "elapsed_seconds": 159.46,
+      "workbook": {
+        "correct": 8,
+        "correct_blank": 0,
+        "denominator": 8,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 8,
+        "correct_blank": 0,
+        "denominator": 8,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 1,
+        "matched": 1,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 0,
+        "kept_unclear_and_blank": 0,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": []
+    },
+    {
+      "model_family_run": "opus-v3",
+      "case": "anthropic-fox-004",
+      "run": "run-1",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "session_harness": "claude-session-v3",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "mixed-owner-and-provisional",
+      "policy_reply_actor": "human",
+      "permission_denials": 0,
+      "elapsed_seconds": 404.27,
+      "workbook": {
+        "correct": 7,
+        "correct_blank": 3,
+        "denominator": 7,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 5,
+        "correct_blank": 3,
+        "denominator": 5,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 2,
+        "matched": 2,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 1,
+        "kept_unclear_and_blank": 1,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": []
+    },
+    {
+      "model_family_run": "opus-v3",
+      "case": "anthropic-fox-004",
+      "run": "run-2",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "session_harness": "claude-session-v3",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "mixed-owner-and-provisional",
+      "policy_reply_actor": "human",
+      "permission_denials": 0,
+      "elapsed_seconds": 322.36,
+      "workbook": {
+        "correct": 6,
+        "correct_blank": 3,
+        "denominator": 7,
+        "miss": 1,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 4,
+        "correct_blank": 3,
+        "denominator": 5,
+        "miss": 1,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 2,
+        "matched": 2,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 1,
+        "kept_unclear_and_blank": 1,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": [
+        {
+          "layer": "workbook",
+          "field": "Total",
+          "outcome": "miss",
+          "kind": "blank"
+        },
+        {
+          "layer": "raw",
+          "field": "fields.total",
+          "outcome": "miss",
+          "kind": "blank"
+        }
+      ]
+    },
+    {
+      "model_family_run": "opus-v3",
+      "case": "anthropic-fox-004",
+      "run": "run-3",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "session_harness": "claude-session-v3",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "mixed-owner-and-provisional",
+      "policy_reply_actor": "human",
+      "permission_denials": 0,
+      "elapsed_seconds": 312.63,
+      "workbook": {
+        "correct": 7,
+        "correct_blank": 3,
+        "denominator": 7,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 5,
+        "correct_blank": 3,
+        "denominator": 5,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 2,
+        "matched": 2,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 1,
+        "kept_unclear_and_blank": 1,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": []
+    },
+    {
+      "model_family_run": "opus-v3",
+      "case": "anthropic-fox-005",
+      "run": "run-1",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "session_harness": "claude-session-v3",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "owner-verified",
+      "policy_reply_actor": "human",
+      "permission_denials": 0,
+      "elapsed_seconds": 192.67,
+      "workbook": {
+        "correct": 7,
+        "correct_blank": 1,
+        "denominator": 7,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 7,
+        "correct_blank": 1,
+        "denominator": 7,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 1,
+        "matched": 1,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 1,
+        "kept_unclear_and_blank": 1,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": []
+    },
+    {
+      "model_family_run": "opus-v3",
+      "case": "anthropic-fox-005",
+      "run": "run-2",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "session_harness": "claude-session-v3",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "owner-verified",
+      "policy_reply_actor": "human",
+      "permission_denials": 0,
+      "elapsed_seconds": 179.34,
+      "workbook": {
+        "correct": 7,
+        "correct_blank": 1,
+        "denominator": 7,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 7,
+        "correct_blank": 1,
+        "denominator": 7,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 1,
+        "matched": 1,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 1,
+        "kept_unclear_and_blank": 1,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": []
+    },
+    {
+      "model_family_run": "opus-v3",
+      "case": "anthropic-fox-005",
+      "run": "run-3",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "session_harness": "claude-session-v3",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "owner-verified",
+      "policy_reply_actor": "human",
+      "permission_denials": 0,
+      "elapsed_seconds": 220.61,
+      "workbook": {
+        "correct": 7,
+        "correct_blank": 1,
+        "denominator": 7,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 7,
+        "correct_blank": 1,
+        "denominator": 7,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 1,
+        "matched": 1,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 1,
+        "kept_unclear_and_blank": 1,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": []
+    },
+    {
+      "model_family_run": "sonnet-v3.1",
+      "case": "anthropic-fox-001",
+      "run": "run-1",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-sonnet-5-5",
+      "model_reported": "claude-sonnet-5-5",
+      "session_harness": "claude-session-v3.1",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "owner-verified",
+      "policy_reply_actor": "human",
+      "permission_denials": 0,
+      "elapsed_seconds": 229.82,
+      "workbook": {
+        "correct": 4,
+        "correct_blank": 0,
+        "denominator": 5,
+        "miss": 0,
+        "wrong_flagged": 1,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 4,
+        "correct_blank": 0,
+        "denominator": 5,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 1,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 1,
+        "matched": 1,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 0,
+        "kept_unclear_and_blank": 0,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": [
+        {
+          "layer": "workbook",
+          "field": "Payer",
+          "outcome": "wrong_flagged",
+          "kind": "casing_only"
+        },
+        {
+          "layer": "raw",
+          "field": "fields.payer",
+          "outcome": "silent_error",
+          "kind": "casing_only"
+        }
+      ]
+    },
+    {
+      "model_family_run": "sonnet-v3.1",
+      "case": "anthropic-fox-001",
+      "run": "run-2",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-sonnet-5-5",
+      "model_reported": "claude-sonnet-5-5",
+      "session_harness": "claude-session-v3.1",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "owner-verified",
+      "policy_reply_actor": "human",
+      "permission_denials": 0,
+      "elapsed_seconds": 110.35,
+      "workbook": {
+        "correct": 4,
+        "correct_blank": 0,
+        "denominator": 5,
+        "miss": 0,
+        "wrong_flagged": 1,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 4,
+        "correct_blank": 0,
+        "denominator": 5,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 1,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 1,
+        "matched": 1,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 0,
+        "kept_unclear_and_blank": 0,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": [
+        {
+          "layer": "workbook",
+          "field": "Payer",
+          "outcome": "wrong_flagged",
+          "kind": "casing_only"
+        },
+        {
+          "layer": "raw",
+          "field": "fields.payer",
+          "outcome": "silent_error",
+          "kind": "casing_only"
+        }
+      ]
+    },
+    {
+      "model_family_run": "sonnet-v3.1",
+      "case": "anthropic-fox-001",
+      "run": "run-3",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-sonnet-5-5",
+      "model_reported": "claude-sonnet-5-5",
+      "session_harness": "claude-session-v3.1",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "owner-verified",
+      "policy_reply_actor": "human",
+      "permission_denials": 1,
+      "elapsed_seconds": 87.86,
+      "workbook": {
+        "correct": 4,
+        "correct_blank": 0,
+        "denominator": 5,
+        "miss": 0,
+        "wrong_flagged": 1,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 4,
+        "correct_blank": 0,
+        "denominator": 5,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 1,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 1,
+        "matched": 1,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 0,
+        "kept_unclear_and_blank": 0,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": [
+        {
+          "layer": "workbook",
+          "field": "Payer",
+          "outcome": "wrong_flagged",
+          "kind": "casing_only"
+        },
+        {
+          "layer": "raw",
+          "field": "fields.payer",
+          "outcome": "silent_error",
+          "kind": "casing_only"
+        }
+      ]
+    },
+    {
+      "model_family_run": "sonnet-v3.1",
+      "case": "anthropic-fox-003",
+      "run": "run-1",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-sonnet-5-5",
+      "model_reported": "claude-sonnet-5-5",
+      "session_harness": "claude-session-v3.1",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "owner-verified",
+      "policy_reply_actor": "human",
+      "permission_denials": 0,
+      "elapsed_seconds": 233.6,
+      "workbook": {
+        "correct": 7,
+        "correct_blank": 0,
+        "denominator": 8,
+        "miss": 0,
+        "wrong_flagged": 1,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 7,
+        "correct_blank": 0,
+        "denominator": 8,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 1,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 1,
+        "matched": 1,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 0,
+        "kept_unclear_and_blank": 0,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": [
+        {
+          "layer": "workbook",
+          "field": "Payer",
+          "outcome": "wrong_flagged",
+          "kind": "casing_only"
+        },
+        {
+          "layer": "raw",
+          "field": "fields.payer",
+          "outcome": "silent_error",
+          "kind": "casing_only"
+        }
+      ]
+    },
+    {
+      "model_family_run": "sonnet-v3.1",
+      "case": "anthropic-fox-003",
+      "run": "run-2",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-sonnet-5-5",
+      "model_reported": "claude-sonnet-5-5",
+      "session_harness": "claude-session-v3.1",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "owner-verified",
+      "policy_reply_actor": "human",
+      "permission_denials": 0,
+      "elapsed_seconds": 81.36,
+      "workbook": {
+        "correct": 7,
+        "correct_blank": 0,
+        "denominator": 8,
+        "miss": 0,
+        "wrong_flagged": 1,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 7,
+        "correct_blank": 0,
+        "denominator": 8,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 1,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 1,
+        "matched": 1,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 0,
+        "kept_unclear_and_blank": 0,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": [
+        {
+          "layer": "workbook",
+          "field": "Payer",
+          "outcome": "wrong_flagged",
+          "kind": "casing_only"
+        },
+        {
+          "layer": "raw",
+          "field": "fields.payer",
+          "outcome": "silent_error",
+          "kind": "casing_only"
+        }
+      ]
+    },
+    {
+      "model_family_run": "sonnet-v3.1",
+      "case": "anthropic-fox-003",
+      "run": "run-3",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-sonnet-5-5",
+      "model_reported": "claude-sonnet-5-5",
+      "session_harness": "claude-session-v3.1",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "owner-verified",
+      "policy_reply_actor": "human",
+      "permission_denials": 0,
+      "elapsed_seconds": 91.86,
+      "workbook": {
+        "correct": 7,
+        "correct_blank": 0,
+        "denominator": 8,
+        "miss": 0,
+        "wrong_flagged": 1,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 7,
+        "correct_blank": 0,
+        "denominator": 8,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 1,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 1,
+        "matched": 1,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 0,
+        "kept_unclear_and_blank": 0,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": [
+        {
+          "layer": "workbook",
+          "field": "Payer",
+          "outcome": "wrong_flagged",
+          "kind": "casing_only"
+        },
+        {
+          "layer": "raw",
+          "field": "fields.payer",
+          "outcome": "silent_error",
+          "kind": "casing_only"
+        }
+      ]
+    },
+    {
+      "model_family_run": "sonnet-v3.1",
+      "case": "anthropic-fox-004",
+      "run": "run-1",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-sonnet-5-5",
+      "model_reported": "claude-sonnet-5-5",
+      "session_harness": "claude-session-v3.1",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "mixed-owner-and-provisional",
+      "policy_reply_actor": "human",
+      "permission_denials": 0,
+      "elapsed_seconds": 271.05,
+      "workbook": {
+        "correct": 7,
+        "correct_blank": 3,
+        "denominator": 7,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 5,
+        "correct_blank": 3,
+        "denominator": 5,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 2,
+        "matched": 2,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 1,
+        "kept_unclear_and_blank": 1,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": []
+    },
+    {
+      "model_family_run": "sonnet-v3.1",
+      "case": "anthropic-fox-004",
+      "run": "run-2",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-sonnet-5-5",
+      "model_reported": "claude-sonnet-5-5",
+      "session_harness": "claude-session-v3.1",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "mixed-owner-and-provisional",
+      "policy_reply_actor": "human",
+      "permission_denials": 0,
+      "elapsed_seconds": 109.46,
+      "workbook": {
+        "correct": 7,
+        "correct_blank": 3,
+        "denominator": 7,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 5,
+        "correct_blank": 3,
+        "denominator": 5,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 2,
+        "matched": 2,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 1,
+        "kept_unclear_and_blank": 1,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": []
+    },
+    {
+      "model_family_run": "sonnet-v3.1",
+      "case": "anthropic-fox-004",
+      "run": "run-3",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-sonnet-5-5",
+      "model_reported": "claude-sonnet-5-5",
+      "session_harness": "claude-session-v3.1",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "mixed-owner-and-provisional",
+      "policy_reply_actor": "human",
+      "permission_denials": 0,
+      "elapsed_seconds": 216.26,
+      "workbook": {
+        "correct": 7,
+        "correct_blank": 3,
+        "denominator": 7,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 5,
+        "correct_blank": 3,
+        "denominator": 5,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 2,
+        "matched": 2,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 1,
+        "kept_unclear_and_blank": 1,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": []
+    },
+    {
+      "model_family_run": "sonnet-v3.1",
+      "case": "anthropic-fox-005",
+      "run": "run-1",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-sonnet-5-5",
+      "model_reported": "claude-sonnet-5-5",
+      "session_harness": "claude-session-v3.1",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "owner-verified",
+      "policy_reply_actor": "human",
+      "permission_denials": 0,
+      "elapsed_seconds": 259.41,
+      "workbook": {
+        "correct": 6,
+        "correct_blank": 1,
+        "denominator": 7,
+        "miss": 0,
+        "wrong_flagged": 1,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 6,
+        "correct_blank": 1,
+        "denominator": 7,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 1,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 1,
+        "matched": 1,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 1,
+        "kept_unclear_and_blank": 1,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": [
+        {
+          "layer": "workbook",
+          "field": "Payer",
+          "outcome": "wrong_flagged",
+          "kind": "casing_only"
+        },
+        {
+          "layer": "raw",
+          "field": "fields.payer",
+          "outcome": "silent_error",
+          "kind": "casing_only"
+        }
+      ]
+    },
+    {
+      "model_family_run": "sonnet-v3.1",
+      "case": "anthropic-fox-005",
+      "run": "run-2",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-sonnet-5-5",
+      "model_reported": "claude-sonnet-5-5",
+      "session_harness": "claude-session-v3.1",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "owner-verified",
+      "policy_reply_actor": "human",
+      "permission_denials": 0,
+      "elapsed_seconds": 127.67,
+      "workbook": {
+        "correct": 7,
+        "correct_blank": 1,
+        "denominator": 7,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 7,
+        "correct_blank": 1,
+        "denominator": 7,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 1,
+        "matched": 1,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 1,
+        "kept_unclear_and_blank": 1,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": []
+    },
+    {
+      "model_family_run": "sonnet-v3.1",
+      "case": "anthropic-fox-005",
+      "run": "run-3",
+      "valid": true,
+      "phase": "extracted",
+      "model_requested": "claude-sonnet-5-5",
+      "model_reported": "claude-sonnet-5-5",
+      "session_harness": "claude-session-v3.1",
+      "evaluation_kind": "known-source-regression",
+      "reference_status": "owner-verified",
+      "policy_reply_actor": "human",
+      "permission_denials": 0,
+      "elapsed_seconds": 256.91,
+      "workbook": {
+        "correct": 7,
+        "correct_blank": 1,
+        "denominator": 7,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw": {
+        "correct": 7,
+        "correct_blank": 1,
+        "denominator": 7,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 1,
+        "matched": 1,
+        "missing": 0,
+        "extra": 0
+      },
+      "abstention": {
+        "unclear_fields": 1,
+        "kept_unclear_and_blank": 1,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0
+      },
+      "difference_kinds": []
+    }
+  ]
+}

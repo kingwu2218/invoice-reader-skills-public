@@ -1,0 +1,227 @@
+{
+  "tables": {
+    "Billing documents": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence"
+      ],
+      "columns": [
+        {
+          "label": "Document number",
+          "kind": "text"
+        },
+        {
+          "label": "Total",
+          "kind": "text"
+        },
+        {
+          "label": "Arithmetic check",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "dash-origin-printed-v1.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Document number": "SYN-ORIGIN-01",
+          "Total": "360-",
+          "Arithmetic check": "Not checkable",
+          "Needs review": "Yes"
+        },
+        {
+          "File": "dash-origin-printed-v1.pdf",
+          "Pages": "2",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Document number": "SYN-ORIGIN-02",
+          "Total": "720-",
+          "Arithmetic check": "Not checkable",
+          "Needs review": "Yes"
+        }
+      ]
+    },
+    "Line items": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence",
+        "Line"
+      ],
+      "columns": [
+        {
+          "label": "Quantity",
+          "kind": "number"
+        },
+        {
+          "label": "Unit price",
+          "kind": "amount"
+        },
+        {
+          "label": "Line total",
+          "kind": "amount"
+        },
+        {
+          "label": "Line check",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "dash-origin-printed-v1.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Line": "1",
+          "Quantity": "1",
+          "Unit price": "360",
+          "Line total": "360",
+          "Line check": "Passed"
+        },
+        {
+          "File": "dash-origin-printed-v1.pdf",
+          "Pages": "2",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Line": "1",
+          "Quantity": "1",
+          "Unit price": "720",
+          "Line total": "720",
+          "Line check": "Passed"
+        }
+      ]
+    },
+    "Requested data": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence"
+      ],
+      "columns": [
+        {
+          "label": "Printed total",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "dash-origin-printed-v1.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Printed total": "360- HKD"
+        },
+        {
+          "File": "dash-origin-printed-v1.pdf",
+          "Pages": "2",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Printed total": "720- HKD"
+        }
+      ]
+    }
+  },
+  "raw_tables": {
+    "Raw documents": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence"
+      ],
+      "columns": [
+        {
+          "label": "fields.document_number",
+          "kind": "text"
+        },
+        {
+          "label": "fields.total",
+          "kind": "text"
+        },
+        {
+          "label": "fields.currency",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "dash-origin-printed-v1.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "fields.document_number": "SYN-ORIGIN-01",
+          "fields.total": "360-",
+          "fields.currency": "HKD"
+        },
+        {
+          "File": "dash-origin-printed-v1.pdf",
+          "Pages": "2",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "fields.document_number": "SYN-ORIGIN-02",
+          "fields.total": "720-",
+          "fields.currency": "HKD"
+        }
+      ]
+    },
+    "Raw requested values": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence",
+        "Field key",
+        "Occurrence"
+      ],
+      "columns": [
+        {
+          "label": "observation.status",
+          "kind": "text"
+        },
+        {
+          "label": "observation.value",
+          "kind": "text"
+        },
+        {
+          "label": "observation.unit",
+          "kind": "text"
+        },
+        {
+          "label": "observation.pages",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "dash-origin-printed-v1.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Field key": "printed_total",
+          "Occurrence": "1",
+          "observation.status": "printed",
+          "observation.value": "360-",
+          "observation.unit": "HKD",
+          "observation.pages": "1"
+        },
+        {
+          "File": "dash-origin-printed-v1.pdf",
+          "Pages": "2",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Field key": "printed_total",
+          "Occurrence": "1",
+          "observation.status": "printed",
+          "observation.value": "720-",
+          "observation.unit": "HKD",
+          "observation.pages": "2"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,4 @@
+convention,correct,denominator,correct_blanks_excluded,flagged_documents,expected_flagged_documents,raw_input_unchanged
+end-mark,17,17,6,3,3,True
+negative,17,17,6,3,3,True
+unknown,17,17,6,3,3,True

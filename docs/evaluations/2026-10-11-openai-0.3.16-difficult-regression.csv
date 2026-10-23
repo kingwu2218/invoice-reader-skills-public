@@ -1,0 +1,10 @@
+case,scope,layer,correct,correct_blank,miss,wrong_flagged,silent_error,invented,denominator,rate
+fox-regression,mixed-owner-and-provisional,workbook,6,3,1,0,0,0,7,0.8571428571428571
+fox-regression,mixed-owner-and-provisional,raw,4,3,1,0,0,0,5,0.8
+fox-regression,owner-confirmed,raw,1,0,1,0,0,0,2,0.5
+fox-regression,provisional,raw,3,3,0,0,0,0,3,1.0
+fox-regression,owner-confirmed,workbook,3,0,1,0,0,0,4,0.75
+fox-regression,provisional,workbook,3,3,0,0,0,0,3,1.0
+digit-boundary,authored-public,workbook,15,3,0,0,0,0,15,1.0
+digit-boundary,authored-public,raw,13,2,0,0,0,0,13,1.0
+ocr-conflict-energy,authored-public,workbook,25,15,0,0,0,0,25,1.0

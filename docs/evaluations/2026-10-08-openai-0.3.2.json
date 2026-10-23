@@ -1,0 +1,527 @@
+{
+  "date": "2026-10-08",
+  "scope": "Three public image-assisted executions; frozen unit/context cases",
+  "runs": [
+    {
+      "case": "format-payment-units-v1",
+      "run": "run-1",
+      "valid": true,
+      "cells": {
+        "correct": 12,
+        "correct_blank": 6
+      },
+      "flags": {},
+      "checks": {
+        "unprocessed_inputs": 0
+      },
+      "tables": {
+        "Line items": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Billing documents": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Payments": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested values": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        }
+      },
+      "details": [],
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 12,
+          "denominator": 12,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 12,
+          "denominator": 12,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 12,
+          "denominator": 12,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        }
+      },
+      "raw_status": "scored",
+      "image_input_audit": {
+        "status": "supplied_to_cli",
+        "numerator": 2,
+        "denominator": 2,
+        "attention_verified": false
+      },
+      "batch": "evidence-run-05-invoice-reader-openai",
+      "integrity": {
+        "package_unchanged": true,
+        "source_matches_fixture": true,
+        "custom_unchanged": true,
+        "dataset_hash_matches": true
+      },
+      "policy_message_positions": [
+        2
+      ],
+      "raw": {
+        "cells": {
+          "correct": 10,
+          "correct_blank": 10
+        },
+        "flags": {},
+        "checks": {},
+        "tables": {
+          "Raw documents": {
+            "expected": 2,
+            "actual": 2,
+            "matched": 2,
+            "extra": 0
+          },
+          "Raw requested values": {
+            "expected": 2,
+            "actual": 2,
+            "matched": 2,
+            "extra": 0
+          }
+        },
+        "values": {
+          "Raw documents/0/fields.document_number": "SYN-842",
+          "Raw documents/0/fields.total": "None",
+          "Raw documents/0/fields.cheque_number": "None",
+          "Raw documents/0/fields.amount": "None",
+          "Raw documents/0/fields.payment_date": "None",
+          "Raw documents/1/fields.document_number": "None",
+          "Raw documents/1/fields.total": "None",
+          "Raw documents/1/fields.cheque_number": "006204",
+          "Raw documents/1/fields.amount": "8,750/",
+          "Raw documents/1/fields.payment_date": "24 11 2026",
+          "Raw requested values/0/observation.status": "absent",
+          "Raw requested values/0/observation.value": "None",
+          "Raw requested values/0/observation.pages": "None",
+          "Raw requested values/0/observation.unit": "None",
+          "Raw requested values/0/observation.context": "None",
+          "Raw requested values/1/observation.status": "printed",
+          "Raw requested values/1/observation.value": "8,750/",
+          "Raw requested values/1/observation.pages": "2",
+          "Raw requested values/1/observation.unit": "HKD",
+          "Raw requested values/1/observation.context": "Lobby hinge inspection"
+        },
+        "details": []
+      },
+      "raw_metrics": {
+        "field_accuracy": {
+          "numerator": 10,
+          "denominator": 10,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 10,
+          "denominator": 10,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 10,
+          "denominator": 10,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "metadata": {
+        "artifact_hash": "f1ad8618b2244a60bf040dc6f12e984e4d1df66b6bc2f98bd76865186814e68d",
+        "dataset_hash": "9fc3937d9192fdcf55ae82ebee25ef6f18484ea8acc93b594798785dd5a2ea83",
+        "set_version": "0.3.2",
+        "model_requested": "gpt-6.1-sol",
+        "model_reported": "Unknown",
+        "provider": "OpenAI via current Codex ChatGPT login",
+        "tool_version": "codex-cli 0.162.0-alpha.2",
+        "elapsed_seconds": 142.75,
+        "image_inputs_hash": "e45cb369ade88a359e81f945aaef6d4aa877e7e2f348c7116003de18ff93ee5f",
+        "invocation_hash": "53db8d62ed1be66eec602c5d215a429373a255afe12c1e891e357fc527c7acac",
+        "raw_extraction_hash": "25c46f198a96ed6ec34207d5f0bf8789a866bc868007301be263f58b831a398b"
+      },
+      "image_receipt": {
+        "schema_version": 1,
+        "source": "format-pack.pdf",
+        "source_sha256": "1c0ca8e96b3597c7784bffe96adba45994f70c1798351519e80013d40f6f1d88",
+        "page_count": 2,
+        "dpi": 200,
+        "pages": [
+          {
+            "page": 1,
+            "workspace_path": "eval-page-images/page-0001.png",
+            "archive_path": "page-images/page-0001.png",
+            "sha256": "f2e827131b2737cbfc331f8cc00f4e6434013a24a6d88c93484ed570925dbf8a"
+          },
+          {
+            "page": 2,
+            "workspace_path": "eval-page-images/page-0002.png",
+            "archive_path": "page-images/page-0002.png",
+            "sha256": "8675182b78053d4ba75d38a3f59c6778541456437e30ea6078dd6e80481e68f0"
+          }
+        ],
+        "evidence_scope": "Files prepared for CLI image arguments; model attention is not established."
+      }
+    },
+    {
+      "case": "format-project-units-v1",
+      "run": "run-1",
+      "valid": true,
+      "cells": {
+        "correct": 13,
+        "correct_blank": 5
+      },
+      "flags": {},
+      "checks": {
+        "unprocessed_inputs": 0
+      },
+      "tables": {
+        "Line items": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Billing documents": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Payments": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested values": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        }
+      },
+      "details": [],
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 13,
+          "denominator": 13,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 13,
+          "denominator": 13,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 13,
+          "denominator": 13,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        }
+      },
+      "raw_status": "scored",
+      "image_input_audit": {
+        "status": "supplied_to_cli",
+        "numerator": 2,
+        "denominator": 2,
+        "attention_verified": false
+      },
+      "batch": "evidence-run-06-invoice-reader-openai",
+      "integrity": {
+        "package_unchanged": true,
+        "source_matches_fixture": true,
+        "custom_unchanged": true,
+        "dataset_hash_matches": true
+      },
+      "policy_message_positions": [
+        2
+      ],
+      "raw": {
+        "cells": {
+          "correct": 10,
+          "correct_blank": 10
+        },
+        "flags": {},
+        "checks": {},
+        "tables": {
+          "Raw documents": {
+            "expected": 2,
+            "actual": 2,
+            "matched": 2,
+            "extra": 0
+          },
+          "Raw requested values": {
+            "expected": 2,
+            "actual": 2,
+            "matched": 2,
+            "extra": 0
+          }
+        },
+        "values": {
+          "Raw documents/0/fields.document_number": "SYN-842",
+          "Raw documents/0/fields.total": "None",
+          "Raw documents/0/fields.cheque_number": "None",
+          "Raw documents/0/fields.amount": "None",
+          "Raw documents/0/fields.payment_date": "None",
+          "Raw documents/1/fields.document_number": "None",
+          "Raw documents/1/fields.total": "None",
+          "Raw documents/1/fields.cheque_number": "006204",
+          "Raw documents/1/fields.amount": "8,750/",
+          "Raw documents/1/fields.payment_date": "24 11 2026",
+          "Raw requested values/0/observation.status": "printed",
+          "Raw requested values/0/observation.value": "Lobby hinge inspection",
+          "Raw requested values/0/observation.pages": "1",
+          "Raw requested values/0/observation.unit": "None",
+          "Raw requested values/0/observation.context": "None",
+          "Raw requested values/1/observation.status": "printed",
+          "Raw requested values/1/observation.value": "Lobby hinge inspection",
+          "Raw requested values/1/observation.pages": "2",
+          "Raw requested values/1/observation.unit": "None",
+          "Raw requested values/1/observation.context": "None"
+        },
+        "details": []
+      },
+      "raw_metrics": {
+        "field_accuracy": {
+          "numerator": 10,
+          "denominator": 10,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 10,
+          "denominator": 10,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 10,
+          "denominator": 10,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "metadata": {
+        "artifact_hash": "f1ad8618b2244a60bf040dc6f12e984e4d1df66b6bc2f98bd76865186814e68d",
+        "dataset_hash": "f9e35c37d47996f41d88b2e792ec36f9cef79af977b2435e2c57aa5fd73ad9f0",
+        "set_version": "0.3.2",
+        "model_requested": "gpt-6.1-sol",
+        "model_reported": "Unknown",
+        "provider": "OpenAI via current Codex ChatGPT login",
+        "tool_version": "codex-cli 0.162.0-alpha.2",
+        "elapsed_seconds": 125.7,
+        "image_inputs_hash": "e45cb369ade88a359e81f945aaef6d4aa877e7e2f348c7116003de18ff93ee5f",
+        "invocation_hash": "46619675875df83f084947b729acbae4c8733b64d791d2e8403605896346b179",
+        "raw_extraction_hash": "19029f2b0e7bee4d36d28cc7cc6497c42e6be648b294831500b772331c0d7f47"
+      },
+      "image_receipt": {
+        "schema_version": 1,
+        "source": "format-pack.pdf",
+        "source_sha256": "1c0ca8e96b3597c7784bffe96adba45994f70c1798351519e80013d40f6f1d88",
+        "page_count": 2,
+        "dpi": 200,
+        "pages": [
+          {
+            "page": 1,
+            "workspace_path": "eval-page-images/page-0001.png",
+            "archive_path": "page-images/page-0001.png",
+            "sha256": "f2e827131b2737cbfc331f8cc00f4e6434013a24a6d88c93484ed570925dbf8a"
+          },
+          {
+            "page": 2,
+            "workspace_path": "eval-page-images/page-0002.png",
+            "archive_path": "page-images/page-0002.png",
+            "sha256": "8675182b78053d4ba75d38a3f59c6778541456437e30ea6078dd6e80481e68f0"
+          }
+        ],
+        "evidence_scope": "Files prepared for CLI image arguments; model attention is not established."
+      }
+    },
+    {
+      "case": "coal-ocr-energy",
+      "run": "run-1",
+      "valid": true,
+      "cells": {
+        "correct": 25,
+        "correct_blank": 15
+      },
+      "flags": {
+        "true_positive": 2
+      },
+      "checks": {
+        "unprocessed_inputs": 0
+      },
+      "tables": {
+        "Billing documents": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Other": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Line items": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested values": {
+          "expected": 5,
+          "actual": 5,
+          "matched": 5,
+          "extra": 0
+        }
+      },
+      "details": [],
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 25,
+          "denominator": 25,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 25,
+          "denominator": 25,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 25,
+          "denominator": 25,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        }
+      },
+      "raw_status": "not_configured",
+      "image_input_audit": {
+        "status": "supplied_to_cli",
+        "numerator": 2,
+        "denominator": 2,
+        "attention_verified": false
+      },
+      "batch": "evidence-run-07-invoice-reader-openai",
+      "integrity": {
+        "package_unchanged": true,
+        "source_matches_fixture": true,
+        "custom_unchanged": true,
+        "dataset_hash_matches": true
+      },
+      "policy_message_positions": [
+        2
+      ],
+      "metadata": {
+        "artifact_hash": "f1ad8618b2244a60bf040dc6f12e984e4d1df66b6bc2f98bd76865186814e68d",
+        "dataset_hash": "89fb8d67d5a7d506dbc0100edd1f9be4b37093e5da160d6b2b925aa53f883c1a",
+        "set_version": "0.3.2",
+        "model_requested": "gpt-6.1-sol",
+        "model_reported": "Unknown",
+        "provider": "OpenAI via current Codex ChatGPT login",
+        "tool_version": "codex-cli 0.162.0-alpha.2",
+        "elapsed_seconds": 138.64,
+        "image_inputs_hash": "e95134d154eef99a93ab310061a8fb52cd8fd129600aed45602d80d6adf710fa",
+        "invocation_hash": "525ce661653fa2f8d0fdfb86014e6d255869b1353ac717b4a1990c77c13ef6de",
+        "raw_extraction_hash": "19165cc399856b6973b53cf02b1d80c5def30621189811c1d5c4057d84a10e47"
+      },
+      "image_receipt": {
+        "schema_version": 1,
+        "source": "coal-ocr.pdf",
+        "source_sha256": "db7de8fcda64b87888a4437feafa3f7046ee3d51ae8358321e5a4dadc8eed2b2",
+        "page_count": 2,
+        "dpi": 200,
+        "pages": [
+          {
+            "page": 1,
+            "workspace_path": "eval-page-images/page-0001.png",
+            "archive_path": "page-images/page-0001.png",
+            "sha256": "db787a250f9fb3333a4f0f69aa34539bd5106ef8fd705402a1b18a19228f1476"
+          },
+          {
+            "page": 2,
+            "workspace_path": "eval-page-images/page-0002.png",
+            "archive_path": "page-images/page-0002.png",
+            "sha256": "e3337396547579d1db65218031cc491a697b1c5f65188f8bbc10792b198279dd"
+          }
+        ],
+        "evidence_scope": "Files prepared for CLI image arguments; model attention is not established."
+      }
+    }
+  ]
+}

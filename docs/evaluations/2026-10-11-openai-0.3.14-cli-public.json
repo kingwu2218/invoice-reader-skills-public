@@ -1,0 +1,376 @@
+{
+  "date": "2026-10-11",
+  "package": "invoice-reader-openai",
+  "version": "0.3.14",
+  "artifact_hash": "285ad7f5a4edeadbc74c60476cd08bbdf21dbacf27dbf755bc3211cbb85ffac0",
+  "model_requested": "gpt-6.1-sol",
+  "provider": "OpenAI via Codex ChatGPT login; HTTPS transport",
+  "model_identity_verified": false,
+  "reply_actor": "scripted_negative_fixture",
+  "reply": "No, but I will read it before I upload any confidential data",
+  "planned_trials": 12,
+  "valid_extractions": 11,
+  "distinct_started_sessions": 11,
+  "one_question_openings": 11,
+  "automatic_opening_statuses": {
+    "invalid": 10,
+    "requires_review": 1
+  },
+  "cases": {
+    "cash-memo-classification-v1": {
+      "planned": 3,
+      "valid": 3,
+      "workbook_correct": 51,
+      "workbook_denominator": 51,
+      "workbook_correct_blanks_excluded": 0,
+      "raw_status": "scored",
+      "raw_correct": 27,
+      "raw_denominator": 27,
+      "raw_correct_blanks_excluded": 0
+    },
+    "coal-ocr-energy": {
+      "planned": 3,
+      "valid": 3,
+      "workbook_correct": 75,
+      "workbook_denominator": 75,
+      "workbook_correct_blanks_excluded": 45,
+      "raw_status": "not_configured",
+      "raw_correct": null,
+      "raw_denominator": null,
+      "raw_correct_blanks_excluded": null
+    },
+    "coal-ocr-payment": {
+      "planned": 3,
+      "valid": 3,
+      "workbook_correct": 63,
+      "workbook_denominator": 63,
+      "workbook_correct_blanks_excluded": 42,
+      "raw_status": "not_configured",
+      "raw_correct": null,
+      "raw_denominator": null,
+      "raw_correct_blanks_excluded": null
+    },
+    "digit-boundary-v1": {
+      "planned": 3,
+      "valid": 2,
+      "workbook_correct": 30,
+      "workbook_denominator": 30,
+      "workbook_correct_blanks_excluded": 6,
+      "raw_status": "scored",
+      "raw_correct": 26,
+      "raw_denominator": 26,
+      "raw_correct_blanks_excluded": 4
+    }
+  },
+  "trials": [
+    {
+      "trial": 1,
+      "case": "digit-boundary-v1",
+      "repeat": 1,
+      "status": "incomplete",
+      "valid": false,
+      "model_reported": "Unknown",
+      "tool_version": "codex-cli 0.162.0-alpha.17.2",
+      "dataset_hash": "4f1e780a2a78956b2d4162eaa0dd43ef0b6432ee61e81df9eec57ac99cd240a9",
+      "opening_question_count": null,
+      "opening_status": "not_run",
+      "maintainer_opening_review": false,
+      "question_repeated_after_reply": null,
+      "workbook": null,
+      "raw": null,
+      "elapsed_extraction_seconds": null,
+      "failure": "ValueError: A completed first turn with an exact session ID is required."
+    },
+    {
+      "trial": 2,
+      "case": "digit-boundary-v1",
+      "repeat": 2,
+      "status": "recorded",
+      "valid": true,
+      "model_reported": "Unknown",
+      "tool_version": "codex-cli 0.162.0-alpha.17.2",
+      "dataset_hash": "4f1e780a2a78956b2d4162eaa0dd43ef0b6432ee61e81df9eec57ac99cd240a9",
+      "opening_question_count": 1,
+      "opening_status": "invalid",
+      "maintainer_opening_review": true,
+      "question_repeated_after_reply": false,
+      "workbook": {
+        "numerator": 15,
+        "denominator": 15,
+        "rate": 1.0
+      },
+      "raw": {
+        "numerator": 13,
+        "denominator": 13,
+        "rate": 1.0
+      },
+      "elapsed_extraction_seconds": 169.12,
+      "failure": null
+    },
+    {
+      "trial": 3,
+      "case": "digit-boundary-v1",
+      "repeat": 3,
+      "status": "recorded",
+      "valid": true,
+      "model_reported": "Unknown",
+      "tool_version": "codex-cli 0.162.0-alpha.17.2",
+      "dataset_hash": "4f1e780a2a78956b2d4162eaa0dd43ef0b6432ee61e81df9eec57ac99cd240a9",
+      "opening_question_count": 1,
+      "opening_status": "invalid",
+      "maintainer_opening_review": true,
+      "question_repeated_after_reply": false,
+      "workbook": {
+        "numerator": 15,
+        "denominator": 15,
+        "rate": 1.0
+      },
+      "raw": {
+        "numerator": 13,
+        "denominator": 13,
+        "rate": 1.0
+      },
+      "elapsed_extraction_seconds": 180.8,
+      "failure": null
+    },
+    {
+      "trial": 4,
+      "case": "cash-memo-classification-v1",
+      "repeat": 1,
+      "status": "recorded",
+      "valid": true,
+      "model_reported": "Unknown",
+      "tool_version": "codex-cli 0.162.0-alpha.17.2",
+      "dataset_hash": "f7f7dbf181e13e653b37623b679c5deef54d22374aa097cc48d877cba4674fca",
+      "opening_question_count": 1,
+      "opening_status": "invalid",
+      "maintainer_opening_review": true,
+      "question_repeated_after_reply": false,
+      "workbook": {
+        "numerator": 17,
+        "denominator": 17,
+        "rate": 1.0
+      },
+      "raw": {
+        "numerator": 9,
+        "denominator": 9,
+        "rate": 1.0
+      },
+      "elapsed_extraction_seconds": 173.88,
+      "failure": null
+    },
+    {
+      "trial": 5,
+      "case": "cash-memo-classification-v1",
+      "repeat": 2,
+      "status": "recorded",
+      "valid": true,
+      "model_reported": "Unknown",
+      "tool_version": "codex-cli 0.162.0-alpha.17.2",
+      "dataset_hash": "f7f7dbf181e13e653b37623b679c5deef54d22374aa097cc48d877cba4674fca",
+      "opening_question_count": 1,
+      "opening_status": "invalid",
+      "maintainer_opening_review": false,
+      "question_repeated_after_reply": false,
+      "workbook": {
+        "numerator": 17,
+        "denominator": 17,
+        "rate": 1.0
+      },
+      "raw": {
+        "numerator": 9,
+        "denominator": 9,
+        "rate": 1.0
+      },
+      "elapsed_extraction_seconds": 120.56,
+      "failure": null
+    },
+    {
+      "trial": 6,
+      "case": "cash-memo-classification-v1",
+      "repeat": 3,
+      "status": "recorded",
+      "valid": true,
+      "model_reported": "Unknown",
+      "tool_version": "codex-cli 0.162.0-alpha.17.2",
+      "dataset_hash": "f7f7dbf181e13e653b37623b679c5deef54d22374aa097cc48d877cba4674fca",
+      "opening_question_count": 1,
+      "opening_status": "invalid",
+      "maintainer_opening_review": false,
+      "question_repeated_after_reply": false,
+      "workbook": {
+        "numerator": 17,
+        "denominator": 17,
+        "rate": 1.0
+      },
+      "raw": {
+        "numerator": 9,
+        "denominator": 9,
+        "rate": 1.0
+      },
+      "elapsed_extraction_seconds": 150.68,
+      "failure": null
+    },
+    {
+      "trial": 7,
+      "case": "coal-ocr-payment",
+      "repeat": 1,
+      "status": "recorded",
+      "valid": true,
+      "model_reported": "Unknown",
+      "tool_version": "codex-cli 0.162.0-alpha.17.2",
+      "dataset_hash": "23b53e701fb5fc5e322a35e5d2d3496ab5d122e94c751cf44931725192460ca1",
+      "opening_question_count": 1,
+      "opening_status": "invalid",
+      "maintainer_opening_review": false,
+      "question_repeated_after_reply": false,
+      "workbook": {
+        "numerator": 21,
+        "denominator": 21,
+        "rate": 1.0
+      },
+      "raw": null,
+      "elapsed_extraction_seconds": 144.29,
+      "failure": null
+    },
+    {
+      "trial": 8,
+      "case": "coal-ocr-payment",
+      "repeat": 2,
+      "status": "recorded",
+      "valid": true,
+      "model_reported": "Unknown",
+      "tool_version": "codex-cli 0.162.0-alpha.17.2",
+      "dataset_hash": "23b53e701fb5fc5e322a35e5d2d3496ab5d122e94c751cf44931725192460ca1",
+      "opening_question_count": 1,
+      "opening_status": "requires_review",
+      "maintainer_opening_review": false,
+      "question_repeated_after_reply": false,
+      "workbook": {
+        "numerator": 21,
+        "denominator": 21,
+        "rate": 1.0
+      },
+      "raw": null,
+      "elapsed_extraction_seconds": 162.37,
+      "failure": null
+    },
+    {
+      "trial": 9,
+      "case": "coal-ocr-payment",
+      "repeat": 3,
+      "status": "recorded",
+      "valid": true,
+      "model_reported": "Unknown",
+      "tool_version": "codex-cli 0.162.0-alpha.17.2",
+      "dataset_hash": "23b53e701fb5fc5e322a35e5d2d3496ab5d122e94c751cf44931725192460ca1",
+      "opening_question_count": 1,
+      "opening_status": "invalid",
+      "maintainer_opening_review": false,
+      "question_repeated_after_reply": false,
+      "workbook": {
+        "numerator": 21,
+        "denominator": 21,
+        "rate": 1.0
+      },
+      "raw": null,
+      "elapsed_extraction_seconds": 114.45,
+      "failure": null
+    },
+    {
+      "trial": 10,
+      "case": "coal-ocr-energy",
+      "repeat": 1,
+      "status": "recorded",
+      "valid": true,
+      "model_reported": "Unknown",
+      "tool_version": "codex-cli 0.162.0-alpha.17.2",
+      "dataset_hash": "89fb8d67d5a7d506dbc0100edd1f9be4b37093e5da160d6b2b925aa53f883c1a",
+      "opening_question_count": 1,
+      "opening_status": "invalid",
+      "maintainer_opening_review": false,
+      "question_repeated_after_reply": false,
+      "workbook": {
+        "numerator": 25,
+        "denominator": 25,
+        "rate": 1.0
+      },
+      "raw": null,
+      "elapsed_extraction_seconds": 121.27,
+      "failure": null
+    },
+    {
+      "trial": 11,
+      "case": "coal-ocr-energy",
+      "repeat": 2,
+      "status": "recorded",
+      "valid": true,
+      "model_reported": "Unknown",
+      "tool_version": "codex-cli 0.162.0-alpha.17.2",
+      "dataset_hash": "89fb8d67d5a7d506dbc0100edd1f9be4b37093e5da160d6b2b925aa53f883c1a",
+      "opening_question_count": 1,
+      "opening_status": "invalid",
+      "maintainer_opening_review": false,
+      "question_repeated_after_reply": false,
+      "workbook": {
+        "numerator": 25,
+        "denominator": 25,
+        "rate": 1.0
+      },
+      "raw": null,
+      "elapsed_extraction_seconds": 126.41,
+      "failure": null
+    },
+    {
+      "trial": 12,
+      "case": "coal-ocr-energy",
+      "repeat": 3,
+      "status": "recorded",
+      "valid": true,
+      "model_reported": "Unknown",
+      "tool_version": "codex-cli 0.162.0-alpha.17.2",
+      "dataset_hash": "89fb8d67d5a7d506dbc0100edd1f9be4b37093e5da160d6b2b925aa53f883c1a",
+      "opening_question_count": 1,
+      "opening_status": "invalid",
+      "maintainer_opening_review": true,
+      "question_repeated_after_reply": false,
+      "workbook": {
+        "numerator": 25,
+        "denominator": 25,
+        "rate": 1.0
+      },
+      "raw": null,
+      "elapsed_extraction_seconds": 131.58,
+      "failure": null
+    }
+  ],
+  "local_tests_passed": 199,
+  "workbook_cells_differing_between_valid_repeats": 0,
+  "packages": {
+    "invoice-reader-openai": {
+      "version": "0.3.14",
+      "hash": "285ad7f5a4edeadbc74c60476cd08bbdf21dbacf27dbf755bc3211cbb85ffac0"
+    },
+    "invoice-reader-anthropic": {
+      "version": "0.3.13",
+      "hash": "42e4d09398ee2f4acb3fb4d4650147c1c4d79944e04683ef338a95a4a6725483"
+    },
+    "invoice-reader-google": {
+      "version": "0.1.0",
+      "hash": "f271e9814fc3762e5284995a58993b5e3abe593ba90ef31f4fe2aa561f70b5fe"
+    },
+    "invoice-reader-xai": {
+      "version": "0.1.0",
+      "hash": "6eead3a04181057eab3b2f552af1e860ff49d2a27b1c22c0f3055bba67521b2c"
+    }
+  },
+  "limits": [
+    "Known synthetic sources, not human handwriting or an unseen holdout.",
+    "One startup failure retained without replacement.",
+    "Raw checks configured only for classification and digit-boundary cases.",
+    "CLI event stream does not independently establish image viewing; rendering and model reading logs are not proof.",
+    "Fresh sessions/workspaces under the repository; inherited environment/instructions may remain visible.",
+    "Strict opening format failures retained; extraction validity is a separate measure.",
+    "Google/xAI previews are prepared only, with no model results."
+  ]
+}

@@ -1,0 +1,4 @@
+convention,raw_correct,raw_denominator,workbook_correct,workbook_denominator,documents_found,documents_expected,raw_correct_blanks_excluded,workbook_correct_blanks_excluded,correct_review_flags,convention_matches
+end-mark,14,14,21,21,2,2,6,0,2,True
+negative,14,14,21,21,2,2,6,0,2,True
+unknown,14,14,21,21,2,2,6,0,2,True

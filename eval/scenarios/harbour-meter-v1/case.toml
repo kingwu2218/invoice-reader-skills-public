@@ -1,0 +1,4 @@
+source = "fixtures/harbour-meter-v1.pdf"
+medium = "synthetic-native-print"
+content_group = "harbour-meter-v1"
+expected_routes = ["A"]

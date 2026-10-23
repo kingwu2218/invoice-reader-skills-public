@@ -1,0 +1,4 @@
+source = "fixtures/coal-ocr.pdf"
+medium = "pdf-ocr"
+content_group = "coal-pack"
+expected_routes = ["C", "C"]

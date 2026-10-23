@@ -1,0 +1,84 @@
+{
+  "evaluation_type": "deterministic-processor",
+  "artifact_version": "0.3.4",
+  "model": "Not applicable; no model call",
+  "provider": "Local Python",
+  "artifact_hash": "e3d2278987874639aa19590d486ab3b6d339b8b65ace851ab5de193e4ddd4644",
+  "artifact_scope": "core/scripts excluding __pycache__",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "script_hashes": {
+    "amounts.py": "67752939efeca5f5a5a65c1380044e767419e761eee417d4a1334cdbbb99e81f",
+    "buckets.py": "e81f2edfa1bbe1995303cc57a2ba6eef07934b6e552bd83abcb677d7e3e7ee66",
+    "checks.py": "e5a1a991d2ed45c990bad397f98a5b8e52854807d955daa6c97ed546d9e2af83",
+    "check_setup.py": "d4e097ac8f5dd6e2bdf62f800c21c81538e2022672143ff69beea97cb5ff88eb",
+    "company_profile.py": "33cbd7d3f91b0c20d0decbed55d01a62b5458b52e3b142e15caf53f3c70544c9",
+    "custom_fields.py": "802a985235feafb29e3b702c252c95b6695d495dde766b72e4e0f1564a994ab5",
+    "dates.py": "a43e7621f9d628cf5d731d737ccbc235f3bdf26fbcce07d40f6eee87b1c044d6",
+    "extraction.py": "f0026e1eb5da1831bcc6ce0793548421ec7b0839dfe64f845c9e3157441d83a4",
+    "new_custom.py": "d2e0691a0808b82ca21ed3a3e291d257d1512bfc41556f274b6ff470690fc159",
+    "new_profile.py": "ebcb59a578f99fad177c06f516e52f660de6cda733ade35069f29b705418b634",
+    "new_run.py": "41786bfac8a7a2463a31614a3ad025c6e1d2422437bbe89742fc90dae4d2247b",
+    "pdf_routes.py": "cb0fcad28ac5c6f33912cf939f034c85f9ee933dabd49cd0ac8eab47dfbde132",
+    "process.py": "a0875f8bf655e6c6f29952e5a0ad0535b50cbc7c2f5083c16d8e3597608a9602",
+    "reading_capabilities.py": "cf16cb3ee59632ca3e6f4c2d5cbf7ab9b9a4e4aa7679dc5ebf4d08d721bc0b39",
+    "render_pages.py": "8281b10983658fa874db16ccdb6c6dae8277b99652f5e1c1e9dbf48d0862cbaf",
+    "workbook.py": "73da47b10cbec835780706f16fbea198de7cd23b0b7c8a3ecfb2ce64f3006831",
+    "data/columns.toml": "843af5394db004cd0b214440ef437cfaf73803187512dfe6ac43ecee637e9da4",
+    "data/document-types.toml": "9a09537724e70f2f6564c5337542ded5ebba14f7ce605d6bf3b8244c7385dfa6",
+    "data/review-reasons.toml": "d7fe2636a12afb894cf1475ea2fb779605c3eef03d52b34987f613b5bba043c2"
+  },
+  "case": "amount-dash-v1",
+  "input_hashes": {
+    "end-mark": {
+      "extraction.json": "c711b533024a3ccc8e05d2f0c0ddf40c39f1e8170d69344fb9a3588cab876d29",
+      "custom.md": "fe5f0a9a1ff5ef7c296b61b7edc78174cc8d88febaaa544456de513d7428d504",
+      "expected.json": "061235b4c8d532703c6753a71b7d8527206550075608be203d6f5a5d13a83797"
+    },
+    "negative": {
+      "extraction.json": "c711b533024a3ccc8e05d2f0c0ddf40c39f1e8170d69344fb9a3588cab876d29",
+      "custom.md": "fe5f0a9a1ff5ef7c296b61b7edc78174cc8d88febaaa544456de513d7428d504",
+      "expected.json": "0948f99b3039db54c6aaf237dd7ac9709645acdcb4b46681fcd220f6a04338f8"
+    },
+    "unknown": {
+      "extraction.json": "c711b533024a3ccc8e05d2f0c0ddf40c39f1e8170d69344fb9a3588cab876d29",
+      "custom.md": "fe5f0a9a1ff5ef7c296b61b7edc78174cc8d88febaaa544456de513d7428d504",
+      "expected.json": "58aeb01895be7d7ece0857aaa193f6c1ef9c100a5f03ba8bf78b060a2715fac8"
+    }
+  },
+  "results": [
+    {
+      "convention": "end-mark",
+      "correct": 17,
+      "denominator": 17,
+      "correct_blanks_excluded": 6,
+      "flagged_documents": 3,
+      "expected_flagged_documents": 3,
+      "raw_input_unchanged": true
+    },
+    {
+      "convention": "negative",
+      "correct": 17,
+      "denominator": 17,
+      "correct_blanks_excluded": 6,
+      "flagged_documents": 3,
+      "expected_flagged_documents": 3,
+      "raw_input_unchanged": true
+    },
+    {
+      "convention": "unknown",
+      "correct": 17,
+      "denominator": 17,
+      "correct_blanks_excluded": 6,
+      "flagged_documents": 3,
+      "expected_flagged_documents": 3,
+      "raw_input_unchanged": true
+    }
+  ],
+  "unit_tests_passed": 108,
+  "limitations": [
+    "Supplied invented transcription; no PDF or model recognition evaluation.",
+    "Same content under three explicit conventions, not three independent source layouts.",
+    "Earlier 0.3.3 private score and references remain unchanged; no private convention was assumed.",
+    "Both family packages remain experimental pending new model evaluation."
+  ]
+}

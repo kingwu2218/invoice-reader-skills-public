@@ -1,0 +1,1342 @@
+{
+  "rows": [
+    {
+      "arm": "A",
+      "case": "cash-memo-classification-v1",
+      "mode": "extract",
+      "trial": "trial-1",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [],
+      "question_count": 0,
+      "both_choices": false,
+      "question_tool": false,
+      "other_tools": 90,
+      "turn2_question_count": null,
+      "reply_not_sent": true,
+      "scoring": "flexible",
+      "workbook_cells": {
+        "correct": 17,
+        "correct_blank": 0,
+        "miss": 0,
+        "invented": 0,
+        "silent_error": 0
+      },
+      "raw_cells": null,
+      "unprocessed_inputs": null,
+      "unexpected_rows": null,
+      "seconds": 465.7,
+      "turn2_seconds": null,
+      "input_tokens": 174552,
+      "output_tokens": 27155,
+      "cache_read_tokens": 1120768,
+      "turn2_input_tokens": null,
+      "turn2_output_tokens": null,
+      "turn2_cache_read_tokens": null,
+      "cli_timeout": false
+    },
+    {
+      "arm": "A",
+      "case": "cash-memo-classification-v1",
+      "mode": "extract",
+      "trial": "trial-2",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [],
+      "question_count": 0,
+      "both_choices": false,
+      "question_tool": false,
+      "other_tools": 82,
+      "turn2_question_count": null,
+      "reply_not_sent": true,
+      "scoring": "flexible",
+      "workbook_cells": {
+        "correct": 15,
+        "correct_blank": 0,
+        "miss": 0,
+        "invented": 0,
+        "silent_error": 2
+      },
+      "raw_cells": null,
+      "unprocessed_inputs": null,
+      "unexpected_rows": null,
+      "seconds": 743.5,
+      "turn2_seconds": null,
+      "input_tokens": 67773,
+      "output_tokens": 29560,
+      "cache_read_tokens": 1444608,
+      "turn2_input_tokens": null,
+      "turn2_output_tokens": null,
+      "turn2_cache_read_tokens": null,
+      "cli_timeout": false
+    },
+    {
+      "arm": "A",
+      "case": "digit-boundary-v1",
+      "mode": "extract",
+      "trial": "trial-1",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [],
+      "question_count": 0,
+      "both_choices": false,
+      "question_tool": false,
+      "other_tools": 142,
+      "turn2_question_count": null,
+      "reply_not_sent": true,
+      "scoring": "flexible",
+      "workbook_cells": {
+        "correct": 5,
+        "correct_blank": 1,
+        "miss": 3,
+        "invented": 0,
+        "silent_error": 0
+      },
+      "raw_cells": null,
+      "unprocessed_inputs": null,
+      "unexpected_rows": null,
+      "seconds": 679.6,
+      "turn2_seconds": null,
+      "input_tokens": 111827,
+      "output_tokens": 36227,
+      "cache_read_tokens": 2125824,
+      "turn2_input_tokens": null,
+      "turn2_output_tokens": null,
+      "turn2_cache_read_tokens": null,
+      "cli_timeout": false
+    },
+    {
+      "arm": "A",
+      "case": "digit-boundary-v1",
+      "mode": "extract",
+      "trial": "trial-2",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [],
+      "question_count": 0,
+      "both_choices": false,
+      "question_tool": false,
+      "other_tools": 92,
+      "turn2_question_count": null,
+      "reply_not_sent": true,
+      "scoring": "flexible",
+      "workbook_cells": {
+        "correct": 8,
+        "correct_blank": 1,
+        "miss": 0,
+        "invented": 1,
+        "silent_error": 2
+      },
+      "raw_cells": null,
+      "unprocessed_inputs": null,
+      "unexpected_rows": null,
+      "seconds": 665.1,
+      "turn2_seconds": null,
+      "input_tokens": 98638,
+      "output_tokens": 35847,
+      "cache_read_tokens": 1370880,
+      "turn2_input_tokens": null,
+      "turn2_output_tokens": null,
+      "turn2_cache_read_tokens": null,
+      "cli_timeout": false
+    },
+    {
+      "arm": "A",
+      "case": "digit-boundary-v1",
+      "mode": "extract",
+      "trial": "trial-3",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [],
+      "question_count": 0,
+      "both_choices": false,
+      "question_tool": false,
+      "other_tools": 106,
+      "turn2_question_count": null,
+      "reply_not_sent": true,
+      "scoring": "flexible",
+      "workbook_cells": {
+        "correct": 8,
+        "correct_blank": 1,
+        "miss": 0,
+        "invented": 1,
+        "silent_error": 2
+      },
+      "raw_cells": null,
+      "unprocessed_inputs": null,
+      "unexpected_rows": null,
+      "seconds": 555.6,
+      "turn2_seconds": null,
+      "input_tokens": 76548,
+      "output_tokens": 24446,
+      "cache_read_tokens": 1306880,
+      "turn2_input_tokens": null,
+      "turn2_output_tokens": null,
+      "turn2_cache_read_tokens": null,
+      "cli_timeout": false
+    },
+    {
+      "arm": "A",
+      "case": "harbour-meter-v1",
+      "mode": "extract",
+      "trial": "trial-1",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [],
+      "question_count": 0,
+      "both_choices": false,
+      "question_tool": false,
+      "other_tools": 60,
+      "turn2_question_count": null,
+      "reply_not_sent": true,
+      "scoring": "flexible",
+      "workbook_cells": {
+        "correct": 7,
+        "correct_blank": 0,
+        "miss": 1,
+        "invented": 0,
+        "silent_error": 0
+      },
+      "raw_cells": null,
+      "unprocessed_inputs": null,
+      "unexpected_rows": null,
+      "seconds": 669.4,
+      "turn2_seconds": null,
+      "input_tokens": 62608,
+      "output_tokens": 25748,
+      "cache_read_tokens": 1137152,
+      "turn2_input_tokens": null,
+      "turn2_output_tokens": null,
+      "turn2_cache_read_tokens": null,
+      "cli_timeout": false
+    },
+    {
+      "arm": "A",
+      "case": "northwharf-receipt-v1",
+      "mode": "extract",
+      "trial": "trial-1",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [],
+      "question_count": 0,
+      "both_choices": false,
+      "question_tool": false,
+      "other_tools": 142,
+      "turn2_question_count": null,
+      "reply_not_sent": true,
+      "scoring": "flexible",
+      "workbook_cells": {
+        "correct": 6,
+        "correct_blank": 1,
+        "miss": 0,
+        "invented": 0,
+        "silent_error": 0
+      },
+      "raw_cells": null,
+      "unprocessed_inputs": null,
+      "unexpected_rows": null,
+      "seconds": 705.9,
+      "turn2_seconds": null,
+      "input_tokens": 167468,
+      "output_tokens": 36450,
+      "cache_read_tokens": 1434752,
+      "turn2_input_tokens": null,
+      "turn2_output_tokens": null,
+      "turn2_cache_read_tokens": null,
+      "cli_timeout": false
+    },
+    {
+      "arm": "B",
+      "case": "cash-memo-classification-v1",
+      "mode": "extract",
+      "trial": "trial-1",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [],
+      "question_count": 1,
+      "both_choices": true,
+      "question_tool": true,
+      "other_tools": 2,
+      "turn2_question_count": null,
+      "reply_not_sent": true,
+      "scoring": "no output.xlsx",
+      "workbook_cells": {},
+      "raw_cells": null,
+      "unprocessed_inputs": null,
+      "unexpected_rows": null,
+      "seconds": 41.3,
+      "turn2_seconds": null,
+      "input_tokens": 13319,
+      "output_tokens": 2184,
+      "cache_read_tokens": 57856,
+      "turn2_input_tokens": null,
+      "turn2_output_tokens": null,
+      "turn2_cache_read_tokens": null,
+      "cli_timeout": false
+    },
+    {
+      "arm": "B",
+      "case": "cash-memo-classification-v1",
+      "mode": "extract",
+      "trial": "trial-2",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "question_count": 1,
+      "both_choices": true,
+      "question_tool": false,
+      "other_tools": 0,
+      "turn2_question_count": 0,
+      "reply_not_sent": false,
+      "scoring": "official",
+      "workbook_cells": {
+        "correct": 17
+      },
+      "raw_cells": {
+        "correct": 9
+      },
+      "unprocessed_inputs": 0,
+      "unexpected_rows": null,
+      "seconds": null,
+      "turn2_seconds": null,
+      "input_tokens": 12363,
+      "output_tokens": 1567,
+      "cache_read_tokens": 39680,
+      "turn2_input_tokens": 118722,
+      "turn2_output_tokens": 22559,
+      "turn2_cache_read_tokens": 2321024,
+      "cli_timeout": true
+    },
+    {
+      "arm": "B",
+      "case": "cash-memo-classification-v1",
+      "mode": "extract",
+      "trial": "trial-3",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "question_count": 0,
+      "both_choices": true,
+      "question_tool": true,
+      "other_tools": 2,
+      "turn2_question_count": 0,
+      "reply_not_sent": null,
+      "scoring": "official",
+      "workbook_cells": {
+        "correct": 17
+      },
+      "raw_cells": {
+        "correct": 9
+      },
+      "unprocessed_inputs": 0,
+      "unexpected_rows": null,
+      "seconds": 350.3,
+      "turn2_seconds": 849.2,
+      "input_tokens": 16574,
+      "output_tokens": 3111,
+      "cache_read_tokens": 67200,
+      "turn2_input_tokens": 91124,
+      "turn2_output_tokens": 21705,
+      "turn2_cache_read_tokens": 1987328,
+      "cli_timeout": false
+    },
+    {
+      "arm": "B",
+      "case": "digit-boundary-v1",
+      "mode": "extract",
+      "trial": "trial-1",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [],
+      "question_count": 1,
+      "both_choices": true,
+      "question_tool": true,
+      "other_tools": 2,
+      "turn2_question_count": null,
+      "reply_not_sent": true,
+      "scoring": "no output.xlsx",
+      "workbook_cells": {},
+      "raw_cells": null,
+      "unprocessed_inputs": null,
+      "unexpected_rows": null,
+      "seconds": 41.5,
+      "turn2_seconds": null,
+      "input_tokens": 13002,
+      "output_tokens": 2225,
+      "cache_read_tokens": 57728,
+      "turn2_input_tokens": null,
+      "turn2_output_tokens": null,
+      "turn2_cache_read_tokens": null,
+      "cli_timeout": false
+    },
+    {
+      "arm": "B",
+      "case": "digit-boundary-v1",
+      "mode": "extract",
+      "trial": "trial-2",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [],
+      "question_count": 0,
+      "both_choices": false,
+      "question_tool": true,
+      "other_tools": 90,
+      "turn2_question_count": null,
+      "reply_not_sent": true,
+      "scoring": "official",
+      "workbook_cells": {
+        "correct": 15,
+        "correct_blank": 3
+      },
+      "raw_cells": {
+        "correct": 13,
+        "correct_blank": 2
+      },
+      "unprocessed_inputs": 0,
+      "unexpected_rows": null,
+      "seconds": 490.2,
+      "turn2_seconds": null,
+      "input_tokens": 97003,
+      "output_tokens": 21559,
+      "cache_read_tokens": 1441408,
+      "turn2_input_tokens": null,
+      "turn2_output_tokens": null,
+      "turn2_cache_read_tokens": null,
+      "cli_timeout": false
+    },
+    {
+      "arm": "B",
+      "case": "digit-boundary-v1",
+      "mode": "extract",
+      "trial": "trial-3",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [],
+      "question_count": 1,
+      "both_choices": true,
+      "question_tool": true,
+      "other_tools": 2,
+      "turn2_question_count": null,
+      "reply_not_sent": true,
+      "scoring": "no output.xlsx",
+      "workbook_cells": {},
+      "raw_cells": null,
+      "unprocessed_inputs": null,
+      "unexpected_rows": null,
+      "seconds": 43.4,
+      "turn2_seconds": null,
+      "input_tokens": 13465,
+      "output_tokens": 2631,
+      "cache_read_tokens": 57856,
+      "turn2_input_tokens": null,
+      "turn2_output_tokens": null,
+      "turn2_cache_read_tokens": null,
+      "cli_timeout": false
+    },
+    {
+      "arm": "B",
+      "case": "digit-boundary-v1",
+      "mode": "extract",
+      "trial": "trial-4",
+      "day": "2026-10-18",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "question_count": 1,
+      "both_choices": true,
+      "question_tool": true,
+      "other_tools": 2,
+      "turn2_question_count": 0,
+      "reply_not_sent": null,
+      "scoring": "official",
+      "workbook_cells": {
+        "correct": 13,
+        "correct_blank": 3,
+        "silent_error": 2
+      },
+      "raw_cells": {
+        "correct": 13,
+        "correct_blank": 2
+      },
+      "unprocessed_inputs": 0,
+      "unexpected_rows": null,
+      "seconds": 89.0,
+      "turn2_seconds": 1293.3,
+      "input_tokens": 32755,
+      "output_tokens": 2726,
+      "cache_read_tokens": 50816,
+      "turn2_input_tokens": 292634,
+      "turn2_output_tokens": 28818,
+      "turn2_cache_read_tokens": 3162112,
+      "cli_timeout": false
+    },
+    {
+      "arm": "B",
+      "case": "digit-boundary-v1",
+      "mode": "extract",
+      "trial": "trial-5",
+      "day": "2026-10-18",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "question_count": 1,
+      "both_choices": true,
+      "question_tool": false,
+      "other_tools": 0,
+      "turn2_question_count": 0,
+      "reply_not_sent": null,
+      "scoring": "official",
+      "workbook_cells": {
+        "correct": 15,
+        "correct_blank": 3
+      },
+      "raw_cells": {
+        "correct": 13,
+        "correct_blank": 2
+      },
+      "unprocessed_inputs": 0,
+      "unexpected_rows": null,
+      "seconds": 39.9,
+      "turn2_seconds": 535.0,
+      "input_tokens": 29206,
+      "output_tokens": 1559,
+      "cache_read_tokens": 22912,
+      "turn2_input_tokens": 5988,
+      "turn2_output_tokens": 3358,
+      "turn2_cache_read_tokens": 410496,
+      "cli_timeout": false
+    },
+    {
+      "arm": "B",
+      "case": "harbour-meter-v1",
+      "mode": "continue",
+      "trial": "trial-1",
+      "day": "2026-10-18",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [],
+      "question_count": 0,
+      "both_choices": false,
+      "question_tool": false,
+      "other_tools": 54,
+      "turn2_question_count": null,
+      "reply_not_sent": null,
+      "scoring": "official",
+      "workbook_cells": {
+        "correct": 12
+      },
+      "raw_cells": null,
+      "unprocessed_inputs": 0,
+      "unexpected_rows": null,
+      "seconds": 754.3,
+      "turn2_seconds": null,
+      "input_tokens": 166354,
+      "output_tokens": 5698,
+      "cache_read_tokens": 1735680,
+      "turn2_input_tokens": null,
+      "turn2_output_tokens": null,
+      "turn2_cache_read_tokens": null,
+      "cli_timeout": false
+    },
+    {
+      "arm": "B",
+      "case": "harbour-meter-v1",
+      "mode": "extract",
+      "trial": "trial-1",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "question_count": 1,
+      "both_choices": true,
+      "question_tool": true,
+      "other_tools": 2,
+      "turn2_question_count": 0,
+      "reply_not_sent": null,
+      "scoring": "official",
+      "workbook_cells": {
+        "correct": 12
+      },
+      "raw_cells": {
+        "correct": 11
+      },
+      "unprocessed_inputs": 0,
+      "unexpected_rows": null,
+      "seconds": 50.7,
+      "turn2_seconds": 431.4,
+      "input_tokens": 13136,
+      "output_tokens": 2075,
+      "cache_read_tokens": 57728,
+      "turn2_input_tokens": 57897,
+      "turn2_output_tokens": 15823,
+      "turn2_cache_read_tokens": 1099520,
+      "cli_timeout": false
+    },
+    {
+      "arm": "B",
+      "case": "harbour-meter-v1",
+      "mode": "plain-no",
+      "trial": "trial-1",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [],
+      "question_count": 1,
+      "both_choices": true,
+      "question_tool": true,
+      "other_tools": 4,
+      "turn2_question_count": null,
+      "reply_not_sent": true,
+      "scoring": "no output.xlsx",
+      "workbook_cells": {},
+      "raw_cells": null,
+      "unprocessed_inputs": null,
+      "unexpected_rows": null,
+      "seconds": 63.2,
+      "turn2_seconds": null,
+      "input_tokens": 24775,
+      "output_tokens": 3722,
+      "cache_read_tokens": 65408,
+      "turn2_input_tokens": null,
+      "turn2_output_tokens": null,
+      "turn2_cache_read_tokens": null,
+      "cli_timeout": false
+    },
+    {
+      "arm": "B",
+      "case": "harbour-meter-v1",
+      "mode": "silence",
+      "trial": "trial-1",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [],
+      "question_count": 1,
+      "both_choices": true,
+      "question_tool": true,
+      "other_tools": 2,
+      "turn2_question_count": null,
+      "reply_not_sent": null,
+      "scoring": "no output.xlsx",
+      "workbook_cells": {},
+      "raw_cells": null,
+      "unprocessed_inputs": null,
+      "unexpected_rows": null,
+      "seconds": 50.0,
+      "turn2_seconds": null,
+      "input_tokens": 13150,
+      "output_tokens": 2213,
+      "cache_read_tokens": 57344,
+      "turn2_input_tokens": null,
+      "turn2_output_tokens": null,
+      "turn2_cache_read_tokens": null,
+      "cli_timeout": false
+    },
+    {
+      "arm": "B",
+      "case": "harbour-meter-v1",
+      "mode": "stop",
+      "trial": "trial-1",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "question_count": 0,
+      "both_choices": true,
+      "question_tool": true,
+      "other_tools": 2,
+      "turn2_question_count": 0,
+      "reply_not_sent": null,
+      "scoring": "no output.xlsx",
+      "workbook_cells": {},
+      "raw_cells": null,
+      "unprocessed_inputs": null,
+      "unexpected_rows": null,
+      "seconds": 60.2,
+      "turn2_seconds": 21.8,
+      "input_tokens": 13424,
+      "output_tokens": 3286,
+      "cache_read_tokens": 57728,
+      "turn2_input_tokens": 2103,
+      "turn2_output_tokens": 127,
+      "turn2_cache_read_tokens": 18944,
+      "cli_timeout": false
+    },
+    {
+      "arm": "B",
+      "case": "harbour-meter-v1",
+      "mode": "uncertain",
+      "trial": "trial-1",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "question_count": 1,
+      "both_choices": true,
+      "question_tool": true,
+      "other_tools": 2,
+      "turn2_question_count": 0,
+      "reply_not_sent": null,
+      "scoring": "official",
+      "workbook_cells": {
+        "correct": 12
+      },
+      "raw_cells": {
+        "correct": 11
+      },
+      "unprocessed_inputs": 0,
+      "unexpected_rows": null,
+      "seconds": 41.5,
+      "turn2_seconds": 387.7,
+      "input_tokens": 12957,
+      "output_tokens": 2248,
+      "cache_read_tokens": 57728,
+      "turn2_input_tokens": 64960,
+      "turn2_output_tokens": 17254,
+      "turn2_cache_read_tokens": 1194880,
+      "cli_timeout": false
+    },
+    {
+      "arm": "B",
+      "case": "northwharf-receipt-v1",
+      "mode": "extract",
+      "trial": "trial-1",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "question_count": 1,
+      "both_choices": true,
+      "question_tool": false,
+      "other_tools": 0,
+      "turn2_question_count": 0,
+      "reply_not_sent": null,
+      "scoring": "official",
+      "workbook_cells": {
+        "correct": 10,
+        "correct_blank": 1
+      },
+      "raw_cells": {
+        "correct": 8,
+        "correct_blank": 1
+      },
+      "unprocessed_inputs": 0,
+      "unexpected_rows": 1,
+      "seconds": 39.0,
+      "turn2_seconds": 566.2,
+      "input_tokens": 12321,
+      "output_tokens": 1778,
+      "cache_read_tokens": 39680,
+      "turn2_input_tokens": 98352,
+      "turn2_output_tokens": 26054,
+      "turn2_cache_read_tokens": 1597952,
+      "cli_timeout": false
+    },
+    {
+      "arm": "C",
+      "case": "cash-memo-classification-v1",
+      "mode": "extract",
+      "trial": "trial-1",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "question_count": 1,
+      "both_choices": true,
+      "question_tool": false,
+      "other_tools": 0,
+      "turn2_question_count": 0,
+      "reply_not_sent": null,
+      "scoring": "official",
+      "workbook_cells": {
+        "correct": 17
+      },
+      "raw_cells": {
+        "correct": 9
+      },
+      "unprocessed_inputs": 0,
+      "unexpected_rows": null,
+      "seconds": 61.3,
+      "turn2_seconds": 417.9,
+      "input_tokens": 16122,
+      "output_tokens": 1114,
+      "cache_read_tokens": 46080,
+      "turn2_input_tokens": 95682,
+      "turn2_output_tokens": 18850,
+      "turn2_cache_read_tokens": 1624064,
+      "cli_timeout": false
+    },
+    {
+      "arm": "C",
+      "case": "cash-memo-classification-v1",
+      "mode": "extract",
+      "trial": "trial-2",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "question_count": 1,
+      "both_choices": true,
+      "question_tool": false,
+      "other_tools": 0,
+      "turn2_question_count": 0,
+      "reply_not_sent": null,
+      "scoring": "official",
+      "workbook_cells": {
+        "correct": 17
+      },
+      "raw_cells": {
+        "correct": 9
+      },
+      "unprocessed_inputs": 0,
+      "unexpected_rows": null,
+      "seconds": 26.4,
+      "turn2_seconds": 561.5,
+      "input_tokens": 12844,
+      "output_tokens": 877,
+      "cache_read_tokens": 39808,
+      "turn2_input_tokens": 72717,
+      "turn2_output_tokens": 24048,
+      "turn2_cache_read_tokens": 1958272,
+      "cli_timeout": false
+    },
+    {
+      "arm": "C",
+      "case": "cash-memo-classification-v1",
+      "mode": "extract",
+      "trial": "trial-3",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "question_count": 1,
+      "both_choices": true,
+      "question_tool": false,
+      "other_tools": 0,
+      "turn2_question_count": 0,
+      "reply_not_sent": null,
+      "scoring": "official",
+      "workbook_cells": {
+        "correct": 17
+      },
+      "raw_cells": {
+        "correct": 9
+      },
+      "unprocessed_inputs": 0,
+      "unexpected_rows": null,
+      "seconds": 36.2,
+      "turn2_seconds": 433.7,
+      "input_tokens": 11612,
+      "output_tokens": 520,
+      "cache_read_tokens": 22400,
+      "turn2_input_tokens": 98137,
+      "turn2_output_tokens": 20548,
+      "turn2_cache_read_tokens": 1389824,
+      "cli_timeout": false
+    },
+    {
+      "arm": "C",
+      "case": "digit-boundary-v1",
+      "mode": "extract",
+      "trial": "trial-1",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "question_count": 1,
+      "both_choices": true,
+      "question_tool": false,
+      "other_tools": 0,
+      "turn2_question_count": 0,
+      "reply_not_sent": null,
+      "scoring": "official",
+      "workbook_cells": {
+        "correct": 15,
+        "correct_blank": 3
+      },
+      "raw_cells": {
+        "correct": 13,
+        "correct_blank": 2
+      },
+      "unprocessed_inputs": 0,
+      "unexpected_rows": null,
+      "seconds": 32.2,
+      "turn2_seconds": 501.8,
+      "input_tokens": 11756,
+      "output_tokens": 1252,
+      "cache_read_tokens": 22272,
+      "turn2_input_tokens": 126722,
+      "turn2_output_tokens": 24209,
+      "turn2_cache_read_tokens": 1432192,
+      "cli_timeout": false
+    },
+    {
+      "arm": "C",
+      "case": "digit-boundary-v1",
+      "mode": "extract",
+      "trial": "trial-2",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "question_count": 1,
+      "both_choices": true,
+      "question_tool": false,
+      "other_tools": 0,
+      "turn2_question_count": 0,
+      "reply_not_sent": null,
+      "scoring": "official",
+      "workbook_cells": {
+        "correct": 15,
+        "correct_blank": 3
+      },
+      "raw_cells": {
+        "correct": 13,
+        "correct_blank": 2
+      },
+      "unprocessed_inputs": 0,
+      "unexpected_rows": null,
+      "seconds": 25.6,
+      "turn2_seconds": 493.6,
+      "input_tokens": 13160,
+      "output_tokens": 1111,
+      "cache_read_tokens": 39680,
+      "turn2_input_tokens": 60710,
+      "turn2_output_tokens": 22443,
+      "turn2_cache_read_tokens": 1562240,
+      "cli_timeout": false
+    },
+    {
+      "arm": "C",
+      "case": "digit-boundary-v1",
+      "mode": "extract",
+      "trial": "trial-3",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "question_count": 1,
+      "both_choices": true,
+      "question_tool": false,
+      "other_tools": 0,
+      "turn2_question_count": 0,
+      "reply_not_sent": null,
+      "scoring": "official",
+      "workbook_cells": {
+        "correct": 15,
+        "correct_blank": 3
+      },
+      "raw_cells": {
+        "correct": 13,
+        "correct_blank": 2
+      },
+      "unprocessed_inputs": 0,
+      "unexpected_rows": null,
+      "seconds": 31.5,
+      "turn2_seconds": 552.7,
+      "input_tokens": 12842,
+      "output_tokens": 798,
+      "cache_read_tokens": 39680,
+      "turn2_input_tokens": 97895,
+      "turn2_output_tokens": 27300,
+      "turn2_cache_read_tokens": 1707648,
+      "cli_timeout": false
+    },
+    {
+      "arm": "C",
+      "case": "harbour-meter-v1",
+      "mode": "continue",
+      "trial": "trial-1",
+      "day": "2026-10-18",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [],
+      "question_count": 0,
+      "both_choices": false,
+      "question_tool": false,
+      "other_tools": 48,
+      "turn2_question_count": null,
+      "reply_not_sent": null,
+      "scoring": "official",
+      "workbook_cells": {
+        "correct": 12
+      },
+      "raw_cells": null,
+      "unprocessed_inputs": 0,
+      "unexpected_rows": null,
+      "seconds": 758.9,
+      "turn2_seconds": null,
+      "input_tokens": 98417,
+      "output_tokens": 6403,
+      "cache_read_tokens": 1726848,
+      "turn2_input_tokens": null,
+      "turn2_output_tokens": null,
+      "turn2_cache_read_tokens": null,
+      "cli_timeout": false
+    },
+    {
+      "arm": "C",
+      "case": "harbour-meter-v1",
+      "mode": "extract",
+      "trial": "trial-1",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "question_count": 1,
+      "both_choices": true,
+      "question_tool": false,
+      "other_tools": 0,
+      "turn2_question_count": 0,
+      "reply_not_sent": null,
+      "scoring": "official",
+      "workbook_cells": {
+        "correct": 12
+      },
+      "raw_cells": {
+        "correct": 11
+      },
+      "unprocessed_inputs": 0,
+      "unexpected_rows": null,
+      "seconds": 26.4,
+      "turn2_seconds": 457.4,
+      "input_tokens": 11741,
+      "output_tokens": 535,
+      "cache_read_tokens": 22272,
+      "turn2_input_tokens": 115480,
+      "turn2_output_tokens": 17327,
+      "turn2_cache_read_tokens": 1217536,
+      "cli_timeout": false
+    },
+    {
+      "arm": "C",
+      "case": "harbour-meter-v1",
+      "mode": "plain-no",
+      "trial": "trial-1",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "question_count": 1,
+      "both_choices": true,
+      "question_tool": false,
+      "other_tools": 0,
+      "turn2_question_count": 0,
+      "reply_not_sent": null,
+      "scoring": "official",
+      "workbook_cells": {
+        "correct": 12
+      },
+      "raw_cells": {
+        "correct": 11
+      },
+      "unprocessed_inputs": 0,
+      "unexpected_rows": null,
+      "seconds": 27.7,
+      "turn2_seconds": 417.6,
+      "input_tokens": 12888,
+      "output_tokens": 967,
+      "cache_read_tokens": 39808,
+      "turn2_input_tokens": 129647,
+      "turn2_output_tokens": 16928,
+      "turn2_cache_read_tokens": 1466368,
+      "cli_timeout": false
+    },
+    {
+      "arm": "C",
+      "case": "harbour-meter-v1",
+      "mode": "silence",
+      "trial": "trial-1",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [],
+      "question_count": 1,
+      "both_choices": true,
+      "question_tool": false,
+      "other_tools": 0,
+      "turn2_question_count": null,
+      "reply_not_sent": null,
+      "scoring": "no output.xlsx",
+      "workbook_cells": {},
+      "raw_cells": null,
+      "unprocessed_inputs": null,
+      "unexpected_rows": null,
+      "seconds": 29.5,
+      "turn2_seconds": null,
+      "input_tokens": 12837,
+      "output_tokens": 813,
+      "cache_read_tokens": 39680,
+      "turn2_input_tokens": null,
+      "turn2_output_tokens": null,
+      "turn2_cache_read_tokens": null,
+      "cli_timeout": false
+    },
+    {
+      "arm": "C",
+      "case": "harbour-meter-v1",
+      "mode": "stop",
+      "trial": "trial-1",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "question_count": 1,
+      "both_choices": true,
+      "question_tool": false,
+      "other_tools": 0,
+      "turn2_question_count": 0,
+      "reply_not_sent": null,
+      "scoring": "no output.xlsx",
+      "workbook_cells": {},
+      "raw_cells": null,
+      "unprocessed_inputs": null,
+      "unexpected_rows": null,
+      "seconds": 33.4,
+      "turn2_seconds": 14.6,
+      "input_tokens": 13192,
+      "output_tokens": 1160,
+      "cache_read_tokens": 39680,
+      "turn2_input_tokens": 224,
+      "turn2_output_tokens": 72,
+      "turn2_cache_read_tokens": 18816,
+      "cli_timeout": false
+    },
+    {
+      "arm": "C",
+      "case": "harbour-meter-v1",
+      "mode": "uncertain",
+      "trial": "trial-1",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "question_count": 1,
+      "both_choices": true,
+      "question_tool": false,
+      "other_tools": 0,
+      "turn2_question_count": 0,
+      "reply_not_sent": null,
+      "scoring": "official",
+      "workbook_cells": {
+        "correct": 12
+      },
+      "raw_cells": {
+        "correct": 11
+      },
+      "unprocessed_inputs": 0,
+      "unexpected_rows": null,
+      "seconds": 26.2,
+      "turn2_seconds": 513.9,
+      "input_tokens": 11744,
+      "output_tokens": 420,
+      "cache_read_tokens": 22272,
+      "turn2_input_tokens": 54945,
+      "turn2_output_tokens": 14857,
+      "turn2_cache_read_tokens": 1284864,
+      "cli_timeout": false
+    },
+    {
+      "arm": "C",
+      "case": "northwharf-receipt-v1",
+      "mode": "extract",
+      "trial": "trial-1",
+      "day": "2026-10-17",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "question_count": 1,
+      "both_choices": true,
+      "question_tool": false,
+      "other_tools": 0,
+      "turn2_question_count": 0,
+      "reply_not_sent": null,
+      "scoring": "official",
+      "workbook_cells": {
+        "correct": 10,
+        "correct_blank": 1
+      },
+      "raw_cells": {
+        "correct": 8,
+        "correct_blank": 1
+      },
+      "unprocessed_inputs": 0,
+      "unexpected_rows": 1,
+      "seconds": 33.0,
+      "turn2_seconds": 527.9,
+      "input_tokens": 11615,
+      "output_tokens": 1012,
+      "cache_read_tokens": 22400,
+      "turn2_input_tokens": 70070,
+      "turn2_output_tokens": 26061,
+      "turn2_cache_read_tokens": 1435136,
+      "cli_timeout": false
+    },
+    {
+      "arm": "C",
+      "case": "northwharf-receipt-v1",
+      "mode": "extract",
+      "trial": "trial-2",
+      "day": "2026-10-18",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "question_count": 1,
+      "both_choices": true,
+      "question_tool": false,
+      "other_tools": 0,
+      "turn2_question_count": 0,
+      "reply_not_sent": null,
+      "scoring": "official",
+      "workbook_cells": {
+        "correct": 10,
+        "correct_blank": 1
+      },
+      "raw_cells": {
+        "correct": 8,
+        "correct_blank": 1
+      },
+      "unprocessed_inputs": 0,
+      "unexpected_rows": 1,
+      "seconds": 160.0,
+      "turn2_seconds": 900.2,
+      "input_tokens": 14789,
+      "output_tokens": 436,
+      "cache_read_tokens": 25472,
+      "turn2_input_tokens": 158206,
+      "turn2_output_tokens": 28412,
+      "turn2_cache_read_tokens": 1870976,
+      "cli_timeout": false
+    },
+    {
+      "arm": "C",
+      "case": "northwharf-receipt-v1",
+      "mode": "extract",
+      "trial": "trial-3",
+      "day": "2026-10-18",
+      "models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "turn2_models": [
+        "Grok 4.7 256K High Fast"
+      ],
+      "question_count": 1,
+      "both_choices": true,
+      "question_tool": false,
+      "other_tools": 0,
+      "turn2_question_count": 0,
+      "reply_not_sent": null,
+      "scoring": "official",
+      "workbook_cells": {
+        "correct": 8,
+        "correct_blank": 1,
+        "silent_error": 2
+      },
+      "raw_cells": {
+        "correct": 7,
+        "correct_blank": 1,
+        "silent_error": 1
+      },
+      "unprocessed_inputs": 0,
+      "unexpected_rows": 1,
+      "seconds": 160.9,
+      "turn2_seconds": 920.3,
+      "input_tokens": 12285,
+      "output_tokens": 603,
+      "cache_read_tokens": 21760,
+      "turn2_input_tokens": 277090,
+      "turn2_output_tokens": 32869,
+      "turn2_cache_read_tokens": 1958656,
+      "cli_timeout": false
+    }
+  ]
+}

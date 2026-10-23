@@ -1,0 +1,756 @@
+{
+  "tables": {
+    "Billing documents": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence"
+      ],
+      "columns": [
+        {
+          "label": "Document title",
+          "kind": "text"
+        },
+        {
+          "label": "Document number",
+          "kind": "text"
+        },
+        {
+          "label": "Subtotal",
+          "kind": "amount"
+        },
+        {
+          "label": "Tax amount",
+          "kind": "amount"
+        },
+        {
+          "label": "Total",
+          "kind": "amount"
+        },
+        {
+          "label": "Arithmetic check",
+          "kind": "text"
+        },
+        {
+          "label": "Needs review",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "batch-invoices.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Document title": "INVOICE",
+          "Document number": "RT-2048",
+          "Subtotal": "230.00",
+          "Tax amount": "18.40",
+          "Total": "248.40",
+          "Arithmetic check": "Passed",
+          "Needs review": "Yes"
+        },
+        {
+          "File": "batch-invoices.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "2",
+          "Document title": "CASH MEMO",
+          "Document number": "CM-083",
+          "Subtotal": "70.00",
+          "Tax amount": "0.00",
+          "Total": "70.00",
+          "Arithmetic check": "Passed",
+          "Needs review": "Yes"
+        },
+        {
+          "File": "batch-support.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Document title": "INVOICE",
+          "Document number": "SR-0912",
+          "Subtotal": "120.00",
+          "Tax amount": "5.00",
+          "Total": "125.75",
+          "Arithmetic check": "Failed",
+          "Needs review": "Yes"
+        }
+      ]
+    },
+    "Other": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence"
+      ],
+      "columns": [
+        {
+          "label": "Document title",
+          "kind": "text"
+        },
+        {
+          "label": "Needs review",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "batch-support.pdf",
+          "Pages": "2",
+          "Document type": "Other",
+          "Document occurrence": "1",
+          "Document title": "LAB CERTIFICATE",
+          "Needs review": "Yes"
+        }
+      ]
+    },
+    "Line items": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence",
+        "Line"
+      ],
+      "columns": [
+        {
+          "label": "Description",
+          "kind": "text"
+        },
+        {
+          "label": "Quantity",
+          "kind": "amount"
+        },
+        {
+          "label": "Unit price",
+          "kind": "amount"
+        },
+        {
+          "label": "Line total",
+          "kind": "amount"
+        }
+      ],
+      "rows": [
+        {
+          "File": "batch-invoices.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Line": "1",
+          "Description": "Filter cartridges",
+          "Quantity": "2",
+          "Unit price": "115.00",
+          "Line total": "230.00"
+        },
+        {
+          "File": "batch-invoices.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "2",
+          "Line": "1",
+          "Description": "Packing sleeves",
+          "Quantity": "2",
+          "Unit price": "35.00",
+          "Line total": "70.00"
+        },
+        {
+          "File": "batch-support.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Line": "1",
+          "Description": "Sample analysis",
+          "Quantity": "3",
+          "Unit price": "40.00",
+          "Line total": "120.00"
+        }
+      ]
+    },
+    "Requested data": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence"
+      ],
+      "columns": [
+        {
+          "label": "Energy Level of Coal",
+          "kind": "text"
+        },
+        {
+          "label": "Sulphur",
+          "kind": "text"
+        },
+        {
+          "label": "Ash content",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "batch-invoices.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1"
+        },
+        {
+          "File": "batch-invoices.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "2"
+        },
+        {
+          "File": "batch-support.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1"
+        },
+        {
+          "File": "batch-support.pdf",
+          "Pages": "2",
+          "Document type": "Other",
+          "Document occurrence": "1",
+          "Energy Level of Coal": "Sample Q-17: 5,870 kcal/kg\nSample Q-18: 24.8 MJ/kg",
+          "Sulphur": "Sample Q-17: 0.42 %\nSample Q-18: 0.35 %"
+        }
+      ],
+      "exact_columns": [
+        "Document ID",
+        "File",
+        "Pages",
+        "Energy Level of Coal",
+        "Sulphur",
+        "Ash content",
+        "Needs review",
+        "Review reasons"
+      ]
+    },
+    "Requested values": {
+      "identity": [
+        "File",
+        "Document pages",
+        "Document type",
+        "Document occurrence",
+        "Field",
+        "Occurrence"
+      ],
+      "columns": [
+        {
+          "label": "Value (as printed)",
+          "kind": "text"
+        },
+        {
+          "label": "Unit",
+          "kind": "text"
+        },
+        {
+          "label": "Context",
+          "kind": "text"
+        },
+        {
+          "label": "Pages",
+          "kind": "text"
+        },
+        {
+          "label": "Status",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "batch-invoices.pdf",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Document pages": "1",
+          "Field": "Energy Level of Coal",
+          "Occurrence": "1",
+          "Status": "absent"
+        },
+        {
+          "File": "batch-invoices.pdf",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Document pages": "1",
+          "Field": "Sulphur",
+          "Occurrence": "1",
+          "Status": "absent"
+        },
+        {
+          "File": "batch-invoices.pdf",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Document pages": "1",
+          "Field": "Ash content",
+          "Occurrence": "1",
+          "Status": "absent"
+        },
+        {
+          "File": "batch-invoices.pdf",
+          "Document type": "Invoice",
+          "Document occurrence": "2",
+          "Document pages": "1",
+          "Field": "Energy Level of Coal",
+          "Occurrence": "1",
+          "Status": "absent"
+        },
+        {
+          "File": "batch-invoices.pdf",
+          "Document type": "Invoice",
+          "Document occurrence": "2",
+          "Document pages": "1",
+          "Field": "Sulphur",
+          "Occurrence": "1",
+          "Status": "absent"
+        },
+        {
+          "File": "batch-invoices.pdf",
+          "Document type": "Invoice",
+          "Document occurrence": "2",
+          "Document pages": "1",
+          "Field": "Ash content",
+          "Occurrence": "1",
+          "Status": "absent"
+        },
+        {
+          "File": "batch-support.pdf",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Document pages": "1",
+          "Field": "Energy Level of Coal",
+          "Occurrence": "1",
+          "Status": "absent"
+        },
+        {
+          "File": "batch-support.pdf",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Document pages": "1",
+          "Field": "Sulphur",
+          "Occurrence": "1",
+          "Status": "absent"
+        },
+        {
+          "File": "batch-support.pdf",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Document pages": "1",
+          "Field": "Ash content",
+          "Occurrence": "1",
+          "Status": "absent"
+        },
+        {
+          "File": "batch-support.pdf",
+          "Document type": "Other",
+          "Document occurrence": "1",
+          "Document pages": "2",
+          "Field": "Energy Level of Coal",
+          "Occurrence": "1",
+          "Status": "printed",
+          "Value (as printed)": "5,870",
+          "Unit": "kcal/kg",
+          "Context": "Sample Q-17",
+          "Pages": "2"
+        },
+        {
+          "File": "batch-support.pdf",
+          "Document type": "Other",
+          "Document occurrence": "1",
+          "Document pages": "2",
+          "Field": "Energy Level of Coal",
+          "Occurrence": "2",
+          "Status": "printed",
+          "Value (as printed)": "24.8",
+          "Unit": "MJ/kg",
+          "Context": "Sample Q-18",
+          "Pages": "2"
+        },
+        {
+          "File": "batch-support.pdf",
+          "Document type": "Other",
+          "Document occurrence": "1",
+          "Document pages": "2",
+          "Field": "Sulphur",
+          "Occurrence": "1",
+          "Status": "printed",
+          "Value (as printed)": "0.42",
+          "Unit": "%",
+          "Context": "Sample Q-17",
+          "Pages": "2"
+        },
+        {
+          "File": "batch-support.pdf",
+          "Document type": "Other",
+          "Document occurrence": "1",
+          "Document pages": "2",
+          "Field": "Sulphur",
+          "Occurrence": "2",
+          "Status": "printed",
+          "Value (as printed)": "0.35",
+          "Unit": "%",
+          "Context": "Sample Q-18",
+          "Pages": "2"
+        },
+        {
+          "File": "batch-support.pdf",
+          "Document type": "Other",
+          "Document occurrence": "1",
+          "Document pages": "2",
+          "Field": "Ash content",
+          "Occurrence": "1",
+          "Status": "absent"
+        }
+      ]
+    }
+  },
+  "raw_tables": {
+    "Raw documents": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence"
+      ],
+      "columns": [
+        {
+          "label": "fields.document_title",
+          "kind": "text"
+        },
+        {
+          "label": "fields.document_number",
+          "kind": "text"
+        },
+        {
+          "label": "fields.due_date",
+          "kind": "text"
+        },
+        {
+          "label": "fields.subtotal",
+          "kind": "text"
+        },
+        {
+          "label": "fields.tax_amount",
+          "kind": "text"
+        },
+        {
+          "label": "fields.total",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "batch-invoices.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "fields.document_title": "INVOICE",
+          "fields.document_number": "RT-2048",
+          "fields.issue_date": "01 Nov 2026",
+          "fields.seller_name": "North Vale Supplies",
+          "fields.buyer_name": "Cedar Workshop",
+          "fields.currency": "HKD",
+          "fields.subtotal": "230.00",
+          "fields.tax_amount": "18.40",
+          "fields.total": "248.40",
+          "fields.due_date": "12 Nov 2026"
+        },
+        {
+          "File": "batch-invoices.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "2",
+          "fields.document_title": "CASH MEMO",
+          "fields.document_number": "CM-083",
+          "fields.issue_date": "02 Nov 2026",
+          "fields.seller_name": "North Vale Supplies",
+          "fields.buyer_name": "Cedar Workshop",
+          "fields.currency": "HKD",
+          "fields.subtotal": "70.00",
+          "fields.tax_amount": "0.00",
+          "fields.total": "70.00"
+        },
+        {
+          "File": "batch-support.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "fields.document_title": "INVOICE",
+          "fields.document_number": "SR-0912",
+          "fields.issue_date": "03 Nov 2026",
+          "fields.seller_name": "North Vale Supplies",
+          "fields.buyer_name": "Cedar Workshop",
+          "fields.currency": "HKD",
+          "fields.subtotal": "120.00",
+          "fields.tax_amount": "5.00",
+          "fields.total": "125.75"
+        },
+        {
+          "File": "batch-support.pdf",
+          "Pages": "2",
+          "Document type": "Other",
+          "Document occurrence": "1",
+          "fields.document_title": "LAB CERTIFICATE"
+        }
+      ]
+    },
+    "Raw line items": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence",
+        "Line"
+      ],
+      "columns": [
+        {
+          "label": "item.description",
+          "kind": "text"
+        },
+        {
+          "label": "item.quantity",
+          "kind": "text"
+        },
+        {
+          "label": "item.unit_price",
+          "kind": "text"
+        },
+        {
+          "label": "item.line_total",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "batch-invoices.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Line": "1",
+          "item.description": "Filter cartridges",
+          "item.quantity": "2",
+          "item.unit_price": "115.00",
+          "item.line_total": "230.00"
+        },
+        {
+          "File": "batch-invoices.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "2",
+          "Line": "1",
+          "item.description": "Packing sleeves",
+          "item.quantity": "2",
+          "item.unit_price": "35.00",
+          "item.line_total": "70.00"
+        },
+        {
+          "File": "batch-support.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Line": "1",
+          "item.description": "Sample analysis",
+          "item.quantity": "3",
+          "item.unit_price": "40.00",
+          "item.line_total": "120.00"
+        }
+      ]
+    },
+    "Raw requested values": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence",
+        "Field",
+        "Occurrence"
+      ],
+      "columns": [
+        {
+          "label": "observation.value",
+          "kind": "text"
+        },
+        {
+          "label": "observation.unit",
+          "kind": "text"
+        },
+        {
+          "label": "observation.context",
+          "kind": "text"
+        },
+        {
+          "label": "observation.pages",
+          "kind": "text"
+        },
+        {
+          "label": "observation.status",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "batch-invoices.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Field key": "energy",
+          "Occurrence": "1",
+          "Field": "Energy Level of Coal",
+          "observation.status": "absent"
+        },
+        {
+          "File": "batch-invoices.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Field key": "sulphur",
+          "Occurrence": "1",
+          "Field": "Sulphur",
+          "observation.status": "absent"
+        },
+        {
+          "File": "batch-invoices.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Field key": "ash",
+          "Occurrence": "1",
+          "Field": "Ash content",
+          "observation.status": "absent"
+        },
+        {
+          "File": "batch-invoices.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "2",
+          "Field key": "energy",
+          "Occurrence": "1",
+          "Field": "Energy Level of Coal",
+          "observation.status": "absent"
+        },
+        {
+          "File": "batch-invoices.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "2",
+          "Field key": "sulphur",
+          "Occurrence": "1",
+          "Field": "Sulphur",
+          "observation.status": "absent"
+        },
+        {
+          "File": "batch-invoices.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "2",
+          "Field key": "ash",
+          "Occurrence": "1",
+          "Field": "Ash content",
+          "observation.status": "absent"
+        },
+        {
+          "File": "batch-support.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Field key": "energy",
+          "Occurrence": "1",
+          "Field": "Energy Level of Coal",
+          "observation.status": "absent"
+        },
+        {
+          "File": "batch-support.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Field key": "sulphur",
+          "Occurrence": "1",
+          "Field": "Sulphur",
+          "observation.status": "absent"
+        },
+        {
+          "File": "batch-support.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Field key": "ash",
+          "Occurrence": "1",
+          "Field": "Ash content",
+          "observation.status": "absent"
+        },
+        {
+          "File": "batch-support.pdf",
+          "Pages": "2",
+          "Document type": "Other",
+          "Document occurrence": "1",
+          "Field key": "energy",
+          "Occurrence": "1",
+          "Field": "Energy Level of Coal",
+          "observation.status": "printed",
+          "observation.value": "5,870",
+          "observation.unit": "kcal/kg",
+          "observation.context": "Sample Q-17",
+          "observation.pages": "2",
+          "observation.evidence": "Sample Q-17: 5,870 kcal/kg"
+        },
+        {
+          "File": "batch-support.pdf",
+          "Pages": "2",
+          "Document type": "Other",
+          "Document occurrence": "1",
+          "Field key": "energy",
+          "Occurrence": "2",
+          "Field": "Energy Level of Coal",
+          "observation.status": "printed",
+          "observation.value": "24.8",
+          "observation.unit": "MJ/kg",
+          "observation.context": "Sample Q-18",
+          "observation.pages": "2",
+          "observation.evidence": "Sample Q-18: 24.8 MJ/kg"
+        },
+        {
+          "File": "batch-support.pdf",
+          "Pages": "2",
+          "Document type": "Other",
+          "Document occurrence": "1",
+          "Field key": "sulphur",
+          "Occurrence": "1",
+          "Field": "Sulphur",
+          "observation.status": "printed",
+          "observation.value": "0.42",
+          "observation.unit": "%",
+          "observation.context": "Sample Q-17",
+          "observation.pages": "2",
+          "observation.evidence": "Sample Q-17: 0.42 %"
+        },
+        {
+          "File": "batch-support.pdf",
+          "Pages": "2",
+          "Document type": "Other",
+          "Document occurrence": "1",
+          "Field key": "sulphur",
+          "Occurrence": "2",
+          "Field": "Sulphur",
+          "observation.status": "printed",
+          "observation.value": "0.35",
+          "observation.unit": "%",
+          "observation.context": "Sample Q-18",
+          "observation.pages": "2",
+          "observation.evidence": "Sample Q-18: 0.35 %"
+        },
+        {
+          "File": "batch-support.pdf",
+          "Pages": "2",
+          "Document type": "Other",
+          "Document occurrence": "1",
+          "Field key": "ash",
+          "Occurrence": "1",
+          "Field": "Ash content",
+          "observation.status": "absent"
+        }
+      ]
+    }
+  }
+}

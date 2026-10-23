@@ -1,0 +1,351 @@
+{
+  "date": "2026-10-09",
+  "version": "0.3.9",
+  "evaluation_type": "deterministic processor; supplied transcription and origin metadata, no model call",
+  "artifact_hash": "17eeb4971e81ccc7d11a5e7839d921b90f59d64434495c8f3ee9556283c72109",
+  "runs": [
+    {
+      "case": "default-missing-origin",
+      "valid": true,
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        }
+      },
+      "cells": {
+        "correct": 17,
+        "correct_blank": 6
+      },
+      "flags": {
+        "true_positive": 3
+      },
+      "checks": {},
+      "amount_dash": "auto",
+      "reference_source": "eval/processor-cases/amount-dash-v1/expected-unknown.json",
+      "input_hashes": {
+        "extraction.json": "c711b533024a3ccc8e05d2f0c0ddf40c39f1e8170d69344fb9a3588cab876d29",
+        "custom.md": "fe5f0a9a1ff5ef7c296b61b7edc78174cc8d88febaaa544456de513d7428d504",
+        "expected.json": "58aeb01895be7d7ece0857aaa193f6c1ef9c100a5f03ba8bf78b060a2715fac8"
+      },
+      "dataset_hash": "908e5b56c6fe1833be0f0660cfee2f898d1e8a03229d0b910e5c851233f603b5",
+      "raw_input_unchanged": true,
+      "scripts_unchanged": true
+    },
+    {
+      "case": "end-mark",
+      "valid": true,
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        }
+      },
+      "cells": {
+        "correct": 17,
+        "correct_blank": 6
+      },
+      "flags": {
+        "true_positive": 3
+      },
+      "checks": {},
+      "amount_dash": "end-mark",
+      "reference_source": "eval/processor-cases/amount-dash-v1/expected-end-mark.json",
+      "input_hashes": {
+        "extraction.json": "c711b533024a3ccc8e05d2f0c0ddf40c39f1e8170d69344fb9a3588cab876d29",
+        "custom.md": "fe5f0a9a1ff5ef7c296b61b7edc78174cc8d88febaaa544456de513d7428d504",
+        "expected.json": "061235b4c8d532703c6753a71b7d8527206550075608be203d6f5a5d13a83797"
+      },
+      "dataset_hash": "9ffc6a5020897e6fae836507bd7e9949df0d8ab2aa47d58087fe071bac0bfa55",
+      "raw_input_unchanged": true,
+      "scripts_unchanged": true
+    },
+    {
+      "case": "mixed-auto",
+      "valid": true,
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        }
+      },
+      "cells": {
+        "correct": 17,
+        "correct_blank": 6
+      },
+      "flags": {
+        "true_positive": 3
+      },
+      "checks": {},
+      "amount_dash": "auto",
+      "reference_source": "eval/processor-cases/amount-dash-v3/expected-auto.json",
+      "input_hashes": {
+        "extraction.json": "7ba42fee75fc10c01a0e1a0fe416936a20ac319dc7dd68c98748d456df6936bb",
+        "custom.md": "fe5f0a9a1ff5ef7c296b61b7edc78174cc8d88febaaa544456de513d7428d504",
+        "expected.json": "9c48f8dd78e29c28fd6f7f644cc018f13ff58e529ec47004998b2354535201a0"
+      },
+      "dataset_hash": "d9eb7ecba978e36a7df1a71e50c9b82a6ec4f0a9be16d5fe7244d2d70bbd574d",
+      "raw_input_unchanged": true,
+      "scripts_unchanged": true
+    },
+    {
+      "case": "mixed-end-mark",
+      "valid": true,
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        }
+      },
+      "cells": {
+        "correct": 17,
+        "correct_blank": 6
+      },
+      "flags": {
+        "true_positive": 3
+      },
+      "checks": {},
+      "amount_dash": "auto",
+      "reference_source": "eval/processor-cases/amount-dash-v3/expected-end-mark.json",
+      "input_hashes": {
+        "extraction.json": "b79b6e7246c8d62137a81ab3664af093ea2df7ffe43587802e91230d560e3079",
+        "custom.md": "fe5f0a9a1ff5ef7c296b61b7edc78174cc8d88febaaa544456de513d7428d504",
+        "expected.json": "801803d9f3c0a0692f8181f4ca3861c30d30ddb08a03883fce6de2a8925af602"
+      },
+      "dataset_hash": "3eb4bcc50d163748ba15841c7d0a59fe6e7dacd7c32db9d624c551157f397fb7",
+      "raw_input_unchanged": true,
+      "scripts_unchanged": true
+    },
+    {
+      "case": "mixed-negative",
+      "valid": true,
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        }
+      },
+      "cells": {
+        "correct": 17,
+        "correct_blank": 6
+      },
+      "flags": {
+        "true_positive": 3
+      },
+      "checks": {},
+      "amount_dash": "auto",
+      "reference_source": "eval/processor-cases/amount-dash-v3/expected-negative.json",
+      "input_hashes": {
+        "extraction.json": "65e790edae734607994c42f34416c2bb8c17be26e8f4468db59a9d60023f8314",
+        "custom.md": "fe5f0a9a1ff5ef7c296b61b7edc78174cc8d88febaaa544456de513d7428d504",
+        "expected.json": "affcd81d116c8560856280f4058581b8850fe36f87d67738ec7c9e2e18548fae"
+      },
+      "dataset_hash": "259d67691cc1a1014c8a411c327192e46340158ab45be1dec76b6cc02f58650e",
+      "raw_input_unchanged": true,
+      "scripts_unchanged": true
+    },
+    {
+      "case": "negative",
+      "valid": true,
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        }
+      },
+      "cells": {
+        "correct": 17,
+        "correct_blank": 6
+      },
+      "flags": {
+        "true_positive": 3
+      },
+      "checks": {},
+      "amount_dash": "negative",
+      "reference_source": "eval/processor-cases/amount-dash-v1/expected-negative.json",
+      "input_hashes": {
+        "extraction.json": "c711b533024a3ccc8e05d2f0c0ddf40c39f1e8170d69344fb9a3588cab876d29",
+        "custom.md": "fe5f0a9a1ff5ef7c296b61b7edc78174cc8d88febaaa544456de513d7428d504",
+        "expected.json": "0948f99b3039db54c6aaf237dd7ac9709645acdcb4b46681fcd220f6a04338f8"
+      },
+      "dataset_hash": "171507c9e9c2f1eaf1b322934cd8f846edcf85904d006f0d46ac34d80c1cbfc9",
+      "raw_input_unchanged": true,
+      "scripts_unchanged": true
+    },
+    {
+      "case": "unknown",
+      "valid": true,
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        }
+      },
+      "cells": {
+        "correct": 17,
+        "correct_blank": 6
+      },
+      "flags": {
+        "true_positive": 3
+      },
+      "checks": {},
+      "amount_dash": "unknown",
+      "reference_source": "eval/processor-cases/amount-dash-v1/expected-unknown.json",
+      "input_hashes": {
+        "extraction.json": "c711b533024a3ccc8e05d2f0c0ddf40c39f1e8170d69344fb9a3588cab876d29",
+        "custom.md": "fe5f0a9a1ff5ef7c296b61b7edc78174cc8d88febaaa544456de513d7428d504",
+        "expected.json": "58aeb01895be7d7ece0857aaa193f6c1ef9c100a5f03ba8bf78b060a2715fac8"
+      },
+      "dataset_hash": "908e5b56c6fe1833be0f0660cfee2f898d1e8a03229d0b910e5c851233f603b5",
+      "raw_input_unchanged": true,
+      "scripts_unchanged": true
+    }
+  ]
+}

@@ -1,0 +1,2198 @@
+{
+  "batches": [
+    {
+      "batch": "20261010-baseline-claude-session",
+      "summary": {
+        "runs": 9,
+        "valid_runs": 8,
+        "cells_differing_between_runs": 0
+      }
+    },
+    {
+      "batch": "20261010-harness-v2-claude-session",
+      "summary": {
+        "runs": 9,
+        "valid_runs": 9,
+        "cells_differing_between_runs": 0
+      }
+    }
+  ],
+  "runs": [
+    {
+      "case": "coal-energy",
+      "format": "printed-pdf-certificate",
+      "purpose": "coal-energy",
+      "content_group": "coal-pack",
+      "expected_routes": [],
+      "phase": "extracted",
+      "valid": true,
+      "completed": true,
+      "timed_out": false,
+      "error": null,
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "tool_version": "2.1.286 (Claude Code)",
+      "package_version": "0.3.10",
+      "artifact_hash": "ae4f97a3986e5ba7bdd59d54db19ad4a6d3663f2eaa4818cd41ecaf6ebfe6942",
+      "dataset_hash": "25d30eac5b48f9bdba64262a3ac0342e4f00bb76c656856107f09218fd235f09",
+      "raw_extraction_hash": "e1bdac14df065dac60ba0c7bfa533052373bcdf6fca1901a8ed269d727d4e055",
+      "output_sha256": "c14d900dc57e1b6d5ef7aea867f5630ab35ab1ab9008c0b4cfea604d3ab81aec",
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "elapsed_seconds": 122.46,
+      "reported_cost_usd": 0.5948,
+      "permission_denials": 4,
+      "opening_status": "requires_review",
+      "question_occurrences": 1,
+      "opening_tool_uses_requiring_review": 0,
+      "opening_workspace_unchanged": true,
+      "policy_reply_actor": "scripted_public_fixture",
+      "policy_reply": "No, but I will read it before I upload any confidential data",
+      "question_repeated_after_reply": false,
+      "raw_status": "not_configured",
+      "trace": {
+        "page_image_reads": [],
+        "pdf_reads": 1,
+        "scripts": [
+          "reading_capabilities.py",
+          "check_setup.py",
+          "reading_capabilities.py",
+          "new_run.py",
+          "process.py",
+          "process.py",
+          "process.py"
+        ],
+        "denied": [
+          {
+            "tool": "Bash",
+            "scripts": [],
+            "compound": true
+          },
+          {
+            "tool": "Bash",
+            "scripts": [
+              "reading_capabilities.py"
+            ],
+            "compound": true
+          },
+          {
+            "tool": "PowerShell",
+            "scripts": [
+              "reading_capabilities.py"
+            ],
+            "compound": false
+          },
+          {
+            "tool": "PowerShell",
+            "scripts": [
+              "process.py"
+            ],
+            "compound": true
+          }
+        ],
+        "turns": [
+          {
+            "kind": "start",
+            "result": "success",
+            "agent_turns": 2,
+            "elapsed_seconds": 13.23
+          },
+          {
+            "kind": "policy_response",
+            "result": "success",
+            "agent_turns": 24,
+            "elapsed_seconds": 109.23
+          }
+        ]
+      },
+      "opening_layout": {
+        "question_count": 1,
+        "both_reply_choices_verbatim": true,
+        "question_in_bold": true,
+        "announcement_before_question": true,
+        "text_after_choices": "Once you reply, with either answer, I'll read coal-pack.pdf, apply the fields in custom.md and company-profile.xlsx, and save output.xlsx."
+      },
+      "batch": "20261010-baseline-claude-session",
+      "session_harness": "claude-session-v1",
+      "workbook": {
+        "correct": 25,
+        "denominator": 25,
+        "correct_blank": 15,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 2,
+        "actual": 2,
+        "matched": 2,
+        "missing": 0,
+        "extra": 0
+      },
+      "requested_values": {
+        "expected": 5,
+        "actual": 5,
+        "matched": 5,
+        "missing": 0,
+        "extra": 0
+      },
+      "workbook_page_errors": 0,
+      "review_flags": {
+        "true_positive": 2
+      },
+      "structural_checks": {
+        "unprocessed_inputs": 0
+      },
+      "workbook_differences": []
+    },
+    {
+      "case": "coal-mixed-energy",
+      "format": "pdf-mixed",
+      "purpose": "coal-energy",
+      "content_group": "coal-pack",
+      "expected_routes": [
+        "A",
+        "B"
+      ],
+      "phase": "extracted",
+      "valid": true,
+      "completed": true,
+      "timed_out": false,
+      "error": null,
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "tool_version": "2.1.286 (Claude Code)",
+      "package_version": "0.3.10",
+      "artifact_hash": "ae4f97a3986e5ba7bdd59d54db19ad4a6d3663f2eaa4818cd41ecaf6ebfe6942",
+      "dataset_hash": "aff397b5ce95ac2d4f3ae0aa704df1fd2689ab2ab8f0fde820ce09f639cde133",
+      "raw_extraction_hash": "c398b059b2fe1341091a8700b15e838d453fc1870232bfde7a655ca3c9a7a5a0",
+      "output_sha256": "962a9290fb4aac32c911c73e8753a79247dbaaf788ca8bf47e7ce89f44af6c1e",
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "elapsed_seconds": 85.74,
+      "reported_cost_usd": 0.6463,
+      "permission_denials": 2,
+      "opening_status": "requires_review",
+      "question_occurrences": 1,
+      "opening_tool_uses_requiring_review": 0,
+      "opening_workspace_unchanged": true,
+      "policy_reply_actor": "scripted_public_fixture",
+      "policy_reply": "No, but I will read it before I upload any confidential data",
+      "question_repeated_after_reply": false,
+      "raw_status": "not_configured",
+      "trace": {
+        "page_image_reads": [
+          "input-0001/page-0001.png",
+          "input-0001/page-0002.png"
+        ],
+        "pdf_reads": 0,
+        "scripts": [
+          "check_setup.py",
+          "new_run.py",
+          "reading_capabilities.py",
+          "pdf_routes.py",
+          "process.py"
+        ],
+        "denied": [
+          {
+            "tool": "Bash",
+            "scripts": [],
+            "compound": true
+          },
+          {
+            "tool": "Bash",
+            "scripts": [],
+            "compound": true
+          }
+        ],
+        "turns": [
+          {
+            "kind": "start",
+            "result": "success",
+            "agent_turns": 2,
+            "elapsed_seconds": 8.77
+          },
+          {
+            "kind": "policy_response",
+            "result": "success",
+            "agent_turns": 25,
+            "elapsed_seconds": 76.97
+          }
+        ]
+      },
+      "opening_layout": {
+        "question_count": 1,
+        "both_reply_choices_verbatim": true,
+        "question_in_bold": true,
+        "announcement_before_question": true,
+        "text_after_choices": "When you reply, I'll read `coal-mixed.pdf`, pull out the fields listed in `custom.md`, use `company-profile.xlsx`, and save the result as `output.xlsx`."
+      },
+      "batch": "20261010-baseline-claude-session",
+      "session_harness": "claude-session-v1",
+      "workbook": {
+        "correct": 25,
+        "denominator": 25,
+        "correct_blank": 15,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 2,
+        "actual": 2,
+        "matched": 2,
+        "missing": 0,
+        "extra": 0
+      },
+      "requested_values": {
+        "expected": 5,
+        "actual": 5,
+        "matched": 5,
+        "missing": 0,
+        "extra": 0
+      },
+      "workbook_page_errors": 0,
+      "review_flags": {
+        "true_positive": 2
+      },
+      "structural_checks": {
+        "unprocessed_inputs": 0
+      },
+      "workbook_differences": []
+    },
+    {
+      "case": "coal-mixed-payment",
+      "format": "pdf-mixed",
+      "purpose": "payment",
+      "content_group": "coal-pack",
+      "expected_routes": [
+        "A",
+        "B"
+      ],
+      "phase": "extracted",
+      "valid": true,
+      "completed": true,
+      "timed_out": false,
+      "error": null,
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "tool_version": "2.1.286 (Claude Code)",
+      "package_version": "0.3.10",
+      "artifact_hash": "ae4f97a3986e5ba7bdd59d54db19ad4a6d3663f2eaa4818cd41ecaf6ebfe6942",
+      "dataset_hash": "942184c347ea25c670b15f041a3db6e03bc2f9a762964d525e45594620d65db0",
+      "raw_extraction_hash": "349aef9885bafbb713b1905c529f86ed514f16849ef7fbd490b125ac2a8a73fc",
+      "output_sha256": "33436f8371a0777d73c4a5f8e53abdb17970ab2b0aa4b745ba060140b3daaa49",
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "elapsed_seconds": 86.89,
+      "reported_cost_usd": 0.6274,
+      "permission_denials": 2,
+      "opening_status": "requires_review",
+      "question_occurrences": 1,
+      "opening_tool_uses_requiring_review": 0,
+      "opening_workspace_unchanged": true,
+      "policy_reply_actor": "scripted_public_fixture",
+      "policy_reply": "No, but I will read it before I upload any confidential data",
+      "question_repeated_after_reply": false,
+      "raw_status": "not_configured",
+      "trace": {
+        "page_image_reads": [
+          "input-0001/page-0001.png",
+          "input-0001/page-0002.png"
+        ],
+        "pdf_reads": 0,
+        "scripts": [
+          "check_setup.py",
+          "new_run.py",
+          "reading_capabilities.py",
+          "pdf_routes.py",
+          "pdf_routes.py",
+          "process.py"
+        ],
+        "denied": [
+          {
+            "tool": "Bash",
+            "scripts": [
+              "pdf_routes.py"
+            ],
+            "compound": true
+          },
+          {
+            "tool": "Bash",
+            "scripts": [],
+            "compound": true
+          }
+        ],
+        "turns": [
+          {
+            "kind": "start",
+            "result": "success",
+            "agent_turns": 2,
+            "elapsed_seconds": 8.19
+          },
+          {
+            "kind": "policy_response",
+            "result": "success",
+            "agent_turns": 24,
+            "elapsed_seconds": 78.7
+          }
+        ]
+      },
+      "opening_layout": {
+        "question_count": 1,
+        "both_reply_choices_verbatim": true,
+        "question_in_bold": true,
+        "announcement_before_question": true,
+        "text_after_choices": ""
+      },
+      "batch": "20261010-baseline-claude-session",
+      "session_harness": "claude-session-v1",
+      "workbook": {
+        "correct": 21,
+        "denominator": 21,
+        "correct_blank": 14,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 2,
+        "actual": 2,
+        "matched": 2,
+        "missing": 0,
+        "extra": 0
+      },
+      "requested_values": {
+        "expected": 4,
+        "actual": 4,
+        "matched": 4,
+        "missing": 0,
+        "extra": 0
+      },
+      "workbook_page_errors": 0,
+      "review_flags": {
+        "true_positive": 2
+      },
+      "structural_checks": {
+        "unprocessed_inputs": 0
+      },
+      "workbook_differences": []
+    },
+    {
+      "case": "coal-ocr-energy",
+      "format": "pdf-ocr",
+      "purpose": "coal-energy",
+      "content_group": "coal-pack",
+      "expected_routes": [
+        "C",
+        "C"
+      ],
+      "phase": "awaiting_user",
+      "valid": false,
+      "completed": true,
+      "timed_out": false,
+      "error": "Raw evaluation requires exactly one run manifest; preserve and adjudicate multiple attempts.",
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "tool_version": "2.1.286 (Claude Code)",
+      "package_version": "0.3.10",
+      "artifact_hash": "ae4f97a3986e5ba7bdd59d54db19ad4a6d3663f2eaa4818cd41ecaf6ebfe6942",
+      "dataset_hash": "89fb8d67d5a7d506dbc0100edd1f9be4b37093e5da160d6b2b925aa53f883c1a",
+      "raw_extraction_hash": null,
+      "output_sha256": null,
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "elapsed_seconds": 33.2,
+      "reported_cost_usd": 0.2984,
+      "permission_denials": 2,
+      "opening_status": "requires_review",
+      "question_occurrences": 1,
+      "opening_tool_uses_requiring_review": 0,
+      "opening_workspace_unchanged": true,
+      "policy_reply_actor": "scripted_public_fixture",
+      "policy_reply": "No, but I will read it before I upload any confidential data",
+      "question_repeated_after_reply": false,
+      "raw_status": "not_run",
+      "trace": {
+        "page_image_reads": [],
+        "pdf_reads": 0,
+        "scripts": [
+          "check_setup.py"
+        ],
+        "denied": [
+          {
+            "tool": "Bash",
+            "scripts": [],
+            "compound": true
+          },
+          {
+            "tool": "PowerShell",
+            "scripts": [
+              "check_setup.py"
+            ],
+            "compound": true
+          }
+        ],
+        "turns": [
+          {
+            "kind": "start",
+            "result": "success",
+            "agent_turns": 2,
+            "elapsed_seconds": 9.17
+          },
+          {
+            "kind": "policy_response",
+            "result": "success",
+            "agent_turns": 9,
+            "elapsed_seconds": 24.03
+          }
+        ]
+      },
+      "opening_layout": {
+        "question_count": 1,
+        "both_reply_choices_verbatim": true,
+        "question_in_bold": true,
+        "announcement_before_question": true,
+        "text_after_choices": ""
+      },
+      "batch": "20261010-baseline-claude-session",
+      "session_harness": "claude-session-v1"
+    },
+    {
+      "case": "coal-ocr-payment",
+      "format": "pdf-ocr",
+      "purpose": "payment",
+      "content_group": "coal-pack",
+      "expected_routes": [
+        "C",
+        "C"
+      ],
+      "phase": "extracted",
+      "valid": true,
+      "completed": true,
+      "timed_out": false,
+      "error": null,
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "tool_version": "2.1.286 (Claude Code)",
+      "package_version": "0.3.10",
+      "artifact_hash": "ae4f97a3986e5ba7bdd59d54db19ad4a6d3663f2eaa4818cd41ecaf6ebfe6942",
+      "dataset_hash": "23b53e701fb5fc5e322a35e5d2d3496ab5d122e94c751cf44931725192460ca1",
+      "raw_extraction_hash": "ef8313971cd8b2a2df21ad49d706f4780bdcc7cbda1075944d02ce7bd1898d9e",
+      "output_sha256": "296a588e77208eca0a6932c84dea44ee32cda49553d16727b84ab05132b83757",
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "elapsed_seconds": 73.7,
+      "reported_cost_usd": 0.5131,
+      "permission_denials": 2,
+      "opening_status": "requires_review",
+      "question_occurrences": 1,
+      "opening_tool_uses_requiring_review": 0,
+      "opening_workspace_unchanged": true,
+      "policy_reply_actor": "scripted_public_fixture",
+      "policy_reply": "No, but I will read it before I upload any confidential data",
+      "question_repeated_after_reply": false,
+      "raw_status": "not_configured",
+      "trace": {
+        "page_image_reads": [],
+        "pdf_reads": 1,
+        "scripts": [
+          "check_setup.py",
+          "new_run.py",
+          "check_setup.py",
+          "new_run.py",
+          "reading_capabilities.py",
+          "process.py"
+        ],
+        "denied": [
+          {
+            "tool": "Bash",
+            "scripts": [
+              "check_setup.py",
+              "new_run.py"
+            ],
+            "compound": true
+          },
+          {
+            "tool": "PowerShell",
+            "scripts": [
+              "reading_capabilities.py"
+            ],
+            "compound": false
+          }
+        ],
+        "turns": [
+          {
+            "kind": "start",
+            "result": "success",
+            "agent_turns": 2,
+            "elapsed_seconds": 8.42
+          },
+          {
+            "kind": "policy_response",
+            "result": "success",
+            "agent_turns": 16,
+            "elapsed_seconds": 65.28
+          }
+        ]
+      },
+      "opening_layout": {
+        "question_count": 1,
+        "both_reply_choices_verbatim": true,
+        "question_in_bold": true,
+        "announcement_before_question": true,
+        "text_after_choices": ""
+      },
+      "batch": "20261010-baseline-claude-session",
+      "session_harness": "claude-session-v1",
+      "workbook": {
+        "correct": 21,
+        "denominator": 21,
+        "correct_blank": 14,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 2,
+        "actual": 2,
+        "matched": 2,
+        "missing": 0,
+        "extra": 0
+      },
+      "requested_values": {
+        "expected": 4,
+        "actual": 4,
+        "matched": 4,
+        "missing": 0,
+        "extra": 0
+      },
+      "workbook_page_errors": 0,
+      "review_flags": {
+        "true_positive": 2
+      },
+      "structural_checks": {
+        "unprocessed_inputs": 0
+      },
+      "workbook_differences": []
+    },
+    {
+      "case": "coal-payment",
+      "format": "printed-pdf-certificate",
+      "purpose": "payment",
+      "content_group": "coal-pack",
+      "expected_routes": [],
+      "phase": "extracted",
+      "valid": true,
+      "completed": true,
+      "timed_out": false,
+      "error": null,
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "tool_version": "2.1.286 (Claude Code)",
+      "package_version": "0.3.10",
+      "artifact_hash": "ae4f97a3986e5ba7bdd59d54db19ad4a6d3663f2eaa4818cd41ecaf6ebfe6942",
+      "dataset_hash": "c0dd991a74140158c65dcc01d1362e16e2c8b698bdf98ead2e3e66e522ce4518",
+      "raw_extraction_hash": "ef5b716429e354a9a3fe48b993930423de8301fed65efb926532cde136b49870",
+      "output_sha256": "7f6d85ad2b329025f94273ad806e72d34dcb7d59ea11e7ead3f7d2ab29f6295b",
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "elapsed_seconds": 74.94,
+      "reported_cost_usd": 0.5329,
+      "permission_denials": 4,
+      "opening_status": "requires_review",
+      "question_occurrences": 1,
+      "opening_tool_uses_requiring_review": 0,
+      "opening_workspace_unchanged": true,
+      "policy_reply_actor": "scripted_public_fixture",
+      "policy_reply": "No, but I will read it before I upload any confidential data",
+      "question_repeated_after_reply": false,
+      "raw_status": "not_configured",
+      "trace": {
+        "page_image_reads": [],
+        "pdf_reads": 1,
+        "scripts": [
+          "check_setup.py",
+          "reading_capabilities.py",
+          "new_run.py",
+          "process.py",
+          "process.py"
+        ],
+        "denied": [
+          {
+            "tool": "Bash",
+            "scripts": [],
+            "compound": true
+          },
+          {
+            "tool": "Bash",
+            "scripts": [],
+            "compound": true
+          },
+          {
+            "tool": "PowerShell",
+            "scripts": [
+              "reading_capabilities.py"
+            ],
+            "compound": false
+          },
+          {
+            "tool": "PowerShell",
+            "scripts": [
+              "process.py"
+            ],
+            "compound": true
+          }
+        ],
+        "turns": [
+          {
+            "kind": "start",
+            "result": "success",
+            "agent_turns": 2,
+            "elapsed_seconds": 10.38
+          },
+          {
+            "kind": "policy_response",
+            "result": "success",
+            "agent_turns": 21,
+            "elapsed_seconds": 64.56
+          }
+        ]
+      },
+      "opening_layout": {
+        "question_count": 1,
+        "both_reply_choices_verbatim": true,
+        "question_in_bold": true,
+        "announcement_before_question": true,
+        "text_after_choices": "Any reply is fine, and I'll continue as soon as I have it."
+      },
+      "batch": "20261010-baseline-claude-session",
+      "session_harness": "claude-session-v1",
+      "workbook": {
+        "correct": 21,
+        "denominator": 21,
+        "correct_blank": 14,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 2,
+        "actual": 2,
+        "matched": 2,
+        "missing": 0,
+        "extra": 0
+      },
+      "requested_values": {
+        "expected": 4,
+        "actual": 4,
+        "matched": 4,
+        "missing": 0,
+        "extra": 0
+      },
+      "workbook_page_errors": 0,
+      "review_flags": {
+        "true_positive": 2
+      },
+      "structural_checks": {
+        "unprocessed_inputs": 0
+      },
+      "workbook_differences": []
+    },
+    {
+      "case": "coal-scan-energy",
+      "format": "pdf-scan",
+      "purpose": "coal-energy",
+      "content_group": "coal-pack",
+      "expected_routes": [
+        "B",
+        "B"
+      ],
+      "phase": "extracted",
+      "valid": true,
+      "completed": true,
+      "timed_out": false,
+      "error": null,
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "tool_version": "2.1.286 (Claude Code)",
+      "package_version": "0.3.10",
+      "artifact_hash": "ae4f97a3986e5ba7bdd59d54db19ad4a6d3663f2eaa4818cd41ecaf6ebfe6942",
+      "dataset_hash": "66fc6cc3d9e1e96edaeb7717cb4a795912c35d19c44f7d84b89c422af627aad8",
+      "raw_extraction_hash": "9f102b3048ee538b8d8c9057b6e11043b7cca4ba664e132d5850757307bf0db8",
+      "output_sha256": "cc2a1ae1e9548d99a75c04b619937ca3a348d32ff9c8fd3dc378f6293a4a1273",
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "elapsed_seconds": 77.55,
+      "reported_cost_usd": 0.5795,
+      "permission_denials": 1,
+      "opening_status": "requires_review",
+      "question_occurrences": 1,
+      "opening_tool_uses_requiring_review": 0,
+      "opening_workspace_unchanged": true,
+      "policy_reply_actor": "scripted_public_fixture",
+      "policy_reply": "No, but I will read it before I upload any confidential data",
+      "question_repeated_after_reply": false,
+      "raw_status": "not_configured",
+      "trace": {
+        "page_image_reads": [
+          "input-0001/page-0001.png",
+          "input-0001/page-0002.png"
+        ],
+        "pdf_reads": 0,
+        "scripts": [
+          "check_setup.py",
+          "new_run.py",
+          "reading_capabilities.py",
+          "pdf_routes.py",
+          "pdf_routes.py",
+          "process.py"
+        ],
+        "denied": [
+          {
+            "tool": "Bash",
+            "scripts": [
+              "pdf_routes.py"
+            ],
+            "compound": true
+          }
+        ],
+        "turns": [
+          {
+            "kind": "start",
+            "result": "success",
+            "agent_turns": 2,
+            "elapsed_seconds": 9.3
+          },
+          {
+            "kind": "policy_response",
+            "result": "success",
+            "agent_turns": 23,
+            "elapsed_seconds": 68.25
+          }
+        ]
+      },
+      "opening_layout": {
+        "question_count": 1,
+        "both_reply_choices_verbatim": true,
+        "question_in_bold": true,
+        "announcement_before_question": true,
+        "text_after_choices": "Any reply is fine, and I'll start reading the document as soon as you answer."
+      },
+      "batch": "20261010-baseline-claude-session",
+      "session_harness": "claude-session-v1",
+      "workbook": {
+        "correct": 25,
+        "denominator": 25,
+        "correct_blank": 15,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 2,
+        "actual": 2,
+        "matched": 2,
+        "missing": 0,
+        "extra": 0
+      },
+      "requested_values": {
+        "expected": 5,
+        "actual": 5,
+        "matched": 5,
+        "missing": 0,
+        "extra": 0
+      },
+      "workbook_page_errors": 0,
+      "review_flags": {
+        "true_positive": 2
+      },
+      "structural_checks": {
+        "unprocessed_inputs": 0
+      },
+      "workbook_differences": []
+    },
+    {
+      "case": "coal-scan-payment",
+      "format": "pdf-scan",
+      "purpose": "payment",
+      "content_group": "coal-pack",
+      "expected_routes": [
+        "B",
+        "B"
+      ],
+      "phase": "extracted",
+      "valid": true,
+      "completed": true,
+      "timed_out": false,
+      "error": null,
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "tool_version": "2.1.286 (Claude Code)",
+      "package_version": "0.3.10",
+      "artifact_hash": "ae4f97a3986e5ba7bdd59d54db19ad4a6d3663f2eaa4818cd41ecaf6ebfe6942",
+      "dataset_hash": "d43655b9d9002adb45e5c7d8427bc171e45282f86e0e7639eae923e98fb6af4a",
+      "raw_extraction_hash": "372da5c3102289c9ad35f2109814dc061619b41784cb890c6f4460657e94b2a4",
+      "output_sha256": "00ce1c82cb49ee4727168e855ed2fd646e502d4c7e9cbe19a9eec7d64a92ec6c",
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "elapsed_seconds": 73.77,
+      "reported_cost_usd": 0.5794,
+      "permission_denials": 1,
+      "opening_status": "requires_review",
+      "question_occurrences": 1,
+      "opening_tool_uses_requiring_review": 0,
+      "opening_workspace_unchanged": true,
+      "policy_reply_actor": "scripted_public_fixture",
+      "policy_reply": "No, but I will read it before I upload any confidential data",
+      "question_repeated_after_reply": false,
+      "raw_status": "not_configured",
+      "trace": {
+        "page_image_reads": [
+          "input-0001/page-0001.png",
+          "input-0001/page-0002.png"
+        ],
+        "pdf_reads": 0,
+        "scripts": [
+          "new_run.py",
+          "reading_capabilities.py",
+          "pdf_routes.py",
+          "pdf_routes.py",
+          "process.py"
+        ],
+        "denied": [
+          {
+            "tool": "Bash",
+            "scripts": [
+              "pdf_routes.py"
+            ],
+            "compound": true
+          }
+        ],
+        "turns": [
+          {
+            "kind": "start",
+            "result": "success",
+            "agent_turns": 2,
+            "elapsed_seconds": 8.08
+          },
+          {
+            "kind": "policy_response",
+            "result": "success",
+            "agent_turns": 23,
+            "elapsed_seconds": 65.69
+          }
+        ]
+      },
+      "opening_layout": {
+        "question_count": 1,
+        "both_reply_choices_verbatim": true,
+        "question_in_bold": true,
+        "announcement_before_question": true,
+        "text_after_choices": "Once you reply, I'll begin reading the document."
+      },
+      "batch": "20261010-baseline-claude-session",
+      "session_harness": "claude-session-v1",
+      "workbook": {
+        "correct": 21,
+        "denominator": 21,
+        "correct_blank": 14,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 2,
+        "actual": 2,
+        "matched": 2,
+        "missing": 0,
+        "extra": 0
+      },
+      "requested_values": {
+        "expected": 4,
+        "actual": 4,
+        "matched": 4,
+        "missing": 0,
+        "extra": 0
+      },
+      "workbook_page_errors": 0,
+      "review_flags": {
+        "true_positive": 2
+      },
+      "structural_checks": {
+        "unprocessed_inputs": 0
+      },
+      "workbook_differences": []
+    },
+    {
+      "case": "digit-boundary-v1",
+      "format": "synthetic-raster-print",
+      "purpose": "digit-boundary-v1",
+      "content_group": "digit-boundary-v1",
+      "expected_routes": [
+        "B",
+        "B",
+        "B"
+      ],
+      "phase": "extracted",
+      "valid": true,
+      "completed": true,
+      "timed_out": false,
+      "error": null,
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "tool_version": "2.1.286 (Claude Code)",
+      "package_version": "0.3.10",
+      "artifact_hash": "ae4f97a3986e5ba7bdd59d54db19ad4a6d3663f2eaa4818cd41ecaf6ebfe6942",
+      "dataset_hash": "4f1e780a2a78956b2d4162eaa0dd43ef0b6432ee61e81df9eec57ac99cd240a9",
+      "raw_extraction_hash": "fcf0d861e1439bdf5ea58a1fb01938284468d4ee4dbca490b79a5ec07e917be9",
+      "output_sha256": "1d2714954838c609dbc434e857bf1c4d27a33db688db5b27ad8219c61970b238",
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "elapsed_seconds": 130.57,
+      "reported_cost_usd": 0.9184,
+      "permission_denials": 2,
+      "opening_status": "requires_review",
+      "question_occurrences": 1,
+      "opening_tool_uses_requiring_review": 0,
+      "opening_workspace_unchanged": true,
+      "policy_reply_actor": "scripted_public_fixture",
+      "policy_reply": "No, but I will read it before I upload any confidential data",
+      "question_repeated_after_reply": false,
+      "raw_status": "scored",
+      "trace": {
+        "page_image_reads": [
+          "input-0001/page-0001.png",
+          "input-0001/page-0002.png",
+          "input-0001/page-0003.png",
+          "recovery-1/page-0001.png",
+          "recovery-1/page-0002.png",
+          "recovery-1/page-0003.png"
+        ],
+        "pdf_reads": 0,
+        "scripts": [
+          "check_setup.py",
+          "reading_capabilities.py",
+          "new_run.py",
+          "pdf_routes.py",
+          "pdf_routes.py",
+          "render_pages.py",
+          "process.py"
+        ],
+        "denied": [
+          {
+            "tool": "Bash",
+            "scripts": [
+              "pdf_routes.py"
+            ],
+            "compound": true
+          },
+          {
+            "tool": "Bash",
+            "scripts": [],
+            "compound": false
+          }
+        ],
+        "turns": [
+          {
+            "kind": "start",
+            "result": "success",
+            "agent_turns": 2,
+            "elapsed_seconds": 12.09
+          },
+          {
+            "kind": "policy_response",
+            "result": "success",
+            "agent_turns": 29,
+            "elapsed_seconds": 118.48
+          }
+        ]
+      },
+      "opening_layout": {
+        "question_count": 1,
+        "both_reply_choices_verbatim": true,
+        "question_in_bold": true,
+        "announcement_before_question": true,
+        "text_after_choices": ""
+      },
+      "batch": "20261010-baseline-claude-session",
+      "session_harness": "claude-session-v1",
+      "workbook": {
+        "correct": 15,
+        "denominator": 15,
+        "correct_blank": 3,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 3,
+        "actual": 3,
+        "matched": 3,
+        "missing": 0,
+        "extra": 0
+      },
+      "requested_values": {
+        "expected": 3,
+        "actual": 3,
+        "matched": 3,
+        "missing": 0,
+        "extra": 0
+      },
+      "workbook_page_errors": 0,
+      "review_flags": {},
+      "structural_checks": {
+        "unprocessed_inputs": 0
+      },
+      "workbook_differences": [],
+      "raw": {
+        "correct": 13,
+        "denominator": 13,
+        "correct_blank": 2,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw_documents": {
+        "expected": 3,
+        "actual": 3,
+        "matched": 3,
+        "missing": 0,
+        "extra": 0
+      },
+      "raw_requested_values": {
+        "expected": 3,
+        "actual": 3,
+        "matched": 3,
+        "missing": 0,
+        "extra": 0
+      },
+      "raw_line_items": {
+        "expected": 0,
+        "actual": 0,
+        "matched": 0,
+        "missing": 0,
+        "extra": 0
+      },
+      "raw_page_errors": 0,
+      "raw_differences": []
+    },
+    {
+      "case": "coal-energy",
+      "format": "printed-pdf-certificate",
+      "purpose": "coal-energy",
+      "content_group": "coal-pack",
+      "expected_routes": [],
+      "phase": "extracted",
+      "valid": true,
+      "completed": true,
+      "timed_out": false,
+      "error": null,
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "tool_version": "2.1.286 (Claude Code)",
+      "package_version": "0.3.10",
+      "artifact_hash": "ae4f97a3986e5ba7bdd59d54db19ad4a6d3663f2eaa4818cd41ecaf6ebfe6942",
+      "dataset_hash": "25d30eac5b48f9bdba64262a3ac0342e4f00bb76c656856107f09218fd235f09",
+      "raw_extraction_hash": "ab77ccf5b8d4a1895b17383bc9a2f5876a9155793754209b28ed1f8d4cbcc5ae",
+      "output_sha256": "d299c6d9408950ac809d1f668579889fd57911eac68c9819c2eacfb344ad2187",
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "elapsed_seconds": 83.77,
+      "reported_cost_usd": 0.6323,
+      "permission_denials": 3,
+      "opening_status": "requires_review",
+      "question_occurrences": 1,
+      "opening_tool_uses_requiring_review": 0,
+      "opening_workspace_unchanged": true,
+      "policy_reply_actor": "scripted_public_fixture",
+      "policy_reply": "No, but I will read it before I upload any confidential data",
+      "question_repeated_after_reply": false,
+      "raw_status": "not_configured",
+      "trace": {
+        "page_image_reads": [
+          "input-0001/page-0001.png",
+          "input-0001/page-0002.png"
+        ],
+        "pdf_reads": 0,
+        "scripts": [
+          "check_setup.py",
+          "new_run.py",
+          "reading_capabilities.py",
+          "pdf_routes.py",
+          "pdf_routes.py",
+          "process.py"
+        ],
+        "denied": [
+          {
+            "tool": "Bash",
+            "scripts": [],
+            "compound": true
+          },
+          {
+            "tool": "Bash",
+            "scripts": [
+              "pdf_routes.py"
+            ],
+            "compound": true
+          },
+          {
+            "tool": "Bash",
+            "scripts": [],
+            "compound": true
+          }
+        ],
+        "turns": [
+          {
+            "kind": "start",
+            "result": "success",
+            "agent_turns": 2,
+            "elapsed_seconds": 8.83
+          },
+          {
+            "kind": "policy_response",
+            "result": "success",
+            "agent_turns": 25,
+            "elapsed_seconds": 74.94
+          }
+        ]
+      },
+      "opening_layout": {
+        "question_count": 1,
+        "both_reply_choices_verbatim": true,
+        "question_in_bold": true,
+        "announcement_before_question": true,
+        "text_after_choices": "Once you reply, I'll read coal-pack.pdf and use your requested fields from custom.md and the company profile in company-profile.xlsx to create output.xlsx."
+      },
+      "batch": "20261010-harness-v2-claude-session",
+      "session_harness": "claude-session-v2",
+      "workbook": {
+        "correct": 25,
+        "denominator": 25,
+        "correct_blank": 15,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 2,
+        "actual": 2,
+        "matched": 2,
+        "missing": 0,
+        "extra": 0
+      },
+      "requested_values": {
+        "expected": 5,
+        "actual": 5,
+        "matched": 5,
+        "missing": 0,
+        "extra": 0
+      },
+      "workbook_page_errors": 0,
+      "review_flags": {
+        "true_positive": 2
+      },
+      "structural_checks": {
+        "unprocessed_inputs": 0
+      },
+      "workbook_differences": []
+    },
+    {
+      "case": "coal-mixed-energy",
+      "format": "pdf-mixed",
+      "purpose": "coal-energy",
+      "content_group": "coal-pack",
+      "expected_routes": [
+        "A",
+        "B"
+      ],
+      "phase": "extracted",
+      "valid": true,
+      "completed": true,
+      "timed_out": false,
+      "error": null,
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "tool_version": "2.1.286 (Claude Code)",
+      "package_version": "0.3.10",
+      "artifact_hash": "ae4f97a3986e5ba7bdd59d54db19ad4a6d3663f2eaa4818cd41ecaf6ebfe6942",
+      "dataset_hash": "aff397b5ce95ac2d4f3ae0aa704df1fd2689ab2ab8f0fde820ce09f639cde133",
+      "raw_extraction_hash": "e6fc3c276c6234b3192a3e970cde03e71119bdb2772cd88e3421e023088d03c6",
+      "output_sha256": "1b70b92fba09f4a4cc1818fd85bac3b4807ccb2a320a400ec71e2244256dfe3b",
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "elapsed_seconds": 87.27,
+      "reported_cost_usd": 0.6092,
+      "permission_denials": 2,
+      "opening_status": "requires_review",
+      "question_occurrences": 1,
+      "opening_tool_uses_requiring_review": 0,
+      "opening_workspace_unchanged": true,
+      "policy_reply_actor": "scripted_public_fixture",
+      "policy_reply": "No, but I will read it before I upload any confidential data",
+      "question_repeated_after_reply": false,
+      "raw_status": "not_configured",
+      "trace": {
+        "page_image_reads": [
+          "input-0001/page-0001.png",
+          "input-0001/page-0002.png"
+        ],
+        "pdf_reads": 0,
+        "scripts": [
+          "check_setup.py",
+          "reading_capabilities.py",
+          "new_run.py",
+          "pdf_routes.py",
+          "pdf_routes.py",
+          "process.py"
+        ],
+        "denied": [
+          {
+            "tool": "Bash",
+            "scripts": [
+              "check_setup.py"
+            ],
+            "compound": true
+          },
+          {
+            "tool": "Bash",
+            "scripts": [
+              "pdf_routes.py"
+            ],
+            "compound": true
+          }
+        ],
+        "turns": [
+          {
+            "kind": "start",
+            "result": "success",
+            "agent_turns": 2,
+            "elapsed_seconds": 7.69
+          },
+          {
+            "kind": "policy_response",
+            "result": "success",
+            "agent_turns": 23,
+            "elapsed_seconds": 79.58
+          }
+        ]
+      },
+      "opening_layout": {
+        "question_count": 1,
+        "both_reply_choices_verbatim": true,
+        "question_in_bold": true,
+        "announcement_before_question": true,
+        "text_after_choices": "Once you reply with either answer, I'll start."
+      },
+      "batch": "20261010-harness-v2-claude-session",
+      "session_harness": "claude-session-v2",
+      "workbook": {
+        "correct": 25,
+        "denominator": 25,
+        "correct_blank": 15,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 2,
+        "actual": 2,
+        "matched": 2,
+        "missing": 0,
+        "extra": 0
+      },
+      "requested_values": {
+        "expected": 5,
+        "actual": 5,
+        "matched": 5,
+        "missing": 0,
+        "extra": 0
+      },
+      "workbook_page_errors": 0,
+      "review_flags": {
+        "true_positive": 2
+      },
+      "structural_checks": {
+        "unprocessed_inputs": 0
+      },
+      "workbook_differences": []
+    },
+    {
+      "case": "coal-mixed-payment",
+      "format": "pdf-mixed",
+      "purpose": "payment",
+      "content_group": "coal-pack",
+      "expected_routes": [
+        "A",
+        "B"
+      ],
+      "phase": "extracted",
+      "valid": true,
+      "completed": true,
+      "timed_out": false,
+      "error": null,
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "tool_version": "2.1.286 (Claude Code)",
+      "package_version": "0.3.10",
+      "artifact_hash": "ae4f97a3986e5ba7bdd59d54db19ad4a6d3663f2eaa4818cd41ecaf6ebfe6942",
+      "dataset_hash": "942184c347ea25c670b15f041a3db6e03bc2f9a762964d525e45594620d65db0",
+      "raw_extraction_hash": "97438a38cc6568491ecfb714009fcc4892db3a34127822251efda82d57b464cc",
+      "output_sha256": "a627c2fbd6c3d7a03b174b722ef6e87b19b807f6f0a6f386acf63b6ccd01040f",
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "elapsed_seconds": 86.69,
+      "reported_cost_usd": 0.6124,
+      "permission_denials": 2,
+      "opening_status": "requires_review",
+      "question_occurrences": 1,
+      "opening_tool_uses_requiring_review": 0,
+      "opening_workspace_unchanged": true,
+      "policy_reply_actor": "scripted_public_fixture",
+      "policy_reply": "No, but I will read it before I upload any confidential data",
+      "question_repeated_after_reply": false,
+      "raw_status": "not_configured",
+      "trace": {
+        "page_image_reads": [
+          "input-0001/page-0001.png",
+          "input-0001/page-0002.png"
+        ],
+        "pdf_reads": 0,
+        "scripts": [
+          "reading_capabilities.py",
+          "reading_capabilities.py",
+          "check_setup.py",
+          "new_run.py",
+          "pdf_routes.py",
+          "process.py"
+        ],
+        "denied": [
+          {
+            "tool": "Bash",
+            "scripts": [],
+            "compound": true
+          },
+          {
+            "tool": "Bash",
+            "scripts": [
+              "reading_capabilities.py"
+            ],
+            "compound": true
+          }
+        ],
+        "turns": [
+          {
+            "kind": "start",
+            "result": "success",
+            "agent_turns": 2,
+            "elapsed_seconds": 8.97
+          },
+          {
+            "kind": "policy_response",
+            "result": "success",
+            "agent_turns": 21,
+            "elapsed_seconds": 77.72
+          }
+        ]
+      },
+      "opening_layout": {
+        "question_count": 1,
+        "both_reply_choices_verbatim": true,
+        "question_in_bold": true,
+        "announcement_before_question": true,
+        "text_after_choices": "Any answer is fine, and I'll continue as soon as you reply."
+      },
+      "batch": "20261010-harness-v2-claude-session",
+      "session_harness": "claude-session-v2",
+      "workbook": {
+        "correct": 21,
+        "denominator": 21,
+        "correct_blank": 14,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 2,
+        "actual": 2,
+        "matched": 2,
+        "missing": 0,
+        "extra": 0
+      },
+      "requested_values": {
+        "expected": 4,
+        "actual": 4,
+        "matched": 4,
+        "missing": 0,
+        "extra": 0
+      },
+      "workbook_page_errors": 0,
+      "review_flags": {
+        "true_positive": 2
+      },
+      "structural_checks": {
+        "unprocessed_inputs": 0
+      },
+      "workbook_differences": []
+    },
+    {
+      "case": "coal-ocr-energy",
+      "format": "pdf-ocr",
+      "purpose": "coal-energy",
+      "content_group": "coal-pack",
+      "expected_routes": [
+        "C",
+        "C"
+      ],
+      "phase": "extracted",
+      "valid": true,
+      "completed": true,
+      "timed_out": false,
+      "error": null,
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "tool_version": "2.1.286 (Claude Code)",
+      "package_version": "0.3.10",
+      "artifact_hash": "ae4f97a3986e5ba7bdd59d54db19ad4a6d3663f2eaa4818cd41ecaf6ebfe6942",
+      "dataset_hash": "89fb8d67d5a7d506dbc0100edd1f9be4b37093e5da160d6b2b925aa53f883c1a",
+      "raw_extraction_hash": "09ef097ffdae064f9fbea1256a0e06986014f3dd7a59625e537b33125564727c",
+      "output_sha256": "6417f6cf49c3a2890197dd122684877ca45fff3e8292e6bef05f39c84dff2b92",
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "elapsed_seconds": 124.61,
+      "reported_cost_usd": 0.7306,
+      "permission_denials": 3,
+      "opening_status": "requires_review",
+      "question_occurrences": 1,
+      "opening_tool_uses_requiring_review": 0,
+      "opening_workspace_unchanged": true,
+      "policy_reply_actor": "scripted_public_fixture",
+      "policy_reply": "No, but I will read it before I upload any confidential data",
+      "question_repeated_after_reply": false,
+      "raw_status": "not_configured",
+      "trace": {
+        "page_image_reads": [
+          "input-0001/page-0001.png",
+          "input-0001/page-0002.png",
+          "recovery-1/page-0001.png",
+          "recovery-2/page-0002.png"
+        ],
+        "pdf_reads": 0,
+        "scripts": [
+          "check_setup.py",
+          "new_run.py",
+          "reading_capabilities.py",
+          "pdf_routes.py",
+          "pdf_routes.py",
+          "render_pages.py",
+          "render_pages.py",
+          "process.py"
+        ],
+        "denied": [
+          {
+            "tool": "Bash",
+            "scripts": [],
+            "compound": true
+          },
+          {
+            "tool": "Bash",
+            "scripts": [
+              "pdf_routes.py"
+            ],
+            "compound": true
+          },
+          {
+            "tool": "Bash",
+            "scripts": [],
+            "compound": true
+          }
+        ],
+        "turns": [
+          {
+            "kind": "start",
+            "result": "success",
+            "agent_turns": 2,
+            "elapsed_seconds": 11.69
+          },
+          {
+            "kind": "policy_response",
+            "result": "success",
+            "agent_turns": 30,
+            "elapsed_seconds": 112.92
+          }
+        ]
+      },
+      "opening_layout": {
+        "question_count": 1,
+        "both_reply_choices_verbatim": true,
+        "question_in_bold": true,
+        "announcement_before_question": true,
+        "text_after_choices": ""
+      },
+      "batch": "20261010-harness-v2-claude-session",
+      "session_harness": "claude-session-v2",
+      "workbook": {
+        "correct": 25,
+        "denominator": 25,
+        "correct_blank": 15,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 2,
+        "actual": 2,
+        "matched": 2,
+        "missing": 0,
+        "extra": 0
+      },
+      "requested_values": {
+        "expected": 5,
+        "actual": 5,
+        "matched": 5,
+        "missing": 0,
+        "extra": 0
+      },
+      "workbook_page_errors": 0,
+      "review_flags": {
+        "true_positive": 2
+      },
+      "structural_checks": {
+        "unprocessed_inputs": 0
+      },
+      "workbook_differences": []
+    },
+    {
+      "case": "coal-ocr-payment",
+      "format": "pdf-ocr",
+      "purpose": "payment",
+      "content_group": "coal-pack",
+      "expected_routes": [
+        "C",
+        "C"
+      ],
+      "phase": "extracted",
+      "valid": true,
+      "completed": true,
+      "timed_out": false,
+      "error": null,
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "tool_version": "2.1.286 (Claude Code)",
+      "package_version": "0.3.10",
+      "artifact_hash": "ae4f97a3986e5ba7bdd59d54db19ad4a6d3663f2eaa4818cd41ecaf6ebfe6942",
+      "dataset_hash": "23b53e701fb5fc5e322a35e5d2d3496ab5d122e94c751cf44931725192460ca1",
+      "raw_extraction_hash": "b8862b9da8ab18f8a858fda7e8c65df8243a8838b27877dfb3b554d3f2a8eb5b",
+      "output_sha256": "6e29faaa34d69527086aa9a4b889705e320695f27261d01e74c9100c6aa19664",
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "elapsed_seconds": 109.65,
+      "reported_cost_usd": 0.6093,
+      "permission_denials": 1,
+      "opening_status": "requires_review",
+      "question_occurrences": 1,
+      "opening_tool_uses_requiring_review": 0,
+      "opening_workspace_unchanged": true,
+      "policy_reply_actor": "scripted_public_fixture",
+      "policy_reply": "No, but I will read it before I upload any confidential data",
+      "question_repeated_after_reply": false,
+      "raw_status": "not_configured",
+      "trace": {
+        "page_image_reads": [
+          "input-0001/page-0001.png",
+          "input-0001/page-0002.png"
+        ],
+        "pdf_reads": 0,
+        "scripts": [
+          "check_setup.py",
+          "new_run.py",
+          "reading_capabilities.py",
+          "pdf_routes.py",
+          "process.py"
+        ],
+        "denied": [
+          {
+            "tool": "Bash",
+            "scripts": [],
+            "compound": true
+          }
+        ],
+        "turns": [
+          {
+            "kind": "start",
+            "result": "success",
+            "agent_turns": 2,
+            "elapsed_seconds": 10.34
+          },
+          {
+            "kind": "policy_response",
+            "result": "success",
+            "agent_turns": 19,
+            "elapsed_seconds": 99.31
+          }
+        ]
+      },
+      "opening_layout": {
+        "question_count": 1,
+        "both_reply_choices_verbatim": true,
+        "question_in_bold": true,
+        "announcement_before_question": true,
+        "text_after_choices": "Once you answer, I'll read coal-ocr.pdf, pull out the fields listed in custom.md, use company-profile.xlsx, and save the results to output.xlsx."
+      },
+      "batch": "20261010-harness-v2-claude-session",
+      "session_harness": "claude-session-v2",
+      "workbook": {
+        "correct": 21,
+        "denominator": 21,
+        "correct_blank": 14,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 2,
+        "actual": 2,
+        "matched": 2,
+        "missing": 0,
+        "extra": 0
+      },
+      "requested_values": {
+        "expected": 4,
+        "actual": 4,
+        "matched": 4,
+        "missing": 0,
+        "extra": 0
+      },
+      "workbook_page_errors": 0,
+      "review_flags": {
+        "true_positive": 2
+      },
+      "structural_checks": {
+        "unprocessed_inputs": 0
+      },
+      "workbook_differences": []
+    },
+    {
+      "case": "coal-payment",
+      "format": "printed-pdf-certificate",
+      "purpose": "payment",
+      "content_group": "coal-pack",
+      "expected_routes": [],
+      "phase": "extracted",
+      "valid": true,
+      "completed": true,
+      "timed_out": false,
+      "error": null,
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "tool_version": "2.1.286 (Claude Code)",
+      "package_version": "0.3.10",
+      "artifact_hash": "ae4f97a3986e5ba7bdd59d54db19ad4a6d3663f2eaa4818cd41ecaf6ebfe6942",
+      "dataset_hash": "c0dd991a74140158c65dcc01d1362e16e2c8b698bdf98ead2e3e66e522ce4518",
+      "raw_extraction_hash": "3b275e09a5b23147c27e34ccb5737db19bfcb219aa5dcab3ae627b15969d3866",
+      "output_sha256": "8bdc72a6066a638ee923bad8db2fe871f5febc8c155cf2517a0e76d5e5af8da0",
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "elapsed_seconds": 80.36,
+      "reported_cost_usd": 0.5781,
+      "permission_denials": 1,
+      "opening_status": "requires_review",
+      "question_occurrences": 1,
+      "opening_tool_uses_requiring_review": 0,
+      "opening_workspace_unchanged": true,
+      "policy_reply_actor": "scripted_public_fixture",
+      "policy_reply": "No, but I will read it before I upload any confidential data",
+      "question_repeated_after_reply": false,
+      "raw_status": "not_configured",
+      "trace": {
+        "page_image_reads": [
+          "input-0001/page-0001.png",
+          "input-0001/page-0002.png"
+        ],
+        "pdf_reads": 0,
+        "scripts": [
+          "check_setup.py",
+          "new_run.py",
+          "reading_capabilities.py",
+          "pdf_routes.py",
+          "pdf_routes.py",
+          "process.py"
+        ],
+        "denied": [
+          {
+            "tool": "Bash",
+            "scripts": [
+              "pdf_routes.py"
+            ],
+            "compound": true
+          }
+        ],
+        "turns": [
+          {
+            "kind": "start",
+            "result": "success",
+            "agent_turns": 2,
+            "elapsed_seconds": 8.2
+          },
+          {
+            "kind": "policy_response",
+            "result": "success",
+            "agent_turns": 23,
+            "elapsed_seconds": 72.16
+          }
+        ]
+      },
+      "opening_layout": {
+        "question_count": 1,
+        "both_reply_choices_verbatim": true,
+        "question_in_bold": true,
+        "announcement_before_question": true,
+        "text_after_choices": ""
+      },
+      "batch": "20261010-harness-v2-claude-session",
+      "session_harness": "claude-session-v2",
+      "workbook": {
+        "correct": 21,
+        "denominator": 21,
+        "correct_blank": 14,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 2,
+        "actual": 2,
+        "matched": 2,
+        "missing": 0,
+        "extra": 0
+      },
+      "requested_values": {
+        "expected": 4,
+        "actual": 4,
+        "matched": 4,
+        "missing": 0,
+        "extra": 0
+      },
+      "workbook_page_errors": 0,
+      "review_flags": {
+        "true_positive": 2
+      },
+      "structural_checks": {
+        "unprocessed_inputs": 0
+      },
+      "workbook_differences": []
+    },
+    {
+      "case": "coal-scan-energy",
+      "format": "pdf-scan",
+      "purpose": "coal-energy",
+      "content_group": "coal-pack",
+      "expected_routes": [
+        "B",
+        "B"
+      ],
+      "phase": "extracted",
+      "valid": true,
+      "completed": true,
+      "timed_out": false,
+      "error": null,
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "tool_version": "2.1.286 (Claude Code)",
+      "package_version": "0.3.10",
+      "artifact_hash": "ae4f97a3986e5ba7bdd59d54db19ad4a6d3663f2eaa4818cd41ecaf6ebfe6942",
+      "dataset_hash": "66fc6cc3d9e1e96edaeb7717cb4a795912c35d19c44f7d84b89c422af627aad8",
+      "raw_extraction_hash": "1d8a112c9e41bf1d5aeb56aa001376d92c7ee72ded416bd589e2e1ea4ef93857",
+      "output_sha256": "fa8ea90fa90125015cfca66eadeb8b361bf96ab818df01a95c5aa914f6db35ca",
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "elapsed_seconds": 122.13,
+      "reported_cost_usd": 0.6806,
+      "permission_denials": 3,
+      "opening_status": "requires_review",
+      "question_occurrences": 1,
+      "opening_tool_uses_requiring_review": 0,
+      "opening_workspace_unchanged": true,
+      "policy_reply_actor": "scripted_public_fixture",
+      "policy_reply": "No, but I will read it before I upload any confidential data",
+      "question_repeated_after_reply": false,
+      "raw_status": "not_configured",
+      "trace": {
+        "page_image_reads": [
+          "input-0001/page-0001.png",
+          "input-0001/page-0002.png"
+        ],
+        "pdf_reads": 0,
+        "scripts": [
+          "reading_capabilities.py",
+          "new_run.py",
+          "pdf_routes.py",
+          "pdf_routes.py",
+          "process.py"
+        ],
+        "denied": [
+          {
+            "tool": "Bash",
+            "scripts": [],
+            "compound": true
+          },
+          {
+            "tool": "Bash",
+            "scripts": [
+              "pdf_routes.py"
+            ],
+            "compound": true
+          },
+          {
+            "tool": "Bash",
+            "scripts": [],
+            "compound": true
+          }
+        ],
+        "turns": [
+          {
+            "kind": "start",
+            "result": "success",
+            "agent_turns": 2,
+            "elapsed_seconds": 10.99
+          },
+          {
+            "kind": "policy_response",
+            "result": "success",
+            "agent_turns": 28,
+            "elapsed_seconds": 111.14
+          }
+        ]
+      },
+      "opening_layout": {
+        "question_count": 1,
+        "both_reply_choices_verbatim": true,
+        "question_in_bold": true,
+        "announcement_before_question": true,
+        "text_after_choices": "I'll start reading the document once you reply."
+      },
+      "batch": "20261010-harness-v2-claude-session",
+      "session_harness": "claude-session-v2",
+      "workbook": {
+        "correct": 25,
+        "denominator": 25,
+        "correct_blank": 15,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 2,
+        "actual": 2,
+        "matched": 2,
+        "missing": 0,
+        "extra": 0
+      },
+      "requested_values": {
+        "expected": 5,
+        "actual": 5,
+        "matched": 5,
+        "missing": 0,
+        "extra": 0
+      },
+      "workbook_page_errors": 0,
+      "review_flags": {
+        "true_positive": 2
+      },
+      "structural_checks": {
+        "unprocessed_inputs": 0
+      },
+      "workbook_differences": []
+    },
+    {
+      "case": "coal-scan-payment",
+      "format": "pdf-scan",
+      "purpose": "payment",
+      "content_group": "coal-pack",
+      "expected_routes": [
+        "B",
+        "B"
+      ],
+      "phase": "extracted",
+      "valid": true,
+      "completed": true,
+      "timed_out": false,
+      "error": null,
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "tool_version": "2.1.286 (Claude Code)",
+      "package_version": "0.3.10",
+      "artifact_hash": "ae4f97a3986e5ba7bdd59d54db19ad4a6d3663f2eaa4818cd41ecaf6ebfe6942",
+      "dataset_hash": "d43655b9d9002adb45e5c7d8427bc171e45282f86e0e7639eae923e98fb6af4a",
+      "raw_extraction_hash": "046529945042b2afce7083a4ff8d52ac0f528d45c298925cb2fa65e3b2f7d49b",
+      "output_sha256": "4de71de733658062287ac9bfc55c89d652706396135bcbd3c94279a395d9f538",
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "elapsed_seconds": 89.81,
+      "reported_cost_usd": 0.6256,
+      "permission_denials": 2,
+      "opening_status": "requires_review",
+      "question_occurrences": 1,
+      "opening_tool_uses_requiring_review": 0,
+      "opening_workspace_unchanged": true,
+      "policy_reply_actor": "scripted_public_fixture",
+      "policy_reply": "No, but I will read it before I upload any confidential data",
+      "question_repeated_after_reply": false,
+      "raw_status": "not_configured",
+      "trace": {
+        "page_image_reads": [
+          "input-0001/page-0001.png",
+          "input-0001/page-0002.png"
+        ],
+        "pdf_reads": 0,
+        "scripts": [
+          "check_setup.py",
+          "reading_capabilities.py",
+          "new_run.py",
+          "pdf_routes.py",
+          "pdf_routes.py",
+          "process.py"
+        ],
+        "denied": [
+          {
+            "tool": "Bash",
+            "scripts": [
+              "pdf_routes.py"
+            ],
+            "compound": true
+          },
+          {
+            "tool": "Bash",
+            "scripts": [],
+            "compound": false
+          }
+        ],
+        "turns": [
+          {
+            "kind": "start",
+            "result": "success",
+            "agent_turns": 2,
+            "elapsed_seconds": 9.69
+          },
+          {
+            "kind": "policy_response",
+            "result": "success",
+            "agent_turns": 25,
+            "elapsed_seconds": 80.12
+          }
+        ]
+      },
+      "opening_layout": {
+        "question_count": 1,
+        "both_reply_choices_verbatim": true,
+        "question_in_bold": true,
+        "announcement_before_question": true,
+        "text_after_choices": "Either answer is fine. I'll start as soon as you reply."
+      },
+      "batch": "20261010-harness-v2-claude-session",
+      "session_harness": "claude-session-v2",
+      "workbook": {
+        "correct": 21,
+        "denominator": 21,
+        "correct_blank": 14,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 2,
+        "actual": 2,
+        "matched": 2,
+        "missing": 0,
+        "extra": 0
+      },
+      "requested_values": {
+        "expected": 4,
+        "actual": 4,
+        "matched": 4,
+        "missing": 0,
+        "extra": 0
+      },
+      "workbook_page_errors": 0,
+      "review_flags": {
+        "true_positive": 2
+      },
+      "structural_checks": {
+        "unprocessed_inputs": 0
+      },
+      "workbook_differences": []
+    },
+    {
+      "case": "digit-boundary-v1",
+      "format": "synthetic-raster-print",
+      "purpose": "digit-boundary-v1",
+      "content_group": "digit-boundary-v1",
+      "expected_routes": [
+        "B",
+        "B",
+        "B"
+      ],
+      "phase": "extracted",
+      "valid": true,
+      "completed": true,
+      "timed_out": false,
+      "error": null,
+      "model_requested": "claude-opus-5-5",
+      "model_reported": "claude-opus-5-5",
+      "tool_version": "2.1.286 (Claude Code)",
+      "package_version": "0.3.10",
+      "artifact_hash": "ae4f97a3986e5ba7bdd59d54db19ad4a6d3663f2eaa4818cd41ecaf6ebfe6942",
+      "dataset_hash": "4f1e780a2a78956b2d4162eaa0dd43ef0b6432ee61e81df9eec57ac99cd240a9",
+      "raw_extraction_hash": "1ce42a7d3f7b3a29bfcb8467654a8b0dd94d461bcbf15b94765950f7d4ba262d",
+      "output_sha256": "8f0ea5aa3d7473680a4315b85b9df7ab52a0774bca68c2d396270e8bdcf9812e",
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "elapsed_seconds": 102.45,
+      "reported_cost_usd": 0.7702,
+      "permission_denials": 2,
+      "opening_status": "requires_review",
+      "question_occurrences": 1,
+      "opening_tool_uses_requiring_review": 0,
+      "opening_workspace_unchanged": true,
+      "policy_reply_actor": "scripted_public_fixture",
+      "policy_reply": "No, but I will read it before I upload any confidential data",
+      "question_repeated_after_reply": false,
+      "raw_status": "scored",
+      "trace": {
+        "page_image_reads": [
+          "input-0001/page-0001.png",
+          "input-0001/page-0002.png",
+          "input-0001/page-0003.png",
+          "recovery-1/page-0001.png",
+          "recovery-1/page-0002.png",
+          "recovery-1/page-0003.png"
+        ],
+        "pdf_reads": 0,
+        "scripts": [
+          "check_setup.py",
+          "new_run.py",
+          "reading_capabilities.py",
+          "pdf_routes.py",
+          "pdf_routes.py",
+          "render_pages.py",
+          "process.py"
+        ],
+        "denied": [
+          {
+            "tool": "Bash",
+            "scripts": [
+              "pdf_routes.py"
+            ],
+            "compound": true
+          },
+          {
+            "tool": "Bash",
+            "scripts": [],
+            "compound": true
+          }
+        ],
+        "turns": [
+          {
+            "kind": "start",
+            "result": "success",
+            "agent_turns": 2,
+            "elapsed_seconds": 10.06
+          },
+          {
+            "kind": "policy_response",
+            "result": "success",
+            "agent_turns": 33,
+            "elapsed_seconds": 92.39
+          }
+        ]
+      },
+      "opening_layout": {
+        "question_count": 1,
+        "both_reply_choices_verbatim": true,
+        "question_in_bold": true,
+        "announcement_before_question": true,
+        "text_after_choices": ""
+      },
+      "batch": "20261010-harness-v2-claude-session",
+      "session_harness": "claude-session-v2",
+      "workbook": {
+        "correct": 15,
+        "denominator": 15,
+        "correct_blank": 3,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "documents": {
+        "expected": 3,
+        "actual": 3,
+        "matched": 3,
+        "missing": 0,
+        "extra": 0
+      },
+      "requested_values": {
+        "expected": 3,
+        "actual": 3,
+        "matched": 3,
+        "missing": 0,
+        "extra": 0
+      },
+      "workbook_page_errors": 0,
+      "review_flags": {},
+      "structural_checks": {
+        "unprocessed_inputs": 0
+      },
+      "workbook_differences": [],
+      "raw": {
+        "correct": 13,
+        "denominator": 13,
+        "correct_blank": 2,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0
+      },
+      "raw_documents": {
+        "expected": 3,
+        "actual": 3,
+        "matched": 3,
+        "missing": 0,
+        "extra": 0
+      },
+      "raw_requested_values": {
+        "expected": 3,
+        "actual": 3,
+        "matched": 3,
+        "missing": 0,
+        "extra": 0
+      },
+      "raw_line_items": {
+        "expected": 0,
+        "actual": 0,
+        "matched": 0,
+        "missing": 0,
+        "extra": 0
+      },
+      "raw_page_errors": 0,
+      "raw_differences": []
+    }
+  ]
+}

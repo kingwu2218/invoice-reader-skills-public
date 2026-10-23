@@ -1,0 +1,35 @@
+{
+  "raw_tables": {
+    "Raw line items": {
+      "identity": ["File", "Pages", "Document type", "Document occurrence", "Line"],
+      "columns": [
+        {"label": "item.description", "kind": "text"},
+        {"label": "item.quantity", "kind": "text"},
+        {"label": "item.unit", "kind": "text"},
+        {"label": "item.unit_price", "kind": "text"},
+        {"label": "item.line_total", "kind": "text"}
+      ],
+      "rows": [
+        {"File": "invented-lines.pdf", "Pages": "1", "Document type": "Invoice", "Document occurrence": "1", "Line": "1", "item.description": "Reusable housings", "item.quantity": "2", "item.unit": "box", "item.unit_price": "1,250.00", "item.line_total": "2,490.00"},
+        {"File": "invented-lines.pdf", "Pages": "1", "Document type": "Invoice", "Document occurrence": "1", "Line": "2", "item.description": "Inspection", "item.quantity": "1", "item.unit": "visit", "item.unit_price": "310-", "item.line_total": "310-"},
+        {"File": "invented-lines.pdf", "Pages": "1", "Document type": "Invoice", "Document occurrence": "2", "Line": "1", "item.description": "Calibration", "item.quantity": "1", "item.unit": "lot", "item.unit_price": "45.00", "item.line_total": "45.00"},
+        {"File": "invented-lines.pdf", "Pages": "1", "Document type": "Invoice", "Document occurrence": "2", "Line": "2"}
+      ]
+    },
+    "Raw statement lines": {
+      "identity": ["File", "Pages", "Document type", "Document occurrence", "Line"],
+      "columns": [
+        {"label": "item.date", "kind": "text"},
+        {"label": "item.reference", "kind": "text"},
+        {"label": "item.description", "kind": "text"},
+        {"label": "item.debit", "kind": "text"},
+        {"label": "item.credit", "kind": "text"},
+        {"label": "item.balance", "kind": "text"}
+      ],
+      "rows": [
+        {"File": "invented-lines.pdf", "Pages": "2", "Document type": "Statement of account", "Document occurrence": "1", "Line": "1", "item.date": "04 10 2026", "item.reference": "INV-009", "item.description": "Opening charge", "item.debit": "2,490.00", "item.balance": "2,490.00"},
+        {"File": "invented-lines.pdf", "Pages": "2", "Document type": "Statement of account", "Document occurrence": "1", "Line": "2", "item.date": "06 10 2026", "item.reference": "000041", "item.description": "Payment received", "item.credit": "1,000.00", "item.balance": "1,490.00"}
+      ]
+    }
+  }
+}

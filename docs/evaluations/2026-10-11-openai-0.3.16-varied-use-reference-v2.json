@@ -1,0 +1,330 @@
+{
+  "reference_version": "varied-use-v2",
+  "timing": "Retrospective reference erratum after observing both model outputs; not a prospectively frozen pass or a new model execution.",
+  "change": "Only certificate Document type changes from Other (worksheet bucket) to Lab certificate (existing extraction contract). Printed answers, identity columns and scorer are unchanged.",
+  "package_version": "0.3.16",
+  "package_sha256": "2f03d23ca01d755c4cf6ed94c752d809ef03df201a94a26d8b8c49dc11bd7743",
+  "requested_model": "gpt-6.1-sol",
+  "provider": "OpenAI via existing Codex ChatGPT login",
+  "model_reported": "Unknown",
+  "plan_sha256": "103679b1c35492b5d66c029b43f52a53087626137e84c830e1f307c0d6ff6155",
+  "reference_hashes": {
+    "eval/workflows/varied-use-v2/payment.json": "b915e4ef581ba599add824b8e15cd19f4c08b2887efba0ef153f6c591a6d5ec7",
+    "eval/workflows/varied-use-v2/quality.json": "79f5b3036123892e6969fd2ab3c1c6c010bb5670650557f5b0aed9afd220fcb3"
+  },
+  "reviewer_sha256": "4aa8a1ad9714d43f0f41d035e25143822c46a9eaf1ca50e5d4a4b8d24b1176aa",
+  "rows": [
+    {
+      "trial": 1,
+      "purpose": "payment",
+      "layer": "raw",
+      "original_correct": 42,
+      "original_denominator": 48,
+      "correct": 45,
+      "denominator": 45,
+      "correct_blank": 31,
+      "cells": {
+        "correct": 45,
+        "correct_blank": 31
+      },
+      "tables": {
+        "Raw documents": {
+          "expected": 4,
+          "actual": 4,
+          "matched": 4,
+          "extra": 0
+        },
+        "Raw line items": {
+          "expected": 3,
+          "actual": 3,
+          "matched": 3,
+          "extra": 0
+        },
+        "Raw requested values": {
+          "expected": 8,
+          "actual": 8,
+          "matched": 8,
+          "extra": 0
+        }
+      },
+      "checks": {},
+      "details": [],
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 45,
+          "denominator": 45,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 45,
+          "denominator": 45,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 45,
+          "denominator": 45,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "raw_sha256": "5eada8f83a621f142629f77436c9f1ba54639ec63728c5830267da3e6f03f624",
+      "workbook_sha256": "6c62babddc96cb38cdab0d775ec9a3c6e980901868c70d55ccd0f91806dfac61",
+      "original_score_sha256": "8c75fc1e915af2f159b63a54223be4ddb2d14fa46336ae3b42b42c0ddf1e67cb"
+    },
+    {
+      "trial": 1,
+      "purpose": "payment",
+      "layer": "workbook",
+      "original_correct": 51,
+      "original_denominator": 59,
+      "correct": 55,
+      "denominator": 55,
+      "correct_blank": 28,
+      "cells": {
+        "correct": 55,
+        "correct_blank": 28
+      },
+      "tables": {
+        "Billing documents": {
+          "expected": 3,
+          "actual": 3,
+          "matched": 3,
+          "extra": 0
+        },
+        "Other": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Line items": {
+          "expected": 3,
+          "actual": 3,
+          "matched": 3,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 4,
+          "actual": 4,
+          "matched": 4,
+          "extra": 0
+        },
+        "Requested values": {
+          "expected": 8,
+          "actual": 8,
+          "matched": 8,
+          "extra": 0
+        }
+      },
+      "checks": {
+        "unprocessed_inputs": 0
+      },
+      "details": [],
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 55,
+          "denominator": 55,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 55,
+          "denominator": 55,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 55,
+          "denominator": 55,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 4,
+          "denominator": 4,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 4,
+          "denominator": 4,
+          "rate": 1.0
+        }
+      },
+      "raw_sha256": "5eada8f83a621f142629f77436c9f1ba54639ec63728c5830267da3e6f03f624",
+      "workbook_sha256": "6c62babddc96cb38cdab0d775ec9a3c6e980901868c70d55ccd0f91806dfac61",
+      "original_score_sha256": "f819d5850f4d50f4e6ee4fa9d76bf15c9c6952d960943ee92c5fa9745b5bba9a"
+    },
+    {
+      "trial": 2,
+      "purpose": "quality",
+      "layer": "raw",
+      "original_correct": 37,
+      "original_denominator": 81,
+      "correct": 59,
+      "denominator": 59,
+      "correct_blank": 47,
+      "cells": {
+        "correct": 59,
+        "correct_blank": 47
+      },
+      "tables": {
+        "Raw documents": {
+          "expected": 4,
+          "actual": 4,
+          "matched": 4,
+          "extra": 0
+        },
+        "Raw line items": {
+          "expected": 3,
+          "actual": 3,
+          "matched": 3,
+          "extra": 0
+        },
+        "Raw requested values": {
+          "expected": 14,
+          "actual": 14,
+          "matched": 14,
+          "extra": 0
+        }
+      },
+      "checks": {},
+      "details": [],
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 59,
+          "denominator": 59,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 59,
+          "denominator": 59,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 59,
+          "denominator": 59,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "raw_sha256": "53cf84714ff4fee0ab6eec83d7487606abb479f4250eff1ae131e8dfe53cce57",
+      "workbook_sha256": "a9823ed9b3defc4ed409f30e2a94135d15b83c9826ba467a3e7670faee471acb",
+      "original_score_sha256": "8f732250ab4374df2f68106a26edf22eea486237b90fd532eae6794c1efc7766"
+    },
+    {
+      "trial": 2,
+      "purpose": "quality",
+      "layer": "workbook",
+      "original_correct": 42,
+      "original_denominator": 92,
+      "correct": 67,
+      "denominator": 67,
+      "correct_blank": 50,
+      "cells": {
+        "correct": 67,
+        "correct_blank": 50
+      },
+      "tables": {
+        "Billing documents": {
+          "expected": 3,
+          "actual": 3,
+          "matched": 3,
+          "extra": 0
+        },
+        "Other": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Line items": {
+          "expected": 3,
+          "actual": 3,
+          "matched": 3,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 4,
+          "actual": 4,
+          "matched": 4,
+          "extra": 0
+        },
+        "Requested values": {
+          "expected": 14,
+          "actual": 14,
+          "matched": 14,
+          "extra": 0
+        }
+      },
+      "checks": {
+        "unprocessed_inputs": 0
+      },
+      "details": [],
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 67,
+          "denominator": 67,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 67,
+          "denominator": 67,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 67,
+          "denominator": 67,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 4,
+          "denominator": 4,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 4,
+          "denominator": 4,
+          "rate": 1.0
+        }
+      },
+      "raw_sha256": "53cf84714ff4fee0ab6eec83d7487606abb479f4250eff1ae131e8dfe53cce57",
+      "workbook_sha256": "a9823ed9b3defc4ed409f30e2a94135d15b83c9826ba467a3e7670faee471acb",
+      "original_score_sha256": "88c7fa8b4dbe8331a4d6c326c2489c277edaa7c13e0afd16459e24f6b085faad"
+    }
+  ],
+  "totals": {
+    "raw": {
+      "cells": {
+        "correct": 104,
+        "correct_blank": 78
+      },
+      "correct": 104,
+      "denominator": 104,
+      "correct_blank": 78
+    },
+    "workbook": {
+      "cells": {
+        "correct": 122,
+        "correct_blank": 78
+      },
+      "correct": 122,
+      "denominator": 122,
+      "correct_blank": 78
+    }
+  }
+}

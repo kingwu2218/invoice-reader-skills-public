@@ -1,0 +1,35 @@
+{
+  "scope": "Supplementary runtime-command and environment observations; not a change to frozen v9 opening or extraction scoring.",
+  "rows": [
+    {
+      "trial": 1,
+      "phase": "reply",
+      "probe_calls": 1,
+      "prepare_calls": 1,
+      "runtime_prepare_success": true,
+      "same_probe_prepare_environment": true,
+      "reused_prior_verified_environment": false,
+      "one_route_report": true,
+      "render_status": "usable",
+      "pdfium_version": "5.14.0",
+      "python_version": "3.14.5",
+      "route_sha256": "0174627a85480cd9323cac321e431df8a74e710d0eed2426d82d8a85aa7fda08",
+      "stream_sha256": "5c4286283ab67864134fede94a009e28b31cc450cd3a8f818853c5eec5dba0d9"
+    },
+    {
+      "trial": 2,
+      "phase": "reply",
+      "probe_calls": 1,
+      "prepare_calls": 1,
+      "runtime_prepare_success": true,
+      "same_probe_prepare_environment": true,
+      "reused_prior_verified_environment": false,
+      "one_route_report": true,
+      "render_status": "usable",
+      "pdfium_version": "5.14.0",
+      "python_version": "3.14.5",
+      "route_sha256": "c1e5f070c8acb301ec4eed567fe19769599d153eb9a571eddfb90e4daed0a483",
+      "stream_sha256": "42356089acb582f672628964cf65a98accb0e3bc538f8b99d2995e8c1c213849"
+    }
+  ]
+}

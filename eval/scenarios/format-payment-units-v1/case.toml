@@ -1,0 +1,4 @@
+source = "fixtures/format-pack.pdf"
+medium = "printed-format"
+content_group = "format-pack"
+expected_routes = ["A"]

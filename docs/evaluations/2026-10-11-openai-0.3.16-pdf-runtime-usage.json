@@ -1,0 +1,65 @@
+{
+  "scope": "Supplementary runtime-command and environment observations; not a change to frozen v9 opening or extraction scoring.",
+  "rows": [
+    {
+      "trial": 1,
+      "phase": "reply",
+      "probe_calls": 1,
+      "prepare_calls": 1,
+      "runtime_prepare_success": true,
+      "same_probe_prepare_environment": true,
+      "reused_prior_verified_environment": false,
+      "one_route_report": true,
+      "render_status": "usable",
+      "pdfium_version": "5.14.0",
+      "python_version": "3.14.5",
+      "route_sha256": "a388adba4a35dd4aa91e272367bb0d6542cdf07808d642b2fa1cbb1cb69d851b",
+      "stream_sha256": "b06c905e7b82ad7cf535696132668185a5de1abf01bf1a029ce3768b6504d8d9"
+    },
+    {
+      "trial": 2,
+      "phase": "reply",
+      "probe_calls": 1,
+      "prepare_calls": 1,
+      "runtime_prepare_success": true,
+      "same_probe_prepare_environment": true,
+      "reused_prior_verified_environment": false,
+      "one_route_report": true,
+      "render_status": "usable",
+      "pdfium_version": "5.14.0",
+      "python_version": "3.14.5",
+      "route_sha256": "5b9cdd75ca0443023cbbcc2fc30630a41d2cdfea5cb316fe642edd2f544c769a",
+      "stream_sha256": "4004606bca3ffceebef32622cced818acae5a073b034bc4c309ee7e88231a83b"
+    },
+    {
+      "trial": 3,
+      "phase": "reply",
+      "probe_calls": 1,
+      "prepare_calls": 1,
+      "runtime_prepare_success": true,
+      "same_probe_prepare_environment": true,
+      "reused_prior_verified_environment": false,
+      "one_route_report": true,
+      "render_status": "usable",
+      "pdfium_version": "5.14.0",
+      "python_version": "3.14.5",
+      "route_sha256": "dcc3bf709247629b929f46649cf8d08950b72b1123fbf35f73c2c6c3c176e970",
+      "stream_sha256": "68a8eb70a9a18009e58b49faa8e594c39629d52a36c9489b65583b9db8c22364"
+    },
+    {
+      "trial": 1,
+      "phase": "followup",
+      "probe_calls": 1,
+      "prepare_calls": 1,
+      "runtime_prepare_success": true,
+      "same_probe_prepare_environment": true,
+      "reused_prior_verified_environment": true,
+      "one_route_report": true,
+      "render_status": "usable",
+      "pdfium_version": "5.14.0",
+      "python_version": "3.14.5",
+      "route_sha256": "5956774336e7af58aa058829d854e73dc4a95f325e8fc92f15649a260908cb43",
+      "stream_sha256": "83cd812d4f0ab61d1bc8a33ba23712dcb80feeea906f26230c97640270c06115"
+    }
+  ]
+}

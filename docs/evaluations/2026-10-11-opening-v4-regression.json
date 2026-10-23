@@ -1,0 +1,646 @@
+{
+  "scope": "Deterministic grader fixtures, not model extraction accuracy. Cases were authored and tested before the fresh chats.",
+  "grader_version": "codex-opening-v4",
+  "grader_sha256": "68bbcd1bea77397d2126f1edc423f283281c22150a1c1cf7cc9678bb2453d974",
+  "fixtures_sha256": "ae77c9f5a4e1f1c7b0ad98deb0aad0c779f017743068ddd20a40addc40cf2a5c",
+  "summary": {
+    "rejected_condition": {
+      "correct": 18,
+      "total": 18
+    },
+    "rejected_appended_requirement": {
+      "correct": 48,
+      "total": 48
+    },
+    "accepted_paraphrase": {
+      "correct": 12,
+      "total": 12
+    }
+  },
+  "rows": [
+    {
+      "category": "accepted_paraphrase",
+      "case": 1,
+      "expected_acceptance": true,
+      "actual_acceptance": true,
+      "correct": true,
+      "diagnostic": "recognised_wait_explanation"
+    },
+    {
+      "category": "accepted_paraphrase",
+      "case": 2,
+      "expected_acceptance": true,
+      "actual_acceptance": true,
+      "correct": true,
+      "diagnostic": "recognised_wait_explanation"
+    },
+    {
+      "category": "accepted_paraphrase",
+      "case": 3,
+      "expected_acceptance": true,
+      "actual_acceptance": true,
+      "correct": true,
+      "diagnostic": "recognised_wait_explanation"
+    },
+    {
+      "category": "accepted_paraphrase",
+      "case": 4,
+      "expected_acceptance": true,
+      "actual_acceptance": true,
+      "correct": true,
+      "diagnostic": "recognised_wait_explanation"
+    },
+    {
+      "category": "accepted_paraphrase",
+      "case": 5,
+      "expected_acceptance": true,
+      "actual_acceptance": true,
+      "correct": true,
+      "diagnostic": "recognised_wait_explanation"
+    },
+    {
+      "category": "accepted_paraphrase",
+      "case": 6,
+      "expected_acceptance": true,
+      "actual_acceptance": true,
+      "correct": true,
+      "diagnostic": "recognised_wait_explanation"
+    },
+    {
+      "category": "accepted_paraphrase",
+      "case": 7,
+      "expected_acceptance": true,
+      "actual_acceptance": true,
+      "correct": true,
+      "diagnostic": "recognised_wait_explanation"
+    },
+    {
+      "category": "accepted_paraphrase",
+      "case": 8,
+      "expected_acceptance": true,
+      "actual_acceptance": true,
+      "correct": true,
+      "diagnostic": "recognised_wait_explanation"
+    },
+    {
+      "category": "accepted_paraphrase",
+      "case": 9,
+      "expected_acceptance": true,
+      "actual_acceptance": true,
+      "correct": true,
+      "diagnostic": "recognised_wait_explanation"
+    },
+    {
+      "category": "accepted_paraphrase",
+      "case": 10,
+      "expected_acceptance": true,
+      "actual_acceptance": true,
+      "correct": true,
+      "diagnostic": "recognised_wait_explanation"
+    },
+    {
+      "category": "accepted_paraphrase",
+      "case": 11,
+      "expected_acceptance": true,
+      "actual_acceptance": true,
+      "correct": true,
+      "diagnostic": "recognised_wait_explanation"
+    },
+    {
+      "category": "accepted_paraphrase",
+      "case": 12,
+      "expected_acceptance": true,
+      "actual_acceptance": true,
+      "correct": true,
+      "diagnostic": "recognised_wait_explanation"
+    },
+    {
+      "category": "rejected_condition",
+      "case": 1,
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_condition",
+      "case": 2,
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_condition",
+      "case": 3,
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_condition",
+      "case": 4,
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_condition",
+      "case": 5,
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_condition",
+      "case": 6,
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_condition",
+      "case": 7,
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_condition",
+      "case": 8,
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_condition",
+      "case": 9,
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unsupported_explanation"
+    },
+    {
+      "category": "rejected_condition",
+      "case": 10,
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unsupported_explanation"
+    },
+    {
+      "category": "rejected_condition",
+      "case": 11,
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unsupported_explanation"
+    },
+    {
+      "category": "rejected_condition",
+      "case": 12,
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unsupported_explanation"
+    },
+    {
+      "category": "rejected_condition",
+      "case": 13,
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unsupported_explanation"
+    },
+    {
+      "category": "rejected_condition",
+      "case": 14,
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unsupported_explanation"
+    },
+    {
+      "category": "rejected_condition",
+      "case": 15,
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unsupported_explanation"
+    },
+    {
+      "category": "rejected_condition",
+      "case": 16,
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unsupported_explanation"
+    },
+    {
+      "category": "rejected_condition",
+      "case": 17,
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unsupported_explanation"
+    },
+    {
+      "category": "rejected_condition",
+      "case": 18,
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "1-1",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "1-2",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "1-3",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unexpected_opening_structure"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "1-4",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unsupported_explanation"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "2-1",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "2-2",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "2-3",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unexpected_opening_structure"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "2-4",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unsupported_explanation"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "3-1",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "3-2",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "3-3",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unexpected_opening_structure"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "3-4",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unsupported_explanation"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "4-1",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "4-2",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "4-3",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unexpected_opening_structure"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "4-4",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unsupported_explanation"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "5-1",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "5-2",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "5-3",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unexpected_opening_structure"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "5-4",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unsupported_explanation"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "6-1",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "6-2",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "6-3",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unexpected_opening_structure"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "6-4",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unsupported_explanation"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "7-1",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "7-2",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "7-3",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unexpected_opening_structure"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "7-4",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unsupported_explanation"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "8-1",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "8-2",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "8-3",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unexpected_opening_structure"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "8-4",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unsupported_explanation"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "9-1",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "9-2",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "9-3",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unexpected_opening_structure"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "9-4",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unsupported_explanation"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "10-1",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "10-2",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "10-3",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unexpected_opening_structure"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "10-4",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unsupported_explanation"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "11-1",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "11-2",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "11-3",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unexpected_opening_structure"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "11-4",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unsupported_explanation"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "12-1",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "12-2",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "extra_confirmation_or_yes_condition"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "12-3",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unexpected_opening_structure"
+    },
+    {
+      "category": "rejected_appended_requirement",
+      "case": "12-4",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "correct": true,
+      "diagnostic": "unsupported_explanation"
+    }
+  ]
+}

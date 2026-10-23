@@ -1,0 +1,4 @@
+source = "fixtures/dash-origin-printed-v1.pdf"
+medium = "printed-and-handwriting-style-font"
+content_group = "dash-origin-printed-v1"
+expected_routes = ["A", "A"]

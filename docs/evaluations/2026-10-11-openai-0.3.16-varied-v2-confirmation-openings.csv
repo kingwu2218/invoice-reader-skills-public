@@ -1,0 +1,3 @@
+﻿trial,status,strict_v2_format,format_status,observed_pause,allowed_disclosure,automatic_pass
+1,reviewed,requires_review,host_disclosure,True,True,True
+2,reviewed,requires_review,host_disclosure,True,True,True

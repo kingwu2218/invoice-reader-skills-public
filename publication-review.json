@@ -1,0 +1,1460 @@
+{
+  "version": 1,
+  "synthetic_matches": [
+    {
+      "file": ".gitattributes",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/resources/references/",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": ".gitattributes",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/references/",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "README.md",
+      "location": "text",
+      "category": "windows_path",
+      "value": "C:/...",
+      "reason": "Ellipsis placeholder illustrating a link format."
+    },
+    {
+      "file": "adapters/claude-code/eval_adapter.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/.claude/",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "adapters/claude-code/resources/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/check_setup.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "adapters/claude-code/resources/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/new_run.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "adapters/claude-code/resources/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/process.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "adapters/claude-code/resources/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/reading_capabilities.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "adapters/claude-code/resources/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/pdf_routes.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "adapters/codex/resources/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/check_setup.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "adapters/codex/resources/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/new_custom.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "adapters/codex/resources/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/new_profile.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "adapters/codex/resources/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/new_run.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "adapters/codex/resources/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/reading_capabilities.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "adapters/codex/resources/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/pdf_runtime.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "adapters/codex/resources/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/process.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "adapters/cursor/resources/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/pdf_runtime.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "adapters/cursor/resources/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/new_run.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "adapters/cursor/resources/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/process.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "adapters/gemini-cli/resources/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/reading_capabilities.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "adapters/gemini-cli/resources/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/new_run.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "adapters/gemini-cli/resources/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/pdf_routes.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "adapters/gemini-cli/resources/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/process.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "adapters/grok-build/resources/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/reading_capabilities.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "adapters/grok-build/resources/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/new_run.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "adapters/grok-build/resources/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/pdf_routes.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "adapters/grok-build/resources/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/process.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "dist/claude-code/invoice-reader-anthropic/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/check_setup.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "dist/claude-code/invoice-reader-anthropic/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/new_run.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "dist/claude-code/invoice-reader-anthropic/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/process.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "dist/claude-code/invoice-reader-anthropic/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/reading_capabilities.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "dist/claude-code/invoice-reader-anthropic/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/pdf_routes.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "dist/codex/invoice-reader-openai/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/check_setup.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "dist/codex/invoice-reader-openai/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/new_custom.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "dist/codex/invoice-reader-openai/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/new_profile.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "dist/codex/invoice-reader-openai/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/new_run.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "dist/codex/invoice-reader-openai/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/reading_capabilities.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "dist/codex/invoice-reader-openai/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/pdf_runtime.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "dist/codex/invoice-reader-openai/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/process.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "dist/cursor/invoice-reader-xai-cursor/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/pdf_runtime.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "dist/cursor/invoice-reader-xai-cursor/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/new_run.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "dist/cursor/invoice-reader-xai-cursor/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/process.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "dist/gemini-cli/invoice-reader-google/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/reading_capabilities.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "dist/gemini-cli/invoice-reader-google/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/new_run.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "dist/gemini-cli/invoice-reader-google/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/pdf_routes.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "dist/gemini-cli/invoice-reader-google/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/process.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "dist/grok-build/invoice-reader-xai/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/reading_capabilities.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "dist/grok-build/invoice-reader-xai/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/new_run.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "dist/grok-build/invoice-reader-xai/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/pdf_routes.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "dist/grok-build/invoice-reader-xai/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/process.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluation.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/eval/workflows/varied-use-v2/README.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluation.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/eval/workflows/varied-use-v1/README.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluation.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/eval/workflows/first-use-v1/README.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluation.md",
+      "location": "text",
+      "category": "windows_path",
+      "value": "C:/...",
+      "reason": "Ellipsis placeholder illustrating a link format."
+    },
+    {
+      "file": "docs/evaluation.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/eval/scenarios/dash-origin-printed-v2/README.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluation.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/eval/scorer-cases/raw-lines-v1/README.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluation.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/eval/scenarios/coal-scan-lines.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluations/2026-10-08-core-0.3.4-amount-dash.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../eval/processor-cases/amount-dash-v1/README.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluations/2026-10-08-openai-0.3.4-model.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../eval/scenarios/amount-dash-model-v1.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluations/2026-10-08-openai-0.3.4-scan-lines.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../eval/scenarios/coal-scan-lines.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluations/2026-10-08-raw-lines-regression.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../eval/scorer-cases/raw-lines-v1/README.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluations/2026-10-10-anthropic-0.3.10-repeats-and-fox.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/variables/",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluations/2026-10-11-openai-0.3.12-cash-memo.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../eval/fixtures/cash-memo-classification-v1.pdf",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluations/2026-10-11-openai-0.3.13-direct-fox-repeats.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../skills/openai/SKILL.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluations/2026-10-11-openai-0.3.13-direct-fox-repeats.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../skills/openai/references/handwritten-numbers.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluations/2026-10-11-openai-0.3.14-first-use.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../eval/workflows/first-use-v1/README.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluations/2026-10-11-openai-0.3.15-first-use.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../eval/workflows/first-use-v1/README.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluations/2026-10-11-openai-0.3.15-v6-confirmation.md",
+      "location": "text",
+      "category": "windows_path",
+      "value": "C:/...",
+      "reason": "Ellipsis placeholder illustrating a link format."
+    },
+    {
+      "file": "docs/evaluations/2026-10-11-openai-0.3.15-v6-confirmation.md",
+      "location": "text",
+      "category": "windows_path",
+      "value": "C:/.../SKILL.md",
+      "reason": "Ellipsis placeholder illustrating a link format."
+    },
+    {
+      "file": "docs/evaluations/2026-10-11-openai-0.3.15-v7-confirmation.md",
+      "location": "text",
+      "category": "windows_path",
+      "value": "C:/...",
+      "reason": "Ellipsis placeholder illustrating a link format."
+    },
+    {
+      "file": "docs/evaluations/2026-10-11-openai-0.3.16-difficult-regression.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../eval/scenarios/digit-boundary-v1/expected.json",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluations/2026-10-11-openai-0.3.16-difficult-regression.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../eval/scenarios/coal-ocr-energy/expected.json",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluations/2026-10-11-openai-0.3.16-pdf-runtime.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../eval/tools/check_pdf_runtime.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluations/2026-10-11-openai-0.3.16-varied-use.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../eval/workflows/varied-use-v1/README.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluations/2026-10-11-openai-0.3.16-varied-use.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../eval/workflows/varied-use-v2/README.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluations/2026-10-11-openai-0.3.16-varied-use.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../core/references/document-types.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluations/2026-10-11-openai-0.3.16-varied-use.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../core/references/extraction.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluations/2026-10-11-openai-0.3.16-varied-use.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../eval/runner/varied_use.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluations/2026-10-11-openai-0.3.16-varied-use.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../eval/tools/build_varied_use.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluations/2026-10-11-openai-0.3.16-varied-use.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../eval/tools/review_varied_use.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluations/2026-10-11-openai-0.3.16-varied-use.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../tests/test_varied_use.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluations/2026-10-11-openai-0.3.16-varied-v2-confirmation.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../eval/runner/varied_use_v2.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluations/2026-10-11-openai-0.3.16-varied-v2-confirmation.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../eval/workflows/varied-use-v2/README.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/evaluations/2026-10-11-openai-0.3.16-varied-v2-confirmation.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../tests/test_varied_use_v2.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/prompt-maintenance.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/skills/openai/prompt/01-goals.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/prompt-maintenance.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/skills/openai/prompt/02-workflow.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/prompt-maintenance.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/skills/openai/prompt/03-constraints.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/prompt-maintenance.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/skills/openai/SKILL.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/releases/0.3.17.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../README.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/releases/0.3.17.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/evaluations/2026-10-13-openai-0.3.17-prompt-parts.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "docs/research/platform-facts.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/.claude/skills/",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "eval/answer-key.xlsx!xl/_rels/workbook.xml.rels",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/xl/worksheets/sheet1.xml",
+      "reason": "Internal workbook package relationship target."
+    },
+    {
+      "file": "eval/answer-key.xlsx!xl/_rels/workbook.xml.rels",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/xl/worksheets/sheet2.xml",
+      "reason": "Internal workbook package relationship target."
+    },
+    {
+      "file": "eval/answer-key.xlsx!xl/_rels/workbook.xml.rels",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/xl/worksheets/sheet3.xml",
+      "reason": "Internal workbook package relationship target."
+    },
+    {
+      "file": "eval/answer-key.xlsx![Content_Types].xml",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/docProps/app.xml",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "eval/answer-key.xlsx![Content_Types].xml",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/docProps/core.xml",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "eval/answer-key.xlsx![Content_Types].xml",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/xl/styles.xml",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "eval/answer-key.xlsx![Content_Types].xml",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/xl/theme/theme1.xml",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "eval/answer-key.xlsx![Content_Types].xml",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/xl/workbook.xml",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "eval/answer-key.xlsx![Content_Types].xml",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/xl/worksheets/sheet1.xml",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "eval/answer-key.xlsx![Content_Types].xml",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/xl/worksheets/sheet2.xml",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "eval/answer-key.xlsx![Content_Types].xml",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/xl/worksheets/sheet3.xml",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "eval/cases/printed-001/printed-001.pdf",
+      "location": "page-1",
+      "category": "email",
+      "value": "accounts@kestrel-lane.example",
+      "reason": "Reserved example-domain address in a synthetic fixture or its generator."
+    },
+    {
+      "file": "eval/cases/printed-002/printed-002.pdf",
+      "location": "page-1",
+      "category": "email",
+      "value": "orders@brackenfold.example",
+      "reason": "Reserved example-domain address in a synthetic fixture or its generator."
+    },
+    {
+      "file": "eval/cases/printed-003/printed-003.pdf",
+      "location": "page-1",
+      "category": "email",
+      "value": "hello@ostrowe-windows.example",
+      "reason": "Reserved example-domain address in a synthetic fixture or its generator."
+    },
+    {
+      "file": "eval/cases/printed-004/printed-004.pdf",
+      "location": "page-1",
+      "category": "email",
+      "value": "accounts@kestrel-lane.example",
+      "reason": "Reserved example-domain address in a synthetic fixture or its generator."
+    },
+    {
+      "file": "eval/cases/printed-005/printed-005.pdf",
+      "location": "page-1",
+      "category": "email",
+      "value": "orders@brackenfold.example",
+      "reason": "Reserved example-domain address in a synthetic fixture or its generator."
+    },
+    {
+      "file": "eval/runner/conversation.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/case_id/",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "eval/runner/conversation.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/run-1/meta.json",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "eval/runner/conversation.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/attempt_id/",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "eval/runner/conversation.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/retry_of/",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "eval/runner/first_use.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/VERSION/",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "eval/runner/score.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/extra/",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "eval/runner/varied_use.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/VERSION/",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "eval/scenarios/amount-dash-model-v1.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../docs/evaluation.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "eval/scenarios/dash-origin-printed-v2/README.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/dash-origin-printed-v1/README.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "eval/tools/claude_session_summary.py",
+      "location": "text",
+      "category": "unc_path",
+      "value": "\\\\Users\\\\",
+      "reason": "Generic detection expression, not an observed path."
+    },
+    {
+      "file": "eval/tools/make_cases.py",
+      "location": "text",
+      "category": "email",
+      "value": "accounts@kestrel-lane.example",
+      "reason": "Reserved example-domain address in a synthetic fixture or its generator."
+    },
+    {
+      "file": "eval/tools/make_cases.py",
+      "location": "text",
+      "category": "email",
+      "value": "orders@brackenfold.example",
+      "reason": "Reserved example-domain address in a synthetic fixture or its generator."
+    },
+    {
+      "file": "eval/tools/make_cases.py",
+      "location": "text",
+      "category": "email",
+      "value": "hello@ostrowe-windows.example",
+      "reason": "Reserved example-domain address in a synthetic fixture or its generator."
+    },
+    {
+      "file": "eval/workflows/first-use-v1/README.md",
+      "location": "text",
+      "category": "windows_path",
+      "value": "C:/...",
+      "reason": "Ellipsis placeholder illustrating a link format."
+    },
+    {
+      "file": "eval/workflows/varied-use-v2/README.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../../core/references/document-types.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "eval/workflows/varied-use-v2/README.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../../core/references/extraction.md",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "legacy/0.2.0/claude/invoice-reader-claude-sonnet-5-5/SKILL.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/check_setup.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "legacy/0.2.0/claude/invoice-reader-claude-sonnet-5-5/SKILL.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/new_profile.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "legacy/0.2.0/claude/invoice-reader-claude-sonnet-5-5/SKILL.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/new_custom.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "legacy/0.2.0/claude/invoice-reader-claude-sonnet-5-5/SKILL.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/process.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "legacy/0.2.0/claude/invoice-reader/SKILL.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/check_setup.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "legacy/0.2.0/claude/invoice-reader/SKILL.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/new_profile.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "legacy/0.2.0/claude/invoice-reader/SKILL.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/new_custom.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "legacy/0.2.0/claude/invoice-reader/SKILL.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/process.py",
+      "reason": "Reviewed relative-link fragment, glob, template or placeholder-based command; not a workstation path."
+    },
+    {
+      "file": "tests/test_build.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/tool/",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_cash_memo_eval.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/NAME/",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_clarification_eval.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/CASE/",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_clarification_eval.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/CASE/name",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_claude_session_eval.py",
+      "location": "text",
+      "category": "windows_path",
+      "value": "C:/py/python.exe",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_claude_session_eval.py",
+      "location": "text",
+      "category": "unc_path",
+      "value": "\\\\py\\\\python.exe",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_claude_session_eval.py",
+      "location": "text",
+      "category": "windows_path",
+      "value": "C:\\\\py\\\\python.exe",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_claude_session_eval.py",
+      "location": "text",
+      "category": "windows_path",
+      "value": "C:\\py\\python.exe",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_claude_session_eval.py",
+      "location": "text",
+      "category": "windows_path",
+      "value": "C:/Program",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_claude_session_eval.py",
+      "location": "text",
+      "category": "unc_path",
+      "value": "\\\\w\\\\.claude\\\\skills\\\\invoice-reader-anthropic\\\\references\\\\chat-start.md",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_claude_session_eval.py",
+      "location": "text",
+      "category": "windows_path",
+      "value": "C:\\\\w\\\\.claude\\\\skills\\\\invoice-reader-anthropic\\\\references\\\\chat-start.md",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_claude_session_eval.py",
+      "location": "text",
+      "category": "windows_path",
+      "value": "C:\\w\\.claude\\skills\\invoice-reader-anthropic\\references\\chat-start.md",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_claude_session_eval.py",
+      "location": "text",
+      "category": "unc_path",
+      "value": "\\\\w\\\\coal-pack.pdf",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_claude_session_eval.py",
+      "location": "text",
+      "category": "windows_path",
+      "value": "C:\\\\w\\\\coal-pack.pdf",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_claude_session_eval.py",
+      "location": "text",
+      "category": "windows_path",
+      "value": "C:\\w\\coal-pack.pdf",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_conversation_eval.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/case/",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_cursor_adapter.py",
+      "location": "text",
+      "category": "windows_path",
+      "value": "Z:/synthetic-fixture/python.exe",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_custom_extraction.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scenario/",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_digit_boundary_eval.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/NAME/",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_opening_v4.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../../custom.md",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_opening_v7.py",
+      "location": "text",
+      "category": "file_url",
+      "value": "file:///",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_opening_v7.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../other/SKILL.md",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_opening_v7.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/references/../../other/SKILL.md",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_opening_v7.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/references/../SKILL.md",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_pdf_routes.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/configured/engine",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_public_repeats.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/runs/private",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_publication_check.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/synthetic-fixture/private.txt",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_publication_check.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/synthetic-fixture/python.exe",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_publication_check.py",
+      "location": "text",
+      "category": "email",
+      "value": "fixture@synthetic.example",
+      "reason": "Reserved example-domain address in a synthetic fixture or its generator."
+    },
+    {
+      "file": "tests/test_rescore_reference.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/case/",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tests/test_workflow_audit.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../../custom.md",
+      "reason": "Inspected synthetic test input; not an observed workstation location."
+    },
+    {
+      "file": "tools/check.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/Users/",
+      "reason": "Generic detection expression, not an observed path."
+    },
+    {
+      "file": "tools/check.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/home/",
+      "reason": "Generic detection expression, not an observed path."
+    },
+    {
+      "file": "tools/check.py",
+      "location": "text",
+      "category": "unc_path",
+      "value": "\\\\Users\\\\",
+      "reason": "Generic detection expression, not an observed path."
+    },
+    {
+      "file": "tools/install_publication_hooks.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/bin/sh",
+      "reason": "Portable shell interpreter directive for a local hook."
+    },
+    {
+      "file": "tools/publication_check.py",
+      "location": "text",
+      "category": "file_url",
+      "value": "file:/+",
+      "reason": "Generic detection expression, not an observed path."
+    },
+    {
+      "file": "tools/publication_check.py",
+      "location": "text",
+      "category": "windows_path",
+      "value": "w:/",
+      "reason": "Generic detection expression, not an observed path."
+    },
+    {
+      "file": "docs/development-log.md",
+      "location": "text",
+      "category": "windows_path",
+      "value": "C:/...",
+      "reason": "Illustrative placeholder in a public synthetic evaluation narrative; not a workstation path."
+    },
+    {
+      "file": "invoice-reader-openai-0.3.17.zip!invoice-reader-openai/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/check_setup.py",
+      "reason": "Reviewed relative script reference inside the OpenAI skill package; not an absolute filesystem path."
+    },
+    {
+      "file": "invoice-reader-openai-0.3.17.zip!invoice-reader-openai/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/new_custom.py",
+      "reason": "Reviewed relative script reference inside the OpenAI skill package; not an absolute filesystem path."
+    },
+    {
+      "file": "invoice-reader-openai-0.3.17.zip!invoice-reader-openai/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/new_profile.py",
+      "reason": "Reviewed relative script reference inside the OpenAI skill package; not an absolute filesystem path."
+    },
+    {
+      "file": "invoice-reader-openai-0.3.17.zip!invoice-reader-openai/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/new_run.py",
+      "reason": "Reviewed relative script reference inside the OpenAI skill package; not an absolute filesystem path."
+    },
+    {
+      "file": "invoice-reader-openai-0.3.17.zip!invoice-reader-openai/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/reading_capabilities.py",
+      "reason": "Reviewed relative script reference inside the OpenAI skill package; not an absolute filesystem path."
+    },
+    {
+      "file": "invoice-reader-openai-0.3.17.zip!invoice-reader-openai/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/pdf_runtime.py",
+      "reason": "Reviewed relative script reference inside the OpenAI skill package; not an absolute filesystem path."
+    },
+    {
+      "file": "invoice-reader-openai-0.3.17.zip!invoice-reader-openai/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/process.py",
+      "reason": "Reviewed relative script reference inside the OpenAI skill package; not an absolute filesystem path."
+    },
+    {
+      "file": "0.3.17.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/../README.md",
+      "reason": "Reviewed relative link from release notes to repository README; not an absolute filesystem path."
+    },
+    {
+      "file": "0.3.17.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/evaluations/2026-10-13-openai-0.3.17-prompt-parts.md",
+      "reason": "Reviewed relative link from release notes to evaluation report; not an absolute filesystem path."
+    },
+    {
+      "file": "adapters/codex/resources/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/pdf_routes.py",
+      "reason": "Individually reviewed historical relative script or installation-directory fragment inside a placeholder-based command; not an observed workstation path."
+    },
+    {
+      "file": "dist/codex/invoice-reader-openai/references/tool.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/pdf_routes.py",
+      "reason": "Individually reviewed historical relative script or installation-directory fragment inside a placeholder-based command; not an observed workstation path."
+    },
+    {
+      "file": "README.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/.claude/skills/",
+      "reason": "Individually reviewed historical relative script or installation-directory fragment inside a placeholder-based command; not an observed workstation path."
+    },
+    {
+      "file": "core/skill/SKILL.md.in",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/check_setup.py",
+      "reason": "Individually reviewed historical relative script or installation-directory fragment inside a placeholder-based command; not an observed workstation path."
+    },
+    {
+      "file": "core/skill/SKILL.md.in",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/new_profile.py",
+      "reason": "Individually reviewed historical relative script or installation-directory fragment inside a placeholder-based command; not an observed workstation path."
+    },
+    {
+      "file": "core/skill/SKILL.md.in",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/new_custom.py",
+      "reason": "Individually reviewed historical relative script or installation-directory fragment inside a placeholder-based command; not an observed workstation path."
+    },
+    {
+      "file": "core/skill/SKILL.md.in",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/process.py",
+      "reason": "Individually reviewed historical relative script or installation-directory fragment inside a placeholder-based command; not an observed workstation path."
+    },
+    {
+      "file": "eval/runner/run.py",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/.claude/",
+      "reason": "Individually reviewed historical relative script or installation-directory fragment inside a placeholder-based command; not an observed workstation path."
+    },
+    {
+      "file": "skills/claude/invoice-reader-claude-sonnet-5-5/SKILL.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/check_setup.py",
+      "reason": "Individually reviewed historical relative script or installation-directory fragment inside a placeholder-based command; not an observed workstation path."
+    },
+    {
+      "file": "skills/claude/invoice-reader-claude-sonnet-5-5/SKILL.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/new_profile.py",
+      "reason": "Individually reviewed historical relative script or installation-directory fragment inside a placeholder-based command; not an observed workstation path."
+    },
+    {
+      "file": "skills/claude/invoice-reader-claude-sonnet-5-5/SKILL.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/new_custom.py",
+      "reason": "Individually reviewed historical relative script or installation-directory fragment inside a placeholder-based command; not an observed workstation path."
+    },
+    {
+      "file": "skills/claude/invoice-reader-claude-sonnet-5-5/SKILL.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/process.py",
+      "reason": "Individually reviewed historical relative script or installation-directory fragment inside a placeholder-based command; not an observed workstation path."
+    },
+    {
+      "file": "skills/claude/invoice-reader/SKILL.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/check_setup.py",
+      "reason": "Individually reviewed historical relative script or installation-directory fragment inside a placeholder-based command; not an observed workstation path."
+    },
+    {
+      "file": "skills/claude/invoice-reader/SKILL.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/new_profile.py",
+      "reason": "Individually reviewed historical relative script or installation-directory fragment inside a placeholder-based command; not an observed workstation path."
+    },
+    {
+      "file": "skills/claude/invoice-reader/SKILL.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/new_custom.py",
+      "reason": "Individually reviewed historical relative script or installation-directory fragment inside a placeholder-based command; not an observed workstation path."
+    },
+    {
+      "file": "skills/claude/invoice-reader/SKILL.md",
+      "location": "text",
+      "category": "posix_path",
+      "value": "/scripts/process.py",
+      "reason": "Individually reviewed historical relative script or installation-directory fragment inside a placeholder-based command; not an observed workstation path."
+    }
+  ],
+  "binary_reviews": [
+    {
+      "file": "eval/cases/printed-001/printed-001.pdf",
+      "sha256": "d6edd40a7e9d6616df21f56bbd161113857927bfb9a3362204211b58fa47fed3",
+      "reason": "Synthetic fixture: all rendered pages, text, metadata, annotations, objects and attachments inspected in the 2026-10-13 audit."
+    },
+    {
+      "file": "eval/cases/printed-002/printed-002.pdf",
+      "sha256": "63f7b86f5b998e23c11d8ff7ce9be26055ae0cda9b3e7719f45d08255f44464f",
+      "reason": "Synthetic fixture: all rendered pages, text, metadata, annotations, objects and attachments inspected in the 2026-10-13 audit."
+    },
+    {
+      "file": "eval/cases/printed-003/printed-003.pdf",
+      "sha256": "4207b0eb2543205124665ba6884a5ee9cdbce78adeec65f1181c7c7accefaecc",
+      "reason": "Synthetic fixture: all rendered pages, text, metadata, annotations, objects and attachments inspected in the 2026-10-13 audit."
+    },
+    {
+      "file": "eval/cases/printed-004/printed-004.pdf",
+      "sha256": "2472ee533f90b462ac754e05c3bf29d20f86e42397b52b63efad165617127517",
+      "reason": "Synthetic fixture: all rendered pages, text, metadata, annotations, objects and attachments inspected in the 2026-10-13 audit."
+    },
+    {
+      "file": "eval/cases/printed-005/printed-005.pdf",
+      "sha256": "16cfea6c079fb1f7d4c4650d62865895049a2a96137b52571c8054fbe4d4bd3b",
+      "reason": "Synthetic fixture: all rendered pages, text, metadata, annotations, objects and attachments inspected in the 2026-10-13 audit."
+    },
+    {
+      "file": "eval/fixtures/amount-dash-model-v1.pdf",
+      "sha256": "b9d49358880e514f1f8b9ac7ef6cabac531bfbcd0f6c31b5278ea2cfa6303d4d",
+      "reason": "Synthetic fixture: all rendered pages, text, metadata, annotations, objects and attachments inspected in the 2026-10-13 audit."
+    },
+    {
+      "file": "eval/fixtures/batch-invoices.pdf",
+      "sha256": "92cde0374b82d6248ba124cc7d98850c5a0323123be4975635dfdb90db6148e9",
+      "reason": "Synthetic fixture: all rendered pages, text, metadata, annotations, objects and attachments inspected in the 2026-10-13 audit."
+    },
+    {
+      "file": "eval/fixtures/batch-support.pdf",
+      "sha256": "2ae7c35c816074658daf97ee44d8e3db5d8b7277ec3276405b2c6925416d5d2a",
+      "reason": "Synthetic fixture: all rendered pages, text, metadata, annotations, objects and attachments inspected in the 2026-10-13 audit."
+    },
+    {
+      "file": "eval/fixtures/cash-memo-classification-v1.pdf",
+      "sha256": "ba40e50479a4e066bf3001239c5424d1177fe51fc33974ae7161561218422d3b",
+      "reason": "Synthetic fixture: all rendered pages, text, metadata, annotations, objects and attachments inspected in the 2026-10-13 audit."
+    },
+    {
+      "file": "eval/fixtures/coal-mixed.pdf",
+      "sha256": "15c42770abb72497611237bee1bc1a24438930e118295ab15f388871ac5491bf",
+      "reason": "Synthetic fixture: all rendered pages, text, metadata, annotations, objects and attachments inspected in the 2026-10-13 audit."
+    },
+    {
+      "file": "eval/fixtures/coal-ocr.pdf",
+      "sha256": "db7de8fcda64b87888a4437feafa3f7046ee3d51ae8358321e5a4dadc8eed2b2",
+      "reason": "Synthetic fixture: all rendered pages, text, metadata, annotations, objects and attachments inspected in the 2026-10-13 audit."
+    },
+    {
+      "file": "eval/fixtures/coal-pack.pdf",
+      "sha256": "3bc32be0f2cdd9fef1c2fe8f801bb6db34d8e258cde64f65ee8ea6d90ff660f9",
+      "reason": "Synthetic fixture: all rendered pages, text, metadata, annotations, objects and attachments inspected in the 2026-10-13 audit."
+    },
+    {
+      "file": "eval/fixtures/coal-scan.pdf",
+      "sha256": "2efbfd0f62a7d1b79cf7d11bf611c73dd111166f9223d73b66c5d33d4a7f313b",
+      "reason": "Synthetic fixture: all rendered pages, text, metadata, annotations, objects and attachments inspected in the 2026-10-13 audit."
+    },
+    {
+      "file": "eval/fixtures/dash-origin-printed-v1.pdf",
+      "sha256": "ef641a56165b99035940e1caa942109b51de19ce554ac8275ba3e48c5c61612f",
+      "reason": "Synthetic fixture: all rendered pages, text, metadata, annotations, objects and attachments inspected in the 2026-10-13 audit."
+    },
+    {
+      "file": "eval/fixtures/digit-boundary-v1.pdf",
+      "sha256": "0e09318987c4209aa2979338fc65a7f283616f903bf75a34bbca5f3372a78827",
+      "reason": "Synthetic fixture: all rendered pages, text, metadata, annotations, objects and attachments inspected in the 2026-10-13 audit."
+    },
+    {
+      "file": "eval/fixtures/format-pack.pdf",
+      "sha256": "1c0ca8e96b3597c7784bffe96adba45994f70c1798351519e80013d40f6f1d88",
+      "reason": "Synthetic fixture: all rendered pages, text, metadata, annotations, objects and attachments inspected in the 2026-10-13 audit."
+    },
+    {
+      "file": "eval/fixtures/harbour-meter-v1.pdf",
+      "sha256": "8ceb2f0af60c1fc06d3274f4dddc2e56984fcb5ea67fef91532a0098c7167177",
+      "reason": "Synthetic one-page fixture. Rendered and visually inspected every page; checked extracted text, metadata, catalog/page objects, annotations and attachments. Contains no real transaction; exact bytes reviewed."
+    },
+    {
+      "file": "eval/fixtures/northwharf-receipt-v1.pdf",
+      "sha256": "e17acab5ba6358f7f9da22fdfef1ae96c270160ba07fa5d62f00d9eb5bf0e477",
+      "reason": "Synthetic one-page fixture. Rendered and visually inspected every page; checked extracted text, metadata, catalog/page objects, annotations and attachments. Contains no real transaction; exact bytes reviewed."
+    },
+    {
+      "file": "eval/fixtures/diverse-terms-v1.pdf",
+      "sha256": "4da8aea1df717ac1d04c553e1f89b4aeb7445005f0428611dc7d85f815183a32",
+      "reason": "Synthetic one-page fixture. Rendered and visually inspected the complete page; checked extracted text, metadata, catalog/page objects, annotations and attachments. Two fictitious transactions; no attachments or annotations. Exact bytes reviewed on 2026-10-23."
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+file = "printed-005.pdf"
+type = "receipt"
+medium = "printed-pdf"
+direction = "AP"
+hard = []

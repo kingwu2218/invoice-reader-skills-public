@@ -1,0 +1,5 @@
+﻿trial,purpose,layer,original_correct,original_denominator,correct,denominator,correct_blank
+1,payment,raw,42,48,45,45,31
+1,payment,workbook,51,59,55,55,28
+2,quality,raw,37,81,59,59,47
+2,quality,workbook,42,92,67,67,50

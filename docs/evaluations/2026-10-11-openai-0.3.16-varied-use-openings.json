@@ -1,0 +1,83 @@
+{
+  "version": "codex-opening-v9",
+  "contract_decision": "Owner permits one necessary Codex wait explanation with a source link, 2026-10-11; Versioned bounded recognition excludes additional confirmation and Yes-only conditions; v5 parses quote then application; v6 validates application then quote; v7 checks slash-drive sources; v8 recognises this-question-and-reply and before-I-can-begin prose; v9 accepts one reply/response without added requirements.",
+  "timing": "Contract and grader hash frozen in the pre-execution plan.",
+  "package_version": "0.3.16",
+  "package_sha256": "2f03d23ca01d755c4cf6ed94c752d809ef03df201a94a26d8b8c49dc11bd7743",
+  "plan_sha256": "103679b1c35492b5d66c029b43f52a53087626137e84c830e1f307c0d6ff6155",
+  "grader_sha256": "4e4e083323835f3a8579b818a5b64b7af49e03e482aecd420b57a2dbd59a6c16",
+  "grader_dependency_hashes": {
+    "opening_v3.py": "8c65d1b17197a65a13ae6371466116aa8e757e37bffcfa51e3a24a608c3c91d8",
+    "workflow_audit.py": "0d630f9d4fc4297648b1836a5e94c3e45fec3009a9072bd56bd53661878de282",
+    "opening_v4.py": "68bbcd1bea77397d2126f1edc423f283281c22150a1c1cf7cc9678bb2453d974",
+    "opening_v5.py": "937ac85106f99bc411b836b4006cdd9c5cccc72ad31102829dbe933672dfd0c9",
+    "opening_v6.py": "3b96566757cd337605e2cc4238f1db8a649dab89097d3c91cff242aa625dd426",
+    "opening_v7.py": "52528d96f3a74f058d9fb3147282b53bc2b89cd4c83218727a556848c3ca154f",
+    "opening_v8.py": "39406d4f47b617e80b9fff609e1cd3b794a01338929b0777e0c8b849dd0290c7"
+  },
+  "reviewer_sha256": "fefb2b9b6e16acda1d4f61342945d1918887b4d864822a8da25886a8b8bc0e33",
+  "planned_chats": 2,
+  "automatic_passes": 2,
+  "rows": [
+    {
+      "trial": 1,
+      "status": "reviewed",
+      "automatic_pass": true,
+      "version": "codex-opening-v9",
+      "strict_v2_format": "requires_review",
+      "exact_question_once": true,
+      "both_exact_choices_once": true,
+      "observed_pause": true,
+      "ordered_question_and_choices": true,
+      "format_status": "host_disclosure",
+      "allowed_disclosure": true,
+      "host_evidence": {
+        "disclosure_required": true,
+        "source": "session_meta.base_instructions",
+        "rule_sha256": "90158bea67d2e88da332cc0d308cba6b381c91044df9328992e33a3e129e1944"
+      },
+      "scope": "Opening format and observed pause only; not full host-instruction compliance, consent or extraction accuracy.",
+      "v3_format_status": "requires_review",
+      "disclosure_diagnostic": "recognised_wait_explanation",
+      "v4_format_status": "host_disclosure",
+      "v5_format_status": "host_disclosure",
+      "v6_format_status": "host_disclosure",
+      "v7_format_status": "host_disclosure",
+      "v8_format_status": "host_disclosure",
+      "result_sha256": "737a93b3fac481a0a5099085403eddd56b03de2ca0b2c6692d512e8b8390b590",
+      "turn_sha256": "49e3e0ba061b2f40ff665613a932080f3e93cfe77306f7133fd8b4ac035a8a8f",
+      "snapshots_sha256": "4b5c680372f0f519f976090b16346003f1e46e7701fd45116f50583ae474b84e",
+      "trace_sha256": "9dfe003e10b3c50d146f86e5d0db589d97aabe0e981513257deb549dd66e2939"
+    },
+    {
+      "trial": 2,
+      "status": "reviewed",
+      "automatic_pass": true,
+      "version": "codex-opening-v9",
+      "strict_v2_format": "requires_review",
+      "exact_question_once": true,
+      "both_exact_choices_once": true,
+      "observed_pause": true,
+      "ordered_question_and_choices": true,
+      "format_status": "host_disclosure",
+      "allowed_disclosure": true,
+      "host_evidence": {
+        "disclosure_required": true,
+        "source": "session_meta.base_instructions",
+        "rule_sha256": "90158bea67d2e88da332cc0d308cba6b381c91044df9328992e33a3e129e1944"
+      },
+      "scope": "Opening format and observed pause only; not full host-instruction compliance, consent or extraction accuracy.",
+      "v3_format_status": "requires_review",
+      "disclosure_diagnostic": "recognised_wait_explanation",
+      "v4_format_status": "host_disclosure",
+      "v5_format_status": "host_disclosure",
+      "v6_format_status": "host_disclosure",
+      "v7_format_status": "host_disclosure",
+      "v8_format_status": "host_disclosure",
+      "result_sha256": "82be5ee03af50a0a5b77989d776b492086324c8f25db2418c48094c525cf6e71",
+      "turn_sha256": "a81574ef98cece47b1ed413105dc1f17e92c29bc04ed2f79eab259c7b92a1bbe",
+      "snapshots_sha256": "4b5c680372f0f519f976090b16346003f1e46e7701fd45116f50583ae474b84e",
+      "trace_sha256": "cc93584c2d9c645baf79661cd9f85c6272d3b89cff79aeb73cca238717a1fd79"
+    }
+  ]
+}

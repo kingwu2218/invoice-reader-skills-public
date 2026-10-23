@@ -1,0 +1,636 @@
+{
+  "protocol": "first-use-v1",
+  "workflow_grader": "workflow-audit-v2",
+  "planned_chats": 3,
+  "planned_batches": 4,
+  "completed_batches": 4,
+  "package_version": "0.3.15",
+  "package_sha256": "dbadd0982cb76f54bcbe2b2141996a6ead202878c0854de591c225fd8b75f7b2",
+  "requested_model": "gpt-6.1-sol",
+  "provider": "OpenAI via existing Codex ChatGPT login",
+  "tool_version": "codex-cli 0.162.0-alpha.17.2",
+  "plan_sha256": "6dc1695ccfc05dce4c570dc9fa0fda46f15d01be79ad5846023edc5cd617eefa",
+  "fixture_hashes": {
+    "eval/fixtures/coal-ocr.pdf": "db7de8fcda64b87888a4437feafa3f7046ee3d51ae8358321e5a4dadc8eed2b2",
+    "eval/fixtures/coal-scan.pdf": "2efbfd0f62a7d1b79cf7d11bf611c73dd111166f9223d73b66c5d33d4a7f313b",
+    "eval/workflows/first-use-v1/payment.json": "bbe0a6e6bb6bf5d2346eeb0d8a6105fb870c3f9fdd5ac4dfc6dc00ad78caba9b",
+    "eval/workflows/first-use-v1/energy.json": "e19f5f93ecef73d80622090c671a1c642ae62f3c0d374baea250965f45c99f7b"
+  },
+  "execution_harness_hashes": {
+    "eval/runner/first_use.py": "577e05403a08e8ee5aa3b6ced92e55b6e53eccb4fd9238e2dafebd966990c1a6",
+    "eval/runner/workflow_audit.py": "0d630f9d4fc4297648b1836a5e94c3e45fec3009a9072bd56bd53661878de282",
+    "eval/runner/opening_v3.py": "8c65d1b17197a65a13ae6371466116aa8e757e37bffcfa51e3a24a608c3c91d8",
+    "eval/runner/opening_v4.py": "68bbcd1bea77397d2126f1edc423f283281c22150a1c1cf7cc9678bb2453d974",
+    "eval/runner/opening_v5.py": "937ac85106f99bc411b836b4006cdd9c5cccc72ad31102829dbe933672dfd0c9",
+    "eval/runner/opening_v6.py": "3b96566757cd337605e2cc4238f1db8a649dab89097d3c91cff242aa625dd426",
+    "eval/runner/raw.py": "452ad52c5e8d35a8def0dcf1a8605e8b3621c73fd5ca7a4e5c1c88c5b708d257",
+    "eval/runner/score.py": "82ec5ed8a7aa15b4e2c6a31ec0b7c3f678413a35585fe8a683f4a71c7a54c430",
+    "eval/runner/conversation.py": "b0008a745f2b338e9f799aca7efa53ae8d5e99d86b3df7bdeb331b1f46f72f64",
+    "adapters/codex/eval_adapter.py": "e07de8328babd263db3102d77541c94b3100aaac7857258aaf445dd17fee5a62"
+  },
+  "reporter_sha256": "577e05403a08e8ee5aa3b6ced92e55b6e53eccb4fd9238e2dafebd966990c1a6",
+  "openings": [
+    {
+      "trial": 1,
+      "completed": true,
+      "legacy_status": "invalid",
+      "opening_v3": {
+        "version": "codex-opening-v3",
+        "strict_v2_format": "requires_review",
+        "exact_question_once": true,
+        "both_exact_choices_once": true,
+        "observed_pause": true,
+        "ordered_question_and_choices": true,
+        "format_status": "requires_review",
+        "allowed_disclosure": false,
+        "automatic_pass": false,
+        "host_evidence": {
+          "disclosure_required": true,
+          "source": "session_meta.base_instructions",
+          "rule_sha256": "90158bea67d2e88da332cc0d308cba6b381c91044df9328992e33a3e129e1944"
+        },
+        "scope": "Opening format and observed pause only; not full host-instruction compliance, consent or extraction accuracy."
+      },
+      "opening_v4": {
+        "version": "codex-opening-v4",
+        "strict_v2_format": "requires_review",
+        "exact_question_once": true,
+        "both_exact_choices_once": true,
+        "observed_pause": true,
+        "ordered_question_and_choices": true,
+        "format_status": "requires_review",
+        "allowed_disclosure": false,
+        "automatic_pass": false,
+        "host_evidence": {
+          "disclosure_required": true,
+          "source": "session_meta.base_instructions",
+          "rule_sha256": "90158bea67d2e88da332cc0d308cba6b381c91044df9328992e33a3e129e1944"
+        },
+        "scope": "Opening format and observed pause only; not full host-instruction compliance, consent or extraction accuracy.",
+        "v3_format_status": "requires_review",
+        "disclosure_diagnostic": "unrelated_source"
+      },
+      "opening_v5": {
+        "version": "codex-opening-v5",
+        "strict_v2_format": "requires_review",
+        "exact_question_once": true,
+        "both_exact_choices_once": true,
+        "observed_pause": true,
+        "ordered_question_and_choices": true,
+        "format_status": "requires_review",
+        "allowed_disclosure": false,
+        "automatic_pass": false,
+        "host_evidence": {
+          "disclosure_required": true,
+          "source": "session_meta.base_instructions",
+          "rule_sha256": "90158bea67d2e88da332cc0d308cba6b381c91044df9328992e33a3e129e1944"
+        },
+        "scope": "Opening format and observed pause only; not full host-instruction compliance, consent or extraction accuracy.",
+        "v3_format_status": "requires_review",
+        "disclosure_diagnostic": "unrelated_source",
+        "v4_format_status": "requires_review"
+      },
+      "opening_v6": {
+        "version": "codex-opening-v6",
+        "strict_v2_format": "requires_review",
+        "exact_question_once": true,
+        "both_exact_choices_once": true,
+        "observed_pause": true,
+        "ordered_question_and_choices": true,
+        "format_status": "requires_review",
+        "allowed_disclosure": false,
+        "automatic_pass": false,
+        "host_evidence": {
+          "disclosure_required": true,
+          "source": "session_meta.base_instructions",
+          "rule_sha256": "90158bea67d2e88da332cc0d308cba6b381c91044df9328992e33a3e129e1944"
+        },
+        "scope": "Opening format and observed pause only; not full host-instruction compliance, consent or extraction accuracy.",
+        "v3_format_status": "requires_review",
+        "disclosure_diagnostic": "unrelated_source",
+        "v4_format_status": "requires_review",
+        "v5_format_status": "requires_review"
+      },
+      "exact_question_once": true,
+      "both_exact_choices_once": true,
+      "format_status": "requires_review",
+      "observed_pause": true,
+      "automatic_pass": false,
+      "installed_instruction_reads_observed": true,
+      "evidence_sha256": "52a631a0057413cf0556357219a8b8045249ea9381bbbb3034164be2773130f8"
+    },
+    {
+      "trial": 2,
+      "completed": true,
+      "legacy_status": "invalid",
+      "opening_v3": {
+        "version": "codex-opening-v3",
+        "strict_v2_format": "requires_review",
+        "exact_question_once": true,
+        "both_exact_choices_once": true,
+        "observed_pause": true,
+        "ordered_question_and_choices": true,
+        "format_status": "requires_review",
+        "allowed_disclosure": false,
+        "automatic_pass": false,
+        "host_evidence": {
+          "disclosure_required": true,
+          "source": "session_meta.base_instructions",
+          "rule_sha256": "90158bea67d2e88da332cc0d308cba6b381c91044df9328992e33a3e129e1944"
+        },
+        "scope": "Opening format and observed pause only; not full host-instruction compliance, consent or extraction accuracy."
+      },
+      "opening_v4": {
+        "version": "codex-opening-v4",
+        "strict_v2_format": "requires_review",
+        "exact_question_once": true,
+        "both_exact_choices_once": true,
+        "observed_pause": true,
+        "ordered_question_and_choices": true,
+        "format_status": "host_disclosure",
+        "allowed_disclosure": true,
+        "automatic_pass": true,
+        "host_evidence": {
+          "disclosure_required": true,
+          "source": "session_meta.base_instructions",
+          "rule_sha256": "90158bea67d2e88da332cc0d308cba6b381c91044df9328992e33a3e129e1944"
+        },
+        "scope": "Opening format and observed pause only; not full host-instruction compliance, consent or extraction accuracy.",
+        "v3_format_status": "requires_review",
+        "disclosure_diagnostic": "recognised_wait_explanation"
+      },
+      "opening_v5": {
+        "version": "codex-opening-v5",
+        "strict_v2_format": "requires_review",
+        "exact_question_once": true,
+        "both_exact_choices_once": true,
+        "observed_pause": true,
+        "ordered_question_and_choices": true,
+        "format_status": "host_disclosure",
+        "allowed_disclosure": true,
+        "automatic_pass": true,
+        "host_evidence": {
+          "disclosure_required": true,
+          "source": "session_meta.base_instructions",
+          "rule_sha256": "90158bea67d2e88da332cc0d308cba6b381c91044df9328992e33a3e129e1944"
+        },
+        "scope": "Opening format and observed pause only; not full host-instruction compliance, consent or extraction accuracy.",
+        "v3_format_status": "requires_review",
+        "disclosure_diagnostic": "recognised_wait_explanation",
+        "v4_format_status": "host_disclosure"
+      },
+      "opening_v6": {
+        "version": "codex-opening-v6",
+        "strict_v2_format": "requires_review",
+        "exact_question_once": true,
+        "both_exact_choices_once": true,
+        "observed_pause": true,
+        "ordered_question_and_choices": true,
+        "format_status": "host_disclosure",
+        "allowed_disclosure": true,
+        "automatic_pass": true,
+        "host_evidence": {
+          "disclosure_required": true,
+          "source": "session_meta.base_instructions",
+          "rule_sha256": "90158bea67d2e88da332cc0d308cba6b381c91044df9328992e33a3e129e1944"
+        },
+        "scope": "Opening format and observed pause only; not full host-instruction compliance, consent or extraction accuracy.",
+        "v3_format_status": "requires_review",
+        "disclosure_diagnostic": "recognised_wait_explanation",
+        "v4_format_status": "host_disclosure",
+        "v5_format_status": "host_disclosure"
+      },
+      "exact_question_once": true,
+      "both_exact_choices_once": true,
+      "format_status": "requires_review",
+      "observed_pause": true,
+      "automatic_pass": false,
+      "installed_instruction_reads_observed": true,
+      "evidence_sha256": "387259586ab2911b66216bd6c0d8e613e0e99328fa9e6d987a61a22d8be7ab35"
+    },
+    {
+      "trial": 3,
+      "completed": true,
+      "legacy_status": "invalid",
+      "opening_v3": {
+        "version": "codex-opening-v3",
+        "strict_v2_format": "requires_review",
+        "exact_question_once": true,
+        "both_exact_choices_once": true,
+        "observed_pause": true,
+        "ordered_question_and_choices": true,
+        "format_status": "requires_review",
+        "allowed_disclosure": false,
+        "automatic_pass": false,
+        "host_evidence": {
+          "disclosure_required": true,
+          "source": "session_meta.base_instructions",
+          "rule_sha256": "90158bea67d2e88da332cc0d308cba6b381c91044df9328992e33a3e129e1944"
+        },
+        "scope": "Opening format and observed pause only; not full host-instruction compliance, consent or extraction accuracy."
+      },
+      "opening_v4": {
+        "version": "codex-opening-v4",
+        "strict_v2_format": "requires_review",
+        "exact_question_once": true,
+        "both_exact_choices_once": true,
+        "observed_pause": true,
+        "ordered_question_and_choices": true,
+        "format_status": "host_disclosure",
+        "allowed_disclosure": true,
+        "automatic_pass": true,
+        "host_evidence": {
+          "disclosure_required": true,
+          "source": "session_meta.base_instructions",
+          "rule_sha256": "90158bea67d2e88da332cc0d308cba6b381c91044df9328992e33a3e129e1944"
+        },
+        "scope": "Opening format and observed pause only; not full host-instruction compliance, consent or extraction accuracy.",
+        "v3_format_status": "requires_review",
+        "disclosure_diagnostic": "recognised_wait_explanation"
+      },
+      "opening_v5": {
+        "version": "codex-opening-v5",
+        "strict_v2_format": "requires_review",
+        "exact_question_once": true,
+        "both_exact_choices_once": true,
+        "observed_pause": true,
+        "ordered_question_and_choices": true,
+        "format_status": "host_disclosure",
+        "allowed_disclosure": true,
+        "automatic_pass": true,
+        "host_evidence": {
+          "disclosure_required": true,
+          "source": "session_meta.base_instructions",
+          "rule_sha256": "90158bea67d2e88da332cc0d308cba6b381c91044df9328992e33a3e129e1944"
+        },
+        "scope": "Opening format and observed pause only; not full host-instruction compliance, consent or extraction accuracy.",
+        "v3_format_status": "requires_review",
+        "disclosure_diagnostic": "recognised_wait_explanation",
+        "v4_format_status": "host_disclosure"
+      },
+      "opening_v6": {
+        "version": "codex-opening-v6",
+        "strict_v2_format": "requires_review",
+        "exact_question_once": true,
+        "both_exact_choices_once": true,
+        "observed_pause": true,
+        "ordered_question_and_choices": true,
+        "format_status": "host_disclosure",
+        "allowed_disclosure": true,
+        "automatic_pass": true,
+        "host_evidence": {
+          "disclosure_required": true,
+          "source": "session_meta.base_instructions",
+          "rule_sha256": "90158bea67d2e88da332cc0d308cba6b381c91044df9328992e33a3e129e1944"
+        },
+        "scope": "Opening format and observed pause only; not full host-instruction compliance, consent or extraction accuracy.",
+        "v3_format_status": "requires_review",
+        "disclosure_diagnostic": "recognised_wait_explanation",
+        "v4_format_status": "host_disclosure",
+        "v5_format_status": "host_disclosure"
+      },
+      "exact_question_once": true,
+      "both_exact_choices_once": true,
+      "format_status": "requires_review",
+      "observed_pause": true,
+      "automatic_pass": false,
+      "installed_instruction_reads_observed": true,
+      "evidence_sha256": "52605d89dab354d32cbebab4f143bb38aa354a548c0bdd24c7cb13ebec6843e4"
+    }
+  ],
+  "rows": [
+    {
+      "trial": 1,
+      "phase": "reply",
+      "purpose": "payment",
+      "source": "coal-ocr.pdf",
+      "status": "recorded",
+      "core_delivery_complete": true,
+      "same_session": true,
+      "policy_questions_after_reply": 0,
+      "coverage_matches_request": true,
+      "custom_matches_requested_labels": true,
+      "custom_reused_unchanged": null,
+      "prior_outputs_unchanged": true,
+      "package_unchanged": true,
+      "source_unchanged": true,
+      "new_tool_returned_images": 2,
+      "elapsed_seconds": 227.78,
+      "model_reported": "Unknown",
+      "result_sha256": "16c47c18a5a5df62007055e22e921777839efee5c8ab2964aa5abecd953b5a84",
+      "workbook_sha256": "f0db0b6cd8ef77d8c69fe3f60d8259faf0b1dbf8f630900f76dee14d720e1c97",
+      "trace_sha256": "c56c0194a11ef81587f57c7d0f35bb495b186477408464ca4638ba661c6fcb5a",
+      "raw_correct": 15,
+      "raw_denominator": 15,
+      "raw_correct_blank": 17,
+      "raw_checks": {},
+      "raw_tables": {
+        "Raw documents": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Raw requested values": {
+          "expected": 4,
+          "actual": 4,
+          "matched": 4,
+          "extra": 0
+        }
+      },
+      "workbook_correct": 21,
+      "workbook_denominator": 21,
+      "workbook_correct_blank": 14,
+      "workbook_checks": {
+        "unprocessed_inputs": 0
+      },
+      "workbook_tables": {
+        "Billing documents": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Other": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Line items": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested values": {
+          "expected": 4,
+          "actual": 4,
+          "matched": 4,
+          "extra": 0
+        }
+      }
+    },
+    {
+      "trial": 1,
+      "phase": "followup",
+      "purpose": "payment",
+      "source": "coal-scan.pdf",
+      "status": "recorded",
+      "core_delivery_complete": true,
+      "same_session": true,
+      "policy_questions_after_reply": 0,
+      "coverage_matches_request": true,
+      "custom_matches_requested_labels": true,
+      "custom_reused_unchanged": true,
+      "prior_outputs_unchanged": true,
+      "package_unchanged": true,
+      "source_unchanged": true,
+      "new_tool_returned_images": 2,
+      "elapsed_seconds": 115.78,
+      "model_reported": "Unknown",
+      "result_sha256": "dcf06af9e3f17b550671a9747a84af25f66971e04bf7d58b12b93042cd91c9e3",
+      "workbook_sha256": "bb41bc79f3c27ab1ee451f602d2376f3bc990c87cdfdd52a18f186700abd9e45",
+      "trace_sha256": "13aa200eb10747f5452c76b57044ff93349424fab46755a3eed77eb30614aed8",
+      "raw_correct": 15,
+      "raw_denominator": 15,
+      "raw_correct_blank": 17,
+      "raw_checks": {},
+      "raw_tables": {
+        "Raw documents": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Raw requested values": {
+          "expected": 4,
+          "actual": 4,
+          "matched": 4,
+          "extra": 0
+        }
+      },
+      "workbook_correct": 21,
+      "workbook_denominator": 21,
+      "workbook_correct_blank": 14,
+      "workbook_checks": {
+        "unprocessed_inputs": 0
+      },
+      "workbook_tables": {
+        "Billing documents": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Other": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Line items": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested values": {
+          "expected": 4,
+          "actual": 4,
+          "matched": 4,
+          "extra": 0
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "phase": "reply",
+      "purpose": "energy",
+      "source": "coal-ocr.pdf",
+      "status": "recorded",
+      "core_delivery_complete": true,
+      "same_session": true,
+      "policy_questions_after_reply": 0,
+      "coverage_matches_request": true,
+      "custom_matches_requested_labels": true,
+      "custom_reused_unchanged": null,
+      "prior_outputs_unchanged": true,
+      "package_unchanged": true,
+      "source_unchanged": true,
+      "new_tool_returned_images": 2,
+      "elapsed_seconds": 198.2,
+      "model_reported": "Unknown",
+      "result_sha256": "46fedc382a929f6494c26c1fb0da3d320896cca3a044be4e99bd5fc51e4de0f6",
+      "workbook_sha256": "67a74d6e02cd4738ad173986430c55152b74ecfe483f9c8363871c8885877ac3",
+      "trace_sha256": "8821b97505af3b5939df070a655402f306264b187ba8468cfaf9022a63c4d925",
+      "raw_correct": 20,
+      "raw_denominator": 20,
+      "raw_correct_blank": 17,
+      "raw_checks": {},
+      "raw_tables": {
+        "Raw documents": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Raw requested values": {
+          "expected": 5,
+          "actual": 5,
+          "matched": 5,
+          "extra": 0
+        }
+      },
+      "workbook_correct": 25,
+      "workbook_denominator": 25,
+      "workbook_correct_blank": 15,
+      "workbook_checks": {
+        "unprocessed_inputs": 0
+      },
+      "workbook_tables": {
+        "Billing documents": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Other": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Line items": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested values": {
+          "expected": 5,
+          "actual": 5,
+          "matched": 5,
+          "extra": 0
+        }
+      }
+    },
+    {
+      "trial": 3,
+      "phase": "reply",
+      "purpose": "payment",
+      "source": "coal-ocr.pdf",
+      "status": "recorded",
+      "core_delivery_complete": true,
+      "same_session": true,
+      "policy_questions_after_reply": 0,
+      "coverage_matches_request": true,
+      "custom_matches_requested_labels": true,
+      "custom_reused_unchanged": null,
+      "prior_outputs_unchanged": true,
+      "package_unchanged": true,
+      "source_unchanged": true,
+      "new_tool_returned_images": 2,
+      "elapsed_seconds": 186.57,
+      "model_reported": "Unknown",
+      "result_sha256": "115fce26bbe2ae9561825ee4e856bbc804375d4edd585326e488f312c26e9633",
+      "workbook_sha256": "2c1e691f39c4f8d2a018cb69a90a35f2418cbbaf1f7643a80b42a566c044f0f9",
+      "trace_sha256": "9d09de23592f9b00bd2f71383c382dd24a86b36540c153473b5052bbeff774dc",
+      "raw_correct": 15,
+      "raw_denominator": 15,
+      "raw_correct_blank": 17,
+      "raw_checks": {},
+      "raw_tables": {
+        "Raw documents": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Raw requested values": {
+          "expected": 4,
+          "actual": 4,
+          "matched": 4,
+          "extra": 0
+        }
+      },
+      "workbook_correct": 21,
+      "workbook_denominator": 21,
+      "workbook_correct_blank": 14,
+      "workbook_checks": {
+        "unprocessed_inputs": 0
+      },
+      "workbook_tables": {
+        "Billing documents": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Other": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Line items": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested values": {
+          "expected": 4,
+          "actual": 4,
+          "matched": 4,
+          "extra": 0
+        }
+      }
+    }
+  ],
+  "totals": {
+    "raw": {
+      "scored_batches": 4,
+      "correct": 65,
+      "denominator": 65,
+      "correct_blank": 68
+    },
+    "workbook": {
+      "scored_batches": 4,
+      "correct": 88,
+      "denominator": 88,
+      "correct_blank": 57
+    }
+  },
+  "scope": "Three fresh CLI sessions; public known sources, model-created settings, no prefilled profile/extraction, no answer files in model workspaces. Existing host tooling/auth retained; global host instructions may remain visible.",
+  "limitations": [
+    "Known synthetic content; same source reused across purposes/formats.",
+    "Opening text requiring review remains separate from core delivery completion.",
+    "Image returns are observed tool evidence, not proof of attention.",
+    "Requested model is not verified runtime identity."
+  ]
+}

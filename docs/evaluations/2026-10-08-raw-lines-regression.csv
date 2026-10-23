@@ -1,0 +1,8 @@
+﻿trial,evaluation_type,expected_extraction_pass,observed_extraction_pass,scorer_behaved_as_expected,correct,correct_blank_excluded,miss,silent_error,invented,structural_failures,field_accuracy_numerator,field_accuracy_denominator,field_accuracy_rate,field_precision_numerator,field_precision_denominator,field_precision_rate,printed_value_recall_numerator,printed_value_recall_denominator,printed_value_recall_rate,line_item_matched,line_item_expected,line_item_actual,statement_line_matched,statement_line_expected,statement_line_actual
+baseline,deterministic-scorer-regression,True,True,True,25,7,0,0,0,0,25,25,1.0,25,25,1.0,25,25,1.0,4,4,4,2,2,2
+missing-blank-row,deterministic-scorer-regression,False,False,True,25,7,0,0,0,1,25,25,1.0,25,25,1.0,25,25,1.0,3,4,3,2,2,2
+numeric-reformat,deterministic-scorer-regression,False,False,True,24,7,0,1,0,0,24,25,0.96,24,25,0.96,24,25,0.96,4,4,4,2,2,2
+repaired-printed-total,deterministic-scorer-regression,False,False,True,24,7,0,1,0,0,24,25,0.96,24,25,0.96,24,25,0.96,4,4,4,2,2,2
+reversed-lines,deterministic-scorer-regression,False,False,True,15,7,0,10,0,0,15,25,0.6,15,25,0.6,15,25,0.6,4,4,4,2,2,2
+filled-unclear-value,deterministic-scorer-regression,False,False,True,25,6,0,0,1,0,25,26,0.9615384615384616,25,26,0.9615384615384616,25,25,1.0,4,4,4,2,2,2
+debit-credit-swap,deterministic-scorer-regression,False,False,True,24,6,1,0,1,0,24,26,0.9230769230769231,24,25,0.96,24,25,0.96,4,4,4,2,2,2

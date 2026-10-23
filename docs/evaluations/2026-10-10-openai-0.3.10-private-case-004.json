@@ -1,0 +1,534 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-10",
+  "evaluation_kind": "known-source-regression",
+  "scope": "One previously used private page, two invoices; configured fields only. No private values published.",
+  "owner_target_reference_confirmed_before_new_run": true,
+  "private_attempts": 1,
+  "completed_private_attempts": 1,
+  "comparison": {
+    "previous": {
+      "version": "0.3.9",
+      "requested_model": "gpt-6.1-sol",
+      "reported_model": "Unknown",
+      "provider": "OpenAI via current Codex ChatGPT login",
+      "tool_version": "codex-cli 0.162.0-alpha.2",
+      "artifact_hash": "71b918aabef3688f5e9aa4463237898d12e8e0aaa8a2eae44b44f468b1f67653",
+      "dataset_hash": "a40b0ebd8e461b70a2c296c881452f58a814dcb867fac38ac3fd7545881146c4",
+      "execution_valid": true,
+      "elapsed_seconds": 1708.34,
+      "raw": {
+        "correct": 4,
+        "correct_blank": 3,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 1,
+        "invented": 0,
+        "numerator": 4,
+        "denominator": 5,
+        "rate": 0.8
+      },
+      "workbook": {
+        "correct": 6,
+        "correct_blank": 3,
+        "miss": 0,
+        "wrong_flagged": 1,
+        "silent_error": 0,
+        "invented": 0,
+        "numerator": 6,
+        "denominator": 7,
+        "rate": 0.8571428571428571
+      },
+      "raw_reference_scope": {
+        "owner_confirmed": {
+          "correct": 1,
+          "correct_blank": 0,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 1,
+          "invented": 0,
+          "numerator": 1,
+          "denominator": 2,
+          "rate": 0.5
+        },
+        "provisional": {
+          "correct": 3,
+          "correct_blank": 3,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "unmatched_extra": {
+          "correct": 0,
+          "correct_blank": 0,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "workbook_reference_scope": {
+        "owner_confirmed": {
+          "correct": 3,
+          "correct_blank": 0,
+          "miss": 0,
+          "wrong_flagged": 1,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 3,
+          "denominator": 4,
+          "rate": 0.75
+        },
+        "provisional": {
+          "correct": 3,
+          "correct_blank": 3,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "unmatched_extra": {
+          "correct": 0,
+          "correct_blank": 0,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "target_total": {
+        "raw_correct": false,
+        "workbook_correct": false,
+        "raw_blank": false,
+        "workbook_blank": false
+      },
+      "raw_tables": {
+        "Raw documents": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Raw requested values": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        }
+      },
+      "workbook_tables": {
+        "Billing documents": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Line items": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested values": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        }
+      },
+      "checks": {
+        "unprocessed_inputs": 0
+      },
+      "raw_checks": {},
+      "scored_differences": [
+        {
+          "where": "Raw documents/0/fields.total",
+          "outcome": "silent_error"
+        },
+        {
+          "where": "Billing documents/0/Total",
+          "outcome": "wrong_flagged"
+        }
+      ],
+      "abstention": {
+        "unclear_fields": 1,
+        "kept_unclear_and_blank": 1,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0,
+        "abstention_rate": 1.0
+      }
+    },
+    "current": {
+      "version": "0.3.10",
+      "requested_model": "gpt-6.1-sol",
+      "reported_model": "Unknown",
+      "provider": "OpenAI via current Codex ChatGPT login",
+      "tool_version": "codex-cli 0.162.0-alpha.17.2",
+      "artifact_hash": "3454bd4f2f63ae7731e1dd6f52481246c51085f411ca399eebf491c3417c8028",
+      "dataset_hash": "a40b0ebd8e461b70a2c296c881452f58a814dcb867fac38ac3fd7545881146c4",
+      "execution_valid": true,
+      "elapsed_seconds": 1670.3,
+      "raw": {
+        "correct": 3,
+        "correct_blank": 3,
+        "miss": 2,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 2,
+        "numerator": 3,
+        "denominator": 7,
+        "rate": 0.42857142857142855
+      },
+      "workbook": {
+        "correct": 4,
+        "correct_blank": 3,
+        "miss": 3,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 1,
+        "numerator": 4,
+        "denominator": 8,
+        "rate": 0.5
+      },
+      "raw_reference_scope": {
+        "owner_confirmed": {
+          "correct": 1,
+          "correct_blank": 0,
+          "miss": 1,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 1,
+          "denominator": 2,
+          "rate": 0.5
+        },
+        "provisional": {
+          "correct": 2,
+          "correct_blank": 3,
+          "miss": 1,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 2,
+          "denominator": 3,
+          "rate": 0.6666666666666666
+        },
+        "unmatched_extra": {
+          "correct": 0,
+          "correct_blank": 0,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 2,
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        }
+      },
+      "workbook_reference_scope": {
+        "owner_confirmed": {
+          "correct": 2,
+          "correct_blank": 0,
+          "miss": 2,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 2,
+          "denominator": 4,
+          "rate": 0.5
+        },
+        "provisional": {
+          "correct": 2,
+          "correct_blank": 3,
+          "miss": 1,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 2,
+          "denominator": 3,
+          "rate": 0.6666666666666666
+        },
+        "unmatched_extra": {
+          "correct": 0,
+          "correct_blank": 0,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 1,
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        }
+      },
+      "target_total": {
+        "raw_correct": true,
+        "workbook_correct": true,
+        "raw_blank": false,
+        "workbook_blank": false
+      },
+      "raw_tables": {
+        "Raw documents": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 1,
+          "missing": 1,
+          "extra": 1
+        },
+        "Raw requested values": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 1,
+          "missing": 1,
+          "extra": 1
+        }
+      },
+      "workbook_tables": {
+        "Billing documents": {
+          "expected": 2,
+          "actual": 1,
+          "matched": 1,
+          "missing": 1,
+          "extra": 0
+        },
+        "Line items": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 1,
+          "missing": 1,
+          "extra": 1
+        },
+        "Requested data": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 1,
+          "missing": 1,
+          "extra": 1
+        },
+        "Requested values": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 1,
+          "missing": 1,
+          "extra": 1
+        },
+        "Reference documents": {
+          "expected": 0,
+          "actual": 1,
+          "matched": 0,
+          "missing": 0,
+          "extra": 1
+        }
+      },
+      "checks": {
+        "unexpected_rows": 1,
+        "unprocessed_inputs": 0
+      },
+      "raw_checks": {},
+      "scored_differences": [
+        {
+          "where": "Raw documents/1/fields.total",
+          "outcome": "miss"
+        },
+        {
+          "where": "Raw documents/extra/1",
+          "outcome": "extra_row"
+        },
+        {
+          "where": "Raw requested values/1/observation.status",
+          "outcome": "miss"
+        },
+        {
+          "where": "Raw requested values/extra/1",
+          "outcome": "extra_row"
+        },
+        {
+          "where": "Billing documents/1/Total",
+          "outcome": "miss"
+        },
+        {
+          "where": "Billing documents/1/Document type",
+          "outcome": "miss"
+        },
+        {
+          "where": "Line items/extra/1",
+          "outcome": "extra_row"
+        },
+        {
+          "where": "Requested data/extra/1",
+          "outcome": "extra_row"
+        },
+        {
+          "where": "Requested values/1/Status",
+          "outcome": "miss"
+        },
+        {
+          "where": "Requested values/extra/1",
+          "outcome": "extra_row"
+        }
+      ],
+      "abstention": {
+        "unclear_fields": 1,
+        "kept_unclear_and_blank": 1,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0,
+        "abstention_rate": 1.0
+      }
+    }
+  },
+  "public_bootstrap_separate": {
+    "case": "printed-001",
+    "valid": true,
+    "raw": null,
+    "workbook": {
+      "correct": 19,
+      "correct_blank": 11,
+      "miss": 15,
+      "wrong_flagged": 0,
+      "silent_error": 0,
+      "invented": 15,
+      "numerator": 19,
+      "denominator": 49,
+      "rate": 0.3877551020408163
+    },
+    "diagnostic": {
+      "kind": "post-run-reference-diagnostic",
+      "case": "printed-001",
+      "frozen_score_preserved": true,
+      "reference_sha256": "bde5a2e1e90e52201cbcb795b675f3105f7b4718e4b8863f2c582eef396bf598",
+      "workbook_sha256": "86242368392c032f096c4a17efcde37d16f3350b7b70450aa44980dc15259b58",
+      "finding": "Line identity requires Document number, but every frozen expected line omits that key. Actual lines include the document number and match their parent invoice. This causes three false missing/extra row pairs.",
+      "manual_line_values_correct": 15,
+      "manual_line_values_denominator": 15,
+      "reference_changed": false,
+      "replacement_score_published": false,
+      "raw_expectations": "unavailable for legacy fixture",
+      "scope": "Diagnostic comparing unchanged artifacts; not a new independently frozen reference or fresh model run."
+    }
+  },
+  "onboarding": {
+    "actor": "human",
+    "response_received": true,
+    "new_session_for_target": true,
+    "automatic_opening_status": "invalid",
+    "question_occurrences_before_reply": 3,
+    "once_per_chat_pass": false,
+    "observed_pause_accepted_by_maintainer": true,
+    "verified_policy_reading": false
+  },
+  "reading_review": {
+    "reviewer": "maintainer",
+    "rollout_sha256": "d8137c47cf4c9c7f295aa09452e59a012d033f836adb3af5286451e874bd5679",
+    "private_stream_sha256": "0ee37b57eb495cda8367931a83f34c1038285d99d9055fb56d0758bd598377ec",
+    "image_calls": [
+      {
+        "timestamp": "2026-10-10T09:37:15.516Z",
+        "call_id": "call_683d4789be6745428619ff224b014aa1",
+        "view": "initial full-page render",
+        "returned_content_types": [
+          "input_text",
+          "input_image"
+        ]
+      },
+      {
+        "timestamp": "2026-10-10T09:40:40.510Z",
+        "call_id": "call_bf4514766f844a909919c0d4ff9944c2",
+        "view": "90-degree render",
+        "returned_content_types": [
+          "input_text",
+          "input_image"
+        ]
+      },
+      {
+        "timestamp": "2026-10-10T09:47:48.959Z",
+        "call_id": "call_5f953e537edc4829943fff8210f781f3",
+        "view": "upright 270-degree render",
+        "returned_content_types": [
+          "input_text",
+          "input_image",
+          "input_text"
+        ]
+      }
+    ],
+    "page_routes": [
+      "B"
+    ],
+    "completed_commands": 9,
+    "nonzero_command_exits": 0,
+    "document_type_reference_read_in_private_turn": false,
+    "second_record_classification": {
+      "expected": "Invoice",
+      "actual": "Receipt",
+      "reference_basis": "Owner-confirmed Cash Memo classification before this run."
+    },
+    "second_record_dash_origin": "handwritten",
+    "second_record_amount_review": {
+      "raw_matches_reference": true,
+      "numeric_workbook_matches_reference": true,
+      "scope": "Supplemental source-record amount check despite incorrect classification; does not replace the strict identity-based score."
+    },
+    "second_record_has_explicit_sign_confirmation": false,
+    "global_dash_override_used": false,
+    "question_repeated_in_private_turn": false,
+    "target_value_supplied_in_private_prompt": false,
+    "artifact_sha256": {
+      "manifest.json": "acd4e0a10235d936017ca89d7857f5c7553d2302c10f71b6d3506d522ebb9aaf",
+      "pdf-evidence/input-0001/page-0001.png": "de18e28c9b76a1b994ba3489f969ff649b6975650a70e0220422ac0bb7f6a414",
+      "pdf-evidence/reading-review.json": "66602634ec9094424bc508619ea691451f30ad6f53c04b79d80c9731b479150a",
+      "pdf-evidence/routes.json": "54a2a196ff821fb15e59bcf5bea04a1399fbf64e9287bc5acfed3b0dd2603f90",
+      "recovery-1/page-0001.png": "d07629752739984d93931418cdda0cb6b3402294b750a92441e27fc8e7a5e08a",
+      "source.json": "a4cebc6c7f0399f025cd2ef4ed38305ffc297a6ce4cb626eeaacfcf3e6f4dd28",
+      "upright/page-0001.png": "28df0a52bb23bfdaeaac4c5e4e258444eacb0a1c953ac6db4860d1ac98911cea"
+    },
+    "scope": "Observed command and image-tool traces plus final artifacts; not verified model attention. Private values omitted.",
+    "cli_attachment_receipt": "not_captured"
+  },
+  "evidence_sha256": {
+    "new_score": "be07d96764e11dec6d9ac977fd6c57859b8441c0282ece99183982c01389d804",
+    "new_conversation_score": "71ccf44101333d8843f36d1e80d4852bdd0a66461c5276127c0d504f02a74ef7",
+    "old_score": "f5c6cb8a19365dd17ef3638a59bd6f8f22d0d42db3fbae3d26e6aa80e12cf3ad",
+    "original_public_completion_report": "1fafbd8bf9d611adc3822309ca41351755079ea36156ec8ca3c6c4ff48ee2edd",
+    "new_raw": "7c208af02e4eae3d153f7707ec5efc99af7b678581c6d4e9c4584dc936480d89",
+    "new_workbook": "fd4348dde23426762ed5f92299e1ca2fdb6c6b9ff49fc710f6c1d13b1601e115",
+    "new_reference": "b31991832f4cec8058f92fab731ae848ac5c4d1d9f443f9cfbfb366b8d7e56af",
+    "old_raw": "0cf99a121afc9ab048a77c8c474779d94aa0811d50b1f8d32fe2f6e36efd070e",
+    "old_workbook": "b05e412677e91966d7ded1277c5b56ca2da4d4df09bd4fde19a3a699d336715b",
+    "old_reference": "b31991832f4cec8058f92fab731ae848ac5c4d1d9f443f9cfbfb366b8d7e56af",
+    "owner_policy_reply": "7ccdd84f5650d83f5fca67afc8cb48d2bf7904b53069616f203bcdf65dfe36e7",
+    "authorization": "27332a1966730e34279c899845582af1fff46c74babd879e6fbc5b1afb24ad3f",
+    "regression_lock": "9c2e03077612416a9775384071e58f0cac6b27699f1464a95a7ad847e4d546b5",
+    "reference_scope": "64d6e56bef951b3417e2d648105cff481ff92f6ae3d4d7524b26b0fc2f35f06e",
+    "owner_target_adjudication": "b39aaeb5b56568f0fbfa49ff00f82b1f23d6ef64e1632d4863002bcfdf56d1df",
+    "opening_trace_review": "ac2bfa2a97e9c46f14c6576f0147810e5b80cec7d3a22df10019449dacbf84cd",
+    "extraction_trace_review": "946a598332b27f0475edd58ce93262ecbbcf0f48066f33f99eeff39cd7d8f4b3",
+    "bootstrap_reference_diagnostic": "f98adfc8fdc8ccf25f7af4cd817a1c3d79f1ee1ba4e5bc247ba6eab27ed6db85"
+  },
+  "limitations": [
+    "Known reused source and prompt-development target; not a holdout.",
+    "One new execution does not establish repeatability or general handwriting accuracy.",
+    "Package, CLI version and session history differ from the prior run; no prompt-only causal conclusion.",
+    "Reference review remains mixed owner-confirmed and provisional.",
+    "Onboarding repeated-question failure remains visible regardless of extraction accuracy.",
+    "Reported model identity is not verified; Unknown remains Unknown."
+  ],
+  "status": "experimental",
+  "commit_performed": false
+}

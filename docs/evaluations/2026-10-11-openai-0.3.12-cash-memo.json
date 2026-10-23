@@ -1,0 +1,592 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-11",
+  "status": "experimental",
+  "results": [
+    {
+      "case": "cash-memo-classification-v1",
+      "evaluation_kind": "public-native-print-controls",
+      "version": "0.3.12",
+      "requested_model": "gpt-6.1-sol",
+      "reported_model": "Unknown",
+      "provider": "OpenAI via current Codex ChatGPT login",
+      "tool_version": "codex-cli 0.162.0-alpha.17.2",
+      "transport": "https",
+      "artifact_hash": "7b5dafe91acfbeb644589f5dcffb18ceed964999338f88210195ba5b8036724c",
+      "dataset_hash": "f7f7dbf181e13e653b37623b679c5deef54d22374aa097cc48d877cba4674fca",
+      "elapsed_seconds": 151.61,
+      "completed_attempts": 1,
+      "raw": {
+        "correct": 9,
+        "correct_blank": 0,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0,
+        "numerator": 9,
+        "denominator": 9,
+        "rate": 1.0
+      },
+      "workbook": {
+        "correct": 17,
+        "correct_blank": 0,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0,
+        "numerator": 17,
+        "denominator": 17,
+        "rate": 1.0
+      },
+      "raw_tables": {
+        "Raw documents": {
+          "expected": 3,
+          "actual": 3,
+          "matched": 3,
+          "extra": 0
+        }
+      },
+      "workbook_tables": {
+        "Billing documents": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Reference documents": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Line items": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        }
+      },
+      "checks": {
+        "unprocessed_inputs": 0
+      },
+      "raw_checks": {},
+      "scored_differences": [],
+      "evidence_sha256": {
+        "meta.json": "4729c86e230591765a8131012b7426b602f0f753a47a0dec98cea6a1c2d6f02b",
+        "expected.json": "4bc3c4f5823140cbdbd12b4babcd51bb827aa30394045f8f3b925e09a840102d",
+        "custom.md": "4820bb8a81c9774249329202d5d6fbb31cea50b7c738c4281db55c4638d5128e",
+        "raw-extraction.json": "373aee8559ff7ea93945a296bbe4e70ada62681d6fe7fe9c6cd92796a4b0724f",
+        "output.xlsx": "83c56d43e154564c19c3cef2f0e58a43bd84d346d1ad7db75dcf9e73c30f3379"
+      },
+      "classification_correct": {
+        "numerator": 3,
+        "denominator": 3
+      }
+    },
+    {
+      "case": "private-case-004",
+      "evaluation_kind": "known-source-regression",
+      "version": "0.3.12",
+      "requested_model": "gpt-6.1-sol",
+      "reported_model": "Unknown",
+      "provider": "OpenAI via current Codex ChatGPT login",
+      "tool_version": "codex-cli 0.162.0-alpha.17.2",
+      "transport": "https",
+      "artifact_hash": "7b5dafe91acfbeb644589f5dcffb18ceed964999338f88210195ba5b8036724c",
+      "dataset_hash": "a40b0ebd8e461b70a2c296c881452f58a814dcb867fac38ac3fd7545881146c4",
+      "elapsed_seconds": 211.94,
+      "completed_attempts": 1,
+      "raw": {
+        "correct": 4,
+        "correct_blank": 3,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 1,
+        "invented": 0,
+        "numerator": 4,
+        "denominator": 5,
+        "rate": 0.8
+      },
+      "workbook": {
+        "correct": 7,
+        "correct_blank": 3,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0,
+        "numerator": 7,
+        "denominator": 7,
+        "rate": 1.0
+      },
+      "raw_tables": {
+        "Raw documents": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Raw requested values": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        }
+      },
+      "workbook_tables": {
+        "Billing documents": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Line items": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested values": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        }
+      },
+      "checks": {
+        "unprocessed_inputs": 0
+      },
+      "raw_checks": {},
+      "scored_differences": [
+        {
+          "where": "Raw documents/1/fields.total",
+          "outcome": "silent_error"
+        }
+      ],
+      "evidence_sha256": {
+        "meta.json": "30ddba5bedc2fc0f503840f6fbe4214498203f0872410dd663be3ef8dd5a241d",
+        "expected.json": "b31991832f4cec8058f92fab731ae848ac5c4d1d9f443f9cfbfb366b8d7e56af",
+        "custom.md": "d5697ce658657790951fe6fca10b548735df3654b50317fb4b6bf463cb4484f0",
+        "raw-extraction.json": "96a92cbfc1c4519e1662a046ab3a6de704ccd57dc76e147f3d95690aec21d99b",
+        "output.xlsx": "5b4603e3316099fd731d3b0f8a0c570fc17474ccdd3b978b2443a19a05b027f9"
+      },
+      "raw_reference_scope": {
+        "owner_confirmed": {
+          "correct": 1,
+          "correct_blank": 0,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 1,
+          "invented": 0,
+          "numerator": 1,
+          "denominator": 2,
+          "rate": 0.5
+        },
+        "provisional": {
+          "correct": 3,
+          "correct_blank": 3,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "unmatched_extra": {
+          "correct": 0,
+          "correct_blank": 0,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "workbook_reference_scope": {
+        "owner_confirmed": {
+          "correct": 4,
+          "correct_blank": 0,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 4,
+          "denominator": 4,
+          "rate": 1.0
+        },
+        "provisional": {
+          "correct": 3,
+          "correct_blank": 3,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "unmatched_extra": {
+          "correct": 0,
+          "correct_blank": 0,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "target_total": {
+        "raw_correct": true,
+        "workbook_correct": true
+      },
+      "abstention": {
+        "unclear_fields": 1,
+        "kept_unclear_and_blank": 1,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0,
+        "abstention_rate": 1.0
+      },
+      "reading_review": {
+        "reviewer": "maintainer",
+        "rollout_sha256": "6a417ba29525417a91c6272ab411bd92240407ceb4d72cc7f0172bc53859c126",
+        "private_stream_sha256": "88f79c3b7095ee12f5cd91a2d9467008a12451d2456c119557b1cb1e4ecbac14",
+        "image_calls": [
+          {
+            "timestamp": "2026-10-10T20:38:23.586Z",
+            "call_id": "call_9281735dcc1948be81028e434f4d0250",
+            "view": "private page image call 1",
+            "returned_content_types": [
+              "input_text",
+              "input_image"
+            ]
+          },
+          {
+            "timestamp": "2026-10-10T20:39:17.619Z",
+            "call_id": "call_8f8352ae68b3467baae9fbeba3c4ce2c",
+            "view": "private page image call 2",
+            "returned_content_types": [
+              "input_text",
+              "input_text",
+              "input_image"
+            ]
+          },
+          {
+            "timestamp": "2026-10-10T20:39:33.012Z",
+            "call_id": "call_9d5aa0bacb504d02a07f88ed8fee1ada",
+            "view": "private page image call 3",
+            "returned_content_types": [
+              "input_text",
+              "input_text",
+              "input_image"
+            ]
+          }
+        ],
+        "page_routes": [
+          "B"
+        ],
+        "completed_commands": 9,
+        "nonzero_command_exits": 0,
+        "document_type_reference_read_in_private_turn": true,
+        "second_record_classification": {
+          "expected": "Invoice",
+          "actual": "Invoice",
+          "reference_basis": "Owner-confirmed Cash Memo classification before this run."
+        },
+        "second_record_dash_origin": "handwritten",
+        "second_record_amount_review": {
+          "raw_matches_reference": false,
+          "numeric_workbook_matches_reference": true,
+          "scope": "Supplemental source-record amount check; does not replace strict identity-based scoring."
+        },
+        "second_record_has_explicit_sign_confirmation": false,
+        "global_dash_override_used": false,
+        "question_repeated_in_private_turn": false,
+        "target_value_supplied_in_private_prompt": false,
+        "artifact_sha256": {
+          "extraction.json": "80c99525fbaade37219bf4007aa1073686fbb01c1fb575da8b68bad8d5ee26b2",
+          "manifest.json": "3dcaa4bca4db107e026d61a29fdabd54d793648d3184dfb3a9b57132e9348045",
+          "pdf-evidence/input-0001/page-0001.png": "de18e28c9b76a1b994ba3489f969ff649b6975650a70e0220422ac0bb7f6a414",
+          "pdf-evidence/reading-review.json": "69e46a05c8a2ce2188a366ae89383fff1435218da69422a6f7dbedd6f8d222a4",
+          "pdf-evidence/routes.json": "f64cb79e6eab751ce0c6aedb9e0d8185c6c437826c7ac8e9c1defec2a9322033",
+          "recovery-1/page-0001.png": "d07629752739984d93931418cdda0cb6b3402294b750a92441e27fc8e7a5e08a",
+          "upright/page-0001.png": "28df0a52bb23bfdaeaac4c5e4e258444eacb0a1c953ac6db4860d1ac98911cea"
+        },
+        "raw_total_difference_review": {
+          "strict_reference_unchanged": true,
+          "difference": "The prediction includes a currency prefix absent from the frozen raw reference; digits and terminal dash agree.",
+          "maintainer_visual_observation": "The upright source image shows a currency mark immediately before the total. This is a source-supported formatting difference, not evidence of a changed numerical amount.",
+          "review_status": "Maintainer visual diagnosis only; no new owner adjudication or replacement score."
+        },
+        "scope": "Observed command and image-tool traces plus final artifacts; not verified model attention. Private values omitted.",
+        "cli_attachment_receipt": "not_captured"
+      }
+    }
+  ],
+  "onboarding": {
+    "actor": "human",
+    "response_received": true,
+    "verified_reading": false,
+    "fresh_session_for_target": true,
+    "question_occurrences_before_reply": 1,
+    "automatic_opening_status": "invalid",
+    "observed_pause_accepted_by_maintainer": true,
+    "question_repeated_after_reply": false
+  },
+  "local_verification": {
+    "tests_passed": 186,
+    "supplied_transcription_raw": {
+      "numerator": 9,
+      "denominator": 9
+    },
+    "supplied_transcription_workbook": {
+      "numerator": 17,
+      "denominator": 17
+    },
+    "injected_classification_errors_detected": {
+      "numerator": 3,
+      "denominator": 3
+    }
+  },
+  "previous_private_result": {
+    "version": "0.3.10",
+    "requested_model": "gpt-6.1-sol",
+    "reported_model": "Unknown",
+    "provider": "OpenAI via current Codex ChatGPT login",
+    "tool_version": "codex-cli 0.162.0-alpha.17.2",
+    "artifact_hash": "3454bd4f2f63ae7731e1dd6f52481246c51085f411ca399eebf491c3417c8028",
+    "dataset_hash": "a40b0ebd8e461b70a2c296c881452f58a814dcb867fac38ac3fd7545881146c4",
+    "execution_valid": true,
+    "elapsed_seconds": 1670.3,
+    "raw": {
+      "correct": 3,
+      "correct_blank": 3,
+      "miss": 2,
+      "wrong_flagged": 0,
+      "silent_error": 0,
+      "invented": 2,
+      "numerator": 3,
+      "denominator": 7,
+      "rate": 0.42857142857142855
+    },
+    "workbook": {
+      "correct": 4,
+      "correct_blank": 3,
+      "miss": 3,
+      "wrong_flagged": 0,
+      "silent_error": 0,
+      "invented": 1,
+      "numerator": 4,
+      "denominator": 8,
+      "rate": 0.5
+    },
+    "raw_reference_scope": {
+      "owner_confirmed": {
+        "correct": 1,
+        "correct_blank": 0,
+        "miss": 1,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0,
+        "numerator": 1,
+        "denominator": 2,
+        "rate": 0.5
+      },
+      "provisional": {
+        "correct": 2,
+        "correct_blank": 3,
+        "miss": 1,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0,
+        "numerator": 2,
+        "denominator": 3,
+        "rate": 0.6666666666666666
+      },
+      "unmatched_extra": {
+        "correct": 0,
+        "correct_blank": 0,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 2,
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0.0
+      }
+    },
+    "workbook_reference_scope": {
+      "owner_confirmed": {
+        "correct": 2,
+        "correct_blank": 0,
+        "miss": 2,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0,
+        "numerator": 2,
+        "denominator": 4,
+        "rate": 0.5
+      },
+      "provisional": {
+        "correct": 2,
+        "correct_blank": 3,
+        "miss": 1,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0,
+        "numerator": 2,
+        "denominator": 3,
+        "rate": 0.6666666666666666
+      },
+      "unmatched_extra": {
+        "correct": 0,
+        "correct_blank": 0,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 1,
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0
+      }
+    },
+    "target_total": {
+      "raw_correct": true,
+      "workbook_correct": true,
+      "raw_blank": false,
+      "workbook_blank": false
+    },
+    "raw_tables": {
+      "Raw documents": {
+        "expected": 2,
+        "actual": 2,
+        "matched": 1,
+        "missing": 1,
+        "extra": 1
+      },
+      "Raw requested values": {
+        "expected": 2,
+        "actual": 2,
+        "matched": 1,
+        "missing": 1,
+        "extra": 1
+      }
+    },
+    "workbook_tables": {
+      "Billing documents": {
+        "expected": 2,
+        "actual": 1,
+        "matched": 1,
+        "missing": 1,
+        "extra": 0
+      },
+      "Line items": {
+        "expected": 2,
+        "actual": 2,
+        "matched": 1,
+        "missing": 1,
+        "extra": 1
+      },
+      "Requested data": {
+        "expected": 2,
+        "actual": 2,
+        "matched": 1,
+        "missing": 1,
+        "extra": 1
+      },
+      "Requested values": {
+        "expected": 2,
+        "actual": 2,
+        "matched": 1,
+        "missing": 1,
+        "extra": 1
+      },
+      "Reference documents": {
+        "expected": 0,
+        "actual": 1,
+        "matched": 0,
+        "missing": 0,
+        "extra": 1
+      }
+    },
+    "checks": {
+      "unexpected_rows": 1,
+      "unprocessed_inputs": 0
+    },
+    "raw_checks": {},
+    "scored_differences": [
+      {
+        "where": "Raw documents/1/fields.total",
+        "outcome": "miss"
+      },
+      {
+        "where": "Raw documents/extra/1",
+        "outcome": "extra_row"
+      },
+      {
+        "where": "Raw requested values/1/observation.status",
+        "outcome": "miss"
+      },
+      {
+        "where": "Raw requested values/extra/1",
+        "outcome": "extra_row"
+      },
+      {
+        "where": "Billing documents/1/Total",
+        "outcome": "miss"
+      },
+      {
+        "where": "Billing documents/1/Document type",
+        "outcome": "miss"
+      },
+      {
+        "where": "Line items/extra/1",
+        "outcome": "extra_row"
+      },
+      {
+        "where": "Requested data/extra/1",
+        "outcome": "extra_row"
+      },
+      {
+        "where": "Requested values/1/Status",
+        "outcome": "miss"
+      },
+      {
+        "where": "Requested values/extra/1",
+        "outcome": "extra_row"
+      }
+    ],
+    "abstention": {
+      "unclear_fields": 1,
+      "kept_unclear_and_blank": 1,
+      "unsupported_filled": 0,
+      "missing_or_ambiguous_observation": 0,
+      "abstention_rate": 1.0
+    }
+  },
+  "evidence_sha256": {
+    "conversation-score.json": "91e9a69fab03703e1b6d5b952174b16d2eabcac8a9fa02ffba5b31e6224f9397",
+    "extractions/score.json": "953dc13fb46d0e6bde384a12b78d48fb0f5ca3bda51e84bb87d5f68fc72a231f",
+    "owner-policy-reply.json": "14e959b3735ad8126706d31758f4c6a7545f8de21e0346d13511735170c3c059",
+    "turns/001-start/trace-review.json": "31bb9044ffba9d5031be229b783dafcc6d635204056b98a863472f101bc1fb7f"
+  },
+  "limitations": [
+    "One execution per case; no repeatability or general handwriting accuracy claim.",
+    "The private page is a reused prompt-development target, not an unseen holdout.",
+    "Private references remain mixed owner-confirmed and provisional.",
+    "The new package inherits shared core 0.3.11; comparison with 0.3.10 does not isolate the classification instruction.",
+    "Model identity is self-reported, not verified.",
+    "The public classification controls precede the private batch in the same session; this is not an independent fresh-chat private run.",
+    "Correct blanks are excluded from field-accuracy denominators."
+  ],
+  "commit_performed": false
+}

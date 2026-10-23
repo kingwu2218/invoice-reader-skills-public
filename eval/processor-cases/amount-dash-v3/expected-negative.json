@@ -1,0 +1,212 @@
+{
+  "tables": {
+    "Billing documents": {
+      "identity": [
+        "File",
+        "Pages"
+      ],
+      "columns": [
+        {
+          "label": "Total",
+          "kind": "text"
+        },
+        {
+          "label": "Arithmetic check",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "invented-amounts.pdf",
+          "Pages": "1",
+          "Total": "-125",
+          "Arithmetic check": "Not checkable",
+          "Needs review": "Yes"
+        }
+      ]
+    },
+    "Payments": {
+      "identity": [
+        "File",
+        "Pages"
+      ],
+      "columns": [
+        {
+          "label": "Amount",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "invented-amounts.pdf",
+          "Pages": "2",
+          "Amount": "125",
+          "Needs review": "Yes"
+        }
+      ]
+    },
+    "Reference documents": {
+      "identity": [
+        "File",
+        "Pages"
+      ],
+      "columns": [
+        {
+          "label": "Document type",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "invented-amounts.pdf",
+          "Pages": "3",
+          "Document type": "Statement of account",
+          "Needs review": "Yes"
+        }
+      ]
+    },
+    "Line items": {
+      "identity": [
+        "File",
+        "Line"
+      ],
+      "columns": [
+        {
+          "label": "Quantity",
+          "kind": "number"
+        },
+        {
+          "label": "Unit price",
+          "kind": "text"
+        },
+        {
+          "label": "Line total",
+          "kind": "text"
+        },
+        {
+          "label": "Line check",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "invented-amounts.pdf",
+          "Line": "1",
+          "Quantity": "1",
+          "Unit price": "125",
+          "Line total": "125-",
+          "Line check": "Not checkable"
+        }
+      ]
+    },
+    "Statement lines": {
+      "identity": [
+        "File",
+        "Line"
+      ],
+      "columns": [
+        {
+          "label": "Debit",
+          "kind": "text"
+        },
+        {
+          "label": "Credit",
+          "kind": "amount"
+        },
+        {
+          "label": "Balance",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "invented-amounts.pdf",
+          "Line": "1",
+          "Debit": "125",
+          "Credit": "0",
+          "Balance": "125-"
+        }
+      ]
+    },
+    "Requested data": {
+      "identity": [
+        "File",
+        "Pages"
+      ],
+      "columns": [
+        {
+          "label": "Printed amount",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "invented-amounts.pdf",
+          "Pages": "1",
+          "Printed amount": "125-"
+        },
+        {
+          "File": "invented-amounts.pdf",
+          "Pages": "2",
+          "Printed amount": null
+        },
+        {
+          "File": "invented-amounts.pdf",
+          "Pages": "3",
+          "Printed amount": null
+        }
+      ]
+    },
+    "Requested values": {
+      "identity": [
+        "File",
+        "Document pages",
+        "Field key",
+        "Occurrence"
+      ],
+      "columns": [
+        {
+          "label": "Status",
+          "kind": "text"
+        },
+        {
+          "label": "Value (as printed)",
+          "kind": "text"
+        },
+        {
+          "label": "Pages",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "invented-amounts.pdf",
+          "Document pages": "1",
+          "Field key": "printed_amount",
+          "Occurrence": "1",
+          "Status": "printed",
+          "Value (as printed)": "125-",
+          "Pages": "1"
+        },
+        {
+          "File": "invented-amounts.pdf",
+          "Document pages": "2",
+          "Field key": "printed_amount",
+          "Occurrence": "1",
+          "Status": "absent",
+          "Value (as printed)": null,
+          "Pages": null
+        },
+        {
+          "File": "invented-amounts.pdf",
+          "Document pages": "3",
+          "Field key": "printed_amount",
+          "Occurrence": "1",
+          "Status": "absent",
+          "Value (as printed)": null,
+          "Pages": null
+        }
+      ]
+    }
+  }
+}

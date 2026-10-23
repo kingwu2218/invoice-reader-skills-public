@@ -1,0 +1,329 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-10",
+  "evaluation_kind": "live-public-model-evaluation",
+  "package": "invoice-reader-openai",
+  "package_version": "0.3.10",
+  "status": "experimental",
+  "model_requested": "gpt-6.1-sol",
+  "model_reported": "Unknown",
+  "provider": "OpenAI via current Codex ChatGPT login",
+  "tool_version": "codex-cli 0.162.0-alpha.17.2",
+  "transport": "https",
+  "artifact_hash": "3454bd4f2f63ae7731e1dd6f52481246c51085f411ca399eebf491c3417c8028",
+  "dataset_hash": "4f1e780a2a78956b2d4162eaa0dd43ef0b6432ee61e81df9eec57ac99cd240a9",
+  "conversation": "evidence-run-11",
+  "case": "digit-boundary-v1",
+  "scope": {
+    "files": 1,
+    "physical_pages": 3,
+    "expected_documents": 3,
+    "content_groups": 1,
+    "medium": "synthetic-raster-print",
+    "extraction_attempts": 1,
+    "completed_attempts": 1,
+    "private_documents": 0,
+    "human_handwriting_examples": 0
+  },
+  "execution": {
+    "valid": true,
+    "completed": true,
+    "exit_code": 0,
+    "elapsed_seconds": 226.76,
+    "execution_timeout_seconds": 900,
+    "prepared_only": false,
+    "package_unchanged": true,
+    "dataset_unchanged": true
+  },
+  "onboarding": {
+    "contract": "any-response-v1",
+    "automatic_opening_status": "invalid",
+    "observed_pause_accepted_by_maintainer": true,
+    "question_occurrences_before_reply": 1,
+    "workspace_unchanged_before_reply": true,
+    "question_repeated_after_reply": false,
+    "reply": "No, but I will read it before I upload any confidential data",
+    "actor": "scripted_negative_fixture",
+    "human_acknowledgement": false,
+    "private_continuations_allowed": false,
+    "limitation": "Additional explanation and combined reference reads did not pass the automatic layout/command matcher; original invalid audit retained."
+  },
+  "raw": {
+    "raw_status": "scored",
+    "raw": {
+      "cells": {
+        "correct": 13,
+        "correct_blank": 2
+      },
+      "flags": {},
+      "checks": {},
+      "tables": {
+        "Raw documents": {
+          "expected": 3,
+          "actual": 3,
+          "matched": 3,
+          "extra": 0
+        },
+        "Raw requested values": {
+          "expected": 3,
+          "actual": 3,
+          "matched": 3,
+          "extra": 0
+        }
+      },
+      "values": {
+        "Raw documents/0/fields.document_number": "SYN-BOUNDARY-01",
+        "Raw documents/0/fields.total": "684",
+        "Raw documents/1/fields.document_number": "SYN-BOUNDARY-02",
+        "Raw documents/1/fields.total": "1684",
+        "Raw documents/2/fields.document_number": "SYN-BOUNDARY-03",
+        "Raw documents/2/fields.total": "None",
+        "Raw requested values/0/observation.status": "printed",
+        "Raw requested values/0/observation.value": "684",
+        "Raw requested values/0/observation.pages": "1",
+        "Raw requested values/1/observation.status": "printed",
+        "Raw requested values/1/observation.value": "1684",
+        "Raw requested values/1/observation.pages": "2",
+        "Raw requested values/2/observation.status": "unclear",
+        "Raw requested values/2/observation.value": "None",
+        "Raw requested values/2/observation.pages": "3"
+      },
+      "details": []
+    },
+    "raw_metrics": {
+      "field_accuracy": {
+        "numerator": 13,
+        "denominator": 13,
+        "rate": 1.0
+      },
+      "field_precision": {
+        "numerator": 13,
+        "denominator": 13,
+        "rate": 1.0
+      },
+      "printed_value_recall": {
+        "numerator": 13,
+        "denominator": 13,
+        "rate": 1.0
+      },
+      "document_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "document_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "line_item_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "line_item_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "statement_line_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "statement_line_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      }
+    }
+  },
+  "workbook": {
+    "cells": {
+      "correct": 15,
+      "correct_blank": 3
+    },
+    "flags": {},
+    "checks": {
+      "unprocessed_inputs": 0
+    },
+    "tables": {
+      "Billing documents": {
+        "expected": 3,
+        "actual": 3,
+        "matched": 3,
+        "extra": 0
+      },
+      "Requested data": {
+        "expected": 3,
+        "actual": 3,
+        "matched": 3,
+        "extra": 0
+      },
+      "Requested values": {
+        "expected": 3,
+        "actual": 3,
+        "matched": 3,
+        "extra": 0
+      }
+    },
+    "metrics": {
+      "field_accuracy": {
+        "numerator": 15,
+        "denominator": 15,
+        "rate": 1.0
+      },
+      "field_precision": {
+        "numerator": 15,
+        "denominator": 15,
+        "rate": 1.0
+      },
+      "printed_value_recall": {
+        "numerator": 15,
+        "denominator": 15,
+        "rate": 1.0
+      },
+      "document_recall": {
+        "numerator": 3,
+        "denominator": 3,
+        "rate": 1.0
+      },
+      "document_precision": {
+        "numerator": 3,
+        "denominator": 3,
+        "rate": 1.0
+      }
+    },
+    "details": []
+  },
+  "correct_blanks_excluded": {
+    "raw": 2,
+    "workbook": 3
+  },
+  "scoped_observations": {
+    "readable_totals": {
+      "numerator": 2,
+      "denominator": 2
+    },
+    "unclear_complete_total_kept_blank": {
+      "numerator": 1,
+      "denominator": 1
+    },
+    "custom_observation_source_pages": {
+      "numerator": 3,
+      "denominator": 3
+    },
+    "document_records_matched": {
+      "numerator": 3,
+      "denominator": 3
+    },
+    "page_3_review_flag": "Observed in workbook/processor trace; not a configured automatic flag metric.",
+    "unsupported_complete_totals": 0,
+    "note": "These are overlapping observations, not extra independent accuracy checks."
+  },
+  "reading_trace_review": {
+    "reviewer": "maintainer",
+    "rollout_sha256": "5dcf55503840dc9465701d4588ce4c020dfac41c07bba15b67635234c986407e",
+    "reply_stream_sha256": "4da6f1cd08b536f36f6f294134fe3b61935c85f09fbaab25fc5071cccf7300bf",
+    "image_calls": [
+      {
+        "timestamp": "2026-10-10T04:06:17.394Z",
+        "call_id": "call_pmG77SEB8BaDpPPeEK8Vks9G",
+        "request": "Full-page images 1-3",
+        "returned_content_types": [
+          "input_text",
+          "input_image",
+          "input_image",
+          "input_image"
+        ]
+      },
+      {
+        "timestamp": "2026-10-10T04:06:47.481Z",
+        "call_id": "call_5c6ZBNetkAzNCXOoWfP6cFlv",
+        "request": "Page 3 recovery crop",
+        "returned_content_types": [
+          "input_text",
+          "input_image"
+        ]
+      }
+    ],
+    "routes": [
+      "B",
+      "B",
+      "B"
+    ],
+    "reading_review_sha256": "543534f59932a36d56f0799dbdf250d837c40d0cb33a6cce350fdc1e4e88aeac",
+    "scope": "Observed image-tool calls and outputs, route report and agent-authored ledger; not server receipt or proof of model attention.",
+    "recovery": "One page-3 crop at 450 dpi; unresolved complete amount left blank.",
+    "cli_attachment_receipt": "not_captured"
+  },
+  "capabilities": {
+    "python": "3.12.14",
+    "libraries": {
+      "pypdfium2": {
+        "status": "usable",
+        "version": "5.13.0"
+      },
+      "PIL": {
+        "status": "usable",
+        "version": "12.3.0"
+      },
+      "openpyxl": {
+        "status": "usable",
+        "version": "3.1.5"
+      }
+    },
+    "tesseract": {
+      "status": "unavailable",
+      "reason": "Not found at the configured path or on PATH; installation elsewhere is unknown."
+    },
+    "python_supplied_by_evaluator": true
+  },
+  "image_input_audit": {
+    "status": "not_captured",
+    "numerator": null,
+    "denominator": null
+  },
+  "tests_passed": 169,
+  "evidence_sha256": {
+    "eval/runs/evidence-run-11/extractions/score.json": "facb379b620247605ea4d6cb26dcbb91bc468c311f98f94444069bb1c17a2628",
+    "eval/runs/evidence-run-11/conversation-score.json": "90dcd051b77c6054b4aac4f3aef9bf1fd62ed0c48bd9b273322258c7fc46c81d",
+    "eval/runs/evidence-run-11/state.json": "05470dc6b810b0c1f37c66c0a8cef08c1dc00cde015ef8b3027285b884cb8c01",
+    "eval/runs/evidence-run-11/execution-plan.json": "966aff883b1a41ce49176204e676a327299ecf7d66988f4913ed68acbc64af2a",
+    "eval/runs/evidence-run-11/turns/001-start/stream.jsonl": "40bba3e105428c38458c73d3e2cafbb3fa4131ff9b979ba0d4fa44b3c0a5d90d",
+    "eval/runs/evidence-run-11/turns/001-start/trace-review.json": "22c138142e7bd953f1227704149eacc443c99c9f1cd787519744d8c11c9cbcd1",
+    "eval/runs/evidence-run-11/turns/002-reply/stream.jsonl": "4da6f1cd08b536f36f6f294134fe3b61935c85f09fbaab25fc5071cccf7300bf",
+    "eval/runs/evidence-run-11/extraction-trace-review.json": "a573b45bfe86646086643baf0ef7f7b294594d0aec3d9f2965590d0c033ffbb8",
+    "eval/runs/evidence-run-11/extractions/digit-boundary-v1/run-1/expected.json": "bd385fdd34c973dc203eba2d9f7cf933713f47f85271549399865cea2a95914e",
+    "eval/runs/evidence-run-11/extractions/digit-boundary-v1/run-1/custom.md": "6bc45a568041cac18767875a59720473cba31d321f6d349ffaf97d752edbae43",
+    "eval/runs/evidence-run-11/extractions/digit-boundary-v1/run-1/raw-extraction.json": "bfb9a3e0528383df9bf8a1d2cfdc79315eb36bea4f5082d1059443fe882f8bc2",
+    "eval/runs/evidence-run-11/extractions/digit-boundary-v1/run-1/output.xlsx": "05027210dea4d11d39c63d1c6c90b72ac32396affcaa1d3c0f519958cd79fd10",
+    "eval/runs/evidence-run-11/extractions/digit-boundary-v1/run-1/work/evidence-run-12/manifest.json": "ecd628585b8bba399f98981645135613d22d479b120f7763890c815bb4980f4f",
+    "eval/runs/evidence-run-11/extractions/digit-boundary-v1/run-1/work/evidence-run-12/extraction.json": "b559d737dc3d4fb99d0967739edd142f28993d2481fe41c733c281cc24ddb866",
+    "eval/runs/evidence-run-11/extractions/digit-boundary-v1/run-1/work/evidence-run-12/pdf-evidence/routes.json": "3deeec0e2c1c376631499fad8b74efe25294ce5b9f99b425bd27228c86552a1d",
+    "eval/runs/evidence-run-11/extractions/digit-boundary-v1/run-1/work/evidence-run-12/pdf-evidence/reading-review.json": "543534f59932a36d56f0799dbdf250d837c40d0cb33a6cce350fdc1e4e88aeac",
+    "eval/runs/validation-0.3.10-final.txt": "51959d00bf29ef80942dff1e19de82c38aed25176165395430e29027146d6c79",
+    "eval/fixtures/digit-boundary-v1.pdf": "0e09318987c4209aa2979338fc65a7f283616f903bf75a34bbca5f3372a78827",
+    "eval/scenarios/digit-boundary-v1/case.toml": "c32739a1260529ed75d3adc13ff3ac97e7cd6796236244ec45dd9e6006a2de34",
+    "eval/scenarios/digit-boundary-v1/custom.md": "6bc45a568041cac18767875a59720473cba31d321f6d349ffaf97d752edbae43",
+    "eval/scenarios/digit-boundary-v1/expected.json": "c31ade043bf4a54860329821aa6894b33e7439eb45272cd160a868fa244fdee9",
+    "eval/runner/score.py": "f4bd2411a3e2f47af82ca14184b77aa03fe45a5e5f6debfb951ae3fdb242584d",
+    "eval/runner/conversation.py": "76b47efc3e46c17a7f2f67b688e2016e8c7190d906511c6596526e3a34125554",
+    "adapters/codex/eval_adapter.py": "e07de8328babd263db3102d77541c94b3100aaac7857258aaf445dd17fee5a62",
+    "eval/runs/evidence-run-11/extractions/digit-boundary-v1/run-1/work/evidence-run-12/pdf-evidence/input-0001/page-0001.png": "db015fc1eaabdfacfcfee2b6e6a58a881ba7569270290a045fbacdbb575e28a0",
+    "eval/runs/evidence-run-11/extractions/digit-boundary-v1/run-1/work/evidence-run-12/pdf-evidence/input-0001/page-0002.png": "a04c2b0b7921c46c8734869bc8902d622155ba935d188b65596bb6d1ae5e80d4",
+    "eval/runs/evidence-run-11/extractions/digit-boundary-v1/run-1/work/evidence-run-12/pdf-evidence/input-0001/page-0003.png": "4dcc566cc276e9155e3c8d399880e97e8be1f13fb7bb4809a0d7e49095cc954b",
+    "eval/runs/evidence-run-11/extractions/digit-boundary-v1/run-1/work/evidence-run-12/recovery-1/page-0003.png": "e77ca9775cd1cc5e63d6b0bc780010081b4729f77569dae2364ad83dab5d0f29"
+  },
+  "limitations": [
+    "One execution on three related synthetic printed pages; no repeatability or general handwriting estimate.",
+    "Known fixture authored for this failure hypothesis; not a held-out dataset.",
+    "The earlier owner-confirmed private amount error has not been retested with 0.3.10.",
+    "Both package and CLI differ from the 0.3.9 private evaluation; no controlled causal comparison.",
+    "Route B only; no fresh 0.3.10 multi-purpose, native, hidden-OCR, mixed or amount-dash regression here.",
+    "Configured fields only; not every extracted field was scored.",
+    "Automatic opening audit remains invalid; acceptance is a separate maintainer trace judgement.",
+    "Image-tool trace is not a CLI attachment receipt or verified model attention; reported identity remains Unknown.",
+    "No package promotion or Anthropic evaluation is implied."
+  ]
+}

@@ -1,0 +1,376 @@
+{
+  "protocol": "difficult-regression-v1",
+  "package_version": "0.3.16",
+  "artifact_hash": "2f03d23ca01d755c4cf6ed94c752d809ef03df201a94a26d8b8c49dc11bd7743",
+  "opening_contract": "codex-opening-v9",
+  "opening_grader_sha256": "4e4e083323835f3a8579b818a5b64b7af49e03e482aecd420b57a2dbd59a6c16",
+  "plan_sha256": "1e32645095703f234f950971e13dccdb7a0378ff4788f2dd12db74a2bc1f6281",
+  "model_requested": "gpt-6.1-sol",
+  "provider": "OpenAI via existing Codex ChatGPT login",
+  "transport": "https",
+  "scope": "Three independent sessions: known private Fox regression, public raster digit-boundary controls, and public conflicting OCR-layer certificate. Preloaded frozen custom.md and synthetic company profile; no expected answers or examples in workspaces. Not a fresh holdout or first-use settings test.",
+  "trials": [
+    {
+      "case": "fox-regression",
+      "private": true,
+      "reference_scope": "mixed-owner-and-provisional",
+      "source_sha256": "8d69ce17904f684fbad8d542459587c5a80d1632d88c7aacedb111aaad3e371c",
+      "expected_sha256": "b8e05a97b52e26ba6cfad25a267fea220e600d7ff3b3f54febb66c2a8abc7677",
+      "raw_sha256": "e79f58acf974405315a6158febfd7616d450d1ca9eb29c1fc7afb7fc23fd8a76",
+      "workbook_sha256": "fc49320295efd1fa72f10da450302db6a373eb6abb0844ffe11dae4101efe77b",
+      "tool_version": "codex-cli 0.162.0-alpha.17.2",
+      "model_reported": "Unknown",
+      "valid": true,
+      "completed": true,
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "opening": {
+        "version": "codex-opening-v9",
+        "strict_v2_format": "requires_review",
+        "exact_question_once": true,
+        "both_exact_choices_once": true,
+        "observed_pause": true,
+        "ordered_question_and_choices": true,
+        "format_status": "requires_review",
+        "allowed_disclosure": false,
+        "automatic_pass": false,
+        "host_evidence": {
+          "disclosure_required": true,
+          "source": "session_meta.base_instructions",
+          "rule_sha256": "90158bea67d2e88da332cc0d308cba6b381c91044df9328992e33a3e129e1944"
+        },
+        "scope": "Opening format and observed pause only; not full host-instruction compliance, consent or extraction accuracy.",
+        "v3_format_status": "requires_review",
+        "disclosure_diagnostic": "unsupported_explanation",
+        "v4_format_status": "requires_review",
+        "v5_format_status": "requires_review",
+        "v6_format_status": "requires_review",
+        "v7_format_status": "requires_review",
+        "v8_format_status": "requires_review"
+      },
+      "raw_status": "scored",
+      "tables": {
+        "Billing documents": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Line items": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested values": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        }
+      },
+      "checks": {
+        "unprocessed_inputs": 0
+      },
+      "routes": [
+        "B"
+      ],
+      "returned_images": 6,
+      "abstention": {
+        "unclear_fields": 1,
+        "kept_unclear_and_blank": 1,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0,
+        "abstention_rate": 1.0
+      }
+    },
+    {
+      "case": "digit-boundary",
+      "private": false,
+      "reference_scope": "authored-public",
+      "source_sha256": "0e09318987c4209aa2979338fc65a7f283616f903bf75a34bbca5f3372a78827",
+      "expected_sha256": "c31ade043bf4a54860329821aa6894b33e7439eb45272cd160a868fa244fdee9",
+      "raw_sha256": "dbffcd296c502d157cd0a820a382a71b8d8cf64edc6e51538692a5a9012aab9b",
+      "workbook_sha256": "5a60ec6c80cb0198ead578b7b37ecf22f749445b33f13491142c6ab40b877340",
+      "tool_version": "codex-cli 0.162.0-alpha.17.2",
+      "model_reported": "Unknown",
+      "valid": true,
+      "completed": true,
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "opening": {
+        "version": "codex-opening-v9",
+        "strict_v2_format": "requires_review",
+        "exact_question_once": true,
+        "both_exact_choices_once": true,
+        "observed_pause": true,
+        "ordered_question_and_choices": true,
+        "format_status": "requires_review",
+        "allowed_disclosure": false,
+        "automatic_pass": false,
+        "host_evidence": {
+          "disclosure_required": true,
+          "source": "session_meta.base_instructions",
+          "rule_sha256": "90158bea67d2e88da332cc0d308cba6b381c91044df9328992e33a3e129e1944"
+        },
+        "scope": "Opening format and observed pause only; not full host-instruction compliance, consent or extraction accuracy.",
+        "v3_format_status": "requires_review",
+        "disclosure_diagnostic": "unsupported_application_clause",
+        "v4_format_status": "requires_review",
+        "v5_format_status": "requires_review",
+        "v6_format_status": "requires_review",
+        "v7_format_status": "requires_review",
+        "v8_format_status": "requires_review"
+      },
+      "raw_status": "scored",
+      "tables": {
+        "Billing documents": {
+          "expected": 3,
+          "actual": 3,
+          "matched": 3,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 3,
+          "actual": 3,
+          "matched": 3,
+          "extra": 0
+        },
+        "Requested values": {
+          "expected": 3,
+          "actual": 3,
+          "matched": 3,
+          "extra": 0
+        }
+      },
+      "checks": {
+        "unprocessed_inputs": 0
+      },
+      "routes": [
+        "B",
+        "B",
+        "B"
+      ],
+      "returned_images": 6,
+      "abstention": {
+        "unclear_fields": 1,
+        "kept_unclear_and_blank": 1,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0,
+        "abstention_rate": 1.0
+      }
+    },
+    {
+      "case": "ocr-conflict-energy",
+      "private": false,
+      "reference_scope": "authored-public",
+      "source_sha256": "db7de8fcda64b87888a4437feafa3f7046ee3d51ae8358321e5a4dadc8eed2b2",
+      "expected_sha256": "afc7263d70956d13fb95f94b3cf0ef3cae67eceea85ac1576f3fb9b268aac2c9",
+      "raw_sha256": "6fba1a7533e274e9dde270a10bee5b50d6b4c652cc106ac2a341bfb458d88c23",
+      "workbook_sha256": "ec8e1430296f3b0358b68bccaf7c8017a79b3786ed2cd8a9412402d60791028a",
+      "tool_version": "codex-cli 0.162.0-alpha.17.2",
+      "model_reported": "Unknown",
+      "valid": true,
+      "completed": true,
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "opening": {
+        "version": "codex-opening-v9",
+        "strict_v2_format": "requires_review",
+        "exact_question_once": true,
+        "both_exact_choices_once": true,
+        "observed_pause": true,
+        "ordered_question_and_choices": true,
+        "format_status": "requires_review",
+        "allowed_disclosure": false,
+        "automatic_pass": false,
+        "host_evidence": {
+          "disclosure_required": true,
+          "source": "session_meta.base_instructions",
+          "rule_sha256": "90158bea67d2e88da332cc0d308cba6b381c91044df9328992e33a3e129e1944"
+        },
+        "scope": "Opening format and observed pause only; not full host-instruction compliance, consent or extraction accuracy.",
+        "v3_format_status": "requires_review",
+        "disclosure_diagnostic": "unsupported_application_clause",
+        "v4_format_status": "requires_review",
+        "v5_format_status": "requires_review",
+        "v6_format_status": "requires_review",
+        "v7_format_status": "requires_review",
+        "v8_format_status": "requires_review"
+      },
+      "raw_status": "not_configured",
+      "tables": {
+        "Billing documents": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Other": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Line items": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested values": {
+          "expected": 5,
+          "actual": 5,
+          "matched": 5,
+          "extra": 0
+        }
+      },
+      "checks": {
+        "unprocessed_inputs": 0
+      },
+      "routes": [
+        "C",
+        "C"
+      ],
+      "returned_images": 2,
+      "abstention": null
+    }
+  ],
+  "matrix": [
+    {
+      "case": "fox-regression",
+      "scope": "mixed-owner-and-provisional",
+      "layer": "workbook",
+      "correct": 6,
+      "correct_blank": 3,
+      "miss": 1,
+      "wrong_flagged": 0,
+      "silent_error": 0,
+      "invented": 0,
+      "denominator": 7,
+      "rate": 0.8571428571428571
+    },
+    {
+      "case": "fox-regression",
+      "scope": "mixed-owner-and-provisional",
+      "layer": "raw",
+      "correct": 4,
+      "correct_blank": 3,
+      "miss": 1,
+      "wrong_flagged": 0,
+      "silent_error": 0,
+      "invented": 0,
+      "denominator": 5,
+      "rate": 0.8
+    },
+    {
+      "case": "fox-regression",
+      "scope": "owner-confirmed",
+      "layer": "raw",
+      "correct": 1,
+      "correct_blank": 0,
+      "miss": 1,
+      "wrong_flagged": 0,
+      "silent_error": 0,
+      "invented": 0,
+      "denominator": 2,
+      "rate": 0.5
+    },
+    {
+      "case": "fox-regression",
+      "scope": "provisional",
+      "layer": "raw",
+      "correct": 3,
+      "correct_blank": 3,
+      "miss": 0,
+      "wrong_flagged": 0,
+      "silent_error": 0,
+      "invented": 0,
+      "denominator": 3,
+      "rate": 1.0
+    },
+    {
+      "case": "fox-regression",
+      "scope": "owner-confirmed",
+      "layer": "workbook",
+      "correct": 3,
+      "correct_blank": 0,
+      "miss": 1,
+      "wrong_flagged": 0,
+      "silent_error": 0,
+      "invented": 0,
+      "denominator": 4,
+      "rate": 0.75
+    },
+    {
+      "case": "fox-regression",
+      "scope": "provisional",
+      "layer": "workbook",
+      "correct": 3,
+      "correct_blank": 3,
+      "miss": 0,
+      "wrong_flagged": 0,
+      "silent_error": 0,
+      "invented": 0,
+      "denominator": 3,
+      "rate": 1.0
+    },
+    {
+      "case": "digit-boundary",
+      "scope": "authored-public",
+      "layer": "workbook",
+      "correct": 15,
+      "correct_blank": 3,
+      "miss": 0,
+      "wrong_flagged": 0,
+      "silent_error": 0,
+      "invented": 0,
+      "denominator": 15,
+      "rate": 1.0
+    },
+    {
+      "case": "digit-boundary",
+      "scope": "authored-public",
+      "layer": "raw",
+      "correct": 13,
+      "correct_blank": 2,
+      "miss": 0,
+      "wrong_flagged": 0,
+      "silent_error": 0,
+      "invented": 0,
+      "denominator": 13,
+      "rate": 1.0
+    },
+    {
+      "case": "ocr-conflict-energy",
+      "scope": "authored-public",
+      "layer": "workbook",
+      "correct": 25,
+      "correct_blank": 15,
+      "miss": 0,
+      "wrong_flagged": 0,
+      "silent_error": 0,
+      "invented": 0,
+      "denominator": 25,
+      "rate": 1.0
+    }
+  ],
+  "verification": {
+    "harness_files": 43,
+    "historical_reports_unchanged": 169,
+    "scorers_recomputed": true
+  },
+  "privacy": "Aggregates and hashes only; private sources, references, predictions and traces stay ignored."
+}

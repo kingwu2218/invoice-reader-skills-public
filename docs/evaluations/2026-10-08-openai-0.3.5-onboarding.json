@@ -1,0 +1,253 @@
+{
+  "version": "0.3.5",
+  "contract": "announcement-before-question-v1",
+  "package_hash": "c2d5c1358ad71865d3afd83f6e32e40deba1fe932485ab881e94ba86f7b963a4",
+  "dataset_hash": "39f40d564892ab198c7c592757c0028d3d0d1d642b9f7f9c5dd14856e7dc8630",
+  "model_requested": "gpt-6.1-sol",
+  "model_reported": "Unknown",
+  "tool_version": "codex-cli 0.162.0-alpha.2",
+  "provider": "OpenAI via current Codex ChatGPT login",
+  "tests_passed": 128,
+  "new_chat_trials": 1,
+  "question_occurrences": 1,
+  "literal_first_message": false,
+  "automatic_opening_status": "requires_review",
+  "manual_opening_pass": true,
+  "workspace_unchanged": true,
+  "command_events": 0,
+  "phase": "acknowledged",
+  "extraction_status": "scored",
+  "field_accuracy": {
+    "numerator": 46,
+    "denominator": 46,
+    "rate": 1.0
+  },
+  "stream_hash": "16cd4943a75afacdc500c7b1e717fd233d17242c586dfccd018a066c095cca6b",
+  "snapshot_hash": "b66e58f7b3a7bf4d4fe0e5f92f743c583276f6867c351c5768e43e5b53bf9b56",
+  "review": {
+    "stream_sha256": "16cd4943a75afacdc500c7b1e717fd233d17242c586dfccd018a066c095cca6b",
+    "reviewer": "Maintainer agent; manual trace review",
+    "onboarding_contract": "announcement-before-question-v1",
+    "opening_matches_contract": true,
+    "no_document_work_observed": true,
+    "notes": "Brief skill-use announcement explains the required pause; exact question follows once. No command events and no changed workspace files. No acknowledgement fabricated or extraction performed. This is observable evidence, not proof of unlogged reads."
+  },
+  "raw_field_accuracy": {
+    "numerator": 39,
+    "denominator": 39,
+    "rate": 1.0
+  },
+  "correct_blanks_excluded": {
+    "workbook": 29,
+    "raw": 32
+  },
+  "real_acknowledgement_received": true,
+  "post_acknowledgement_turns": 2,
+  "repeated_questions_after_acknowledgement": 0,
+  "runs": [
+    {
+      "case": "coal-scan-energy-lines-v2",
+      "valid": true,
+      "dataset_hash": "82bac0cc827d8440d652fd3d5167b6237570b67778d2d02acbf469d805ddaf69",
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "elapsed_seconds": 116.83,
+      "raw_extraction_hash": "cb097e832956c33c779c4db61307a13331f1dc7fb392701ff9e12a4261cb0921",
+      "workbook_metrics": {
+        "field_accuracy": {
+          "numerator": 25,
+          "denominator": 25,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 25,
+          "denominator": 25,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 25,
+          "denominator": 25,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        }
+      },
+      "raw_metrics": {
+        "field_accuracy": {
+          "numerator": 22,
+          "denominator": 22,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 22,
+          "denominator": 22,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 22,
+          "denominator": 22,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "line_item_recall": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "line_item_precision": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "statement_line_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "statement_line_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "workbook_cells": {
+        "correct": 25,
+        "correct_blank": 15
+      },
+      "raw_cells": {
+        "correct": 22,
+        "correct_blank": 16
+      },
+      "review_flags": {
+        "true_positive": 2
+      },
+      "image_input_audit": {
+        "status": "not_captured",
+        "numerator": null,
+        "denominator": null
+      }
+    },
+    {
+      "case": "coal-scan-payment-lines-v2",
+      "valid": true,
+      "dataset_hash": "39f40d564892ab198c7c592757c0028d3d0d1d642b9f7f9c5dd14856e7dc8630",
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "elapsed_seconds": 147.97,
+      "raw_extraction_hash": "aad99e6fde29e692f28c70007892e950dd7178c5e5ecc285368d8e2657cc7904",
+      "workbook_metrics": {
+        "field_accuracy": {
+          "numerator": 21,
+          "denominator": 21,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 21,
+          "denominator": 21,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 21,
+          "denominator": 21,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        }
+      },
+      "raw_metrics": {
+        "field_accuracy": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "line_item_recall": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "line_item_precision": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "statement_line_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "statement_line_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "workbook_cells": {
+        "correct": 21,
+        "correct_blank": 14
+      },
+      "raw_cells": {
+        "correct": 17,
+        "correct_blank": 16
+      },
+      "review_flags": {
+        "true_positive": 2
+      },
+      "image_input_audit": {
+        "status": "not_captured",
+        "numerator": null,
+        "denominator": null
+      }
+    }
+  ],
+  "limitations": [
+    "Two public image-only pages reused for two purposes; not a holdout or broad recognition accuracy.",
+    "Fresh chat opening, then two extractions in the same acknowledged chat; not independent repeated runs.",
+    "No captured supplied-image receipts or proof of image attention; no new private or handwritten recognition test.",
+    "Actual model identity Unknown; Anthropic package not live-tested."
+  ]
+}

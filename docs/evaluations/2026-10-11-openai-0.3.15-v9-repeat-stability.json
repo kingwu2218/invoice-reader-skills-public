@@ -1,0 +1,94 @@
+{
+  "scope": "Two prospectively frozen v9 batches over known synthetic content; no private handwriting. Comparisons include blank values only for repeatability, not accuracy denominators. Follow-ups are same-session continuations, not independent recognition trials.",
+  "same_frozen_configuration": true,
+  "grader_version": "codex-opening-v9",
+  "grader_sha256": "4e4e083323835f3a8579b818a5b64b7af49e03e482aecd420b57a2dbd59a6c16",
+  "package_version": "0.3.15",
+  "package_sha256": "dbadd0982cb76f54bcbe2b2141996a6ead202878c0854de591c225fd8b75f7b2",
+  "evidence_sha256": {
+    "2026-10-11-openai-0.3.15-v9-openings.json": "649ace295a54aa505a8ca7017edd46bb8ee18094a277b5dd55203c5325a528bd",
+    "2026-10-11-openai-0.3.15-v9-repeat-openings.json": "7bb579beba17de7381d8d464fa5d0b5a362631d77fbe12c6cafb03145711cc9d",
+    "2026-10-11-openai-0.3.15-v9-confirmation.json": "3ec0b2d9f57eeb314d2d2ebbe042e36116fb012f346bb02d3a82c887b6a12780",
+    "2026-10-11-openai-0.3.15-v9-repeat.json": "6d23087a1d7ee6b17e1a772b9e4b2bc4762105b7618af4d5d8d45e421db702f2"
+  },
+  "fresh_chats": 6,
+  "opening_automatic_passes": 6,
+  "opening_v8_automatic_passes": 6,
+  "completed_batches": 8,
+  "totals": {
+    "initial_only": {
+      "raw": {
+        "correct": 100,
+        "denominator": 100,
+        "correct_blank": 102
+      },
+      "workbook": {
+        "correct": 134,
+        "denominator": 134,
+        "correct_blank": 86
+      }
+    },
+    "including_followups": {
+      "raw": {
+        "correct": 130,
+        "denominator": 130,
+        "correct_blank": 136
+      },
+      "workbook": {
+        "correct": 176,
+        "denominator": 176,
+        "correct_blank": 114
+      }
+    }
+  },
+  "repeatability": [
+    {
+      "purpose": "payment_initial",
+      "layer": "raw",
+      "runs": 4,
+      "compared_cells_including_blanks": 32,
+      "varying_cells": 0,
+      "different_keys": []
+    },
+    {
+      "purpose": "payment_initial",
+      "layer": "workbook",
+      "runs": 4,
+      "compared_cells_including_blanks": 35,
+      "varying_cells": 0,
+      "different_keys": []
+    },
+    {
+      "purpose": "energy_initial",
+      "layer": "raw",
+      "runs": 2,
+      "compared_cells_including_blanks": 37,
+      "varying_cells": 0,
+      "different_keys": []
+    },
+    {
+      "purpose": "energy_initial",
+      "layer": "workbook",
+      "runs": 2,
+      "compared_cells_including_blanks": 40,
+      "varying_cells": 0,
+      "different_keys": []
+    },
+    {
+      "purpose": "payment_scan_followup",
+      "layer": "raw",
+      "runs": 2,
+      "compared_cells_including_blanks": 32,
+      "varying_cells": 0,
+      "different_keys": []
+    },
+    {
+      "purpose": "payment_scan_followup",
+      "layer": "workbook",
+      "runs": 2,
+      "compared_cells_including_blanks": 35,
+      "varying_cells": 0,
+      "different_keys": []
+    }
+  ]
+}

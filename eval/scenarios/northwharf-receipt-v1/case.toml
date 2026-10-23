@@ -1,0 +1,4 @@
+source = "fixtures/northwharf-receipt-v1.pdf"
+medium = "synthetic-raster-print"
+content_group = "northwharf-receipt-v1"
+expected_routes = ["B"]

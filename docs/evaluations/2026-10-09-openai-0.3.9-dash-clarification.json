@@ -1,0 +1,1061 @@
+{
+  "date": "2026-10-09",
+  "package_version": "0.3.9",
+  "scope": "Two public computer-generated pages; same sources reused in two fresh conversations. No human-handwriting or private-document run.",
+  "reference_history": "v1 omitted required Requested values rows; retained. v2 adds the documented table before fresh execution. Initial v1 pre-page-join scoring retained separately.",
+  "tests_passed": 152,
+  "stages": [
+    {
+      "reference_version": "v1-reference-defect",
+      "conversation": "evidence-run-09",
+      "requested_model": "gpt-6.1-sol",
+      "provider": "OpenAI via current Codex ChatGPT login",
+      "tool_version": "codex-cli 0.162.0-alpha.2",
+      "artifact_hash": "71b918aabef3688f5e9aa4463237898d12e8e0aaa8a2eae44b44f468b1f67653",
+      "frozen_inputs": {
+        "files": {
+          "clarification.json": "a79c5aece74407b6958d2981cf06a01de64e1372c77f85a8af8082c5f6e4dfe9",
+          "case.toml": "81df671346032a1be733cc77dc5f6de141380568d2d8975d095bbba3e36e92c8",
+          "custom.md": "1432659b209db6b7ca2e3a2d234b8dd0ba87c302cf0435bd127eb8f02ccf615e",
+          "expected.json": "573ea8dbfb77c88fd9f0e27a02f29ec4fd5a4acbbe95b079b89eaa4f5d06e1b0",
+          "expected-first.json": "7086a222ff6b93cfb9d94ed87540cac6fd0d55c0323862abfc153031ab4a721c",
+          "expected-second.json": "e19d14278edf42db44b9c4bfd43df8ebb5935325eb6eec893d3ec2de3b53f67c"
+        },
+        "source_sha256": "ef641a56165b99035940e1caa942109b51de19ce554ac8275ba3e48c5c61612f"
+      },
+      "runs": [
+        {
+          "case": "dash-origin-printed-v1",
+          "execution_valid": true,
+          "model_reported": "Unknown",
+          "metrics": {
+            "field_accuracy": {
+              "numerator": 16,
+              "denominator": 16,
+              "rate": 1.0
+            },
+            "field_precision": {
+              "numerator": 16,
+              "denominator": 16,
+              "rate": 1.0
+            },
+            "printed_value_recall": {
+              "numerator": 16,
+              "denominator": 16,
+              "rate": 1.0
+            },
+            "document_recall": {
+              "numerator": 2,
+              "denominator": 2,
+              "rate": 1.0
+            },
+            "document_precision": {
+              "numerator": 2,
+              "denominator": 2,
+              "rate": 1.0
+            }
+          },
+          "raw_metrics": {
+            "field_accuracy": {
+              "numerator": 14,
+              "denominator": 14,
+              "rate": 1.0
+            },
+            "field_precision": {
+              "numerator": 14,
+              "denominator": 14,
+              "rate": 1.0
+            },
+            "printed_value_recall": {
+              "numerator": 14,
+              "denominator": 14,
+              "rate": 1.0
+            },
+            "document_recall": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "document_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "line_item_recall": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "line_item_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "statement_line_recall": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "statement_line_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            }
+          },
+          "cells": {
+            "correct": 16
+          },
+          "raw_cells": {
+            "correct": 14
+          },
+          "flags": {
+            "true_positive": 2
+          },
+          "checks": {
+            "unexpected_rows": 2,
+            "unprocessed_inputs": 0
+          },
+          "details": [],
+          "dataset_hash": "37fefd1b7702c36cc44628d884f5dc4ceab6fafe4367ffa21f5ad54b1179b8fc",
+          "raw_extraction_hash": "13fbcc37aeefa22c98a47b142c495b5589fd1a54f72adf39318ef75a3f7ad36b",
+          "package_unchanged": true,
+          "dataset_unchanged": true,
+          "workbook_totals": [
+            {
+              "value": "360-",
+              "excel_type": "s"
+            },
+            {
+              "value": "720-",
+              "excel_type": "s"
+            }
+          ],
+          "notation_observations": [
+            {
+              "page": "1",
+              "metadata": {
+                "total": {
+                  "origin": "computer-generated"
+                }
+              }
+            },
+            {
+              "page": "2",
+              "metadata": {
+                "total": {
+                  "origin": "computer-generated"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "case": "dash-origin-printed-v1-first",
+          "execution_valid": true,
+          "model_reported": "Unknown",
+          "metrics": {
+            "field_accuracy": {
+              "numerator": 16,
+              "denominator": 16,
+              "rate": 1.0
+            },
+            "field_precision": {
+              "numerator": 16,
+              "denominator": 16,
+              "rate": 1.0
+            },
+            "printed_value_recall": {
+              "numerator": 16,
+              "denominator": 16,
+              "rate": 1.0
+            },
+            "document_recall": {
+              "numerator": 2,
+              "denominator": 2,
+              "rate": 1.0
+            },
+            "document_precision": {
+              "numerator": 2,
+              "denominator": 2,
+              "rate": 1.0
+            }
+          },
+          "raw_metrics": {
+            "field_accuracy": {
+              "numerator": 14,
+              "denominator": 14,
+              "rate": 1.0
+            },
+            "field_precision": {
+              "numerator": 14,
+              "denominator": 14,
+              "rate": 1.0
+            },
+            "printed_value_recall": {
+              "numerator": 14,
+              "denominator": 14,
+              "rate": 1.0
+            },
+            "document_recall": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "document_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "line_item_recall": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "line_item_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "statement_line_recall": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "statement_line_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            }
+          },
+          "cells": {
+            "correct": 16
+          },
+          "raw_cells": {
+            "correct": 14
+          },
+          "flags": {
+            "true_positive": 2
+          },
+          "checks": {
+            "unexpected_rows": 2,
+            "unprocessed_inputs": 0
+          },
+          "details": [],
+          "dataset_hash": "a0d151e64815744840087eec40568e1ffc705f6f89fdaa26852e854378552830",
+          "raw_extraction_hash": "8da604e671580d73f08301af8a7e50920238be90d428a233fe7f689faaa379aa",
+          "package_unchanged": true,
+          "dataset_unchanged": true,
+          "workbook_totals": [
+            {
+              "value": 360,
+              "excel_type": "n"
+            },
+            {
+              "value": "720-",
+              "excel_type": "s"
+            }
+          ],
+          "notation_observations": [
+            {
+              "page": "1",
+              "metadata": {
+                "total": {
+                  "origin": "computer-generated",
+                  "confirmed_as": "end-mark",
+                  "confirmation": "User confirmed: For invoice SYN-ORIGIN-01 on page 1 only, the ending dash means positive 360. I have not decided the sign for page 2 yet."
+                }
+              }
+            },
+            {
+              "page": "2",
+              "metadata": {
+                "total": {
+                  "origin": "computer-generated"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "case": "dash-origin-printed-v1-second",
+          "execution_valid": true,
+          "model_reported": "Unknown",
+          "metrics": {
+            "field_accuracy": {
+              "numerator": 16,
+              "denominator": 16,
+              "rate": 1.0
+            },
+            "field_precision": {
+              "numerator": 16,
+              "denominator": 16,
+              "rate": 1.0
+            },
+            "printed_value_recall": {
+              "numerator": 16,
+              "denominator": 16,
+              "rate": 1.0
+            },
+            "document_recall": {
+              "numerator": 2,
+              "denominator": 2,
+              "rate": 1.0
+            },
+            "document_precision": {
+              "numerator": 2,
+              "denominator": 2,
+              "rate": 1.0
+            }
+          },
+          "raw_metrics": {
+            "field_accuracy": {
+              "numerator": 14,
+              "denominator": 14,
+              "rate": 1.0
+            },
+            "field_precision": {
+              "numerator": 14,
+              "denominator": 14,
+              "rate": 1.0
+            },
+            "printed_value_recall": {
+              "numerator": 14,
+              "denominator": 14,
+              "rate": 1.0
+            },
+            "document_recall": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "document_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "line_item_recall": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "line_item_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "statement_line_recall": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "statement_line_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            }
+          },
+          "cells": {
+            "correct": 16
+          },
+          "raw_cells": {
+            "correct": 14
+          },
+          "flags": {
+            "true_positive": 2
+          },
+          "checks": {
+            "unexpected_rows": 2,
+            "unprocessed_inputs": 0
+          },
+          "details": [],
+          "dataset_hash": "833c8b807cce8f24846e9facec2621cb4b041ec89e3974c8c9d3a335a239b76e",
+          "raw_extraction_hash": "c2f9261ab4d29a0f67c363f6be23bc367a272d41c0aee2ad84ce16edb9366356",
+          "package_unchanged": true,
+          "dataset_unchanged": true,
+          "workbook_totals": [
+            {
+              "value": 360,
+              "excel_type": "n"
+            },
+            {
+              "value": -720,
+              "excel_type": "n"
+            }
+          ],
+          "notation_observations": [
+            {
+              "page": "1",
+              "metadata": {
+                "total": {
+                  "origin": "computer-generated",
+                  "confirmed_as": "end-mark",
+                  "confirmation": "User confirmed: For invoice SYN-ORIGIN-01 on page 1 only, the ending dash means positive 360. I have not decided the sign for page 2 yet."
+                }
+              }
+            },
+            {
+              "page": "2",
+              "metadata": {
+                "total": {
+                  "origin": "computer-generated",
+                  "confirmed_as": "negative",
+                  "confirmation": "User confirmed: For invoice SYN-ORIGIN-02 on page 2, the ending dash means negative 720. Keep the earlier page 1 decision."
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "onboarding": [
+        {
+          "kind": "start",
+          "actor": null,
+          "stream_sha256": "3b21b0ed79ad3f8523f481a6ca64ee0ca1a2cd5f9b21353c75723153391b0900",
+          "audit": {
+            "onboarding_contract": "any-response-v1",
+            "opening_status": "invalid",
+            "preface": [],
+            "question_first": false,
+            "question_occurrences": 1,
+            "workspace_unchanged": true,
+            "changed_files": [],
+            "no_document_work_observed": false,
+            "observable_pause_pass": false,
+            "scope": "CLI messages, shell commands and file snapshots; not proof of unlogged reads."
+          },
+          "maintainer_review": {
+            "stream_sha256": "3b21b0ed79ad3f8523f481a6ca64ee0ca1a2cd5f9b21353c75723153391b0900",
+            "reviewer": "maintainer agent",
+            "policy_question_and_choices_present": true,
+            "no_document_work_observed": true,
+            "status": "accepted_with_extra_explanation",
+            "note": "Reviewed completed stream and unchanged snapshots: only SKILL.md and chat-start.md reads before the response. Brief announcement and exact question plus declared options are present. Extra explanation after options causes automatic layout rejection; that automatic outcome is retained."
+          }
+        },
+        {
+          "kind": "policy_response",
+          "actor": "scripted_negative_fixture",
+          "stream_sha256": "7157e4c49e19613d0c231ffd904bc769d71a2269cf0c6aa3eb1a7945ad298f1a",
+          "audit": {
+            "question_repeated": false,
+            "extraction_started": true
+          }
+        },
+        {
+          "kind": "scripted_clarification",
+          "actor": "scripted_public_fixture",
+          "stream_sha256": "9c716221f6b5972a790db7d28d3e71ef09daea3af76bbfe8f37a26365219ac3e",
+          "audit": {
+            "question_repeated": false,
+            "same_session": true,
+            "prior_workbooks_unchanged": true
+          }
+        },
+        {
+          "kind": "scripted_clarification",
+          "actor": "scripted_public_fixture",
+          "stream_sha256": "3a7ea1a89b87f85e295a6906a0c81dce0d998766bd4ce68d212a336db043e994",
+          "audit": {
+            "question_repeated": false,
+            "same_session": true,
+            "prior_workbooks_unchanged": true
+          }
+        }
+      ],
+      "source_values_identical_across_phases": true
+    },
+    {
+      "reference_version": "v2-corrected-reference",
+      "conversation": "evidence-run-10",
+      "requested_model": "gpt-6.1-sol",
+      "provider": "OpenAI via current Codex ChatGPT login",
+      "tool_version": "codex-cli 0.162.0-alpha.2",
+      "artifact_hash": "71b918aabef3688f5e9aa4463237898d12e8e0aaa8a2eae44b44f468b1f67653",
+      "frozen_inputs": {
+        "files": {
+          "clarification.json": "a79c5aece74407b6958d2981cf06a01de64e1372c77f85a8af8082c5f6e4dfe9",
+          "case.toml": "81df671346032a1be733cc77dc5f6de141380568d2d8975d095bbba3e36e92c8",
+          "custom.md": "1432659b209db6b7ca2e3a2d234b8dd0ba87c302cf0435bd127eb8f02ccf615e",
+          "expected.json": "f3ebd3bf3741d59fd0a75a2cc1d8ebc9c1be5473e5e9b83a32bee9130ae903b6",
+          "expected-first.json": "92d3233eb04a5977dcfaed33cef34e230437f094e89c73640742d276b8c60952",
+          "expected-second.json": "2dea4f10f355b8c7c4a350e2ea620f1e676e9f63a58712dd85be77b4d9f45d41"
+        },
+        "source_sha256": "ef641a56165b99035940e1caa942109b51de19ce554ac8275ba3e48c5c61612f"
+      },
+      "runs": [
+        {
+          "case": "dash-origin-printed-v2",
+          "execution_valid": true,
+          "model_reported": "Unknown",
+          "metrics": {
+            "field_accuracy": {
+              "numerator": 24,
+              "denominator": 24,
+              "rate": 1.0
+            },
+            "field_precision": {
+              "numerator": 24,
+              "denominator": 24,
+              "rate": 1.0
+            },
+            "printed_value_recall": {
+              "numerator": 24,
+              "denominator": 24,
+              "rate": 1.0
+            },
+            "document_recall": {
+              "numerator": 2,
+              "denominator": 2,
+              "rate": 1.0
+            },
+            "document_precision": {
+              "numerator": 2,
+              "denominator": 2,
+              "rate": 1.0
+            }
+          },
+          "raw_metrics": {
+            "field_accuracy": {
+              "numerator": 14,
+              "denominator": 14,
+              "rate": 1.0
+            },
+            "field_precision": {
+              "numerator": 14,
+              "denominator": 14,
+              "rate": 1.0
+            },
+            "printed_value_recall": {
+              "numerator": 14,
+              "denominator": 14,
+              "rate": 1.0
+            },
+            "document_recall": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "document_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "line_item_recall": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "line_item_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "statement_line_recall": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "statement_line_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            }
+          },
+          "cells": {
+            "correct": 24
+          },
+          "raw_cells": {
+            "correct": 14
+          },
+          "flags": {
+            "true_positive": 2
+          },
+          "checks": {
+            "unprocessed_inputs": 0
+          },
+          "details": [],
+          "dataset_hash": "29c3c9f8ae56e951bc97a7adec97f315fe904498d4953381fd1856de6f5b96d2",
+          "raw_extraction_hash": "9417a47d781f99e3951d2b1bf52a62340562dcebe9d83b1ab74f2be5c2d3ac1e",
+          "package_unchanged": true,
+          "dataset_unchanged": true,
+          "workbook_totals": [
+            {
+              "value": "360-",
+              "excel_type": "s"
+            },
+            {
+              "value": "720-",
+              "excel_type": "s"
+            }
+          ],
+          "notation_observations": [
+            {
+              "page": "1",
+              "metadata": {
+                "total": {
+                  "origin": "computer-generated"
+                }
+              }
+            },
+            {
+              "page": "2",
+              "metadata": {
+                "total": {
+                  "origin": "computer-generated"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "case": "dash-origin-printed-v2-first",
+          "execution_valid": true,
+          "model_reported": "Unknown",
+          "metrics": {
+            "field_accuracy": {
+              "numerator": 24,
+              "denominator": 24,
+              "rate": 1.0
+            },
+            "field_precision": {
+              "numerator": 24,
+              "denominator": 24,
+              "rate": 1.0
+            },
+            "printed_value_recall": {
+              "numerator": 24,
+              "denominator": 24,
+              "rate": 1.0
+            },
+            "document_recall": {
+              "numerator": 2,
+              "denominator": 2,
+              "rate": 1.0
+            },
+            "document_precision": {
+              "numerator": 2,
+              "denominator": 2,
+              "rate": 1.0
+            }
+          },
+          "raw_metrics": {
+            "field_accuracy": {
+              "numerator": 14,
+              "denominator": 14,
+              "rate": 1.0
+            },
+            "field_precision": {
+              "numerator": 14,
+              "denominator": 14,
+              "rate": 1.0
+            },
+            "printed_value_recall": {
+              "numerator": 14,
+              "denominator": 14,
+              "rate": 1.0
+            },
+            "document_recall": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "document_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "line_item_recall": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "line_item_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "statement_line_recall": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "statement_line_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            }
+          },
+          "cells": {
+            "correct": 24
+          },
+          "raw_cells": {
+            "correct": 14
+          },
+          "flags": {
+            "true_positive": 2
+          },
+          "checks": {
+            "unprocessed_inputs": 0
+          },
+          "details": [],
+          "dataset_hash": "fdd6283093dc668aa29fd873e60bf3ed8b48aa8ab4ba93a28bbbaea6097d182e",
+          "raw_extraction_hash": "b6e9f76ad7703e59a2afa38876c77c509e66c6736d4d246cbab55469ef46a692",
+          "package_unchanged": true,
+          "dataset_unchanged": true,
+          "workbook_totals": [
+            {
+              "value": 360,
+              "excel_type": "n"
+            },
+            {
+              "value": "720-",
+              "excel_type": "s"
+            }
+          ],
+          "notation_observations": [
+            {
+              "page": "1",
+              "metadata": {
+                "total": {
+                  "origin": "computer-generated",
+                  "confirmed_as": "end-mark",
+                  "confirmation": "User confirmed: For invoice SYN-ORIGIN-01 on page 1 only, the ending dash means positive 360. User has not decided the sign for page 2."
+                }
+              }
+            },
+            {
+              "page": "2",
+              "metadata": {
+                "total": {
+                  "origin": "computer-generated"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "case": "dash-origin-printed-v2-second",
+          "execution_valid": true,
+          "model_reported": "Unknown",
+          "metrics": {
+            "field_accuracy": {
+              "numerator": 24,
+              "denominator": 24,
+              "rate": 1.0
+            },
+            "field_precision": {
+              "numerator": 24,
+              "denominator": 24,
+              "rate": 1.0
+            },
+            "printed_value_recall": {
+              "numerator": 24,
+              "denominator": 24,
+              "rate": 1.0
+            },
+            "document_recall": {
+              "numerator": 2,
+              "denominator": 2,
+              "rate": 1.0
+            },
+            "document_precision": {
+              "numerator": 2,
+              "denominator": 2,
+              "rate": 1.0
+            }
+          },
+          "raw_metrics": {
+            "field_accuracy": {
+              "numerator": 14,
+              "denominator": 14,
+              "rate": 1.0
+            },
+            "field_precision": {
+              "numerator": 14,
+              "denominator": 14,
+              "rate": 1.0
+            },
+            "printed_value_recall": {
+              "numerator": 14,
+              "denominator": 14,
+              "rate": 1.0
+            },
+            "document_recall": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "document_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "line_item_recall": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "line_item_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "statement_line_recall": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            },
+            "statement_line_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "rate": null
+            }
+          },
+          "cells": {
+            "correct": 24
+          },
+          "raw_cells": {
+            "correct": 14
+          },
+          "flags": {
+            "true_positive": 2
+          },
+          "checks": {
+            "unprocessed_inputs": 0
+          },
+          "details": [],
+          "dataset_hash": "53373a03aaf5d0f065e04339e5db09e381e01e9c7817879928b690bdf220ce1b",
+          "raw_extraction_hash": "c85dd2d318a34c32104da79d652acd33bfa050651d6c3ea531431ace5cef7b31",
+          "package_unchanged": true,
+          "dataset_unchanged": true,
+          "workbook_totals": [
+            {
+              "value": 360,
+              "excel_type": "n"
+            },
+            {
+              "value": -720,
+              "excel_type": "n"
+            }
+          ],
+          "notation_observations": [
+            {
+              "page": "1",
+              "metadata": {
+                "total": {
+                  "origin": "computer-generated",
+                  "confirmed_as": "end-mark",
+                  "confirmation": "User confirmed: For invoice SYN-ORIGIN-01 on page 1 only, the ending dash means positive 360. User has not decided the sign for page 2."
+                }
+              }
+            },
+            {
+              "page": "2",
+              "metadata": {
+                "total": {
+                  "origin": "computer-generated",
+                  "confirmed_as": "negative",
+                  "confirmation": "User confirmed: For invoice SYN-ORIGIN-02 on page 2, the ending dash means negative 720. Keep the earlier page 1 decision."
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "onboarding": [
+        {
+          "kind": "start",
+          "actor": null,
+          "stream_sha256": "01c2c0b9237a07d6e35eae3206df9d896e5d90306d8fd0565f2f95cd8d598cf4",
+          "audit": {
+            "onboarding_contract": "any-response-v1",
+            "opening_status": "invalid",
+            "preface": [],
+            "question_first": false,
+            "question_occurrences": 1,
+            "workspace_unchanged": true,
+            "changed_files": [],
+            "no_document_work_observed": false,
+            "observable_pause_pass": false,
+            "scope": "CLI messages, shell commands and file snapshots; not proof of unlogged reads."
+          },
+          "maintainer_review": {
+            "stream_sha256": "01c2c0b9237a07d6e35eae3206df9d896e5d90306d8fd0565f2f95cd8d598cf4",
+            "reviewer": "maintainer agent",
+            "policy_question_and_choices_present": true,
+            "no_document_work_observed": true,
+            "status": "accepted_with_extra_explanation",
+            "note": "Reviewed completed stream and unchanged snapshots: only SKILL.md and chat-start.md reads before response. Exact question and declared options are present after a brief announcement. Extra explanatory prose is outside the narrow automatic layout matcher; preserve its invalid result separately."
+          }
+        },
+        {
+          "kind": "policy_response",
+          "actor": "scripted_negative_fixture",
+          "stream_sha256": "53f1cbe407e476865173377bad0fb2b6e6a21e222ce696fa0588c64c4c1ca4cf",
+          "audit": {
+            "question_repeated": false,
+            "extraction_started": true
+          }
+        },
+        {
+          "kind": "scripted_clarification",
+          "actor": "scripted_public_fixture",
+          "stream_sha256": "45a0e27d9218d84e27bc53c8c8dba6acec4f779e9a18d083dda34bd8ca33765a",
+          "audit": {
+            "question_repeated": false,
+            "same_session": true,
+            "prior_workbooks_unchanged": true
+          }
+        },
+        {
+          "kind": "scripted_clarification",
+          "actor": "scripted_public_fixture",
+          "stream_sha256": "687ae38503f3049d18841b750c71997fcb891718b00bd5dc686701920b4c4046",
+          "audit": {
+            "question_repeated": false,
+            "same_session": true,
+            "prior_workbooks_unchanged": true
+          }
+        }
+      ],
+      "source_values_identical_across_phases": true
+    }
+  ],
+  "initial_v1_before_scorer_fix": {
+    "case": "dash-origin-printed-v1",
+    "metrics": {
+      "field_accuracy": {
+        "numerator": 8,
+        "denominator": 24,
+        "rate": 0.3333333333333333
+      },
+      "field_precision": {
+        "numerator": 8,
+        "denominator": 16,
+        "rate": 0.5
+      },
+      "printed_value_recall": {
+        "numerator": 8,
+        "denominator": 16,
+        "rate": 0.5
+      },
+      "document_recall": {
+        "numerator": 2,
+        "denominator": 2,
+        "rate": 1.0
+      },
+      "document_precision": {
+        "numerator": 2,
+        "denominator": 2,
+        "rate": 1.0
+      }
+    },
+    "cells": {
+      "correct": 8,
+      "miss": 8,
+      "invented": 8
+    },
+    "checks": {
+      "unexpected_rows": 2,
+      "unprocessed_inputs": 0
+    },
+    "details": [
+      {
+        "where": "Line items/0/Quantity",
+        "outcome": "miss",
+        "expected": "1",
+        "got": "None"
+      },
+      {
+        "where": "Line items/0/Unit price",
+        "outcome": "miss",
+        "expected": "3.6E+2",
+        "got": "None"
+      },
+      {
+        "where": "Line items/0/Line total",
+        "outcome": "miss",
+        "expected": "3.6E+2",
+        "got": "None"
+      },
+      {
+        "where": "Line items/0/Line check",
+        "outcome": "miss",
+        "expected": "Passed",
+        "got": "None"
+      },
+      {
+        "where": "Line items/1/Quantity",
+        "outcome": "miss",
+        "expected": "1",
+        "got": "None"
+      },
+      {
+        "where": "Line items/1/Unit price",
+        "outcome": "miss",
+        "expected": "7.2E+2",
+        "got": "None"
+      },
+      {
+        "where": "Line items/1/Line total",
+        "outcome": "miss",
+        "expected": "7.2E+2",
+        "got": "None"
+      },
+      {
+        "where": "Line items/1/Line check",
+        "outcome": "miss",
+        "expected": "Passed",
+        "got": "None"
+      },
+      {
+        "where": "Line items/extra/0",
+        "outcome": "extra_row",
+        "got": {
+          "Document ID": "dash-origin-printed-v1.pdf:invoice:1",
+          "File": "dash-origin-printed-v1.pdf",
+          "Document number": "SYN-ORIGIN-01",
+          "Line": "1",
+          "Description": "Inspection service",
+          "Quantity": 1,
+          "Unit": null,
+          "Unit price": 360,
+          "Line discount": null,
+          "Tax rate": null,
+          "Line total": 360,
+          "Line check": "Passed",
+          "Review reasons": null,
+          "Document type": "Invoice",
+          "Document occurrence": "1"
+        }
+      },
+      {
+        "where": "Line items/extra/1",
+        "outcome": "extra_row",
+        "got": {
+          "Document ID": "dash-origin-printed-v1.pdf:invoice:2",
+          "File": "dash-origin-printed-v1.pdf",
+          "Document number": "SYN-ORIGIN-02",
+          "Line": "1",
+          "Description": "Inspection service",
+          "Quantity": 1,
+          "Unit": null,
+          "Unit price": 720,
+          "Line discount": null,
+          "Tax rate": null,
+          "Line total": 720,
+          "Line check": "Passed",
+          "Review reasons": null,
+          "Document type": "Invoice",
+          "Document occurrence": "1"
+        }
+      }
+    ]
+  },
+  "eval_code_hashes": {
+    "eval/runner/score.py": "f4bd2411a3e2f47af82ca14184b77aa03fe45a5e5f6debfb951ae3fdb242584d",
+    "eval/runner/conversation.py": "94602102da3b38f0bdf4bf7ac959b77831db8f5a8eff30651d57e28a4e0dbab8",
+    "eval/runner/clarification.py": "68ae364d28a5ec4f57cf49bfc8f01745f2e707ba05d9bec2434bb78b6f92bb1e",
+    "eval/runner/holdout.py": "adbb2962222c65470ef367eb7465a24c5dcb3dbedccf35065ef4467272f0e80b"
+  }
+}

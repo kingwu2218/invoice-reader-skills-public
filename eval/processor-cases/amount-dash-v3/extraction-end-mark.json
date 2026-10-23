@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "documents": [
+    {
+      "document_id": "invoice",
+      "file": "invented-amounts.pdf",
+      "pages": "1",
+      "document_type": "Invoice",
+      "fields": {
+        "document_title": "INVOICE",
+        "document_number": "SYN-DASH",
+        "total": "125-"
+      },
+      "line_items": [
+        {
+          "description": "Invented service",
+          "quantity": "1",
+          "unit_price": "125-",
+          "line_total": "125-",
+          "amount_notation": {
+            "unit_price": {
+              "origin": "handwritten"
+            },
+            "line_total": {
+              "origin": "computer-generated"
+            }
+          }
+        }
+      ],
+      "custom_fields": {
+        "printed_amount": [
+          {
+            "status": "printed",
+            "value": "125-",
+            "pages": "1",
+            "evidence": "Total: 125-"
+          }
+        ]
+      },
+      "handwritten": true,
+      "amount_notation": {
+        "total": {
+          "origin": "computer-generated",
+          "confirmed_as": "end-mark",
+          "confirmation": "Synthetic user reply: only the invoice Total uses end-mark."
+        }
+      }
+    },
+    {
+      "document_id": "cheque",
+      "file": "invented-amounts.pdf",
+      "pages": "2",
+      "document_type": "Cheque",
+      "fields": {
+        "document_title": "CHEQUE",
+        "amount": "125-"
+      },
+      "custom_fields": {
+        "printed_amount": [
+          {
+            "status": "absent"
+          }
+        ]
+      },
+      "amount_notation": {
+        "amount": {
+          "origin": "handwritten"
+        }
+      }
+    },
+    {
+      "document_id": "statement",
+      "file": "invented-amounts.pdf",
+      "pages": "3",
+      "document_type": "Statement of account",
+      "fields": {
+        "document_title": "STATEMENT OF ACCOUNT"
+      },
+      "statement_lines": [
+        {
+          "reference": "SYN-DASH",
+          "debit": "125-",
+          "credit": "0.00",
+          "balance": "125-",
+          "amount_notation": {
+            "debit": {
+              "origin": "handwritten"
+            },
+            "balance": {
+              "origin": "unknown"
+            }
+          }
+        }
+      ],
+      "custom_fields": {
+        "printed_amount": [
+          {
+            "status": "absent"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+scenario,valid,raw_numerator,raw_denominator,raw_rate,workbook_numerator,workbook_denominator,workbook_rate,documents_numerator,documents_denominator,documents_rate,raw_correct_blanks_excluded,workbook_correct_blanks_excluded
+public-payment-purpose,True,10,10,1.0,12,12,1.0,2,2,1.0,10,6
+public-project-purpose,True,10,10,1.0,13,13,1.0,2,2,1.0,10,5
+handwritten-cheque,True,3,3,1.0,3,3,1.0,1,1,1.0,0,0
+handwritten-reference,True,6,6,1.0,6,6,1.0,1,1,1.0,0,0
+overlapping-documents,True,5,5,1.0,4,5,0.8,2,2,1.0,3,3
+overwritten-original-amount,True,5,5,1.0,5,5,1.0,1,1,1.0,1,1

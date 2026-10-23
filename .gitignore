@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+*.pyc
+eval/runs/
+eval/results/raw/
+~$*.xlsx
+
+# Default user workspace outputs; synthetic fixtures remain publishable.
+invoice-reader-work/
+/custom.md
+/company-profile.xlsx
+/invoice-review.xlsx
+
+# Local Cursor test output and copied fixture; canonical fixtures live in eval/.
+/output.xlsx
+/output (*).xlsx
+/cash-memo-classification-v1.pdf
+
+# Local maintainer instructions must never ship to downstream clones.
+/AGENTS.override.md
+/hook.md

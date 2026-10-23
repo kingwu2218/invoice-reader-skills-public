@@ -1,0 +1,399 @@
+{
+  "protocol": "varied-use-v1",
+  "package_version": "0.3.16",
+  "package_sha256": "2f03d23ca01d755c4cf6ed94c752d809ef03df201a94a26d8b8c49dc11bd7743",
+  "requested_model": "gpt-6.1-sol",
+  "provider": "OpenAI via existing Codex ChatGPT login",
+  "tool_version": "codex-cli 0.162.0-alpha.17.2",
+  "opening_contract": "codex-opening-v9",
+  "opening_grader_sha256": "4e4e083323835f3a8579b818a5b64b7af49e03e482aecd420b57a2dbd59a6c16",
+  "plan_sha256": "103679b1c35492b5d66c029b43f52a53087626137e84c830e1f307c0d6ff6155",
+  "fixture_hashes": {
+    "eval/fixtures/batch-invoices.pdf": "92cde0374b82d6248ba124cc7d98850c5a0323123be4975635dfdb90db6148e9",
+    "eval/fixtures/batch-support.pdf": "2ae7c35c816074658daf97ee44d8e3db5d8b7277ec3276405b2c6925416d5d2a",
+    "eval/workflows/varied-use-v1/payment.json": "650f163ac28ae368c325278ad00f19c6f92b1883a2e5e75678a33a8f7f6882e1",
+    "eval/workflows/varied-use-v1/quality.json": "47710fbba70a1a045456fede3311b83f21e81f8ccf031cd82c2ca6599eafb13b",
+    "eval/workflows/varied-use-v1/README.md": "e0a9c812ffa140df15864aac37d0e19907b83c2b566696aa2176dff753b8e725"
+  },
+  "harness_hashes": {
+    "eval/runner/clarification.py": "68ae364d28a5ec4f57cf49bfc8f01745f2e707ba05d9bec2434bb78b6f92bb1e",
+    "eval/runner/claude_session.py": "465db884a12eaff3026d509dd41c1e6af7d8dc8da2fe595946ae336ab88f23aa",
+    "eval/runner/conversation.py": "b0008a745f2b338e9f799aca7efa53ae8d5e99d86b3df7bdeb331b1f46f72f64",
+    "eval/runner/first_use.py": "99f8b0318ade00ade6950a261e12378bc95f9ee1f53d998a2816810906c60775",
+    "eval/runner/holdout.py": "a7a42d52535a9e4baee25ec79d7b474739f0652de88238c5eb61e45593ac0d69",
+    "eval/runner/image_inputs.py": "87fa76a52ae115744aa9d9dbd55f35b3d41bc07950a1c1aad9dde12aab485fd3",
+    "eval/runner/opening_v3.py": "8c65d1b17197a65a13ae6371466116aa8e757e37bffcfa51e3a24a608c3c91d8",
+    "eval/runner/opening_v4.py": "68bbcd1bea77397d2126f1edc423f283281c22150a1c1cf7cc9678bb2453d974",
+    "eval/runner/opening_v5.py": "937ac85106f99bc411b836b4006cdd9c5cccc72ad31102829dbe933672dfd0c9",
+    "eval/runner/opening_v6.py": "3b96566757cd337605e2cc4238f1db8a649dab89097d3c91cff242aa625dd426",
+    "eval/runner/opening_v7.py": "52528d96f3a74f058d9fb3147282b53bc2b89cd4c83218727a556848c3ca154f",
+    "eval/runner/opening_v8.py": "39406d4f47b617e80b9fff609e1cd3b794a01338929b0777e0c8b849dd0290c7",
+    "eval/runner/opening_v9.py": "4e4e083323835f3a8579b818a5b64b7af49e03e482aecd420b57a2dbd59a6c16",
+    "eval/runner/processor.py": "6030108b54d2f5a0776cd9c141ce9ded787bee9aaf737c273e1f7b29de999c9f",
+    "eval/runner/public_repeats.py": "80b8a7e326acc09a3fb3cba43c720a9a054ca0f570aba45fb099fba2eff58844",
+    "eval/runner/raw.py": "452ad52c5e8d35a8def0dcf1a8605e8b3621c73fd5ca7a4e5c1c88c5b708d257",
+    "eval/runner/run.py": "2fc381359894997570eb16bd037ed3872982a64d7e000713f709460650c2dd29",
+    "eval/runner/score.py": "82ec5ed8a7aa15b4e2c6a31ec0b7c3f678413a35585fe8a683f4a71c7a54c430",
+    "eval/runner/varied_use.py": "13073a485c213045ecf9efb2cdc55f3d8731ec8c7c62b4ec4bfd45310c7aaeab",
+    "eval/runner/workflow_audit.py": "0d630f9d4fc4297648b1836a5e94c3e45fec3009a9072bd56bd53661878de282",
+    "adapters/codex/eval_adapter.py": "e07de8328babd263db3102d77541c94b3100aaac7857258aaf445dd17fee5a62",
+    "tools/skillsets.py": "456bc92cf5caf28b16c3538e0e27b283dc6f9c659f570a7b2ccfe0624011dcae",
+    "eval/tools/build_varied_use.py": "1f0d78e5a2892a06d22547722b0e09b7586b34618dc7686a0336481a40382588",
+    "core/scripts/amounts.py": "5f4fa95d2aa77a6321dcfaaecd9a1063d85ae04b83b3ad797361e9dce0783bc2",
+    "core/scripts/buckets.py": "e81f2edfa1bbe1995303cc57a2ba6eef07934b6e552bd83abcb677d7e3e7ee66",
+    "core/scripts/check_setup.py": "d4e097ac8f5dd6e2bdf62f800c21c81538e2022672143ff69beea97cb5ff88eb",
+    "core/scripts/checks.py": "e5a1a991d2ed45c990bad397f98a5b8e52854807d955daa6c97ed546d9e2af83",
+    "core/scripts/company_profile.py": "33cbd7d3f91b0c20d0decbed55d01a62b5458b52e3b142e15caf53f3c70544c9",
+    "core/scripts/custom_fields.py": "802a985235feafb29e3b702c252c95b6695d495dde766b72e4e0f1564a994ab5",
+    "core/scripts/dates.py": "a43e7621f9d628cf5d731d737ccbc235f3bdf26fbcce07d40f6eee87b1c044d6",
+    "core/scripts/extraction.py": "91ceab7d08116285880b70a369ee6ea6c9cbcd69a99c35ad7867d5889d7a42c5",
+    "core/scripts/new_custom.py": "d2e0691a0808b82ca21ed3a3e291d257d1512bfc41556f274b6ff470690fc159",
+    "core/scripts/new_profile.py": "ebcb59a578f99fad177c06f516e52f660de6cda733ade35069f29b705418b634",
+    "core/scripts/new_run.py": "41786bfac8a7a2463a31614a3ad025c6e1d2422437bbe89742fc90dae4d2247b",
+    "core/scripts/pdf_routes.py": "d5a67b96915caef53399a251be87210e64b302c78c427463661f2830f3bf2a92",
+    "core/scripts/pdf_runtime.py": "889afd24f96562569f3ff1d6448a8268b3f8b5c0befe76f1165c7abb2c0b7887",
+    "core/scripts/process.py": "5f81c0b34a8f1a8ab2afcc53c67b1069315794dc1d58437f2001498832693f24",
+    "core/scripts/reading_capabilities.py": "d8fac2b2d255f6964fd8b1fb7beb9eab84b20e155791e1a5fe5d080a8a92af8d",
+    "core/scripts/render_pages.py": "9170d3b0819c7a12fc007b47004d1245b8a3ca224e453f5a6ec3e52d1494a9e9",
+    "core/scripts/workbook.py": "73da47b10cbec835780706f16fbea198de7cd23b0b7c8a3ecfb2ce64f3006831",
+    "core/scripts/data/columns.toml": "843af5394db004cd0b214440ef437cfaf73803187512dfe6ac43ecee637e9da4",
+    "core/scripts/data/document-types.toml": "9a09537724e70f2f6564c5337542ded5ebba14f7ce605d6bf3b8244c7385dfa6",
+    "core/scripts/data/review-reasons.toml": "26f481ce7ee2de78dd8bf724f0f8fd9e981e9627dfaa174257b66f6ef7ec8b12"
+  },
+  "planned_chats": 2,
+  "completed_chats": 2,
+  "opening_passes": 2,
+  "rows": [
+    {
+      "trial": 1,
+      "purpose": "payment",
+      "core_delivery_complete": true,
+      "opening_pass": true,
+      "coverage_matches_request": true,
+      "custom_matches_request": true,
+      "policy_questions_after_reply": 0,
+      "model_reported": "Unknown",
+      "elapsed_seconds": 219.16,
+      "result_sha256": "56728ea1224684fd86385824ebe7e29c8dfeaf503ee362984df16380c0297580",
+      "workbook_sha256": "6c62babddc96cb38cdab0d775ec9a3c6e980901868c70d55ccd0f91806dfac61",
+      "trace_sha256": "834cf514c21887245a8244ebaf06288356a50d0f39d4c35b460a0d5fdb4c6c15",
+      "tool_returned_images": 3,
+      "package_unchanged": true,
+      "sources_unchanged": true,
+      "raw_correct": 42,
+      "raw_denominator": 48,
+      "raw_correct_blank": 31,
+      "raw_cells": {
+        "correct": 42,
+        "correct_blank": 31,
+        "miss": 3,
+        "invented": 3
+      },
+      "raw_tables": {
+        "Raw documents": {
+          "expected": 4,
+          "actual": 4,
+          "matched": 3,
+          "missing": 1,
+          "extra": 1
+        },
+        "Raw line items": {
+          "expected": 3,
+          "actual": 3,
+          "matched": 3,
+          "extra": 0
+        },
+        "Raw requested values": {
+          "expected": 8,
+          "actual": 8,
+          "matched": 6,
+          "missing": 2,
+          "extra": 2
+        }
+      },
+      "raw_checks": {},
+      "raw_metrics": {
+        "field_accuracy": {
+          "numerator": 42,
+          "denominator": 48,
+          "rate": 0.875
+        },
+        "field_precision": {
+          "numerator": 42,
+          "denominator": 45,
+          "rate": 0.9333333333333333
+        },
+        "printed_value_recall": {
+          "numerator": 42,
+          "denominator": 45,
+          "rate": 0.9333333333333333
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "workbook_correct": 51,
+      "workbook_denominator": 59,
+      "workbook_correct_blank": 28,
+      "workbook_cells": {
+        "correct": 51,
+        "miss": 4,
+        "invented": 4,
+        "correct_blank": 28
+      },
+      "workbook_tables": {
+        "Billing documents": {
+          "expected": 3,
+          "actual": 3,
+          "matched": 3,
+          "extra": 0
+        },
+        "Other": {
+          "expected": 1,
+          "actual": 1,
+          "missing": 1,
+          "extra": 1
+        },
+        "Line items": {
+          "expected": 3,
+          "actual": 3,
+          "matched": 3,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 4,
+          "actual": 4,
+          "matched": 3,
+          "missing": 1,
+          "extra": 1
+        },
+        "Requested values": {
+          "expected": 8,
+          "actual": 8,
+          "matched": 6,
+          "missing": 2,
+          "extra": 2
+        }
+      },
+      "workbook_checks": {
+        "unprocessed_inputs": 0
+      },
+      "workbook_metrics": {
+        "field_accuracy": {
+          "numerator": 51,
+          "denominator": 59,
+          "rate": 0.864406779661017
+        },
+        "field_precision": {
+          "numerator": 51,
+          "denominator": 55,
+          "rate": 0.9272727272727272
+        },
+        "printed_value_recall": {
+          "numerator": 51,
+          "denominator": 55,
+          "rate": 0.9272727272727272
+        },
+        "document_recall": {
+          "numerator": 3,
+          "denominator": 4,
+          "rate": 0.75
+        },
+        "document_precision": {
+          "numerator": 3,
+          "denominator": 4,
+          "rate": 0.75
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "purpose": "quality",
+      "core_delivery_complete": true,
+      "opening_pass": true,
+      "coverage_matches_request": true,
+      "custom_matches_request": true,
+      "policy_questions_after_reply": 0,
+      "model_reported": "Unknown",
+      "elapsed_seconds": 222.31,
+      "result_sha256": "b1a982c04f62c00a02851a195017be66521d83a087b5b8fce9aab58a9d63402d",
+      "workbook_sha256": "a9823ed9b3defc4ed409f30e2a94135d15b83c9826ba467a3e7670faee471acb",
+      "trace_sha256": "3de55068577319442606b3311985201ed8daac3285e95b14dbe4415641af5f54",
+      "tool_returned_images": 3,
+      "package_unchanged": true,
+      "sources_unchanged": true,
+      "raw_correct": 37,
+      "raw_denominator": 81,
+      "raw_correct_blank": 47,
+      "raw_cells": {
+        "correct": 37,
+        "correct_blank": 47,
+        "miss": 22,
+        "invented": 22
+      },
+      "raw_tables": {
+        "Raw documents": {
+          "expected": 4,
+          "actual": 4,
+          "matched": 3,
+          "missing": 1,
+          "extra": 1
+        },
+        "Raw line items": {
+          "expected": 3,
+          "actual": 3,
+          "matched": 3,
+          "extra": 0
+        },
+        "Raw requested values": {
+          "expected": 14,
+          "actual": 14,
+          "matched": 9,
+          "missing": 5,
+          "extra": 5
+        }
+      },
+      "raw_checks": {},
+      "raw_metrics": {
+        "field_accuracy": {
+          "numerator": 37,
+          "denominator": 81,
+          "rate": 0.4567901234567901
+        },
+        "field_precision": {
+          "numerator": 37,
+          "denominator": 59,
+          "rate": 0.6271186440677966
+        },
+        "printed_value_recall": {
+          "numerator": 37,
+          "denominator": 59,
+          "rate": 0.6271186440677966
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "workbook_correct": 42,
+      "workbook_denominator": 92,
+      "workbook_correct_blank": 50,
+      "workbook_cells": {
+        "correct": 42,
+        "miss": 25,
+        "invented": 25,
+        "correct_blank": 50
+      },
+      "workbook_tables": {
+        "Billing documents": {
+          "expected": 3,
+          "actual": 3,
+          "matched": 3,
+          "extra": 0
+        },
+        "Other": {
+          "expected": 1,
+          "actual": 1,
+          "missing": 1,
+          "extra": 1
+        },
+        "Line items": {
+          "expected": 3,
+          "actual": 3,
+          "matched": 3,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 4,
+          "actual": 4,
+          "matched": 3,
+          "missing": 1,
+          "extra": 1
+        },
+        "Requested values": {
+          "expected": 14,
+          "actual": 14,
+          "matched": 9,
+          "missing": 5,
+          "extra": 5
+        }
+      },
+      "workbook_checks": {
+        "unprocessed_inputs": 0
+      },
+      "workbook_metrics": {
+        "field_accuracy": {
+          "numerator": 42,
+          "denominator": 92,
+          "rate": 0.45652173913043476
+        },
+        "field_precision": {
+          "numerator": 42,
+          "denominator": 67,
+          "rate": 0.6268656716417911
+        },
+        "printed_value_recall": {
+          "numerator": 42,
+          "denominator": 67,
+          "rate": 0.6268656716417911
+        },
+        "document_recall": {
+          "numerator": 3,
+          "denominator": 4,
+          "rate": 0.75
+        },
+        "document_precision": {
+          "numerator": 3,
+          "denominator": 4,
+          "rate": 0.75
+        }
+      }
+    }
+  ],
+  "totals": {
+    "raw": {
+      "scored_chats": 2,
+      "cells": {
+        "correct": 79,
+        "correct_blank": 78,
+        "miss": 25,
+        "invented": 25
+      },
+      "correct": 79,
+      "denominator": 129,
+      "correct_blank": 78
+    },
+    "workbook": {
+      "scored_chats": 2,
+      "cells": {
+        "correct": 93,
+        "miss": 29,
+        "invented": 29,
+        "correct_blank": 78
+      },
+      "correct": 93,
+      "denominator": 151,
+      "correct_blank": 78
+    }
+  },
+  "scope": "New public synthetic layouts and authored values after 0.3.16 prompt/package freeze. Two fresh CLI sessions, one per purpose; same two files, three pages, four documents. No prior examples, settings, profile or answer files supplied. Existing host tooling/auth and global instructions remain available.",
+  "limitations": [
+    "Two synthetic purpose trials, not a stability or production accuracy estimate.",
+    "Blank cells excluded; printed status/structure cells included, so inspect per-table results.",
+    "Requested model is not verified runtime identity. Image return is not proof of attention.",
+    "No private handwriting, rotated/poor scans, OCR-text conflict, or password-protected documents in this batch."
+  ]
+}

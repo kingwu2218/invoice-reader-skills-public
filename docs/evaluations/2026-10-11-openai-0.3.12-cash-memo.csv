@@ -1,0 +1,11 @@
+﻿case,version,layer,scope,correct,denominator,rate,correct_blank,requested_model,reported_model,artifact_hash
+cash-memo-classification-v1,0.3.12,raw,combined,9,9,1.0,0,gpt-6.1-sol,Unknown,7b5dafe91acfbeb644589f5dcffb18ceed964999338f88210195ba5b8036724c
+cash-memo-classification-v1,0.3.12,workbook,combined,17,17,1.0,0,gpt-6.1-sol,Unknown,7b5dafe91acfbeb644589f5dcffb18ceed964999338f88210195ba5b8036724c
+private-case-004,0.3.12,raw,combined,4,5,0.8,3,gpt-6.1-sol,Unknown,7b5dafe91acfbeb644589f5dcffb18ceed964999338f88210195ba5b8036724c
+private-case-004,0.3.12,raw,owner_confirmed,1,2,0.5,0,gpt-6.1-sol,Unknown,7b5dafe91acfbeb644589f5dcffb18ceed964999338f88210195ba5b8036724c
+private-case-004,0.3.12,raw,provisional,3,3,1.0,3,gpt-6.1-sol,Unknown,7b5dafe91acfbeb644589f5dcffb18ceed964999338f88210195ba5b8036724c
+private-case-004,0.3.12,raw,unmatched_extra,0,0,,0,gpt-6.1-sol,Unknown,7b5dafe91acfbeb644589f5dcffb18ceed964999338f88210195ba5b8036724c
+private-case-004,0.3.12,workbook,combined,7,7,1.0,3,gpt-6.1-sol,Unknown,7b5dafe91acfbeb644589f5dcffb18ceed964999338f88210195ba5b8036724c
+private-case-004,0.3.12,workbook,owner_confirmed,4,4,1.0,0,gpt-6.1-sol,Unknown,7b5dafe91acfbeb644589f5dcffb18ceed964999338f88210195ba5b8036724c
+private-case-004,0.3.12,workbook,provisional,3,3,1.0,3,gpt-6.1-sol,Unknown,7b5dafe91acfbeb644589f5dcffb18ceed964999338f88210195ba5b8036724c
+private-case-004,0.3.12,workbook,unmatched_extra,0,0,,0,gpt-6.1-sol,Unknown,7b5dafe91acfbeb644589f5dcffb18ceed964999338f88210195ba5b8036724c

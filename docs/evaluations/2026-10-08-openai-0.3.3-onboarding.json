@@ -1,0 +1,220 @@
+{
+  "status": "completed limited evaluation; experimental, not qualified for promotion",
+  "model_requested": "gpt-6.1-sol",
+  "model_reported": "Unknown",
+  "provider": "OpenAI via current Codex ChatGPT login",
+  "tool_version": "codex-cli 0.162.0-alpha.2",
+  "artifact_version": "0.3.3",
+  "artifact_hash": "de3224ff26a5d49ba6594ff3528968ba91c9b144f4ef7981a072d7745f7b8bce",
+  "reference_status": "agent-reviewed-provisional",
+  "public": {
+    "runs": 2,
+    "raw": {
+      "numerator": 20,
+      "denominator": 20,
+      "rate": 1.0
+    },
+    "workbook": {
+      "numerator": 25,
+      "denominator": 25,
+      "rate": 1.0
+    },
+    "documents": {
+      "numerator": 4,
+      "denominator": 4,
+      "rate": 1.0
+    },
+    "correct_blanks_excluded": {
+      "raw": 20,
+      "workbook": 11
+    },
+    "workbook_outcomes": {
+      "miss": 0,
+      "wrong_flagged": 0,
+      "silent_error": 0,
+      "invented": 0
+    }
+  },
+  "handwritten_source_holdouts": {
+    "runs": 4,
+    "raw": {
+      "numerator": 19,
+      "denominator": 19,
+      "rate": 1.0
+    },
+    "workbook": {
+      "numerator": 18,
+      "denominator": 19,
+      "rate": 0.9473684210526315
+    },
+    "documents": {
+      "numerator": 5,
+      "denominator": 5,
+      "rate": 1.0
+    },
+    "correct_blanks_excluded": {
+      "raw": 4,
+      "workbook": 4
+    },
+    "workbook_outcomes": {
+      "miss": 0,
+      "wrong_flagged": 1,
+      "silent_error": 0,
+      "invented": 0
+    }
+  },
+  "onboarding": {
+    "new_chat_asks": {
+      "numerator": 2,
+      "denominator": 2
+    },
+    "question_is_literal_first_message": {
+      "numerator": 0,
+      "denominator": 2
+    },
+    "negative_or_uncertain_waits": {
+      "numerator": 2,
+      "denominator": 2
+    },
+    "pre_ack_workspace_unchanged": {
+      "numerator": 4,
+      "denominator": 4
+    },
+    "real_ack_resumes": {
+      "numerator": 1,
+      "denominator": 1
+    },
+    "same_chat_batches_without_repeat": {
+      "numerator": 5,
+      "denominator": 5
+    },
+    "silence": "Unit-tested rejection of an empty reply; no synthetic model turn",
+    "compaction": "Not tested live"
+  },
+  "abstention": {
+    "unclear_fields": 2,
+    "kept_unclear_and_blank": 2,
+    "unsupported_filled": 0,
+    "missing_or_ambiguous_observation": 0
+  },
+  "integrity": {
+    "valid_runs": 6,
+    "runs": 6,
+    "package_unchanged": true,
+    "dataset_unchanged": true,
+    "private_pages": 4,
+    "private_documents": 5
+  },
+  "validation": {
+    "unit_tests_passed": 104,
+    "package_drift_and_links": "passed"
+  },
+  "image_input_audit": "not_captured; no CLI page-attachment receipts in this staged run",
+  "limitations": [
+    "One execution per case in a shared acknowledged conversation, not independent repeated runs.",
+    "Private references are agent-reviewed, not owner-adjudicated ground truth.",
+    "Source holdouts, not unseen-layout or model-training holdouts; three cheques share a bank form.",
+    "Configured checks include status and page metadata; not accuracy across every populated workbook field.",
+    "One workbook terminal-dash amount conversion differs from the frozen reference and is flagged.",
+    "First-message wording failed twice; observable policy waiting passed after manual trace review."
+  ],
+  "evaluator_sha256": {
+    "eval/runner/conversation.py": "7e4e277448bbb3cda5b59ba22b21fe6b33e23b659f0753e712df2712e5f36f6e",
+    "eval/runner/holdout.py": "b6cc3b3c8cbe1f9b94a14b60c973a10b5f8210397782b6508e5619b1e5676fc8",
+    "eval/runner/score.py": "5ae8a2a6b5dc92b77d950e553c0cac43d81332134b1c2f6d4171933674df3e4e",
+    "eval/runner/raw.py": "650f918b868c4be571ddce6347266e84b66339f5121d76e6c05a2d8b65c4f412",
+    "adapters/codex/eval_adapter.py": "ddd67d77afa1cf4be8f02b1b91aeba05b04fae3d73345eec1cc23d7a399c1562"
+  },
+  "accuracy_matrix": [
+    {
+      "scenario": "public-payment-purpose",
+      "valid": true,
+      "raw_numerator": 10,
+      "raw_denominator": 10,
+      "raw_rate": 1.0,
+      "workbook_numerator": 12,
+      "workbook_denominator": 12,
+      "workbook_rate": 1.0,
+      "documents_numerator": 2,
+      "documents_denominator": 2,
+      "documents_rate": 1.0,
+      "raw_correct_blanks_excluded": 10,
+      "workbook_correct_blanks_excluded": 6
+    },
+    {
+      "scenario": "public-project-purpose",
+      "valid": true,
+      "raw_numerator": 10,
+      "raw_denominator": 10,
+      "raw_rate": 1.0,
+      "workbook_numerator": 13,
+      "workbook_denominator": 13,
+      "workbook_rate": 1.0,
+      "documents_numerator": 2,
+      "documents_denominator": 2,
+      "documents_rate": 1.0,
+      "raw_correct_blanks_excluded": 10,
+      "workbook_correct_blanks_excluded": 5
+    },
+    {
+      "scenario": "handwritten-cheque",
+      "valid": true,
+      "raw_numerator": 3,
+      "raw_denominator": 3,
+      "raw_rate": 1.0,
+      "workbook_numerator": 3,
+      "workbook_denominator": 3,
+      "workbook_rate": 1.0,
+      "documents_numerator": 1,
+      "documents_denominator": 1,
+      "documents_rate": 1.0,
+      "raw_correct_blanks_excluded": 0,
+      "workbook_correct_blanks_excluded": 0
+    },
+    {
+      "scenario": "handwritten-reference",
+      "valid": true,
+      "raw_numerator": 6,
+      "raw_denominator": 6,
+      "raw_rate": 1.0,
+      "workbook_numerator": 6,
+      "workbook_denominator": 6,
+      "workbook_rate": 1.0,
+      "documents_numerator": 1,
+      "documents_denominator": 1,
+      "documents_rate": 1.0,
+      "raw_correct_blanks_excluded": 0,
+      "workbook_correct_blanks_excluded": 0
+    },
+    {
+      "scenario": "overlapping-documents",
+      "valid": true,
+      "raw_numerator": 5,
+      "raw_denominator": 5,
+      "raw_rate": 1.0,
+      "workbook_numerator": 4,
+      "workbook_denominator": 5,
+      "workbook_rate": 0.8,
+      "documents_numerator": 2,
+      "documents_denominator": 2,
+      "documents_rate": 1.0,
+      "raw_correct_blanks_excluded": 3,
+      "workbook_correct_blanks_excluded": 3
+    },
+    {
+      "scenario": "overwritten-original-amount",
+      "valid": true,
+      "raw_numerator": 5,
+      "raw_denominator": 5,
+      "raw_rate": 1.0,
+      "workbook_numerator": 5,
+      "workbook_denominator": 5,
+      "workbook_rate": 1.0,
+      "documents_numerator": 1,
+      "documents_denominator": 1,
+      "documents_rate": 1.0,
+      "raw_correct_blanks_excluded": 1,
+      "workbook_correct_blanks_excluded": 1
+    }
+  ]
+}

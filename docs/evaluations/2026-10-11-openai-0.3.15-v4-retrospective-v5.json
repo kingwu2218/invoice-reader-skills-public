@@ -1,0 +1,97 @@
+{
+  "version": "codex-opening-v5",
+  "contract_decision": "Owner permits one necessary Codex wait explanation with a source link, 2026-10-11; Versioned bounded recognition excludes additional confirmation and Yes-only conditions; v5 also parses a quoted waiting rule followed by one application clause.",
+  "timing": "Additional grading after these openings were observed; not a prospectively frozen pass.",
+  "package_version": "0.3.15",
+  "package_sha256": "dbadd0982cb76f54bcbe2b2141996a6ead202878c0854de591c225fd8b75f7b2",
+  "plan_sha256": "2ef9c3540230b138d733109c27dc87dad3249da17fe9c27376ae24dcf8d60eb2",
+  "grader_sha256": "937ac85106f99bc411b836b4006cdd9c5cccc72ad31102829dbe933672dfd0c9",
+  "grader_dependency_hashes": {
+    "opening_v3.py": "8c65d1b17197a65a13ae6371466116aa8e757e37bffcfa51e3a24a608c3c91d8",
+    "workflow_audit.py": "0d630f9d4fc4297648b1836a5e94c3e45fec3009a9072bd56bd53661878de282",
+    "opening_v4.py": "68bbcd1bea77397d2126f1edc423f283281c22150a1c1cf7cc9678bb2453d974"
+  },
+  "reviewer_sha256": "1b44f45cb43ca7217b76f3c07ee3f051b2518c2fc1da864fa5a4effe8a3ea1e1",
+  "planned_chats": 3,
+  "automatic_passes": 3,
+  "rows": [
+    {
+      "trial": 1,
+      "status": "reviewed",
+      "automatic_pass": true,
+      "version": "codex-opening-v5",
+      "strict_v2_format": "requires_review",
+      "exact_question_once": true,
+      "both_exact_choices_once": true,
+      "observed_pause": true,
+      "ordered_question_and_choices": true,
+      "format_status": "host_disclosure",
+      "allowed_disclosure": true,
+      "host_evidence": {
+        "disclosure_required": true,
+        "source": "session_meta.base_instructions",
+        "rule_sha256": "90158bea67d2e88da332cc0d308cba6b381c91044df9328992e33a3e129e1944"
+      },
+      "scope": "Opening format and observed pause only; not full host-instruction compliance, consent or extraction accuracy.",
+      "v3_format_status": "requires_review",
+      "disclosure_diagnostic": "recognised_quoted_wait_explanation",
+      "v4_format_status": "requires_review",
+      "result_sha256": "9a5273092e87ef3ef171b0b4d98ad2c5865dbf19d665b67ef598e63c5340cc02",
+      "turn_sha256": "06249defb543a004168e7a84346ba43631a55b2975a0ed2998c4f964826e01fe",
+      "snapshots_sha256": "92e1701a6ad663dfc67f957ac3713e23a4e3716cb989bd1863d54e414509489c",
+      "trace_sha256": "94bb488c9c10c335891773ad610d2de930edd9f244a69e027b720bc613e06de8"
+    },
+    {
+      "trial": 2,
+      "status": "reviewed",
+      "automatic_pass": true,
+      "version": "codex-opening-v5",
+      "strict_v2_format": "requires_review",
+      "exact_question_once": true,
+      "both_exact_choices_once": true,
+      "observed_pause": true,
+      "ordered_question_and_choices": true,
+      "format_status": "host_disclosure",
+      "allowed_disclosure": true,
+      "host_evidence": {
+        "disclosure_required": true,
+        "source": "session_meta.base_instructions",
+        "rule_sha256": "90158bea67d2e88da332cc0d308cba6b381c91044df9328992e33a3e129e1944"
+      },
+      "scope": "Opening format and observed pause only; not full host-instruction compliance, consent or extraction accuracy.",
+      "v3_format_status": "requires_review",
+      "disclosure_diagnostic": "recognised_quoted_wait_explanation",
+      "v4_format_status": "requires_review",
+      "result_sha256": "34720026a6900c9880f211ac1960c82785e19151248e1625c120954debaf2cd7",
+      "turn_sha256": "051675fcb9053a8b92ec7cdff7548d0ebcb1e0239ecccaffa82f5e4d19d2ef06",
+      "snapshots_sha256": "92e1701a6ad663dfc67f957ac3713e23a4e3716cb989bd1863d54e414509489c",
+      "trace_sha256": "03869597ca80f99efded3e106b737b443482b51e345056eaa5dbf1086a5663ff"
+    },
+    {
+      "trial": 3,
+      "status": "reviewed",
+      "automatic_pass": true,
+      "version": "codex-opening-v5",
+      "strict_v2_format": "requires_review",
+      "exact_question_once": true,
+      "both_exact_choices_once": true,
+      "observed_pause": true,
+      "ordered_question_and_choices": true,
+      "format_status": "host_disclosure",
+      "allowed_disclosure": true,
+      "host_evidence": {
+        "disclosure_required": true,
+        "source": "session_meta.base_instructions",
+        "rule_sha256": "90158bea67d2e88da332cc0d308cba6b381c91044df9328992e33a3e129e1944"
+      },
+      "scope": "Opening format and observed pause only; not full host-instruction compliance, consent or extraction accuracy.",
+      "v3_format_status": "requires_review",
+      "disclosure_diagnostic": "recognised_wait_explanation",
+      "v4_format_status": "host_disclosure",
+      "result_sha256": "cd4c0fab269d566953315b6263fc4e3d341eaf2d1b585929acf00f80bc1fc49e",
+      "turn_sha256": "58c2cbbf9b7425c8dbe388b061544ba7a521542cceeb9dc0b0f00591f9d62fd6",
+      "snapshots_sha256": "92e1701a6ad663dfc67f957ac3713e23a4e3716cb989bd1863d54e414509489c",
+      "trace_sha256": "cfbef77af1067f2f189d2f829b8d01e9b3623c5ccea3a1765108f40e5ecf3cab"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-11",
+  "status": "prepared_not_extracted",
+  "accuracy_claim": false,
+  "package": "invoice-reader-xai-cursor",
+  "family": "xai",
+  "family_version": "0.1.1",
+  "family_prompt_edited": false,
+  "tool": "cursor",
+  "invocation": "manual",
+  "requested_model": "Grok 4.7",
+  "requested_effort": "High",
+  "requested_model_source": "User message in the maintainer chat on 2026-10-11. Not a CLI flag.",
+  "model_reported_by_tool": "Unknown",
+  "effort_reported_by_tool": "Unknown",
+  "self_report": "This conversation identifies the assistant as Grok 4.7. That is not a verified model ID.",
+  "provider_account_route": "Unknown",
+  "cursor_editor_version": "3.23.12",
+  "cursor_editor_commit": "2d29876d567da1607532b23bbf2cd5ddbca496f0",
+  "cursor_editor_arch": "x64",
+  "cursor_editor_version_source": "cursor --version on 2026-10-11",
+  "agent_cli": "not_found_on_path",
+  "agent_create_chat": "documented_not_executed",
+  "docs_reviewed_on": "2026-10-11",
+  "docs": [
+    "https://cursor.com/docs/skills",
+    "https://cursor.com/docs/rules",
+    "https://cursor.com/docs/cli/reference/parameters",
+    "https://cursor.com/docs/cli/reference/output-format",
+    "https://cursor.com/docs/cli/installation"
+  ],
+  "hashes": {
+    "cursor_package": "ba89c43560d1cfc8362135ea9465be5f44f4769f338ca6522501df1fa4527657",
+    "xai_source": "46dc6e841526797800aaec99b806514055965619ed5598de1615744ef66cb175",
+    "cursor_adapter": "d965459316b20034521c2ff0e572d7a874106f936fac81dfbea25ec8f64bb588",
+    "openai_package": "2f03d23ca01d755c4cf6ed94c752d809ef03df201a94a26d8b8c49dc11bd7743",
+    "codex_opening_v9": "4e4e083323835f3a8579b818a5b64b7af49e03e482aecd420b57a2dbd59a6c16"
+  },
+  "capability_smoke": {
+    "scope": "This IDE maintainer chat. Not a fresh skill chat and not an accuracy score.",
+    "shell_write": "passed",
+    "pdf_render": "passed",
+    "pdf_pages_reported": 3,
+    "python": "3.14.5",
+    "pypdfium2": "4.30.0",
+    "pypdfium2_declared_range": ">=5.13,<6",
+    "pillow": "12.3.0",
+    "uv": "not_on_path",
+    "tesseract": "not_checked",
+    "probe_vision_field": "caller-supplied, not detected",
+    "image_tool_returned_image": true,
+    "image_values_copied_to_workspace": false
+  },
+  "opening": {
+    "grader": "cursor-opening-observation-v1",
+    "codex_v9_applied": false,
+    "exact_question": "not_observed",
+    "both_choices": "not_observed",
+    "pause": "not_observed",
+    "extra_confirmation": "not_observed",
+    "yes_only": "not_observed",
+    "scripted_reply": "prepared_not_sent"
+  },
+  "cases": [
+    {
+      "case": "digit-boundary-v1",
+      "raw_reference": "configured",
+      "raw_accuracy": "not_run",
+      "workbook_accuracy": "not_run",
+      "correct_blanks": "not_run",
+      "dataset_hash": "4f1e780a2a78956b2d4162eaa0dd43ef0b6432ee61e81df9eec57ac99cd240a9"
+    },
+    {
+      "case": "cash-memo-classification-v1",
+      "raw_reference": "configured",
+      "raw_accuracy": "not_run",
+      "workbook_accuracy": "not_run",
+      "correct_blanks": "not_run",
+      "dataset_hash": "f7f7dbf181e13e653b37623b679c5deef54d22374aa097cc48d877cba4674fca"
+    },
+    {
+      "case": "coal-ocr-payment",
+      "raw_reference": "not_configured",
+      "raw_accuracy": "not_configured",
+      "workbook_accuracy": "not_run",
+      "correct_blanks": "not_run",
+      "dataset_hash": "23b53e701fb5fc5e322a35e5d2d3496ab5d122e94c751cf44931725192460ca1"
+    },
+    {
+      "case": "coal-ocr-energy",
+      "raw_reference": "not_configured",
+      "raw_accuracy": "not_configured",
+      "workbook_accuracy": "not_run",
+      "correct_blanks": "not_run",
+      "dataset_hash": "89fb8d67d5a7d506dbc0100edd1f9be4b37093e5da160d6b2b925aa53f883c1a"
+    }
+  ],
+  "error_classes": {
+    "missing_documents": "not_run",
+    "wrong_classification": "not_run",
+    "guessed_values": "not_run",
+    "missed_values": "not_run",
+    "silent_amount_changes": "not_run",
+    "omitted_units_pages_or_samples": "not_run"
+  }
+}

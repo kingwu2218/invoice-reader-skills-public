@@ -1,0 +1,9 @@
+# Printed endings and scoped clarification
+
+Two public synthetic invoices. Every character, including the page 2 Segoe Print total, is computer generated. The font file is an existing system dependency and is not redistributed as a standalone asset. This fixture tests the handwriting-style-font trap; it does not represent actual human handwriting or measure handwriting recognition accuracy. Both page renders were visually inspected before the first model execution.
+
+Before any sign reply, standard totals must retain `360-` and `720-` as text and ask for clarification. After the first scripted reply only page 1 becomes positive 360; page 2 stays text. After the second, page 2 becomes negative 720 while its service line remains positive 720 and arithmetic fails. Raw/custom totals retain their source notation throughout. Correct blanks are excluded from accuracy.
+
+`expected.json`, `expected-first.json` and `expected-second.json` were authored independently before execution. `clarification.json` declares ordered public scripted replies and distinct workbook filenames. Conversation start freezes their hashes outside the model workspace. Neither future replies nor expected answers are copied to that workspace. The source generator refuses to overwrite existing files.
+
+Use `conversation.py start --case dash-origin-printed-v1 ...`, then its labelled public negative-policy fixture. Inspect the initial trace and score before running `clarification.py CONVERSATION --phase first` and `--phase second`. These are evaluator-scripted fixture replies, not statements made by the project owner. Each follow-up preserves the exact session and source/workspace, archives a separate raw/workbook result and rejects changed prior workbooks. `conversation.py report` scores all three stages separately. No phase automatically declares behavioural success from a numeric score: inspect the question scope, provenance metadata and arithmetic warning in the trace.

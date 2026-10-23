@@ -1,0 +1,212 @@
+{
+  "tables": {
+    "Billing documents": {
+      "identity": [
+        "File",
+        "Pages"
+      ],
+      "columns": [
+        {
+          "label": "Document number",
+          "kind": "text"
+        },
+        {
+          "label": "Total",
+          "kind": "amount"
+        },
+        {
+          "label": "Subtotal",
+          "kind": "amount"
+        },
+        {
+          "label": "Tax amount",
+          "kind": "amount"
+        },
+        {
+          "label": "Arithmetic check",
+          "kind": "text"
+        },
+        {
+          "label": "Needs review",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "coal-scan.pdf",
+          "Pages": "1",
+          "Document number": "COAL-001",
+          "Total": "105.00",
+          "Subtotal": "100.00",
+          "Tax amount": "0.00",
+          "Arithmetic check": "Failed",
+          "Needs review": "Yes"
+        }
+      ]
+    },
+    "Other": {
+      "identity": [
+        "File",
+        "Pages"
+      ],
+      "columns": [
+        {
+          "label": "Document title",
+          "kind": "text"
+        },
+        {
+          "label": "Needs review",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "coal-scan.pdf",
+          "Pages": "2",
+          "Document title": "LAB CERTIFICATE",
+          "Needs review": "Yes"
+        }
+      ]
+    },
+    "Line items": {
+      "identity": [
+        "File",
+        "Line"
+      ],
+      "columns": [
+        {
+          "label": "Quantity",
+          "kind": "number"
+        },
+        {
+          "label": "Unit price",
+          "kind": "amount"
+        },
+        {
+          "label": "Line total",
+          "kind": "amount"
+        }
+      ],
+      "rows": [
+        {
+          "File": "coal-scan.pdf",
+          "Line": "1",
+          "Quantity": "1",
+          "Unit price": "100.00",
+          "Line total": "100.00"
+        }
+      ]
+    },
+    "Requested data": {
+      "identity": [
+        "File",
+        "Pages"
+      ],
+      "columns": [
+        {
+          "label": "Energy Level of Coal",
+          "kind": "text"
+        },
+        {
+          "label": "Moisture",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "coal-scan.pdf",
+          "Pages": "1"
+        },
+        {
+          "File": "coal-scan.pdf",
+          "Pages": "2",
+          "Energy Level of Coal": "Sample C-01: 6,200 kcal/kg\nSample C-02: 6,100 kcal/kg"
+        }
+      ],
+      "exact_columns": [
+        "Document ID",
+        "File",
+        "Pages",
+        "Energy Level of Coal",
+        "Moisture",
+        "Needs review",
+        "Review reasons"
+      ]
+    },
+    "Requested values": {
+      "identity": [
+        "File",
+        "Document pages",
+        "Field key",
+        "Occurrence"
+      ],
+      "columns": [
+        {
+          "label": "Value (as printed)",
+          "kind": "text"
+        },
+        {
+          "label": "Unit",
+          "kind": "text"
+        },
+        {
+          "label": "Context",
+          "kind": "text"
+        },
+        {
+          "label": "Pages",
+          "kind": "text"
+        },
+        {
+          "label": "Status",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "Field key": "coal_energy",
+          "Occurrence": "1",
+          "Status": "absent",
+          "File": "coal-scan.pdf",
+          "Document pages": "1"
+        },
+        {
+          "Field key": "moisture",
+          "Occurrence": "1",
+          "Status": "absent",
+          "File": "coal-scan.pdf",
+          "Document pages": "1"
+        },
+        {
+          "Field key": "coal_energy",
+          "Occurrence": "1",
+          "Value (as printed)": "6,200",
+          "Unit": "kcal/kg",
+          "Context": "Sample C-01",
+          "Pages": "2",
+          "Status": "printed",
+          "File": "coal-scan.pdf",
+          "Document pages": "2"
+        },
+        {
+          "Field key": "coal_energy",
+          "Occurrence": "2",
+          "Value (as printed)": "6,100",
+          "Unit": "kcal/kg",
+          "Context": "Sample C-02",
+          "Pages": "2",
+          "Status": "printed",
+          "File": "coal-scan.pdf",
+          "Document pages": "2"
+        },
+        {
+          "Field key": "moisture",
+          "Occurrence": "1",
+          "Status": "absent",
+          "File": "coal-scan.pdf",
+          "Document pages": "2"
+        }
+      ]
+    }
+  }
+}

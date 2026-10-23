@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "documents": [
+    {
+      "file": "invented-lines.pdf", "pages": "1", "document_type": "Invoice", "document_id": "a",
+      "fields": {"document_number": "LINE-001"},
+      "line_items": [
+        {"description": "Reusable housings", "quantity": "2", "unit": "box", "unit_price": "1,250.00", "line_total": "2,490.00"},
+        {"description": "Inspection", "quantity": "1", "unit": "visit", "unit_price": "310-", "line_total": "310-"}
+      ]
+    },
+    {
+      "file": "invented-lines.pdf", "pages": "1", "document_type": "Invoice", "document_id": "b",
+      "fields": {"document_number": "LINE-002"},
+      "line_items": [
+        {"description": "Calibration", "quantity": "1", "unit": "lot", "unit_price": "45.00", "line_total": "45.00"},
+        {"unclear": ["description", "quantity", "unit", "unit_price", "line_total"]}
+      ]
+    },
+    {
+      "file": "invented-lines.pdf", "pages": "2", "document_type": "Statement of account", "document_id": "c",
+      "fields": {"document_number": "STAT-001"},
+      "statement_lines": [
+        {"date": "04 10 2026", "reference": "INV-009", "description": "Opening charge", "debit": "2,490.00", "balance": "2,490.00"},
+        {"date": "06 10 2026", "reference": "000041", "description": "Payment received", "credit": "1,000.00", "balance": "1,490.00"}
+      ]
+    }
+  ]
+}

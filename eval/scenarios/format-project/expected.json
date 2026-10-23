@@ -1,0 +1,248 @@
+{
+  "tables": {
+    "Billing documents": {
+      "identity": [
+        "File",
+        "Pages"
+      ],
+      "columns": [
+        {
+          "label": "Document number",
+          "kind": "text"
+        },
+        {
+          "label": "Total",
+          "kind": "amount"
+        }
+      ],
+      "rows": [
+        {
+          "File": "format-pack.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Document number": "SYN-842",
+          "Total": null
+        }
+      ]
+    },
+    "Payments": {
+      "identity": [
+        "File",
+        "Pages"
+      ],
+      "columns": [
+        {
+          "label": "Cheque number",
+          "kind": "text"
+        },
+        {
+          "label": "Amount",
+          "kind": "amount"
+        },
+        {
+          "label": "Date",
+          "kind": "date"
+        }
+      ],
+      "rows": [
+        {
+          "File": "format-pack.pdf",
+          "Pages": "2",
+          "Document type": "Cheque",
+          "Document occurrence": "1",
+          "Cheque number": "006204",
+          "Amount": "8750",
+          "Date": "2026-11-24"
+        }
+      ]
+    },
+    "Requested data": {
+      "identity": [
+        "File",
+        "Pages"
+      ],
+      "columns": [
+        {
+          "label": "Project reference",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "format-pack.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Project reference": "Lobby hinge inspection"
+        },
+        {
+          "File": "format-pack.pdf",
+          "Pages": "2",
+          "Document type": "Cheque",
+          "Document occurrence": "1",
+          "Project reference": "Lobby hinge inspection"
+        }
+      ]
+    },
+    "Requested values": {
+      "identity": [
+        "File",
+        "Document pages",
+        "Field key",
+        "Occurrence"
+      ],
+      "columns": [
+        {
+          "label": "Status",
+          "kind": "text"
+        },
+        {
+          "label": "Value (as printed)",
+          "kind": "text"
+        },
+        {
+          "label": "Pages",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "format-pack.pdf",
+          "Document pages": "1",
+          "Field key": "project_ref",
+          "Occurrence": "1",
+          "Status": "printed",
+          "Value (as printed)": "Lobby hinge inspection",
+          "Pages": "1"
+        },
+        {
+          "File": "format-pack.pdf",
+          "Document pages": "2",
+          "Field key": "project_ref",
+          "Occurrence": "1",
+          "Status": "printed",
+          "Value (as printed)": "Lobby hinge inspection",
+          "Pages": "2"
+        }
+      ]
+    },
+    "Line items": {
+      "identity": [
+        "File",
+        "Line"
+      ],
+      "columns": [
+        {
+          "label": "Line total",
+          "kind": "amount"
+        }
+      ],
+      "rows": [
+        {
+          "File": "format-pack.pdf",
+          "Line": "1",
+          "Line total": "8750"
+        }
+      ]
+    }
+  },
+  "raw_tables": {
+    "Raw documents": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence"
+      ],
+      "columns": [
+        {
+          "label": "fields.document_number",
+          "kind": "text"
+        },
+        {
+          "label": "fields.total",
+          "kind": "text"
+        },
+        {
+          "label": "fields.cheque_number",
+          "kind": "text"
+        },
+        {
+          "label": "fields.amount",
+          "kind": "text"
+        },
+        {
+          "label": "fields.payment_date",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "format-pack.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "fields.document_number": "SYN-842"
+        },
+        {
+          "File": "format-pack.pdf",
+          "Pages": "2",
+          "Document type": "Cheque",
+          "Document occurrence": "1",
+          "fields.cheque_number": "006204",
+          "fields.amount": "8,750/",
+          "fields.payment_date": "24 11 2026"
+        }
+      ]
+    },
+    "Raw requested values": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence",
+        "Field key",
+        "Occurrence"
+      ],
+      "columns": [
+        {
+          "label": "observation.status",
+          "kind": "text"
+        },
+        {
+          "label": "observation.value",
+          "kind": "text"
+        },
+        {
+          "label": "observation.pages",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "format-pack.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Field key": "project_ref",
+          "Occurrence": "1",
+          "observation.status": "printed",
+          "observation.value": "Lobby hinge inspection",
+          "observation.pages": "1"
+        },
+        {
+          "File": "format-pack.pdf",
+          "Pages": "2",
+          "Document type": "Cheque",
+          "Document occurrence": "1",
+          "Field key": "project_ref",
+          "Occurrence": "1",
+          "observation.status": "printed",
+          "observation.value": "Lobby hinge inspection",
+          "observation.pages": "2"
+        }
+      ]
+    }
+  }
+}

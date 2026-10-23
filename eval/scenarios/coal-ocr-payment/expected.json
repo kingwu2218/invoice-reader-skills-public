@@ -1,0 +1,204 @@
+{
+  "tables": {
+    "Billing documents": {
+      "identity": [
+        "File",
+        "Pages"
+      ],
+      "columns": [
+        {
+          "label": "Document number",
+          "kind": "text"
+        },
+        {
+          "label": "Total",
+          "kind": "amount"
+        },
+        {
+          "label": "Subtotal",
+          "kind": "amount"
+        },
+        {
+          "label": "Tax amount",
+          "kind": "amount"
+        },
+        {
+          "label": "Arithmetic check",
+          "kind": "text"
+        },
+        {
+          "label": "Needs review",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "coal-ocr.pdf",
+          "Pages": "1",
+          "Document number": "COAL-001",
+          "Total": "105.00",
+          "Subtotal": "100.00",
+          "Tax amount": "0.00",
+          "Arithmetic check": "Failed",
+          "Needs review": "Yes"
+        }
+      ]
+    },
+    "Other": {
+      "identity": [
+        "File",
+        "Pages"
+      ],
+      "columns": [
+        {
+          "label": "Document title",
+          "kind": "text"
+        },
+        {
+          "label": "Needs review",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "coal-ocr.pdf",
+          "Pages": "2",
+          "Document title": "LAB CERTIFICATE",
+          "Needs review": "Yes"
+        }
+      ]
+    },
+    "Line items": {
+      "identity": [
+        "File",
+        "Line"
+      ],
+      "columns": [
+        {
+          "label": "Quantity",
+          "kind": "number"
+        },
+        {
+          "label": "Unit price",
+          "kind": "amount"
+        },
+        {
+          "label": "Line total",
+          "kind": "amount"
+        }
+      ],
+      "rows": [
+        {
+          "File": "coal-ocr.pdf",
+          "Line": "1",
+          "Quantity": "1",
+          "Unit price": "100.00",
+          "Line total": "100.00"
+        }
+      ]
+    },
+    "Requested data": {
+      "identity": [
+        "File",
+        "Pages"
+      ],
+      "columns": [
+        {
+          "label": "Invoice number",
+          "kind": "text"
+        },
+        {
+          "label": "Payment due date",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "coal-ocr.pdf",
+          "Pages": "1",
+          "Invoice number": "COAL-001",
+          "Payment due date": "15 Oct 2026"
+        },
+        {
+          "File": "coal-ocr.pdf",
+          "Pages": "2",
+          "Invoice number": null,
+          "Payment due date": null
+        }
+      ],
+      "exact_columns": [
+        "Document ID",
+        "File",
+        "Pages",
+        "Invoice number",
+        "Payment due date",
+        "Needs review",
+        "Review reasons"
+      ]
+    },
+    "Requested values": {
+      "identity": [
+        "File",
+        "Document pages",
+        "Field key",
+        "Occurrence"
+      ],
+      "columns": [
+        {
+          "label": "Value (as printed)",
+          "kind": "text"
+        },
+        {
+          "label": "Unit",
+          "kind": "text"
+        },
+        {
+          "label": "Context",
+          "kind": "text"
+        },
+        {
+          "label": "Pages",
+          "kind": "text"
+        },
+        {
+          "label": "Status",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "Field key": "invoice_ref",
+          "Occurrence": "1",
+          "Value (as printed)": "COAL-001",
+          "Status": "printed",
+          "Pages": "1",
+          "File": "coal-ocr.pdf",
+          "Document pages": "1"
+        },
+        {
+          "Field key": "payment_due",
+          "Occurrence": "1",
+          "Value (as printed)": "15 Oct 2026",
+          "Status": "printed",
+          "Pages": "1",
+          "File": "coal-ocr.pdf",
+          "Document pages": "1"
+        },
+        {
+          "Field key": "invoice_ref",
+          "Occurrence": "1",
+          "Status": "absent",
+          "File": "coal-ocr.pdf",
+          "Document pages": "2"
+        },
+        {
+          "Field key": "payment_due",
+          "Occurrence": "1",
+          "Status": "absent",
+          "File": "coal-ocr.pdf",
+          "Document pages": "2"
+        }
+      ]
+    }
+  }
+}

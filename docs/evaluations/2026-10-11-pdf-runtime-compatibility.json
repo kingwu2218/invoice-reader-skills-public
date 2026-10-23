@@ -1,0 +1,89 @@
+{
+  "scope": "Deterministic public PDF rendering, runtime and routing regression; not model extraction accuracy.",
+  "package_version": "0.3.16",
+  "package_sha256": "2f03d23ca01d755c4cf6ed94c752d809ef03df201a94a26d8b8c49dc11bd7743",
+  "previous_package_sha256": "dbadd0982cb76f54bcbe2b2141996a6ead202878c0854de591c225fd8b75f7b2",
+  "grader_hashes_unchanged": {
+    "eval/runner/first_use.py": "99f8b0318ade00ade6950a261e12378bc95f9ee1f53d998a2816810906c60775",
+    "eval/tools/review_first_use_openings.py": "fefb2b9b6e16acda1d4f61342945d1918887b4d864822a8da25886a8b8bc0e33",
+    "eval/runner/workflow_audit.py": "0d630f9d4fc4297648b1836a5e94c3e45fec3009a9072bd56bd53661878de282",
+    "eval/runner/opening_v3.py": "8c65d1b17197a65a13ae6371466116aa8e757e37bffcfa51e3a24a608c3c91d8",
+    "eval/runner/opening_v4.py": "68bbcd1bea77397d2126f1edc423f283281c22150a1c1cf7cc9678bb2453d974",
+    "eval/runner/opening_v5.py": "937ac85106f99bc411b836b4006cdd9c5cccc72ad31102829dbe933672dfd0c9",
+    "eval/runner/opening_v6.py": "3b96566757cd337605e2cc4238f1db8a649dab89097d3c91cff242aa625dd426",
+    "eval/runner/opening_v7.py": "52528d96f3a74f058d9fb3147282b53bc2b89cd4c83218727a556848c3ca154f",
+    "eval/runner/opening_v8.py": "39406d4f47b617e80b9fff609e1cd3b794a01338929b0777e0c8b849dd0290c7",
+    "eval/runner/opening_v9.py": "4e4e083323835f3a8579b818a5b64b7af49e03e482aecd420b57a2dbd59a6c16",
+    "eval/workflows/first-use-v1/payment.json": "bbe0a6e6bb6bf5d2346eeb0d8a6105fb870c3f9fdd5ac4dfc6dc00ad78caba9b",
+    "eval/workflows/first-use-v1/energy.json": "e19f5f93ecef73d80622090c671a1c642ae62f3c0d374baea250965f45c99f7b"
+  },
+  "baseline_pdfium_version": "4.30.0",
+  "baseline_rendering": {
+    "status": "failed",
+    "reason": "'pypdfium2._helpers.document.PdfDocument' object does not support the context manager protocol (missed __exit__ method)"
+  },
+  "baseline_evidence_sha256": "c58498ce8aa4bd78bf82598429f908478b328c45d2180d6e9adeda072d27cba0",
+  "rows": [
+    {
+      "environment": "pdfium-430",
+      "python_version": "3.14.5",
+      "pdfium_version": "4.30.0",
+      "pillow_version": "12.3.0",
+      "checks": {
+        "probe_usable": true,
+        "same_environment": true,
+        "all_inputs_prepared": true,
+        "all_routes": true,
+        "all_eight_images": true,
+        "verification_stays_pending": true,
+        "recovery_rendered": true,
+        "recovery_no_overwrite": true,
+        "failed_input_retained_later_input_prepared": true
+      },
+      "correct": 9,
+      "denominator": 9,
+      "evidence_sha256": "5c3fe98adb0ee8f6a18a15b4b1aaf41087596e603ba06ee29078c5ee7bfa35c1"
+    },
+    {
+      "environment": "pdfium-514",
+      "python_version": "3.14.5",
+      "pdfium_version": "5.14.0",
+      "pillow_version": "12.3.0",
+      "checks": {
+        "probe_usable": true,
+        "same_environment": true,
+        "all_inputs_prepared": true,
+        "all_routes": true,
+        "all_eight_images": true,
+        "verification_stays_pending": true,
+        "recovery_rendered": true,
+        "recovery_no_overwrite": true,
+        "failed_input_retained_later_input_prepared": true
+      },
+      "correct": 9,
+      "denominator": 9,
+      "evidence_sha256": "ac0a2e7ace0ef33b7f40663c8a8f6884b03254206f08b9f99144629d9fb5fecf"
+    },
+    {
+      "environment": "managed-uv",
+      "python_version": "3.14.5",
+      "pdfium_version": "5.14.0",
+      "pillow_version": "12.3.0",
+      "checks": {
+        "probe_usable": true,
+        "same_environment": true,
+        "all_inputs_prepared": true,
+        "all_routes": true,
+        "all_eight_images": true,
+        "verification_stays_pending": true,
+        "recovery_rendered": true,
+        "recovery_no_overwrite": true,
+        "failed_input_retained_later_input_prepared": true
+      },
+      "correct": 9,
+      "denominator": 9,
+      "evidence_sha256": "0c22ff094b8f040c098192403b3605eccaa342b8a8d09da947bef39ece5c2845"
+    }
+  ],
+  "visual_check": "Inspected both managed OCR-fixture page images and the rotated/cropped recovery image; text is legible and rotation/crop is applied. This is render QA, not a new extraction score."
+}

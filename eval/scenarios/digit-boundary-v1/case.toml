@@ -1,0 +1,4 @@
+source = "fixtures/digit-boundary-v1.pdf"
+medium = "synthetic-raster-print"
+content_group = "digit-boundary-v1"
+expected_routes = ["B", "B", "B"]

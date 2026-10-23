@@ -1,0 +1,114 @@
+{
+  "evaluation_type": "live-model-public-format",
+  "package_version": "0.3.4",
+  "package": "invoice-reader-openai",
+  "artifact_hash": "ef249d1898c70f819adf4a29e4a8b11cd195395dacda5391225439e7bd8aef36",
+  "model_requested": "gpt-6.1-sol",
+  "model_reported": "Unknown",
+  "provider": "OpenAI via current Codex ChatGPT login",
+  "tool_version": "codex-cli 0.162.0-alpha.2",
+  "run_order": [
+    "unknown",
+    "end-mark",
+    "negative"
+  ],
+  "context": "Same previously acknowledged CLI conversation, three fresh workspaces; prior conversation history retained.",
+  "unique_source_pages": 2,
+  "executions": 3,
+  "runs": [
+    {
+      "convention": "end-mark",
+      "raw_correct": 14,
+      "raw_denominator": 14,
+      "workbook_correct": 21,
+      "workbook_denominator": 21,
+      "documents_found": 2,
+      "documents_expected": 2,
+      "raw_correct_blanks_excluded": 6,
+      "workbook_correct_blanks_excluded": 0,
+      "correct_review_flags": 2,
+      "convention_matches": true
+    },
+    {
+      "convention": "negative",
+      "raw_correct": 14,
+      "raw_denominator": 14,
+      "workbook_correct": 21,
+      "workbook_denominator": 21,
+      "documents_found": 2,
+      "documents_expected": 2,
+      "raw_correct_blanks_excluded": 6,
+      "workbook_correct_blanks_excluded": 0,
+      "correct_review_flags": 2,
+      "convention_matches": true
+    },
+    {
+      "convention": "unknown",
+      "raw_correct": 14,
+      "raw_denominator": 14,
+      "workbook_correct": 21,
+      "workbook_denominator": 21,
+      "documents_found": 2,
+      "documents_expected": 2,
+      "raw_correct_blanks_excluded": 6,
+      "workbook_correct_blanks_excluded": 0,
+      "correct_review_flags": 2,
+      "convention_matches": true
+    }
+  ],
+  "turns_in_execution_order": [
+    {
+      "elapsed_seconds": 457.16,
+      "recovered_json_notices": 4,
+      "model_reported": [
+        "Unknown"
+      ],
+      "question_repeated": false
+    },
+    {
+      "elapsed_seconds": 281.77,
+      "recovered_json_notices": 4,
+      "model_reported": [
+        "Unknown"
+      ],
+      "question_repeated": false
+    },
+    {
+      "elapsed_seconds": 171.61,
+      "recovered_json_notices": 4,
+      "model_reported": [
+        "Unknown"
+      ],
+      "question_repeated": false
+    }
+  ],
+  "input_reference_hashes": {
+    "eval/fixtures/amount-dash-model-v1.pdf": "b9d49358880e514f1f8b9ac7ef6cabac531bfbcd0f6c31b5278ea2cfa6303d4d",
+    "eval/scenarios/amount-dash-model-v1-end-mark/case.toml": "2130e406b4d2a459ae3e21471985c2cd5eaf04b9578eb10e01736724a6440073",
+    "eval/scenarios/amount-dash-model-v1-end-mark/custom.md": "9a1e4b58825f4913fb6a1cbfe773132cb36b7bc94da0661132132f52b6306858",
+    "eval/scenarios/amount-dash-model-v1-end-mark/expected.json": "e5edd0ee8c5743078b581ece923c1a469f25c183ed425e6cbf594425ee81b6f6",
+    "eval/scenarios/amount-dash-model-v1-negative/case.toml": "2130e406b4d2a459ae3e21471985c2cd5eaf04b9578eb10e01736724a6440073",
+    "eval/scenarios/amount-dash-model-v1-negative/custom.md": "aecfdca0ee1eed8acc7fa7e4a9c953707617c1852e833fde5e6bd12924e8dbae",
+    "eval/scenarios/amount-dash-model-v1-negative/expected.json": "334ab0f545cb25eaf474aaed834215736071ecea1f2ec8e4403ef509ee2c2ac9",
+    "eval/scenarios/amount-dash-model-v1-unknown/case.toml": "2130e406b4d2a459ae3e21471985c2cd5eaf04b9578eb10e01736724a6440073",
+    "eval/scenarios/amount-dash-model-v1-unknown/custom.md": "cf1f7ed5ec11bd81c2cd910561313463d0c953edf551a3a60bef5efc334ea68c",
+    "eval/scenarios/amount-dash-model-v1-unknown/expected.json": "b9f4c70b5d8582b419690b79beb5aab9ad2326e6fc1a39677425004823fcb980"
+  },
+  "pre_run_lock_sha256": "162054a6ffd908d73231fdd172e0b7900567dd833adca727eb38c8317fee38a5",
+  "evaluator_sha256": {
+    "eval/runner/conversation.py": "7e4e277448bbb3cda5b59ba22b21fe6b33e23b659f0753e712df2712e5f36f6e",
+    "eval/runner/score.py": "5ae8a2a6b5dc92b77d950e553c0cac43d81332134b1c2f6d4171933674df3e4e",
+    "eval/runner/raw.py": "650f918b868c4be571ddce6347266e84b66339f5121d76e6c05a2d8b65c4f412",
+    "adapters/codex/eval_adapter.py": "f5f4c469214bfb3f372a2c16871ca139c873f13c79df9fd1790a703405632567"
+  },
+  "unit_tests_passed": 109,
+  "transport_review": "CLI transport fell back after reconnection attempts. The first saved run was reclassified using the tested adapter after exact-session completion, exit zero and unchanged-artifact checks; original classification and stream-hash review retained. Later runs used the corrected adapter directly.",
+  "limitations": [
+    "Only configured checks, including statuses and pages; not every populated workbook field.",
+    "One invented printed PDF repeated with three settings; not handwriting/OCR or independent layout diversity.",
+    "One execution per convention in a shared historical conversation; not independent fresh-session repeatability.",
+    "No page-attachment receipts; output success is not proof of image attention.",
+    "No model identity verified; CLI did not return a model ID.",
+    "Packages remain experimental; no default promotion."
+  ]
+}

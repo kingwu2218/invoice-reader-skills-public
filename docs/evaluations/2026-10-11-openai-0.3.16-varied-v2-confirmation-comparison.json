@@ -1,0 +1,54 @@
+{
+  "scope": "Supplementary repeatability observation: previous outputs retrospectively scored with v2 versus new prospectively frozen v2 execution. Same synthetic content; blank entries count only for consistency, not accuracy. No new model calls or original-score replacement.",
+  "rows": [
+    {
+      "trial": 1,
+      "purpose": "payment",
+      "layer": "raw",
+      "compared_entries_including_blanks": 76,
+      "changed_entries": 0,
+      "changes": [],
+      "old_raw_sha256": "5eada8f83a621f142629f77436c9f1ba54639ec63728c5830267da3e6f03f624",
+      "new_raw_sha256": "757b1a721bd2290770192b0291d612b03591fb1a01af607232998ea1a127adc8",
+      "reference_sha256": "b915e4ef581ba599add824b8e15cd19f4c08b2887efba0ef153f6c591a6d5ec7",
+      "new_score_sha256": "b5e135c13439527f6eec0b58d540db8a45e79cc53586dfff77ce48e3256dc968"
+    },
+    {
+      "trial": 1,
+      "purpose": "payment",
+      "layer": "workbook",
+      "compared_entries_including_blanks": 83,
+      "changed_entries": 0,
+      "changes": [],
+      "old_raw_sha256": "5eada8f83a621f142629f77436c9f1ba54639ec63728c5830267da3e6f03f624",
+      "new_raw_sha256": "757b1a721bd2290770192b0291d612b03591fb1a01af607232998ea1a127adc8",
+      "reference_sha256": "b915e4ef581ba599add824b8e15cd19f4c08b2887efba0ef153f6c591a6d5ec7",
+      "new_score_sha256": "97e0d25713a2fc74821ee692c9fd828c8a83a32d8f789e0057873d6d16d637eb"
+    },
+    {
+      "trial": 2,
+      "purpose": "quality",
+      "layer": "raw",
+      "compared_entries_including_blanks": 106,
+      "changed_entries": 0,
+      "changes": [],
+      "old_raw_sha256": "53cf84714ff4fee0ab6eec83d7487606abb479f4250eff1ae131e8dfe53cce57",
+      "new_raw_sha256": "14742297a9cbcc052853adc8b0a7e36615f11be3943b93f5bd319946b70a8eb4",
+      "reference_sha256": "79f5b3036123892e6969fd2ab3c1c6c010bb5670650557f5b0aed9afd220fcb3",
+      "new_score_sha256": "da1c470c25540efcc6ebb25423b309b2c8d73c64b3a0260c85038afccd667832"
+    },
+    {
+      "trial": 2,
+      "purpose": "quality",
+      "layer": "workbook",
+      "compared_entries_including_blanks": 117,
+      "changed_entries": 0,
+      "changes": [],
+      "old_raw_sha256": "53cf84714ff4fee0ab6eec83d7487606abb479f4250eff1ae131e8dfe53cce57",
+      "new_raw_sha256": "14742297a9cbcc052853adc8b0a7e36615f11be3943b93f5bd319946b70a8eb4",
+      "reference_sha256": "79f5b3036123892e6969fd2ab3c1c6c010bb5670650557f5b0aed9afd220fcb3",
+      "new_score_sha256": "611fcf4d7f72b84038d8d252413bd6526559b839bc6c5f410d56dcd545b7519e"
+    }
+  ],
+  "reviewer_sha256": "c32d0f2be8f9ee53c45a73423f92fb48dc61351e5ad6909233ff9c8fdb2d6446"
+}

@@ -1,0 +1,753 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-11",
+  "evaluation_kind": "three-fresh-chat-known-source-regression",
+  "status": "experimental",
+  "protocol": "Three new chats directly on the same authorized Fox page. No public examples or prior answers. One extraction per chat; retain all results.",
+  "results": [
+    {
+      "repeat": 1,
+      "valid": true,
+      "completed": true,
+      "version": "0.3.12",
+      "requested_model": "gpt-6.1-sol",
+      "reported_model": "Unknown",
+      "provider": "OpenAI via current Codex ChatGPT login",
+      "tool_version": "codex-cli 0.162.0-alpha.17.2",
+      "artifact_hash": "7b5dafe91acfbeb644589f5dcffb18ceed964999338f88210195ba5b8036724c",
+      "dataset_hash": "a40b0ebd8e461b70a2c296c881452f58a814dcb867fac38ac3fd7545881146c4",
+      "elapsed_seconds": 223.86,
+      "transport": "https",
+      "evidence_sha256": {
+        "state": "9fd6c419a2beba894b9af69ef0102e6474f855ca77279bb48d01045f4ce7f799",
+        "score": "cb02263f68d1aa9ea00f8a8b00875d8be45f77857e3bb8be1a882196563de7e6",
+        "reply": "64363cb3348f12f3fc2cbf429693ed6b9ba6203672d76929ecc7d29b97e90743",
+        "opening_invocation": "7ed667288e4f1c67f06d3d4910f66ff1659a0a3b390f827aeab3f725d6d7d459",
+        "raw-extraction.json": "5ca9004b522698040a10ba9ff8c6085d2d6383334ce6d34a8ac30e48ecd45e95",
+        "output.xlsx": "9af79d4a77ee8de175d2b264d0d1b35938f99b6d6141d2dd572a3645693c0454",
+        "expected.json": "b31991832f4cec8058f92fab731ae848ac5c4d1d9f443f9cfbfb366b8d7e56af",
+        "custom.md": "d5697ce658657790951fe6fca10b548735df3654b50317fb4b6bf463cb4484f0",
+        "rollout": "8f9f286da97739aa79ada8feeb94aa8b546123b5eebda27d0d5bb30b5aed8563"
+      },
+      "onboarding": {
+        "question_occurrences": 1,
+        "automatic_status": "invalid",
+        "maintainer_observed_wait": true,
+        "question_repeated_after_reply": false
+      },
+      "raw": {
+        "correct": 4,
+        "correct_blank": 3,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 1,
+        "invented": 0,
+        "numerator": 4,
+        "denominator": 5,
+        "rate": 0.8
+      },
+      "workbook": {
+        "correct": 6,
+        "correct_blank": 3,
+        "miss": 0,
+        "wrong_flagged": 1,
+        "silent_error": 0,
+        "invented": 0,
+        "numerator": 6,
+        "denominator": 7,
+        "rate": 0.8571428571428571
+      },
+      "raw_reference_scope": {
+        "owner_confirmed": {
+          "correct": 1,
+          "correct_blank": 0,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 1,
+          "invented": 0,
+          "numerator": 1,
+          "denominator": 2,
+          "rate": 0.5
+        },
+        "provisional": {
+          "correct": 3,
+          "correct_blank": 3,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "unmatched_extra": {
+          "correct": 0,
+          "correct_blank": 0,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "workbook_reference_scope": {
+        "owner_confirmed": {
+          "correct": 3,
+          "correct_blank": 0,
+          "miss": 0,
+          "wrong_flagged": 1,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 3,
+          "denominator": 4,
+          "rate": 0.75
+        },
+        "provisional": {
+          "correct": 3,
+          "correct_blank": 3,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "unmatched_extra": {
+          "correct": 0,
+          "correct_blank": 0,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "cash_memo_is_invoice": true,
+      "expected_document_count": 2,
+      "actual_document_count": 2,
+      "invoice_classifications_correct": 2,
+      "target_raw_exact": false,
+      "target_raw_numeric": false,
+      "target_workbook_correct": false,
+      "raw_tables": {
+        "Raw documents": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Raw requested values": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        }
+      },
+      "workbook_tables": {
+        "Billing documents": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Line items": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested values": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        }
+      },
+      "checks": {
+        "unprocessed_inputs": 0
+      },
+      "abstention": {
+        "unclear_fields": 1,
+        "kept_unclear_and_blank": 1,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0,
+        "abstention_rate": 1.0
+      },
+      "scored_differences": [
+        {
+          "where": "Raw documents/0/fields.total",
+          "outcome": "silent_error"
+        },
+        {
+          "where": "Billing documents/0/Total",
+          "outcome": "wrong_flagged"
+        }
+      ],
+      "classification_reference_read": true,
+      "nonzero_command_exits": 0,
+      "image_trace": {
+        "calls": 2,
+        "calls_returning_images": 2,
+        "scope": "Observed local tool content, not proof of model attention or server attachment receipt."
+      }
+    },
+    {
+      "repeat": 2,
+      "valid": true,
+      "completed": true,
+      "version": "0.3.12",
+      "requested_model": "gpt-6.1-sol",
+      "reported_model": "Unknown",
+      "provider": "OpenAI via current Codex ChatGPT login",
+      "tool_version": "codex-cli 0.162.0-alpha.17.2",
+      "artifact_hash": "7b5dafe91acfbeb644589f5dcffb18ceed964999338f88210195ba5b8036724c",
+      "dataset_hash": "a40b0ebd8e461b70a2c296c881452f58a814dcb867fac38ac3fd7545881146c4",
+      "elapsed_seconds": 225.73,
+      "transport": "https",
+      "evidence_sha256": {
+        "state": "7b74b92a88e7063f6a496f5d0b6321858700e00bec23b1dda5d235f8ecf57e3b",
+        "score": "5c0d2bd9e2aa668bc6dc10e147a0538d5c70595f6055755eb16e2fee71aee5a4",
+        "reply": "3a1e585e7114faac282f3a6a315d3744a8b840c3ddc5ddf9c1c08b02acb8f3cb",
+        "opening_invocation": "90d7ee4eb9cec0fe03fdcb41c8d1e714fedf787439dbe51cfaa62af9616d57dc",
+        "raw-extraction.json": "b2dd81f9c3f1527f348689fa3faee2d02933c2a8ad839185c0af2d2ec7b93254",
+        "output.xlsx": "05e91841159e317ec2206756403530d0a45eb01b94e4ae168068de7db84f2e9a",
+        "expected.json": "b31991832f4cec8058f92fab731ae848ac5c4d1d9f443f9cfbfb366b8d7e56af",
+        "custom.md": "d5697ce658657790951fe6fca10b548735df3654b50317fb4b6bf463cb4484f0",
+        "rollout": "13c36142414fd2f441fdcb763277ca5aa227aff0e64d1b2285c13d8e6661b797"
+      },
+      "onboarding": {
+        "question_occurrences": 1,
+        "automatic_status": "invalid",
+        "maintainer_observed_wait": true,
+        "question_repeated_after_reply": false
+      },
+      "raw": {
+        "correct": 4,
+        "correct_blank": 3,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 1,
+        "invented": 0,
+        "numerator": 4,
+        "denominator": 5,
+        "rate": 0.8
+      },
+      "workbook": {
+        "correct": 7,
+        "correct_blank": 3,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0,
+        "numerator": 7,
+        "denominator": 7,
+        "rate": 1.0
+      },
+      "raw_reference_scope": {
+        "owner_confirmed": {
+          "correct": 1,
+          "correct_blank": 0,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 1,
+          "invented": 0,
+          "numerator": 1,
+          "denominator": 2,
+          "rate": 0.5
+        },
+        "provisional": {
+          "correct": 3,
+          "correct_blank": 3,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "unmatched_extra": {
+          "correct": 0,
+          "correct_blank": 0,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "workbook_reference_scope": {
+        "owner_confirmed": {
+          "correct": 4,
+          "correct_blank": 0,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 4,
+          "denominator": 4,
+          "rate": 1.0
+        },
+        "provisional": {
+          "correct": 3,
+          "correct_blank": 3,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "unmatched_extra": {
+          "correct": 0,
+          "correct_blank": 0,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "cash_memo_is_invoice": true,
+      "expected_document_count": 2,
+      "actual_document_count": 2,
+      "invoice_classifications_correct": 2,
+      "target_raw_exact": true,
+      "target_raw_numeric": true,
+      "target_workbook_correct": true,
+      "raw_tables": {
+        "Raw documents": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Raw requested values": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        }
+      },
+      "workbook_tables": {
+        "Billing documents": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Line items": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested values": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        }
+      },
+      "checks": {
+        "unprocessed_inputs": 0
+      },
+      "abstention": {
+        "unclear_fields": 1,
+        "kept_unclear_and_blank": 1,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0,
+        "abstention_rate": 1.0
+      },
+      "scored_differences": [
+        {
+          "where": "Raw documents/1/fields.total",
+          "outcome": "silent_error"
+        }
+      ],
+      "classification_reference_read": true,
+      "nonzero_command_exits": 0,
+      "image_trace": {
+        "calls": 2,
+        "calls_returning_images": 2,
+        "scope": "Observed local tool content, not proof of model attention or server attachment receipt."
+      }
+    },
+    {
+      "repeat": 3,
+      "valid": true,
+      "completed": true,
+      "version": "0.3.12",
+      "requested_model": "gpt-6.1-sol",
+      "reported_model": "Unknown",
+      "provider": "OpenAI via current Codex ChatGPT login",
+      "tool_version": "codex-cli 0.162.0-alpha.17.2",
+      "artifact_hash": "7b5dafe91acfbeb644589f5dcffb18ceed964999338f88210195ba5b8036724c",
+      "dataset_hash": "a40b0ebd8e461b70a2c296c881452f58a814dcb867fac38ac3fd7545881146c4",
+      "elapsed_seconds": 223.12,
+      "transport": "https",
+      "evidence_sha256": {
+        "state": "e905a6a9e7778b9b4b65889c24bfbb40245747a7615b2bb17adffbba95f9eb56",
+        "score": "948583174d686d5a6661613e766a3808bb0dba6db420acda1f9b7b81bdd9aca6",
+        "reply": "cefd8328cf6db5cdebab939eab4766b53665e1ce200eec1ceda5a2c78fe641e1",
+        "opening_invocation": "524caffc5bffb2a2d9728d5c00edcb69f7679ac969fb39f991972c8a889e1f43",
+        "raw-extraction.json": "21e6923c9dcfb4569c87499033e12f2b3a1c19662ed911585a4ceef64e9bad1a",
+        "output.xlsx": "bede496dedd7057c519159fe92e14100339dd26fecb15bb6ab20ffc6e78bb093",
+        "expected.json": "b31991832f4cec8058f92fab731ae848ac5c4d1d9f443f9cfbfb366b8d7e56af",
+        "custom.md": "d5697ce658657790951fe6fca10b548735df3654b50317fb4b6bf463cb4484f0",
+        "rollout": "f7626fe36f98f30abe20295227d51d29e5f16ff6f28e7020aa8a0685abb31137"
+      },
+      "onboarding": {
+        "question_occurrences": 1,
+        "automatic_status": "invalid",
+        "maintainer_observed_wait": true,
+        "question_repeated_after_reply": false
+      },
+      "raw": {
+        "correct": 5,
+        "correct_blank": 3,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0,
+        "numerator": 5,
+        "denominator": 5,
+        "rate": 1.0
+      },
+      "workbook": {
+        "correct": 7,
+        "correct_blank": 3,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0,
+        "numerator": 7,
+        "denominator": 7,
+        "rate": 1.0
+      },
+      "raw_reference_scope": {
+        "owner_confirmed": {
+          "correct": 2,
+          "correct_blank": 0,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "provisional": {
+          "correct": 3,
+          "correct_blank": 3,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "unmatched_extra": {
+          "correct": 0,
+          "correct_blank": 0,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "workbook_reference_scope": {
+        "owner_confirmed": {
+          "correct": 4,
+          "correct_blank": 0,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 4,
+          "denominator": 4,
+          "rate": 1.0
+        },
+        "provisional": {
+          "correct": 3,
+          "correct_blank": 3,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "unmatched_extra": {
+          "correct": 0,
+          "correct_blank": 0,
+          "miss": 0,
+          "wrong_flagged": 0,
+          "silent_error": 0,
+          "invented": 0,
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "cash_memo_is_invoice": true,
+      "expected_document_count": 2,
+      "actual_document_count": 2,
+      "invoice_classifications_correct": 2,
+      "target_raw_exact": true,
+      "target_raw_numeric": true,
+      "target_workbook_correct": true,
+      "raw_tables": {
+        "Raw documents": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Raw requested values": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        }
+      },
+      "workbook_tables": {
+        "Billing documents": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Line items": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested values": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        }
+      },
+      "checks": {
+        "unprocessed_inputs": 0
+      },
+      "abstention": {
+        "unclear_fields": 1,
+        "kept_unclear_and_blank": 1,
+        "unsupported_filled": 0,
+        "missing_or_ambiguous_observation": 0,
+        "abstention_rate": 1.0
+      },
+      "scored_differences": [],
+      "classification_reference_read": true,
+      "nonzero_command_exits": 0,
+      "image_trace": {
+        "calls": 3,
+        "calls_returning_images": 3,
+        "scope": "Observed local tool content, not proof of model attention or server attachment receipt."
+      }
+    }
+  ],
+  "aggregate": {
+    "raw": {
+      "correct": 13,
+      "correct_blank": 9,
+      "miss": 0,
+      "wrong_flagged": 0,
+      "silent_error": 2,
+      "invented": 0,
+      "numerator": 13,
+      "denominator": 15,
+      "rate": 0.8666666666666667
+    },
+    "workbook": {
+      "correct": 20,
+      "correct_blank": 9,
+      "miss": 0,
+      "wrong_flagged": 1,
+      "silent_error": 0,
+      "invented": 0,
+      "numerator": 20,
+      "denominator": 21,
+      "rate": 0.9523809523809523
+    },
+    "raw_reference_scope": {
+      "owner_confirmed": {
+        "correct": 4,
+        "correct_blank": 0,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 2,
+        "invented": 0,
+        "numerator": 4,
+        "denominator": 6,
+        "rate": 0.6666666666666666
+      },
+      "provisional": {
+        "correct": 9,
+        "correct_blank": 9,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0,
+        "numerator": 9,
+        "denominator": 9,
+        "rate": 1.0
+      },
+      "unmatched_extra": {
+        "correct": 0,
+        "correct_blank": 0,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0,
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      }
+    },
+    "workbook_reference_scope": {
+      "owner_confirmed": {
+        "correct": 11,
+        "correct_blank": 0,
+        "miss": 0,
+        "wrong_flagged": 1,
+        "silent_error": 0,
+        "invented": 0,
+        "numerator": 11,
+        "denominator": 12,
+        "rate": 0.9166666666666666
+      },
+      "provisional": {
+        "correct": 9,
+        "correct_blank": 9,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0,
+        "numerator": 9,
+        "denominator": 9,
+        "rate": 1.0
+      },
+      "unmatched_extra": {
+        "correct": 0,
+        "correct_blank": 0,
+        "miss": 0,
+        "wrong_flagged": 0,
+        "silent_error": 0,
+        "invented": 0,
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      }
+    },
+    "cash_memo_is_invoice": {
+      "numerator": 3,
+      "denominator": 3
+    },
+    "target_raw_exact": {
+      "numerator": 2,
+      "denominator": 3
+    },
+    "target_raw_numeric": {
+      "numerator": 2,
+      "denominator": 3
+    },
+    "target_workbook_correct": {
+      "numerator": 2,
+      "denominator": 3
+    },
+    "valid_executions": {
+      "numerator": 3,
+      "denominator": 3
+    }
+  },
+  "stability": {
+    "raw": {
+      "completed_runs": 3,
+      "configured_cells": 8,
+      "differing_cells": 2,
+      "differing_cell_keys": [
+        "Raw documents/0/fields.total",
+        "Raw documents/1/fields.total"
+      ]
+    },
+    "workbook": {
+      "completed_runs": 3,
+      "configured_cells": 10,
+      "differing_cells": 1,
+      "differing_cell_keys": [
+        "Billing documents/0/Total"
+      ]
+    }
+  },
+  "tests_passed": 189,
+  "reference_status": "mixed-owner-and-provisional",
+  "maintainer_diagnosis": {
+    "reviewer": "maintainer",
+    "scope": "Post-score diagnosis; no prediction, reference or strict score changed.",
+    "repeat_1": {
+      "target_error": "An extra leading digit recurs in both raw Total and workbook Total.",
+      "raw_target_marked_unclear": false,
+      "workbook_warning": "Total has the processor general handwriting review warning. This is not evidence that the numeral error was detected or corrected."
+    },
+    "repeat_2": {
+      "difference": "The second raw Total includes a currency prefix omitted by the frozen reference; digits and terminal dash agree.",
+      "basis": "Same source-supported formatting difference observed in the preceding single-run 0.3.12 evaluation. Strict mismatch retained."
+    },
+    "repeat_3": {
+      "configured_differences": 0
+    },
+    "interpretation": "Cash Memo classification is consistent across these three direct runs. The owner-confirmed target amount is not stable: correct twice, wrong once. Three repeats are not a population accuracy estimate."
+  },
+  "evidence_sha256": {
+    "plan": "e67e2517ece3af782320667a38f88b5700ada212d4b9c105b7531bf81c851892",
+    "predeclared_metrics": "b7c5ab61bd2b4b9b2fa74f23a397982805d3e775a23a621114450b9cde172d69",
+    "holdout_lock": "2b007ee0ab2a7cc7c9b4ba82d210166266ba44014e4e9df6aafbcba91607aef1",
+    "reference_scope": "64d6e56bef951b3417e2d648105cff481ff92f6ae3d4d7524b26b0fc2f35f06e",
+    "maintainer_review": "ecafd706c3281bf2c4907939c63bb787be582de75e5e4e596bc80afdff9b4860"
+  },
+  "limitations": [
+    "Three repeats of one known page; not three independent documents or a general accuracy estimate.",
+    "All predictions and strict reference scores retained; currency formatting is not silently regraded.",
+    "Actual model identity is self-reported, not verified.",
+    "Opening format failures remain separate from extraction correctness."
+  ],
+  "commit_performed": false
+}

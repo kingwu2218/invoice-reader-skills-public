@@ -1,0 +1,5 @@
+file = "printed-002.pdf"
+type = "invoice"
+medium = "printed-pdf"
+direction = "AP"
+hard = ["no-subtotal"]

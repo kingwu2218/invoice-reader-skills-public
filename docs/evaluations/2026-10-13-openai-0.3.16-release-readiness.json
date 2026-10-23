@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-13",
+  "target_release": "2026-10-16",
+  "package": "invoice-reader-openai",
+  "version": "0.3.16",
+  "package_sha256": "2f03d23ca01d755c4cf6ed94c752d809ef03df201a94a26d8b8c49dc11bd7743",
+  "scope": "Windows copied package, existing uv/base Python, fresh uv cache; supplied known public transcription, not model accuracy or fresh OS/CLI installation.",
+  "environment": {
+    "python": "3.14.5",
+    "pdfium": "5.14.0",
+    "pillow": "12.3.0",
+    "openpyxl": "3.1.5"
+  },
+  "checks": {
+    "one_document": true,
+    "one_processed_input": true,
+    "invoice_classification": true,
+    "document_number": true,
+    "dates": true,
+    "totals": true,
+    "currency": true,
+    "arithmetic": true,
+    "three_line_items": true,
+    "custom_summary": true,
+    "printed_custom_unit": true,
+    "source_evidence": true,
+    "no_profile_review": true,
+    "model_not_invented": true,
+    "correct_package_version": true,
+    "installed_package_unchanged": true,
+    "source_unchanged": true,
+    "shared_interpreter": true,
+    "shared_libraries": true,
+    "native_route": true,
+    "recovery_image_created": true,
+    "custom_template_created": true,
+    "profile_template_created": true,
+    "eight_commands_succeeded": true
+  },
+  "passed": 24,
+  "total": 24,
+  "visual_review": "Prepared page inspected; public invoice readable and matches supplied transcription.",
+  "workbook_sha256": "5b090959901b9072c3f387716411c2c2cd6c7a3f848b60fef00fdbecf77de9d1",
+  "source_sha256": "d6edd40a7e9d6616df21f56bbd161113857927bfb9a3362204211b58fa47fed3",
+  "bundle": {
+    "file": "invoice-reader-openai-0.3.16.zip",
+    "sha256": "f9855c51eeb13e3b830a4ad4098da4d3d763281a875bfc1b4e97aa2ce1643330",
+    "files": 35,
+    "all_member_bytes_match": true
+  },
+  "full_suite": {
+    "tests": 320,
+    "passed": true,
+    "log_sha256": "d4d0486f733172190d446930e0ace68ebff1be4e6000f8b26661ef03960568e2"
+  },
+  "publication": "not committed, tagged, pushed or published",
+  "publication_audit": {
+    "publishable_files": 667,
+    "history_object_types": {
+      "commit": 10,
+      "tree": 320,
+      "blob": 602
+    },
+    "shallow": "false",
+    "decode_errors": [],
+    "suspicious_working_paths": [],
+    "cleared_scanner_pattern_findings": 3,
+    "unresolved_findings": 0,
+    "scope": "All locally reachable refs and publishable working files; regex plus PDF text and archive contents. No claim about encrypted/visual-only content or unreachable objects.",
+    "no_files_above_5MB": true,
+    "no_tracked_symlinks_or_submodules": true,
+    "origin_refreshed": true
+  },
+  "git_head": "95634a2e0ed9cdd47d7d3173e748eac704ce7ea2",
+  "opening_grader_sha256": "4e4e083323835f3a8579b818a5b64b7af49e03e482aecd420b57a2dbd59a6c16",
+  "binary_review": {
+    "previously_reviewed_unchanged": 16,
+    "new_synthetic_pdfs": 2,
+    "new_pages_visually_reviewed": 3
+  }
+}

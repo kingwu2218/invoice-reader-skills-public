@@ -1,0 +1,254 @@
+{
+  "tables": {
+    "Billing documents": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence"
+      ],
+      "columns": [
+        {
+          "label": "Document number",
+          "kind": "text"
+        },
+        {
+          "label": "Total",
+          "kind": "amount"
+        }
+      ],
+      "rows": [
+        {
+          "File": "harbour-meter-v1.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Document number": "HM-7781",
+          "Total": "180.00"
+        }
+      ]
+    },
+    "Line items": {
+      "identity": [
+        "File",
+        "Pages",
+        "Line"
+      ],
+      "columns": [
+        {
+          "label": "Description",
+          "kind": "text"
+        },
+        {
+          "label": "Quantity",
+          "kind": "number"
+        },
+        {
+          "label": "Unit",
+          "kind": "text"
+        },
+        {
+          "label": "Unit price",
+          "kind": "amount"
+        },
+        {
+          "label": "Line total",
+          "kind": "amount"
+        }
+      ],
+      "rows": [
+        {
+          "File": "harbour-meter-v1.pdf",
+          "Pages": "1",
+          "Line": "1",
+          "Description": "Site electricity",
+          "Quantity": "120",
+          "Unit": "kWh",
+          "Unit price": "1.50",
+          "Line total": "180.00"
+        }
+      ]
+    },
+    "Requested data": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence"
+      ],
+      "columns": [
+        {
+          "label": "Meter reading",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "harbour-meter-v1.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Meter reading": "45012 kWh"
+        }
+      ]
+    },
+    "Requested values": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence",
+        "Field key",
+        "Occurrence"
+      ],
+      "columns": [
+        {
+          "label": "Status",
+          "kind": "text"
+        },
+        {
+          "label": "Value (as printed)",
+          "kind": "text"
+        },
+        {
+          "label": "Unit",
+          "kind": "text"
+        },
+        {
+          "label": "Pages",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "harbour-meter-v1.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Field key": "meter_reading",
+          "Occurrence": "1",
+          "Status": "printed",
+          "Value (as printed)": "45012",
+          "Unit": "kWh"
+        }
+      ]
+    }
+  },
+  "raw_tables": {
+    "Raw documents": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence"
+      ],
+      "columns": [
+        {
+          "label": "fields.document_number",
+          "kind": "text"
+        },
+        {
+          "label": "fields.total",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "harbour-meter-v1.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "fields.document_number": "HM-7781",
+          "fields.total": "180.00"
+        }
+      ]
+    },
+    "Raw line items": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence",
+        "Line"
+      ],
+      "columns": [
+        {
+          "label": "item.description",
+          "kind": "text"
+        },
+        {
+          "label": "item.quantity",
+          "kind": "text"
+        },
+        {
+          "label": "item.unit",
+          "kind": "text"
+        },
+        {
+          "label": "item.unit_price",
+          "kind": "text"
+        },
+        {
+          "label": "item.line_total",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "harbour-meter-v1.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Line": "1",
+          "item.description": "Site electricity",
+          "item.quantity": "120",
+          "item.unit": "kWh",
+          "item.unit_price": "1.50",
+          "item.line_total": "180.00"
+        }
+      ]
+    },
+    "Raw requested values": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence",
+        "Field key",
+        "Occurrence"
+      ],
+      "columns": [
+        {
+          "label": "observation.status",
+          "kind": "text"
+        },
+        {
+          "label": "observation.value",
+          "kind": "text"
+        },
+        {
+          "label": "observation.unit",
+          "kind": "text"
+        },
+        {
+          "label": "observation.pages",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "harbour-meter-v1.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Field key": "meter_reading",
+          "Occurrence": "1",
+          "observation.status": "printed",
+          "observation.value": "45012",
+          "observation.unit": "kWh",
+          "observation.pages": "1"
+        }
+      ]
+    }
+  }
+}

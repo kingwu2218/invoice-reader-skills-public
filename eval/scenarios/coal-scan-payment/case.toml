@@ -1,0 +1,4 @@
+source = "fixtures/coal-scan.pdf"
+medium = "pdf-scan"
+content_group = "coal-pack"
+expected_routes = ["B", "B"]

@@ -1,0 +1,4 @@
+source = "fixtures/cash-memo-classification-v1.pdf"
+medium = "synthetic-native-print"
+content_group = "cash-memo-classification-v1"
+expected_routes = ["A", "A", "A"]

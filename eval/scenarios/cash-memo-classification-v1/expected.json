@@ -1,0 +1,159 @@
+{
+  "tables": {
+    "Billing documents": {
+      "identity": [
+        "File",
+        "Pages"
+      ],
+      "columns": [
+        {
+          "label": "Document type",
+          "kind": "text"
+        },
+        {
+          "label": "Document title",
+          "kind": "text"
+        },
+        {
+          "label": "Total",
+          "kind": "amount"
+        }
+      ],
+      "rows": [
+        {
+          "File": "cash-memo-classification-v1.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document title": "CASH MEMO",
+          "Total": "58"
+        },
+        {
+          "File": "cash-memo-classification-v1.pdf",
+          "Pages": "3",
+          "Document type": "Invoice",
+          "Document title": "TAX INVOICE / RECEIPT",
+          "Total": "93"
+        }
+      ]
+    },
+    "Reference documents": {
+      "identity": [
+        "File",
+        "Pages"
+      ],
+      "columns": [
+        {
+          "label": "Document type",
+          "kind": "text"
+        },
+        {
+          "label": "Document title",
+          "kind": "text"
+        },
+        {
+          "label": "Total",
+          "kind": "amount"
+        }
+      ],
+      "rows": [
+        {
+          "File": "cash-memo-classification-v1.pdf",
+          "Pages": "2",
+          "Document type": "Receipt",
+          "Document title": "OFFICIAL RECEIPT",
+          "Total": "58"
+        }
+      ]
+    },
+    "Line items": {
+      "identity": [
+        "File",
+        "Pages",
+        "Line"
+      ],
+      "columns": [
+        {
+          "label": "Description",
+          "kind": "text"
+        },
+        {
+          "label": "Quantity",
+          "kind": "number"
+        },
+        {
+          "label": "Unit price",
+          "kind": "amount"
+        },
+        {
+          "label": "Line total",
+          "kind": "amount"
+        }
+      ],
+      "rows": [
+        {
+          "File": "cash-memo-classification-v1.pdf",
+          "Pages": "1",
+          "Line": "1",
+          "Description": "Repair kit",
+          "Quantity": "1",
+          "Unit price": "58",
+          "Line total": "58"
+        },
+        {
+          "File": "cash-memo-classification-v1.pdf",
+          "Pages": "3",
+          "Line": "1",
+          "Description": "Adapter kit",
+          "Quantity": "1",
+          "Unit price": "93",
+          "Line total": "93"
+        }
+      ]
+    }
+  },
+  "raw_tables": {
+    "Raw documents": {
+      "identity": [
+        "File",
+        "Pages"
+      ],
+      "columns": [
+        {
+          "label": "Document type",
+          "kind": "text"
+        },
+        {
+          "label": "fields.document_title",
+          "kind": "text"
+        },
+        {
+          "label": "fields.total",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "cash-memo-classification-v1.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "fields.document_title": "CASH MEMO",
+          "fields.total": "58"
+        },
+        {
+          "File": "cash-memo-classification-v1.pdf",
+          "Pages": "2",
+          "Document type": "Receipt",
+          "fields.document_title": "OFFICIAL RECEIPT",
+          "fields.total": "58"
+        },
+        {
+          "File": "cash-memo-classification-v1.pdf",
+          "Pages": "3",
+          "Document type": "Invoice",
+          "fields.document_title": "TAX INVOICE / RECEIPT",
+          "fields.total": "93"
+        }
+      ]
+    }
+  }
+}

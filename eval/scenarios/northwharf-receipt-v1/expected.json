@@ -1,0 +1,194 @@
+{
+  "tables": {
+    "Reference documents": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence"
+      ],
+      "columns": [
+        {
+          "label": "Document title",
+          "kind": "text"
+        },
+        {
+          "label": "Document number",
+          "kind": "text"
+        },
+        {
+          "label": "Total",
+          "kind": "amount"
+        }
+      ],
+      "rows": [
+        {
+          "File": "northwharf-receipt-v1.pdf",
+          "Pages": "1",
+          "Document type": "Receipt",
+          "Document occurrence": "1",
+          "Document title": "RECEIPT",
+          "Document number": "NW-204",
+          "Total": null
+        }
+      ]
+    },
+    "Requested data": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence"
+      ],
+      "columns": [
+        {
+          "label": "Storage fee",
+          "kind": "text"
+        },
+        {
+          "label": "Bay",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "northwharf-receipt-v1.pdf",
+          "Pages": "1",
+          "Document type": "Receipt",
+          "Document occurrence": "1",
+          "Storage fee": "80.00",
+          "Bay": "B12"
+        }
+      ]
+    },
+    "Requested values": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence",
+        "Field key",
+        "Occurrence"
+      ],
+      "columns": [
+        {
+          "label": "Status",
+          "kind": "text"
+        },
+        {
+          "label": "Value (as printed)",
+          "kind": "text"
+        },
+        {
+          "label": "Pages",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "northwharf-receipt-v1.pdf",
+          "Pages": "1",
+          "Document type": "Receipt",
+          "Document occurrence": "1",
+          "Field key": "storage_fee",
+          "Occurrence": "1",
+          "Status": "printed",
+          "Value (as printed)": "80.00"
+        },
+        {
+          "File": "northwharf-receipt-v1.pdf",
+          "Pages": "1",
+          "Document type": "Receipt",
+          "Document occurrence": "1",
+          "Field key": "bay",
+          "Occurrence": "1",
+          "Status": "printed",
+          "Value (as printed)": "B12"
+        }
+      ]
+    }
+  },
+  "raw_tables": {
+    "Raw documents": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence"
+      ],
+      "columns": [
+        {
+          "label": "fields.document_title",
+          "kind": "text"
+        },
+        {
+          "label": "fields.document_number",
+          "kind": "text"
+        },
+        {
+          "label": "fields.total",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "northwharf-receipt-v1.pdf",
+          "Pages": "1",
+          "Document type": "Receipt",
+          "Document occurrence": "1",
+          "fields.document_title": "RECEIPT",
+          "fields.document_number": "NW-204",
+          "fields.total": null
+        }
+      ]
+    },
+    "Raw requested values": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence",
+        "Field key",
+        "Occurrence"
+      ],
+      "columns": [
+        {
+          "label": "observation.status",
+          "kind": "text"
+        },
+        {
+          "label": "observation.value",
+          "kind": "text"
+        },
+        {
+          "label": "observation.pages",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "northwharf-receipt-v1.pdf",
+          "Pages": "1",
+          "Document type": "Receipt",
+          "Document occurrence": "1",
+          "Field key": "storage_fee",
+          "Occurrence": "1",
+          "observation.status": "printed",
+          "observation.value": "80.00",
+          "observation.pages": "1"
+        },
+        {
+          "File": "northwharf-receipt-v1.pdf",
+          "Pages": "1",
+          "Document type": "Receipt",
+          "Document occurrence": "1",
+          "Field key": "bay",
+          "Occurrence": "1",
+          "observation.status": "printed",
+          "observation.value": "B12",
+          "observation.pages": "1"
+        }
+      ]
+    }
+  }
+}

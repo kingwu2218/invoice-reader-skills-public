@@ -1,0 +1,210 @@
+{
+  "date": "2026-10-09",
+  "version": "0.3.8",
+  "evaluation_type": "deterministic processor; supplied transcription, no model call",
+  "artifact_hash": "0f50e7739f14033902ed9afa38a28aa4a5590c31373205389663b15d00c5fa20",
+  "tests_passed": 139,
+  "runs": [
+    {
+      "mode": "default",
+      "effective_convention": "end-mark",
+      "valid": true,
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        }
+      },
+      "cells": {
+        "correct": 17,
+        "correct_blank": 6
+      },
+      "flags": {
+        "true_positive": 3
+      },
+      "checks": {},
+      "dataset_hash": "9ffc6a5020897e6fae836507bd7e9949df0d8ab2aa47d58087fe071bac0bfa55",
+      "input_hashes": {
+        "extraction.json": "c711b533024a3ccc8e05d2f0c0ddf40c39f1e8170d69344fb9a3588cab876d29",
+        "custom.md": "fe5f0a9a1ff5ef7c296b61b7edc78174cc8d88febaaa544456de513d7428d504",
+        "expected.json": "061235b4c8d532703c6753a71b7d8527206550075608be203d6f5a5d13a83797"
+      },
+      "raw_input_unchanged": true,
+      "scripts_unchanged": true,
+      "explicit_flag_present": false
+    },
+    {
+      "mode": "end-mark",
+      "effective_convention": "end-mark",
+      "valid": true,
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        }
+      },
+      "cells": {
+        "correct": 17,
+        "correct_blank": 6
+      },
+      "flags": {
+        "true_positive": 3
+      },
+      "checks": {},
+      "dataset_hash": "9ffc6a5020897e6fae836507bd7e9949df0d8ab2aa47d58087fe071bac0bfa55",
+      "input_hashes": {
+        "extraction.json": "c711b533024a3ccc8e05d2f0c0ddf40c39f1e8170d69344fb9a3588cab876d29",
+        "custom.md": "fe5f0a9a1ff5ef7c296b61b7edc78174cc8d88febaaa544456de513d7428d504",
+        "expected.json": "061235b4c8d532703c6753a71b7d8527206550075608be203d6f5a5d13a83797"
+      },
+      "raw_input_unchanged": true,
+      "scripts_unchanged": true,
+      "explicit_flag_present": true
+    },
+    {
+      "mode": "negative",
+      "effective_convention": "negative",
+      "valid": true,
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        }
+      },
+      "cells": {
+        "correct": 17,
+        "correct_blank": 6
+      },
+      "flags": {
+        "true_positive": 3
+      },
+      "checks": {},
+      "dataset_hash": "171507c9e9c2f1eaf1b322934cd8f846edcf85904d006f0d46ac34d80c1cbfc9",
+      "input_hashes": {
+        "extraction.json": "c711b533024a3ccc8e05d2f0c0ddf40c39f1e8170d69344fb9a3588cab876d29",
+        "custom.md": "fe5f0a9a1ff5ef7c296b61b7edc78174cc8d88febaaa544456de513d7428d504",
+        "expected.json": "0948f99b3039db54c6aaf237dd7ac9709645acdcb4b46681fcd220f6a04338f8"
+      },
+      "raw_input_unchanged": true,
+      "scripts_unchanged": true,
+      "explicit_flag_present": true
+    },
+    {
+      "mode": "unknown",
+      "effective_convention": "unknown",
+      "valid": true,
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 17,
+          "denominator": 17,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        }
+      },
+      "cells": {
+        "correct": 17,
+        "correct_blank": 6
+      },
+      "flags": {
+        "true_positive": 3
+      },
+      "checks": {},
+      "dataset_hash": "908e5b56c6fe1833be0f0660cfee2f898d1e8a03229d0b910e5c851233f603b5",
+      "input_hashes": {
+        "extraction.json": "c711b533024a3ccc8e05d2f0c0ddf40c39f1e8170d69344fb9a3588cab876d29",
+        "custom.md": "fe5f0a9a1ff5ef7c296b61b7edc78174cc8d88febaaa544456de513d7428d504",
+        "expected.json": "58aeb01895be7d7ece0857aaa193f6c1ef9c100a5f03ba8bf78b060a2715fac8"
+      },
+      "raw_input_unchanged": true,
+      "scripts_unchanged": true,
+      "explicit_flag_present": true
+    }
+  ],
+  "limitations": [
+    "Same supplied synthetic JSON across four conventions; not PDF or handwriting accuracy.",
+    "Unchanged v1 references reused, default mode uses the positive reference."
+  ],
+  "audit_wording_fix": "Preliminary run values passed but inherited confirmed-convention wording. Catalogue now avoids claiming confirmation; final four-mode matrix rerun preserved raw input and passed."
+}

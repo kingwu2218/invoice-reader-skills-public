@@ -1,0 +1,754 @@
+{
+  "evaluation_type": "deterministic-scorer-regression",
+  "date": "2026-10-08",
+  "model": "Not applicable; no model invocation",
+  "unit_regression_tests_passed": 121,
+  "trial_behaviour_matches": {
+    "numerator": 7,
+    "denominator": 7
+  },
+  "note": "Controlled faulty transcriptions are expected to fail. Do not aggregate these field scores as model accuracy.",
+  "sha256": {
+    "eval/runner/raw.py": "eb1bb5e778e8318bc41350eb61ce83ee83afa904f261dac35111687bfd17bc93",
+    "eval/runner/score.py": "1d257008eab449b1edd5dd705bc6d9c102bd373ddfda3087cc7cf8911b4c3e44",
+    "eval/runner/run.py": "0c31091f91dd70b473cc5b9c27d40dd30507f99bbced8f84ef82916ccc0c9bd0",
+    "eval/runner/holdout.py": "ad2ec20ce0466d8e0317485fc7392ae07afb5b72dce29c37e23d6d46493614e7",
+    "tests/test_raw_lines.py": "b7dca8ef269e02179be376fbe859cb8c0f18dca1f0ca254ad0f4e08f0d0e3ef7",
+    "eval/scorer-cases/raw-lines-v1/extraction.json": "7639339ddf4902d087415ae59e04cdf184e6ef6a591504f0b634b0706c098250",
+    "eval/scorer-cases/raw-lines-v1/expected.json": "f553aba0b7d68072819f2838b5d19fe921b3935349dcac30f3d83c2c2c86135d"
+  },
+  "trials": [
+    {
+      "trial": "baseline",
+      "expected_extraction_pass": true,
+      "observed_extraction_pass": true,
+      "scorer_behaved_as_expected": true,
+      "result": {
+        "cells": {
+          "correct": 25,
+          "correct_blank": 7
+        },
+        "flags": {},
+        "checks": {},
+        "tables": {
+          "Raw line items": {
+            "expected": 4,
+            "actual": 4,
+            "matched": 4,
+            "extra": 0
+          },
+          "Raw statement lines": {
+            "expected": 2,
+            "actual": 2,
+            "matched": 2,
+            "extra": 0
+          }
+        },
+        "values": {
+          "Raw line items/0/item.description": "Reusable housings",
+          "Raw line items/0/item.quantity": "2",
+          "Raw line items/0/item.unit": "box",
+          "Raw line items/0/item.unit_price": "1,250.00",
+          "Raw line items/0/item.line_total": "2,490.00",
+          "Raw line items/1/item.description": "Inspection",
+          "Raw line items/1/item.quantity": "1",
+          "Raw line items/1/item.unit": "visit",
+          "Raw line items/1/item.unit_price": "310-",
+          "Raw line items/1/item.line_total": "310-",
+          "Raw line items/2/item.description": "Calibration",
+          "Raw line items/2/item.quantity": "1",
+          "Raw line items/2/item.unit": "lot",
+          "Raw line items/2/item.unit_price": "45.00",
+          "Raw line items/2/item.line_total": "45.00",
+          "Raw line items/3/item.description": "None",
+          "Raw line items/3/item.quantity": "None",
+          "Raw line items/3/item.unit": "None",
+          "Raw line items/3/item.unit_price": "None",
+          "Raw line items/3/item.line_total": "None",
+          "Raw statement lines/0/item.date": "04 10 2026",
+          "Raw statement lines/0/item.reference": "INV-009",
+          "Raw statement lines/0/item.description": "Opening charge",
+          "Raw statement lines/0/item.debit": "2,490.00",
+          "Raw statement lines/0/item.credit": "None",
+          "Raw statement lines/0/item.balance": "2,490.00",
+          "Raw statement lines/1/item.date": "06 10 2026",
+          "Raw statement lines/1/item.reference": "000041",
+          "Raw statement lines/1/item.description": "Payment received",
+          "Raw statement lines/1/item.debit": "None",
+          "Raw statement lines/1/item.credit": "1,000.00",
+          "Raw statement lines/1/item.balance": "1,490.00"
+        },
+        "details": []
+      },
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 25,
+          "denominator": 25,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 25,
+          "denominator": 25,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 25,
+          "denominator": 25,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      }
+    },
+    {
+      "trial": "missing-blank-row",
+      "expected_extraction_pass": false,
+      "observed_extraction_pass": false,
+      "scorer_behaved_as_expected": true,
+      "result": {
+        "cells": {
+          "correct": 25,
+          "correct_blank": 7
+        },
+        "flags": {},
+        "checks": {},
+        "tables": {
+          "Raw line items": {
+            "expected": 4,
+            "actual": 3,
+            "matched": 3,
+            "missing": 1,
+            "extra": 0
+          },
+          "Raw statement lines": {
+            "expected": 2,
+            "actual": 2,
+            "matched": 2,
+            "extra": 0
+          }
+        },
+        "values": {
+          "Raw line items/0/item.description": "Reusable housings",
+          "Raw line items/0/item.quantity": "2",
+          "Raw line items/0/item.unit": "box",
+          "Raw line items/0/item.unit_price": "1,250.00",
+          "Raw line items/0/item.line_total": "2,490.00",
+          "Raw line items/1/item.description": "Inspection",
+          "Raw line items/1/item.quantity": "1",
+          "Raw line items/1/item.unit": "visit",
+          "Raw line items/1/item.unit_price": "310-",
+          "Raw line items/1/item.line_total": "310-",
+          "Raw line items/2/item.description": "Calibration",
+          "Raw line items/2/item.quantity": "1",
+          "Raw line items/2/item.unit": "lot",
+          "Raw line items/2/item.unit_price": "45.00",
+          "Raw line items/2/item.line_total": "45.00",
+          "Raw line items/3/item.description": "None",
+          "Raw line items/3/item.quantity": "None",
+          "Raw line items/3/item.unit": "None",
+          "Raw line items/3/item.unit_price": "None",
+          "Raw line items/3/item.line_total": "None",
+          "Raw statement lines/0/item.date": "04 10 2026",
+          "Raw statement lines/0/item.reference": "INV-009",
+          "Raw statement lines/0/item.description": "Opening charge",
+          "Raw statement lines/0/item.debit": "2,490.00",
+          "Raw statement lines/0/item.credit": "None",
+          "Raw statement lines/0/item.balance": "2,490.00",
+          "Raw statement lines/1/item.date": "06 10 2026",
+          "Raw statement lines/1/item.reference": "000041",
+          "Raw statement lines/1/item.description": "Payment received",
+          "Raw statement lines/1/item.debit": "None",
+          "Raw statement lines/1/item.credit": "1,000.00",
+          "Raw statement lines/1/item.balance": "1,490.00"
+        },
+        "details": []
+      },
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 25,
+          "denominator": 25,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 25,
+          "denominator": 25,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 25,
+          "denominator": 25,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      }
+    },
+    {
+      "trial": "numeric-reformat",
+      "expected_extraction_pass": false,
+      "observed_extraction_pass": false,
+      "scorer_behaved_as_expected": true,
+      "result": {
+        "cells": {
+          "correct": 24,
+          "silent_error": 1,
+          "correct_blank": 7
+        },
+        "flags": {},
+        "checks": {},
+        "tables": {
+          "Raw line items": {
+            "expected": 4,
+            "actual": 4,
+            "matched": 4,
+            "extra": 0
+          },
+          "Raw statement lines": {
+            "expected": 2,
+            "actual": 2,
+            "matched": 2,
+            "extra": 0
+          }
+        },
+        "values": {
+          "Raw line items/0/item.description": "Reusable housings",
+          "Raw line items/0/item.quantity": "2",
+          "Raw line items/0/item.unit": "box",
+          "Raw line items/0/item.unit_price": "1250",
+          "Raw line items/0/item.line_total": "2,490.00",
+          "Raw line items/1/item.description": "Inspection",
+          "Raw line items/1/item.quantity": "1",
+          "Raw line items/1/item.unit": "visit",
+          "Raw line items/1/item.unit_price": "310-",
+          "Raw line items/1/item.line_total": "310-",
+          "Raw line items/2/item.description": "Calibration",
+          "Raw line items/2/item.quantity": "1",
+          "Raw line items/2/item.unit": "lot",
+          "Raw line items/2/item.unit_price": "45.00",
+          "Raw line items/2/item.line_total": "45.00",
+          "Raw line items/3/item.description": "None",
+          "Raw line items/3/item.quantity": "None",
+          "Raw line items/3/item.unit": "None",
+          "Raw line items/3/item.unit_price": "None",
+          "Raw line items/3/item.line_total": "None",
+          "Raw statement lines/0/item.date": "04 10 2026",
+          "Raw statement lines/0/item.reference": "INV-009",
+          "Raw statement lines/0/item.description": "Opening charge",
+          "Raw statement lines/0/item.debit": "2,490.00",
+          "Raw statement lines/0/item.credit": "None",
+          "Raw statement lines/0/item.balance": "2,490.00",
+          "Raw statement lines/1/item.date": "06 10 2026",
+          "Raw statement lines/1/item.reference": "000041",
+          "Raw statement lines/1/item.description": "Payment received",
+          "Raw statement lines/1/item.debit": "None",
+          "Raw statement lines/1/item.credit": "1,000.00",
+          "Raw statement lines/1/item.balance": "1,490.00"
+        },
+        "details": [
+          {
+            "where": "Raw line items/0/item.unit_price",
+            "outcome": "silent_error",
+            "expected": "1,250.00",
+            "got": "1250"
+          }
+        ]
+      },
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 24,
+          "denominator": 25,
+          "rate": 0.96
+        },
+        "field_precision": {
+          "numerator": 24,
+          "denominator": 25,
+          "rate": 0.96
+        },
+        "printed_value_recall": {
+          "numerator": 24,
+          "denominator": 25,
+          "rate": 0.96
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      }
+    },
+    {
+      "trial": "repaired-printed-total",
+      "expected_extraction_pass": false,
+      "observed_extraction_pass": false,
+      "scorer_behaved_as_expected": true,
+      "result": {
+        "cells": {
+          "correct": 24,
+          "silent_error": 1,
+          "correct_blank": 7
+        },
+        "flags": {},
+        "checks": {},
+        "tables": {
+          "Raw line items": {
+            "expected": 4,
+            "actual": 4,
+            "matched": 4,
+            "extra": 0
+          },
+          "Raw statement lines": {
+            "expected": 2,
+            "actual": 2,
+            "matched": 2,
+            "extra": 0
+          }
+        },
+        "values": {
+          "Raw line items/0/item.description": "Reusable housings",
+          "Raw line items/0/item.quantity": "2",
+          "Raw line items/0/item.unit": "box",
+          "Raw line items/0/item.unit_price": "1,250.00",
+          "Raw line items/0/item.line_total": "2,500.00",
+          "Raw line items/1/item.description": "Inspection",
+          "Raw line items/1/item.quantity": "1",
+          "Raw line items/1/item.unit": "visit",
+          "Raw line items/1/item.unit_price": "310-",
+          "Raw line items/1/item.line_total": "310-",
+          "Raw line items/2/item.description": "Calibration",
+          "Raw line items/2/item.quantity": "1",
+          "Raw line items/2/item.unit": "lot",
+          "Raw line items/2/item.unit_price": "45.00",
+          "Raw line items/2/item.line_total": "45.00",
+          "Raw line items/3/item.description": "None",
+          "Raw line items/3/item.quantity": "None",
+          "Raw line items/3/item.unit": "None",
+          "Raw line items/3/item.unit_price": "None",
+          "Raw line items/3/item.line_total": "None",
+          "Raw statement lines/0/item.date": "04 10 2026",
+          "Raw statement lines/0/item.reference": "INV-009",
+          "Raw statement lines/0/item.description": "Opening charge",
+          "Raw statement lines/0/item.debit": "2,490.00",
+          "Raw statement lines/0/item.credit": "None",
+          "Raw statement lines/0/item.balance": "2,490.00",
+          "Raw statement lines/1/item.date": "06 10 2026",
+          "Raw statement lines/1/item.reference": "000041",
+          "Raw statement lines/1/item.description": "Payment received",
+          "Raw statement lines/1/item.debit": "None",
+          "Raw statement lines/1/item.credit": "1,000.00",
+          "Raw statement lines/1/item.balance": "1,490.00"
+        },
+        "details": [
+          {
+            "where": "Raw line items/0/item.line_total",
+            "outcome": "silent_error",
+            "expected": "2,490.00",
+            "got": "2,500.00"
+          }
+        ]
+      },
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 24,
+          "denominator": 25,
+          "rate": 0.96
+        },
+        "field_precision": {
+          "numerator": 24,
+          "denominator": 25,
+          "rate": 0.96
+        },
+        "printed_value_recall": {
+          "numerator": 24,
+          "denominator": 25,
+          "rate": 0.96
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      }
+    },
+    {
+      "trial": "reversed-lines",
+      "expected_extraction_pass": false,
+      "observed_extraction_pass": false,
+      "scorer_behaved_as_expected": true,
+      "result": {
+        "cells": {
+          "silent_error": 10,
+          "correct": 15,
+          "correct_blank": 7
+        },
+        "flags": {},
+        "checks": {},
+        "tables": {
+          "Raw line items": {
+            "expected": 4,
+            "actual": 4,
+            "matched": 4,
+            "extra": 0
+          },
+          "Raw statement lines": {
+            "expected": 2,
+            "actual": 2,
+            "matched": 2,
+            "extra": 0
+          }
+        },
+        "values": {
+          "Raw line items/0/item.description": "Inspection",
+          "Raw line items/0/item.quantity": "1",
+          "Raw line items/0/item.unit": "visit",
+          "Raw line items/0/item.unit_price": "310-",
+          "Raw line items/0/item.line_total": "310-",
+          "Raw line items/1/item.description": "Reusable housings",
+          "Raw line items/1/item.quantity": "2",
+          "Raw line items/1/item.unit": "box",
+          "Raw line items/1/item.unit_price": "1,250.00",
+          "Raw line items/1/item.line_total": "2,490.00",
+          "Raw line items/2/item.description": "Calibration",
+          "Raw line items/2/item.quantity": "1",
+          "Raw line items/2/item.unit": "lot",
+          "Raw line items/2/item.unit_price": "45.00",
+          "Raw line items/2/item.line_total": "45.00",
+          "Raw line items/3/item.description": "None",
+          "Raw line items/3/item.quantity": "None",
+          "Raw line items/3/item.unit": "None",
+          "Raw line items/3/item.unit_price": "None",
+          "Raw line items/3/item.line_total": "None",
+          "Raw statement lines/0/item.date": "04 10 2026",
+          "Raw statement lines/0/item.reference": "INV-009",
+          "Raw statement lines/0/item.description": "Opening charge",
+          "Raw statement lines/0/item.debit": "2,490.00",
+          "Raw statement lines/0/item.credit": "None",
+          "Raw statement lines/0/item.balance": "2,490.00",
+          "Raw statement lines/1/item.date": "06 10 2026",
+          "Raw statement lines/1/item.reference": "000041",
+          "Raw statement lines/1/item.description": "Payment received",
+          "Raw statement lines/1/item.debit": "None",
+          "Raw statement lines/1/item.credit": "1,000.00",
+          "Raw statement lines/1/item.balance": "1,490.00"
+        },
+        "details": [
+          {
+            "where": "Raw line items/0/item.description",
+            "outcome": "silent_error",
+            "expected": "Reusable housings",
+            "got": "Inspection"
+          },
+          {
+            "where": "Raw line items/0/item.quantity",
+            "outcome": "silent_error",
+            "expected": "2",
+            "got": "1"
+          },
+          {
+            "where": "Raw line items/0/item.unit",
+            "outcome": "silent_error",
+            "expected": "box",
+            "got": "visit"
+          },
+          {
+            "where": "Raw line items/0/item.unit_price",
+            "outcome": "silent_error",
+            "expected": "1,250.00",
+            "got": "310-"
+          },
+          {
+            "where": "Raw line items/0/item.line_total",
+            "outcome": "silent_error",
+            "expected": "2,490.00",
+            "got": "310-"
+          },
+          {
+            "where": "Raw line items/1/item.description",
+            "outcome": "silent_error",
+            "expected": "Inspection",
+            "got": "Reusable housings"
+          },
+          {
+            "where": "Raw line items/1/item.quantity",
+            "outcome": "silent_error",
+            "expected": "1",
+            "got": "2"
+          },
+          {
+            "where": "Raw line items/1/item.unit",
+            "outcome": "silent_error",
+            "expected": "visit",
+            "got": "box"
+          },
+          {
+            "where": "Raw line items/1/item.unit_price",
+            "outcome": "silent_error",
+            "expected": "310-",
+            "got": "1,250.00"
+          },
+          {
+            "where": "Raw line items/1/item.line_total",
+            "outcome": "silent_error",
+            "expected": "310-",
+            "got": "2,490.00"
+          }
+        ]
+      },
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 15,
+          "denominator": 25,
+          "rate": 0.6
+        },
+        "field_precision": {
+          "numerator": 15,
+          "denominator": 25,
+          "rate": 0.6
+        },
+        "printed_value_recall": {
+          "numerator": 15,
+          "denominator": 25,
+          "rate": 0.6
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      }
+    },
+    {
+      "trial": "filled-unclear-value",
+      "expected_extraction_pass": false,
+      "observed_extraction_pass": false,
+      "scorer_behaved_as_expected": true,
+      "result": {
+        "cells": {
+          "correct": 25,
+          "correct_blank": 6,
+          "invented": 1
+        },
+        "flags": {},
+        "checks": {},
+        "tables": {
+          "Raw line items": {
+            "expected": 4,
+            "actual": 4,
+            "matched": 4,
+            "extra": 0
+          },
+          "Raw statement lines": {
+            "expected": 2,
+            "actual": 2,
+            "matched": 2,
+            "extra": 0
+          }
+        },
+        "values": {
+          "Raw line items/0/item.description": "Reusable housings",
+          "Raw line items/0/item.quantity": "2",
+          "Raw line items/0/item.unit": "box",
+          "Raw line items/0/item.unit_price": "1,250.00",
+          "Raw line items/0/item.line_total": "2,490.00",
+          "Raw line items/1/item.description": "Inspection",
+          "Raw line items/1/item.quantity": "1",
+          "Raw line items/1/item.unit": "visit",
+          "Raw line items/1/item.unit_price": "310-",
+          "Raw line items/1/item.line_total": "310-",
+          "Raw line items/2/item.description": "Calibration",
+          "Raw line items/2/item.quantity": "1",
+          "Raw line items/2/item.unit": "lot",
+          "Raw line items/2/item.unit_price": "45.00",
+          "Raw line items/2/item.line_total": "45.00",
+          "Raw line items/3/item.description": "None",
+          "Raw line items/3/item.quantity": "None",
+          "Raw line items/3/item.unit": "None",
+          "Raw line items/3/item.unit_price": "None",
+          "Raw line items/3/item.line_total": "90.00",
+          "Raw statement lines/0/item.date": "04 10 2026",
+          "Raw statement lines/0/item.reference": "INV-009",
+          "Raw statement lines/0/item.description": "Opening charge",
+          "Raw statement lines/0/item.debit": "2,490.00",
+          "Raw statement lines/0/item.credit": "None",
+          "Raw statement lines/0/item.balance": "2,490.00",
+          "Raw statement lines/1/item.date": "06 10 2026",
+          "Raw statement lines/1/item.reference": "000041",
+          "Raw statement lines/1/item.description": "Payment received",
+          "Raw statement lines/1/item.debit": "None",
+          "Raw statement lines/1/item.credit": "1,000.00",
+          "Raw statement lines/1/item.balance": "1,490.00"
+        },
+        "details": [
+          {
+            "where": "Raw line items/3/item.line_total",
+            "outcome": "invented",
+            "expected": "None",
+            "got": "90.00"
+          }
+        ]
+      },
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 25,
+          "denominator": 26,
+          "rate": 0.9615384615384616
+        },
+        "field_precision": {
+          "numerator": 25,
+          "denominator": 26,
+          "rate": 0.9615384615384616
+        },
+        "printed_value_recall": {
+          "numerator": 25,
+          "denominator": 25,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      }
+    },
+    {
+      "trial": "debit-credit-swap",
+      "expected_extraction_pass": false,
+      "observed_extraction_pass": false,
+      "scorer_behaved_as_expected": true,
+      "result": {
+        "cells": {
+          "correct": 24,
+          "correct_blank": 6,
+          "miss": 1,
+          "invented": 1
+        },
+        "flags": {},
+        "checks": {},
+        "tables": {
+          "Raw line items": {
+            "expected": 4,
+            "actual": 4,
+            "matched": 4,
+            "extra": 0
+          },
+          "Raw statement lines": {
+            "expected": 2,
+            "actual": 2,
+            "matched": 2,
+            "extra": 0
+          }
+        },
+        "values": {
+          "Raw line items/0/item.description": "Reusable housings",
+          "Raw line items/0/item.quantity": "2",
+          "Raw line items/0/item.unit": "box",
+          "Raw line items/0/item.unit_price": "1,250.00",
+          "Raw line items/0/item.line_total": "2,490.00",
+          "Raw line items/1/item.description": "Inspection",
+          "Raw line items/1/item.quantity": "1",
+          "Raw line items/1/item.unit": "visit",
+          "Raw line items/1/item.unit_price": "310-",
+          "Raw line items/1/item.line_total": "310-",
+          "Raw line items/2/item.description": "Calibration",
+          "Raw line items/2/item.quantity": "1",
+          "Raw line items/2/item.unit": "lot",
+          "Raw line items/2/item.unit_price": "45.00",
+          "Raw line items/2/item.line_total": "45.00",
+          "Raw line items/3/item.description": "None",
+          "Raw line items/3/item.quantity": "None",
+          "Raw line items/3/item.unit": "None",
+          "Raw line items/3/item.unit_price": "None",
+          "Raw line items/3/item.line_total": "None",
+          "Raw statement lines/0/item.date": "04 10 2026",
+          "Raw statement lines/0/item.reference": "INV-009",
+          "Raw statement lines/0/item.description": "Opening charge",
+          "Raw statement lines/0/item.debit": "None",
+          "Raw statement lines/0/item.credit": "2,490.00",
+          "Raw statement lines/0/item.balance": "2,490.00",
+          "Raw statement lines/1/item.date": "06 10 2026",
+          "Raw statement lines/1/item.reference": "000041",
+          "Raw statement lines/1/item.description": "Payment received",
+          "Raw statement lines/1/item.debit": "None",
+          "Raw statement lines/1/item.credit": "1,000.00",
+          "Raw statement lines/1/item.balance": "1,490.00"
+        },
+        "details": [
+          {
+            "where": "Raw statement lines/0/item.debit",
+            "outcome": "miss",
+            "expected": "2,490.00",
+            "got": "None"
+          },
+          {
+            "where": "Raw statement lines/0/item.credit",
+            "outcome": "invented",
+            "expected": "None",
+            "got": "2,490.00"
+          }
+        ]
+      },
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 24,
+          "denominator": 26,
+          "rate": 0.9230769230769231
+        },
+        "field_precision": {
+          "numerator": 24,
+          "denominator": 25,
+          "rate": 0.96
+        },
+        "printed_value_recall": {
+          "numerator": 24,
+          "denominator": 25,
+          "rate": 0.96
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      }
+    }
+  ]
+}

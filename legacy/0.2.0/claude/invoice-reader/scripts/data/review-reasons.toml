@@ -1,0 +1,84 @@
+# Review reasons. Every reason the workbook shows comes from this catalogue.
+#
+# Each reason is written as "<column labels>: <message>", so a reviewer sees which
+# cells to check and the eval scorer can tell "wrong but flagged" from "wrong and silent".
+#
+# columns  the column keys the reason covers. "field" means the column(s) named when the
+#          reason is raised (for example the one field that was unclear).
+
+[total_mismatch]
+message = "the total doesn't equal the subtotal plus tax (with any discount or shipping shown)"
+columns = ["subtotal", "discount", "shipping", "tax_amount", "total"]
+
+[balance_mismatch]
+message = "no total is printed, so the total is taken from the balance due, and it doesn't equal the subtotal plus tax (it may include earlier balances or payments)"
+columns = ["subtotal", "discount", "shipping", "tax_amount", "total", "balance_due"]
+
+[no_title]
+message = "no document title is printed, so the type was decided from other wording"
+columns = ["document_title"]
+
+[subtotal_mismatch]
+message = "the line totals don't add up to the subtotal"
+columns = ["subtotal"]
+
+[line_mismatch]
+message = "quantity × unit price doesn't equal the line total"
+columns = ["quantity", "unit_price", "line_discount", "line_total"]
+
+[line_items_flagged]
+message = "some line items need a look (see the Line items sheet)"
+columns = []
+
+[unclear]
+message = "unclear on the page, left blank: check the original"
+columns = "field"
+
+[handwritten]
+message = "handwritten: check the figures and dates against the original"
+columns = "field"
+
+[ambiguous_date]
+message = "this date could be read two ways (day/month); set the date order in your company profile"
+columns = "field"
+
+[unreadable_date]
+message = "couldn't read this as a date, so it is copied as printed"
+columns = "field"
+
+[unreadable_amount]
+message = "couldn't read this as an amount, so it is copied as printed"
+columns = "field"
+
+[direction_none]
+message = "neither the seller nor the buyer matches your company profile, so this isn't marked sales or purchase"
+columns = ["seller_name", "buyer_name"]
+
+[direction_both]
+message = "both the seller and the buyer match your company profile"
+columns = ["seller_name", "buyer_name"]
+
+[payment_direction_none]
+message = "neither the payee nor the payer matches your company profile, so this isn't marked money in or out"
+columns = ["payee", "payer"]
+
+[payment_direction_both]
+message = "both the payee and the payer match your company profile"
+columns = ["payee", "payer"]
+
+[other_document]
+message = "not a document type the reader handles in detail: check it against the original"
+columns = []
+
+[no_profile]
+message = "no company profile was used, so this isn't marked sales or purchase"
+columns = ["seller_name", "buyer_name"]
+
+[required_missing]
+message = "your company profile requires this, but it isn't printed on the document"
+columns = "field"
+
+[agent_note]
+# Free-text note from the reading step, for problems the catalogue does not cover.
+message = "{text}"
+columns = "field"

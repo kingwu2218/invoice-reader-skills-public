@@ -1,0 +1,7 @@
+case,run,chat_alias,evidence_status,opening,fresh_chat_baseline,raw_reference,raw_status,workbook_correct,workbook_denominator,workbook_correct_blanks_excluded,miss,invented,wrong_flagged,silent_error,classification_errors,raw_correct,raw_denominator,raw_correct_blanks_excluded
+digit-boundary-v1,run-1,chat-01,linked_execution_answer_generator_read,user_reply_in_transcript,false,configured,scored,15,15,3,0,0,0,0,0,13,13,2
+coal-ocr-payment,run-1,chat-02,linked_execution_shared_chat_opening_reply_not_in_transcript,reply_not_in_stored_user_messages,false,not_configured,not_configured,21,21,14,0,0,0,0,0,,,
+coal-ocr-energy,run-1,chat-02,linked_execution_shared_chat_opening_reply_not_in_transcript,reply_not_in_stored_user_messages,false,not_configured,not_configured,25,25,15,0,0,0,0,0,,,
+coal-ocr-energy,run-2,chat-03,linked_execution_repeat_saved_beside_existing_workbook_folder_choice_not_stored,user_reply_in_transcript,false,not_configured,not_configured,25,25,15,0,0,0,0,0,,,
+cash-memo-classification-v1,run-1,,designated_workspace_not_run,not_applicable,false,configured,not_run,,,,,,,,,
+cash-memo-classification-v1,run-2,chat-04,provisional_repo_root_execution_answer_file_read_not_designated_workspace,reply_not_in_stored_user_messages,false,configured,scored,17,17,0,0,0,0,0,0,9,9,0

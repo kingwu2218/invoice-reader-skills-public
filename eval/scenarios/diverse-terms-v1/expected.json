@@ -1,0 +1,238 @@
+{
+  "tables": {
+    "Billing documents": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence"
+      ],
+      "columns": [
+        {
+          "label": "Document number",
+          "kind": "text"
+        },
+        {
+          "label": "Currency",
+          "kind": "text"
+        },
+        {
+          "label": "Total",
+          "kind": "amount"
+        }
+      ],
+      "rows": [
+        {
+          "File": "diverse-terms-v1.pdf",
+          "Pages": "1",
+          "Document type": "Credit note",
+          "Document occurrence": "1",
+          "Document number": "CN-041",
+          "Currency": "USD",
+          "Total": "125.50"
+        }
+      ]
+    },
+    "Reference documents": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence"
+      ],
+      "columns": [
+        {
+          "label": "Document number",
+          "kind": "text"
+        },
+        {
+          "label": "Currency",
+          "kind": "text"
+        },
+        {
+          "label": "Total",
+          "kind": "amount"
+        }
+      ],
+      "rows": [
+        {
+          "File": "diverse-terms-v1.pdf",
+          "Pages": "1",
+          "Document type": "Proforma invoice",
+          "Document occurrence": "1",
+          "Document number": "PF-019",
+          "Currency": "EUR",
+          "Total": "240.00"
+        }
+      ]
+    },
+    "Requested data": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence"
+      ],
+      "columns": [
+        {
+          "label": "Balance payable",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "diverse-terms-v1.pdf",
+          "Pages": "1",
+          "Document type": "Credit note",
+          "Document occurrence": "1",
+          "Balance payable": "0.00"
+        },
+        {
+          "File": "diverse-terms-v1.pdf",
+          "Pages": "1",
+          "Document type": "Proforma invoice",
+          "Document occurrence": "1",
+          "Balance payable": "180.00"
+        }
+      ]
+    },
+    "Requested values": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence",
+        "Field key",
+        "Occurrence"
+      ],
+      "columns": [
+        {
+          "label": "Status",
+          "kind": "text"
+        },
+        {
+          "label": "Value (as printed)",
+          "kind": "text"
+        },
+        {
+          "label": "Pages",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "diverse-terms-v1.pdf",
+          "Pages": "1",
+          "Document type": "Credit note",
+          "Document occurrence": "1",
+          "Field key": "balance_due",
+          "Occurrence": "1",
+          "Status": "printed",
+          "Value (as printed)": "0.00"
+        },
+        {
+          "File": "diverse-terms-v1.pdf",
+          "Pages": "1",
+          "Document type": "Proforma invoice",
+          "Document occurrence": "1",
+          "Field key": "balance_due",
+          "Occurrence": "1",
+          "Status": "printed",
+          "Value (as printed)": "180.00"
+        }
+      ]
+    }
+  },
+  "raw_tables": {
+    "Raw documents": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence"
+      ],
+      "columns": [
+        {
+          "label": "fields.document_number",
+          "kind": "text"
+        },
+        {
+          "label": "fields.currency",
+          "kind": "text"
+        },
+        {
+          "label": "fields.total",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "diverse-terms-v1.pdf",
+          "Pages": "1",
+          "Document type": "Credit note",
+          "Document occurrence": "1",
+          "fields.document_number": "CN-041",
+          "fields.currency": "USD",
+          "fields.total": "125.50"
+        },
+        {
+          "File": "diverse-terms-v1.pdf",
+          "Pages": "1",
+          "Document type": "Proforma invoice",
+          "Document occurrence": "1",
+          "fields.document_number": "PF-019",
+          "fields.currency": "EUR",
+          "fields.total": "240.00"
+        }
+      ]
+    },
+    "Raw requested values": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence",
+        "Field key",
+        "Occurrence"
+      ],
+      "columns": [
+        {
+          "label": "observation.status",
+          "kind": "text"
+        },
+        {
+          "label": "observation.value",
+          "kind": "text"
+        },
+        {
+          "label": "observation.pages",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "diverse-terms-v1.pdf",
+          "Pages": "1",
+          "Document type": "Credit note",
+          "Document occurrence": "1",
+          "Field key": "balance_due",
+          "Occurrence": "1",
+          "observation.status": "printed",
+          "observation.value": "0.00",
+          "observation.pages": "1"
+        },
+        {
+          "File": "diverse-terms-v1.pdf",
+          "Pages": "1",
+          "Document type": "Proforma invoice",
+          "Document occurrence": "1",
+          "Field key": "balance_due",
+          "Occurrence": "1",
+          "observation.status": "printed",
+          "observation.value": "180.00",
+          "observation.pages": "1"
+        }
+      ]
+    }
+  }
+}

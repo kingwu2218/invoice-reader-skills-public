@@ -1,0 +1,60 @@
+# Document types the reader knows.
+#
+# shape   which fields are read: invoice | payment | other. Fixed by the core.
+# bucket  the default sheet. The user can change it in custom.md, but only to a bucket
+#         of the same shape (see BUCKETS in buckets.py).
+
+[[type]]
+name = "Invoice"
+shape = "invoice"
+bucket = "Billing documents"
+
+[[type]]
+name = "Credit note"
+shape = "invoice"
+bucket = "Billing documents"
+
+[[type]]
+name = "Debit note"
+shape = "invoice"
+bucket = "Billing documents"
+
+[[type]]
+name = "Receipt"
+shape = "invoice"
+bucket = "Reference documents"
+
+[[type]]
+name = "Proforma invoice"
+shape = "invoice"
+bucket = "Reference documents"
+
+[[type]]
+name = "Quotation"
+shape = "invoice"
+bucket = "Reference documents"
+
+[[type]]
+name = "Purchase order"
+shape = "invoice"
+bucket = "Reference documents"
+
+[[type]]
+name = "Delivery note"
+shape = "invoice"
+bucket = "Reference documents"
+
+[[type]]
+name = "Statement of account"
+shape = "invoice"
+bucket = "Reference documents"
+
+[[type]]
+name = "Cheque"
+shape = "payment"
+bucket = "Payments"
+
+[[type]]
+name = "Bank deposit slip"
+shape = "payment"
+bucket = "Payments"

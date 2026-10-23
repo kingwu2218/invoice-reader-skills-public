@@ -1,0 +1,17 @@
+﻿version,layer,scope,correct,denominator,rate,correct_blank,target_correct,model_requested,model_reported,tool_version,artifact_hash
+0.3.9,raw,combined,4,5,0.8,3,False,gpt-6.1-sol,Unknown,codex-cli 0.162.0-alpha.2,71b918aabef3688f5e9aa4463237898d12e8e0aaa8a2eae44b44f468b1f67653
+0.3.9,raw,owner_confirmed,1,2,0.5,0,False,gpt-6.1-sol,Unknown,codex-cli 0.162.0-alpha.2,71b918aabef3688f5e9aa4463237898d12e8e0aaa8a2eae44b44f468b1f67653
+0.3.9,raw,provisional,3,3,1.0,3,False,gpt-6.1-sol,Unknown,codex-cli 0.162.0-alpha.2,71b918aabef3688f5e9aa4463237898d12e8e0aaa8a2eae44b44f468b1f67653
+0.3.9,raw,unmatched_extra,0,0,,0,False,gpt-6.1-sol,Unknown,codex-cli 0.162.0-alpha.2,71b918aabef3688f5e9aa4463237898d12e8e0aaa8a2eae44b44f468b1f67653
+0.3.9,workbook,combined,6,7,0.8571428571428571,3,False,gpt-6.1-sol,Unknown,codex-cli 0.162.0-alpha.2,71b918aabef3688f5e9aa4463237898d12e8e0aaa8a2eae44b44f468b1f67653
+0.3.9,workbook,owner_confirmed,3,4,0.75,0,False,gpt-6.1-sol,Unknown,codex-cli 0.162.0-alpha.2,71b918aabef3688f5e9aa4463237898d12e8e0aaa8a2eae44b44f468b1f67653
+0.3.9,workbook,provisional,3,3,1.0,3,False,gpt-6.1-sol,Unknown,codex-cli 0.162.0-alpha.2,71b918aabef3688f5e9aa4463237898d12e8e0aaa8a2eae44b44f468b1f67653
+0.3.9,workbook,unmatched_extra,0,0,,0,False,gpt-6.1-sol,Unknown,codex-cli 0.162.0-alpha.2,71b918aabef3688f5e9aa4463237898d12e8e0aaa8a2eae44b44f468b1f67653
+0.3.10,raw,combined,3,7,0.42857142857142855,3,True,gpt-6.1-sol,Unknown,codex-cli 0.162.0-alpha.17.2,3454bd4f2f63ae7731e1dd6f52481246c51085f411ca399eebf491c3417c8028
+0.3.10,raw,owner_confirmed,1,2,0.5,0,True,gpt-6.1-sol,Unknown,codex-cli 0.162.0-alpha.17.2,3454bd4f2f63ae7731e1dd6f52481246c51085f411ca399eebf491c3417c8028
+0.3.10,raw,provisional,2,3,0.6666666666666666,3,True,gpt-6.1-sol,Unknown,codex-cli 0.162.0-alpha.17.2,3454bd4f2f63ae7731e1dd6f52481246c51085f411ca399eebf491c3417c8028
+0.3.10,raw,unmatched_extra,0,2,0.0,0,True,gpt-6.1-sol,Unknown,codex-cli 0.162.0-alpha.17.2,3454bd4f2f63ae7731e1dd6f52481246c51085f411ca399eebf491c3417c8028
+0.3.10,workbook,combined,4,8,0.5,3,True,gpt-6.1-sol,Unknown,codex-cli 0.162.0-alpha.17.2,3454bd4f2f63ae7731e1dd6f52481246c51085f411ca399eebf491c3417c8028
+0.3.10,workbook,owner_confirmed,2,4,0.5,0,True,gpt-6.1-sol,Unknown,codex-cli 0.162.0-alpha.17.2,3454bd4f2f63ae7731e1dd6f52481246c51085f411ca399eebf491c3417c8028
+0.3.10,workbook,provisional,2,3,0.6666666666666666,3,True,gpt-6.1-sol,Unknown,codex-cli 0.162.0-alpha.17.2,3454bd4f2f63ae7731e1dd6f52481246c51085f411ca399eebf491c3417c8028
+0.3.10,workbook,unmatched_extra,0,1,0.0,0,True,gpt-6.1-sol,Unknown,codex-cli 0.162.0-alpha.17.2,3454bd4f2f63ae7731e1dd6f52481246c51085f411ca399eebf491c3417c8028

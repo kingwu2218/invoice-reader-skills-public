@@ -1,0 +1,30 @@
+{
+  "scope": "Observed local tool setup and recovery in initial extraction attempts; no evaluator retry or package change. Detailed commands remain in ignored traces.",
+  "probe_error": "pypdfium2 PdfDocument context manager lacks __exit__",
+  "rows": [
+    {
+      "trial": 1,
+      "system_python_render_probe_failed": true,
+      "declared_dependency_route_succeeded": true,
+      "system_python_route_failed": false,
+      "pymupdf_fallback_succeeded": false,
+      "stream_sha256": "94a84ce2b32c3acd37bbe1ea944aebd23c5de3ec5f1d88055d5f3052db31afe5"
+    },
+    {
+      "trial": 2,
+      "system_python_render_probe_failed": true,
+      "declared_dependency_route_succeeded": true,
+      "system_python_route_failed": false,
+      "pymupdf_fallback_succeeded": false,
+      "stream_sha256": "76aed05121b286edc7a81d0f9b5d125917a73cff2f5f2e1b4b0c7f719835f930"
+    },
+    {
+      "trial": 3,
+      "system_python_render_probe_failed": true,
+      "declared_dependency_route_succeeded": false,
+      "system_python_route_failed": true,
+      "pymupdf_fallback_succeeded": true,
+      "stream_sha256": "8baceba7846c85850efa8e3715173e1c9a0ed6646069325e19d192354092c1e9"
+    }
+  ]
+}

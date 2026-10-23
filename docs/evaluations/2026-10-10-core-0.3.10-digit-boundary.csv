@@ -1,0 +1,6 @@
+﻿control,model_execution,processor_exit_code,workbook_status,raw_sha256,workbook_sha256,raw_correct,raw_correct_blank,raw_miss,raw_wrong_flagged,raw_silent_error,raw_invented,raw_denominator,raw_rate,workbook_correct,workbook_correct_blank,workbook_miss,workbook_wrong_flagged,workbook_silent_error,workbook_invented,workbook_denominator,workbook_rate
+correct,False,0,created,0fc94a01ca7963dbb0bb767a6d7a890f8f3a22eda488ee582d257e0718e50d47,afd91a06e144078814d028c10d65fd7a8482c46d758b05b48ae650ce058ec7f1,13,2,0,0,0,0,13,1.0,15,3,0,0,0,0,15,1.0
+added-digit,False,0,created,7083c37b123de7bad8a837142d15fa271f0966613d3956ba0e5976fb59a2109a,3d13c32fc939001230d9179c5b9e539aeeb087a74dcd1709c974f6b4e209b9cf,12,2,0,0,1,0,13,0.9230769230769231,14,3,0,0,1,0,15,0.9333333333333333
+removed-digit,False,0,created,8862ca36d6468182c9c1da3055b942a298acff7599d1c7de33598ee49eb1ab29,09a37f5cf9adf14ef33705adb8ecb8c16116c6eae96fe42741c7e1b8ac2fbf2d,12,2,0,0,1,0,13,0.9230769230769231,14,3,0,0,1,0,15,0.9333333333333333
+guessed-total,False,0,created,6ef0f66395cb1187883a1d60bdcea695ea117fa7cec7717aad67980952f4baf1,054182a04ac5b019c87cd2affff272a53d26c9666f355f18a46a3d0cac238a0d,13,1,0,0,0,1,14,0.9285714285714286,15,3,0,0,0,0,15,1.0
+guessed-custom,False,2,rejected-invalid-input,7ef003a73e20ef6836977c976451881ba818c05074420eb759a5b3df84594239,,13,1,0,0,0,1,14,0.9285714285714286,,,,,,,,

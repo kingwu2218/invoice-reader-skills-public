@@ -1,0 +1,63 @@
+# Recommendations are metadata, never runtime overrides. Changed packages need fresh model evals.
+[[family]]
+name = "openai"
+version = "0.3.17"
+recommended_model = "gpt-6.1-sol"
+provider = "OpenAI"
+status = "experimental"
+last_eval = ""
+
+[[family]]
+name = "anthropic"
+version = "0.3.14"
+recommended_model = "claude-sonnet-5-5"
+provider = "Anthropic API"
+status = "experimental"
+last_eval = ""
+
+[[package]]
+family = "openai"
+tool = "codex"
+name = "invoice-reader-openai"
+invocation = "manual"
+
+[[package]]
+family = "anthropic"
+tool = "claude-code"
+name = "invoice-reader-anthropic"
+invocation = "manual"
+
+[[family]]
+name = "google"
+version = "0.1.1"
+recommended_model = ""
+provider = "Google; record actual CLI authentication route"
+status = "experimental"
+last_eval = ""
+
+[[family]]
+name = "xai"
+version = "0.1.2"
+recommended_model = ""
+provider = "xAI; record actual CLI authentication route"
+status = "experimental"
+last_eval = ""
+
+[[package]]
+family = "google"
+tool = "gemini-cli"
+name = "invoice-reader-google"
+invocation = "manual"
+
+[[package]]
+family = "xai"
+tool = "grok-build"
+name = "invoice-reader-xai"
+invocation = "manual"
+
+[[package]]
+family = "xai"
+tool = "cursor"
+name = "invoice-reader-xai-cursor"
+invocation = "manual"
+provider = "Cursor; record the actual account route. Do not infer it from the xAI family label."

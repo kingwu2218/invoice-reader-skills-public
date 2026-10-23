@@ -1,0 +1,490 @@
+# Output columns: the single source for the workbook, the answer key and the scorer.
+#
+# key     name used in the extraction JSON and in code
+# label   column header in Excel
+# kind    text | amount | number | date
+# source  extracted: read from the page by the agent (scored cell by cell)
+#         meta:      about the document, given by the agent (scored separately)
+#         computed:  filled in by the scripts
+# locked  true: always exported, even if the company profile hides it
+
+[[documents]]
+key = "file"
+label = "File"
+kind = "text"
+source = "meta"
+locked = true
+
+[[documents]]
+key = "pages"
+label = "Pages"
+kind = "text"
+source = "meta"
+
+[[documents]]
+key = "document_title"
+label = "Document title"
+kind = "text"
+source = "extracted"
+locked = true
+
+[[documents]]
+key = "document_type"
+label = "Document type"
+kind = "text"
+source = "meta"
+
+[[documents]]
+key = "type_evidence"
+label = "Type evidence"
+kind = "text"
+source = "meta"
+
+[[documents]]
+key = "direction"
+label = "Direction"
+kind = "text"
+source = "computed"
+
+[[documents]]
+key = "document_number"
+label = "Document number"
+kind = "text"
+source = "extracted"
+
+[[documents]]
+key = "invoice_number"
+label = "Invoice No."
+kind = "text"
+source = "extracted"
+
+[[documents]]
+key = "issue_date"
+label = "Issue date"
+kind = "date"
+source = "extracted"
+
+[[documents]]
+key = "due_date"
+label = "Due date"
+kind = "date"
+source = "extracted"
+
+[[documents]]
+key = "seller_name"
+label = "Seller name"
+kind = "text"
+source = "extracted"
+
+[[documents]]
+key = "seller_tax_id"
+label = "Seller tax ID"
+kind = "text"
+source = "extracted"
+
+[[documents]]
+key = "seller_address"
+label = "Seller address"
+kind = "text"
+source = "extracted"
+
+[[documents]]
+key = "buyer_name"
+label = "Buyer name"
+kind = "text"
+source = "extracted"
+
+[[documents]]
+key = "buyer_tax_id"
+label = "Buyer tax ID"
+kind = "text"
+source = "extracted"
+
+[[documents]]
+key = "buyer_address"
+label = "Buyer address"
+kind = "text"
+source = "extracted"
+
+[[documents]]
+key = "reference"
+label = "Reference / PO number"
+kind = "text"
+source = "extracted"
+
+[[documents]]
+key = "currency"
+label = "Currency"
+kind = "text"
+source = "extracted"
+
+[[documents]]
+key = "subtotal"
+label = "Subtotal"
+kind = "amount"
+source = "extracted"
+
+[[documents]]
+key = "discount"
+label = "Discount"
+kind = "amount"
+source = "extracted"
+
+[[documents]]
+key = "shipping"
+label = "Shipping / freight"
+kind = "amount"
+source = "extracted"
+
+[[documents]]
+key = "tax_rate"
+label = "Tax rate"
+kind = "text"
+source = "extracted"
+
+[[documents]]
+key = "tax_amount"
+label = "Tax amount"
+kind = "amount"
+source = "extracted"
+
+[[documents]]
+key = "total"
+label = "Total"
+kind = "amount"
+source = "extracted"
+
+[[documents]]
+key = "balance_due"
+label = "Balance due"
+kind = "amount"
+source = "extracted"
+
+[[documents]]
+key = "amount_in_words"
+label = "Amount in words"
+kind = "text"
+source = "extracted"
+
+[[documents]]
+key = "arithmetic_check"
+label = "Arithmetic check"
+kind = "text"
+source = "computed"
+
+[[documents]]
+key = "needs_review"
+label = "Needs review"
+kind = "text"
+source = "computed"
+locked = true
+
+[[documents]]
+key = "review_reasons"
+label = "Review reasons"
+kind = "text"
+source = "computed"
+locked = true
+
+[[line_items]]
+key = "file"
+label = "File"
+kind = "text"
+source = "meta"
+
+[[line_items]]
+key = "document_number"
+label = "Document number"
+kind = "text"
+source = "meta"
+
+[[line_items]]
+key = "line"
+label = "Line"
+kind = "number"
+source = "computed"
+
+[[line_items]]
+key = "description"
+label = "Description"
+kind = "text"
+source = "extracted"
+
+[[line_items]]
+key = "quantity"
+label = "Quantity"
+kind = "number"
+source = "extracted"
+
+[[line_items]]
+key = "unit"
+label = "Unit"
+kind = "text"
+source = "extracted"
+
+[[line_items]]
+key = "unit_price"
+label = "Unit price"
+kind = "amount"
+source = "extracted"
+
+[[line_items]]
+key = "line_discount"
+label = "Line discount"
+kind = "amount"
+source = "extracted"
+
+[[line_items]]
+key = "tax_rate"
+label = "Tax rate"
+kind = "text"
+source = "extracted"
+
+[[line_items]]
+key = "line_total"
+label = "Line total"
+kind = "amount"
+source = "extracted"
+
+[[line_items]]
+key = "line_check"
+label = "Line check"
+kind = "text"
+source = "computed"
+
+[[line_items]]
+key = "review_reasons"
+label = "Review reasons"
+kind = "text"
+source = "computed"
+
+# Statement of account transactions (invoice-shaped documents only).
+[[statement_lines]]
+key = "file"
+label = "File"
+kind = "text"
+source = "meta"
+
+[[statement_lines]]
+key = "document_number"
+label = "Document number"
+kind = "text"
+source = "meta"
+
+[[statement_lines]]
+key = "line"
+label = "Line"
+kind = "number"
+source = "computed"
+
+[[statement_lines]]
+key = "date"
+label = "Date"
+kind = "date"
+source = "extracted"
+
+[[statement_lines]]
+key = "reference"
+label = "Reference"
+kind = "text"
+source = "extracted"
+
+[[statement_lines]]
+key = "description"
+label = "Description"
+kind = "text"
+source = "extracted"
+
+[[statement_lines]]
+key = "debit"
+label = "Debit"
+kind = "amount"
+source = "extracted"
+
+[[statement_lines]]
+key = "credit"
+label = "Credit"
+kind = "amount"
+source = "extracted"
+
+[[statement_lines]]
+key = "balance"
+label = "Balance"
+kind = "amount"
+source = "extracted"
+
+[[statement_lines]]
+key = "review_reasons"
+label = "Review reasons"
+kind = "text"
+source = "computed"
+
+# Payments bucket: cheques and bank deposit slips.
+[[payments]]
+key = "file"
+label = "File"
+kind = "text"
+source = "meta"
+
+[[payments]]
+key = "pages"
+label = "Pages"
+kind = "text"
+source = "meta"
+
+[[payments]]
+key = "document_title"
+label = "Document title"
+kind = "text"
+source = "extracted"
+
+[[payments]]
+key = "document_type"
+label = "Document type"
+kind = "text"
+source = "meta"
+
+[[payments]]
+key = "type_evidence"
+label = "Type evidence"
+kind = "text"
+source = "meta"
+
+[[payments]]
+key = "direction"
+label = "Direction"
+kind = "text"
+source = "computed"
+
+[[payments]]
+key = "payment_date"
+label = "Date"
+kind = "date"
+source = "extracted"
+
+[[payments]]
+key = "bank_name"
+label = "Bank"
+kind = "text"
+source = "extracted"
+
+[[payments]]
+key = "cheque_number"
+label = "Cheque number"
+kind = "text"
+source = "extracted"
+
+[[payments]]
+key = "account_number"
+label = "Account number"
+kind = "text"
+source = "extracted"
+
+[[payments]]
+key = "payee"
+label = "Payee"
+kind = "text"
+source = "extracted"
+
+[[payments]]
+key = "payer"
+label = "Payer"
+kind = "text"
+source = "extracted"
+
+[[payments]]
+key = "currency"
+label = "Currency"
+kind = "text"
+source = "extracted"
+
+[[payments]]
+key = "amount"
+label = "Amount"
+kind = "amount"
+source = "extracted"
+
+[[payments]]
+key = "amount_in_words"
+label = "Amount in words"
+kind = "text"
+source = "extracted"
+
+[[payments]]
+key = "needs_review"
+label = "Needs review"
+kind = "text"
+source = "computed"
+
+[[payments]]
+key = "review_reasons"
+label = "Review reasons"
+kind = "text"
+source = "computed"
+
+# Other bucket: anything else, and anything the reader is unsure about.
+[[other]]
+key = "file"
+label = "File"
+kind = "text"
+source = "meta"
+
+[[other]]
+key = "pages"
+label = "Pages"
+kind = "text"
+source = "meta"
+
+[[other]]
+key = "document_title"
+label = "Document title"
+kind = "text"
+source = "extracted"
+
+[[other]]
+key = "document_type"
+label = "Document type"
+kind = "text"
+source = "meta"
+
+[[other]]
+key = "type_evidence"
+label = "Type evidence"
+kind = "text"
+source = "meta"
+
+[[other]]
+key = "document_date"
+label = "Date"
+kind = "date"
+source = "extracted"
+
+[[other]]
+key = "parties"
+label = "Parties"
+kind = "text"
+source = "extracted"
+
+[[other]]
+key = "total"
+label = "Total"
+kind = "amount"
+source = "extracted"
+
+[[other]]
+key = "description"
+label = "Description"
+kind = "text"
+source = "meta"
+
+[[other]]
+key = "needs_review"
+label = "Needs review"
+kind = "text"
+source = "computed"
+
+[[other]]
+key = "review_reasons"
+label = "Review reasons"
+kind = "text"
+source = "computed"

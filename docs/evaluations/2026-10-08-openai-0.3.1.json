@@ -1,0 +1,814 @@
+{
+  "date": "2026-10-08",
+  "scope": "Partial public synthetic evaluation; original frozen references",
+  "package": "invoice-reader-openai",
+  "version": "0.3.1",
+  "model_requested": "gpt-6.1-sol",
+  "model_reported": "Unknown",
+  "provider": "OpenAI via current Codex ChatGPT login",
+  "tool_version": "codex-cli 0.162.0-alpha.2",
+  "artifact_hash": "883993c6faa76f6dd644060ef5215ec8fb64fafac54d4719d374b3d38bac0e8a",
+  "python_setup_assistance": true,
+  "runs": [
+    {
+      "case": "format-payment",
+      "run": "run-1",
+      "batch": "evidence-run-01-invoice-reader-openai",
+      "valid": true,
+      "cells": {
+        "correct": 10,
+        "correct_blank": 4
+      },
+      "flags": {},
+      "checks": {
+        "unprocessed_inputs": 0
+      },
+      "tables": {
+        "Billing documents": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Payments": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested values": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Line items": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        }
+      },
+      "details": [],
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 10,
+          "denominator": 10,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 10,
+          "denominator": 10,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 10,
+          "denominator": 10,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        }
+      },
+      "raw_status": "scored",
+      "integrity": {
+        "package_unchanged": true,
+        "source_matches_public_fixture": true,
+        "custom_unchanged": true,
+        "dataset_hash_matches": true
+      },
+      "dataset_hash": "cb832d85b467bece8d637b46c7efa8d5081d127b2e5a6fe9219196d81efa8a8d",
+      "elapsed_seconds": 126.36,
+      "raw_extraction_hash": "d02a3e68feee006d66e03ee3f541b2475d4df438abd9d60c1191fd0173f4cb23",
+      "first_response_policy_reminder": false,
+      "visual_inspection_independently_verified": false,
+      "raw": {
+        "cells": {
+          "correct": 8,
+          "correct_blank": 8
+        },
+        "flags": {},
+        "checks": {},
+        "tables": {
+          "Raw documents": {
+            "expected": 2,
+            "actual": 2,
+            "matched": 2,
+            "extra": 0
+          },
+          "Raw requested values": {
+            "expected": 2,
+            "actual": 2,
+            "matched": 2,
+            "extra": 0
+          }
+        },
+        "values": {
+          "Raw documents/0/fields.document_number": "SYN-842",
+          "Raw documents/0/fields.total": "None",
+          "Raw documents/0/fields.cheque_number": "None",
+          "Raw documents/0/fields.amount": "None",
+          "Raw documents/0/fields.payment_date": "None",
+          "Raw documents/1/fields.document_number": "None",
+          "Raw documents/1/fields.total": "None",
+          "Raw documents/1/fields.cheque_number": "006204",
+          "Raw documents/1/fields.amount": "8,750/",
+          "Raw documents/1/fields.payment_date": "24 11 2026",
+          "Raw requested values/0/observation.status": "absent",
+          "Raw requested values/0/observation.value": "None",
+          "Raw requested values/0/observation.pages": "None",
+          "Raw requested values/1/observation.status": "printed",
+          "Raw requested values/1/observation.value": "8,750/",
+          "Raw requested values/1/observation.pages": "2"
+        },
+        "details": []
+      },
+      "raw_metrics": {
+        "field_accuracy": {
+          "numerator": 8,
+          "denominator": 8,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 8,
+          "denominator": 8,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 8,
+          "denominator": 8,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      }
+    },
+    {
+      "case": "format-payment",
+      "run": "run-2",
+      "batch": "evidence-run-01-invoice-reader-openai",
+      "valid": true,
+      "cells": {
+        "correct": 9,
+        "correct_blank": 4,
+        "silent_error": 1
+      },
+      "flags": {},
+      "checks": {
+        "unprocessed_inputs": 0
+      },
+      "tables": {
+        "Billing documents": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Payments": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested values": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Line items": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        }
+      },
+      "details": [
+        {
+          "where": "Requested data/1/Payment amount",
+          "outcome": "silent_error",
+          "expected": "8,750/",
+          "got": "8,750/ HKD"
+        }
+      ],
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 9,
+          "denominator": 10,
+          "rate": 0.9
+        },
+        "field_precision": {
+          "numerator": 9,
+          "denominator": 10,
+          "rate": 0.9
+        },
+        "printed_value_recall": {
+          "numerator": 9,
+          "denominator": 10,
+          "rate": 0.9
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        }
+      },
+      "raw_status": "scored",
+      "integrity": {
+        "package_unchanged": true,
+        "source_matches_public_fixture": true,
+        "custom_unchanged": true,
+        "dataset_hash_matches": true
+      },
+      "dataset_hash": "cb832d85b467bece8d637b46c7efa8d5081d127b2e5a6fe9219196d81efa8a8d",
+      "elapsed_seconds": 125.03,
+      "raw_extraction_hash": "a2c6ee973308c1568e67afbc61f763cddbdc7ffb0e43667523e5d3504d5b2479",
+      "first_response_policy_reminder": false,
+      "visual_inspection_independently_verified": false,
+      "raw": {
+        "cells": {
+          "correct": 8,
+          "correct_blank": 8
+        },
+        "flags": {},
+        "checks": {},
+        "tables": {
+          "Raw documents": {
+            "expected": 2,
+            "actual": 2,
+            "matched": 2,
+            "extra": 0
+          },
+          "Raw requested values": {
+            "expected": 2,
+            "actual": 2,
+            "matched": 2,
+            "extra": 0
+          }
+        },
+        "values": {
+          "Raw documents/0/fields.document_number": "SYN-842",
+          "Raw documents/0/fields.total": "None",
+          "Raw documents/0/fields.cheque_number": "None",
+          "Raw documents/0/fields.amount": "None",
+          "Raw documents/0/fields.payment_date": "None",
+          "Raw documents/1/fields.document_number": "None",
+          "Raw documents/1/fields.total": "None",
+          "Raw documents/1/fields.cheque_number": "006204",
+          "Raw documents/1/fields.amount": "8,750/",
+          "Raw documents/1/fields.payment_date": "24 11 2026",
+          "Raw requested values/0/observation.status": "absent",
+          "Raw requested values/0/observation.value": "None",
+          "Raw requested values/0/observation.pages": "None",
+          "Raw requested values/1/observation.status": "printed",
+          "Raw requested values/1/observation.value": "8,750/",
+          "Raw requested values/1/observation.pages": "2"
+        },
+        "details": []
+      },
+      "raw_metrics": {
+        "field_accuracy": {
+          "numerator": 8,
+          "denominator": 8,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 8,
+          "denominator": 8,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 8,
+          "denominator": 8,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      }
+    },
+    {
+      "case": "format-project",
+      "run": "run-1",
+      "batch": "evidence-run-02-invoice-reader-openai",
+      "valid": true,
+      "cells": {
+        "correct": 13,
+        "correct_blank": 1
+      },
+      "flags": {},
+      "checks": {
+        "unprocessed_inputs": 0
+      },
+      "tables": {
+        "Billing documents": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Payments": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested values": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Line items": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        }
+      },
+      "details": [],
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 13,
+          "denominator": 13,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 13,
+          "denominator": 13,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 13,
+          "denominator": 13,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        }
+      },
+      "raw_status": "scored",
+      "integrity": {
+        "package_unchanged": true,
+        "source_matches_public_fixture": true,
+        "custom_unchanged": true,
+        "dataset_hash_matches": true
+      },
+      "dataset_hash": "535bee41dae95d428e417da8fea16452db0a18c620cf0e0ad42b5b70792ab9df",
+      "elapsed_seconds": 110.94,
+      "raw_extraction_hash": "366db0d37f8c12a0adc7654cdbf2042d7182863bf9f546c3817f072af3723c65",
+      "first_response_policy_reminder": false,
+      "visual_inspection_independently_verified": false,
+      "raw": {
+        "cells": {
+          "correct": 10,
+          "correct_blank": 6
+        },
+        "flags": {},
+        "checks": {},
+        "tables": {
+          "Raw documents": {
+            "expected": 2,
+            "actual": 2,
+            "matched": 2,
+            "extra": 0
+          },
+          "Raw requested values": {
+            "expected": 2,
+            "actual": 2,
+            "matched": 2,
+            "extra": 0
+          }
+        },
+        "values": {
+          "Raw documents/0/fields.document_number": "SYN-842",
+          "Raw documents/0/fields.total": "None",
+          "Raw documents/0/fields.cheque_number": "None",
+          "Raw documents/0/fields.amount": "None",
+          "Raw documents/0/fields.payment_date": "None",
+          "Raw documents/1/fields.document_number": "None",
+          "Raw documents/1/fields.total": "None",
+          "Raw documents/1/fields.cheque_number": "006204",
+          "Raw documents/1/fields.amount": "8,750/",
+          "Raw documents/1/fields.payment_date": "24 11 2026",
+          "Raw requested values/0/observation.status": "printed",
+          "Raw requested values/0/observation.value": "Lobby hinge inspection",
+          "Raw requested values/0/observation.pages": "1",
+          "Raw requested values/1/observation.status": "printed",
+          "Raw requested values/1/observation.value": "Lobby hinge inspection",
+          "Raw requested values/1/observation.pages": "2"
+        },
+        "details": []
+      },
+      "raw_metrics": {
+        "field_accuracy": {
+          "numerator": 10,
+          "denominator": 10,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 10,
+          "denominator": 10,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 10,
+          "denominator": 10,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      }
+    },
+    {
+      "case": "format-project",
+      "run": "run-2",
+      "batch": "evidence-run-02-invoice-reader-openai",
+      "valid": true,
+      "cells": {
+        "correct": 13,
+        "correct_blank": 1
+      },
+      "flags": {},
+      "checks": {
+        "unprocessed_inputs": 0
+      },
+      "tables": {
+        "Billing documents": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Payments": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested values": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Line items": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        }
+      },
+      "details": [],
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 13,
+          "denominator": 13,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 13,
+          "denominator": 13,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 13,
+          "denominator": 13,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        }
+      },
+      "raw_status": "scored",
+      "integrity": {
+        "package_unchanged": true,
+        "source_matches_public_fixture": true,
+        "custom_unchanged": true,
+        "dataset_hash_matches": true
+      },
+      "dataset_hash": "535bee41dae95d428e417da8fea16452db0a18c620cf0e0ad42b5b70792ab9df",
+      "elapsed_seconds": 152.8,
+      "raw_extraction_hash": "60ffc2b7e0f0fdf2aa15f525c971439498cf045fdfd5f59f228d47b139794a62",
+      "first_response_policy_reminder": false,
+      "visual_inspection_independently_verified": false,
+      "raw": {
+        "cells": {
+          "correct": 10,
+          "correct_blank": 6
+        },
+        "flags": {},
+        "checks": {},
+        "tables": {
+          "Raw documents": {
+            "expected": 2,
+            "actual": 2,
+            "matched": 2,
+            "extra": 0
+          },
+          "Raw requested values": {
+            "expected": 2,
+            "actual": 2,
+            "matched": 2,
+            "extra": 0
+          }
+        },
+        "values": {
+          "Raw documents/0/fields.document_number": "SYN-842",
+          "Raw documents/0/fields.total": "None",
+          "Raw documents/0/fields.cheque_number": "None",
+          "Raw documents/0/fields.amount": "None",
+          "Raw documents/0/fields.payment_date": "None",
+          "Raw documents/1/fields.document_number": "None",
+          "Raw documents/1/fields.total": "None",
+          "Raw documents/1/fields.cheque_number": "006204",
+          "Raw documents/1/fields.amount": "8,750/",
+          "Raw documents/1/fields.payment_date": "24 11 2026",
+          "Raw requested values/0/observation.status": "printed",
+          "Raw requested values/0/observation.value": "Lobby hinge inspection",
+          "Raw requested values/0/observation.pages": "1",
+          "Raw requested values/1/observation.status": "printed",
+          "Raw requested values/1/observation.value": "Lobby hinge inspection",
+          "Raw requested values/1/observation.pages": "2"
+        },
+        "details": []
+      },
+      "raw_metrics": {
+        "field_accuracy": {
+          "numerator": 10,
+          "denominator": 10,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 10,
+          "denominator": 10,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 10,
+          "denominator": 10,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      }
+    },
+    {
+      "case": "coal-payment",
+      "run": "run-1",
+      "batch": "evidence-run-03-invoice-reader-openai",
+      "valid": true,
+      "cells": {
+        "correct": 21,
+        "correct_blank": 14
+      },
+      "flags": {
+        "true_positive": 2
+      },
+      "checks": {
+        "unprocessed_inputs": 0
+      },
+      "tables": {
+        "Billing documents": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Other": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Line items": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested values": {
+          "expected": 4,
+          "actual": 4,
+          "matched": 4,
+          "extra": 0
+        }
+      },
+      "details": [],
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 21,
+          "denominator": 21,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 21,
+          "denominator": 21,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 21,
+          "denominator": 21,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        }
+      },
+      "raw_status": "not_configured",
+      "integrity": {
+        "package_unchanged": true,
+        "source_matches_public_fixture": true,
+        "custom_unchanged": true,
+        "dataset_hash_matches": true
+      },
+      "dataset_hash": "c0dd991a74140158c65dcc01d1362e16e2c8b698bdf98ead2e3e66e522ce4518",
+      "elapsed_seconds": 125.58,
+      "raw_extraction_hash": "87be2c344f048e31b088093348dedae21dc122715e2347a3f074503c0c451dfa",
+      "first_response_policy_reminder": false,
+      "visual_inspection_independently_verified": false
+    },
+    {
+      "case": "coal-ocr-energy",
+      "run": "run-1",
+      "batch": "evidence-run-04-invoice-reader-openai",
+      "valid": true,
+      "cells": {
+        "correct": 25,
+        "correct_blank": 15
+      },
+      "flags": {
+        "true_positive": 2
+      },
+      "checks": {
+        "unprocessed_inputs": 0
+      },
+      "tables": {
+        "Billing documents": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Other": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Line items": {
+          "expected": 1,
+          "actual": 1,
+          "matched": 1,
+          "extra": 0
+        },
+        "Requested data": {
+          "expected": 2,
+          "actual": 2,
+          "matched": 2,
+          "extra": 0
+        },
+        "Requested values": {
+          "expected": 5,
+          "actual": 5,
+          "matched": 5,
+          "extra": 0
+        }
+      },
+      "details": [],
+      "metrics": {
+        "field_accuracy": {
+          "numerator": 25,
+          "denominator": 25,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 25,
+          "denominator": 25,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 25,
+          "denominator": 25,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        }
+      },
+      "raw_status": "not_configured",
+      "integrity": {
+        "package_unchanged": true,
+        "source_matches_public_fixture": true,
+        "custom_unchanged": true,
+        "dataset_hash_matches": true
+      },
+      "dataset_hash": "89fb8d67d5a7d506dbc0100edd1f9be4b37093e5da160d6b2b925aa53f883c1a",
+      "elapsed_seconds": 142.23,
+      "raw_extraction_hash": "7b4b54cc4a0ffc5b054c698a6248f76f060b2d6d12407b16c0176caa7d2f0a13",
+      "first_response_policy_reminder": false,
+      "visual_inspection_independently_verified": false
+    }
+  ]
+}

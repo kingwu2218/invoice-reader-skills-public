@@ -1,0 +1,246 @@
+{
+  "tables": {
+    "Billing documents": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence"
+      ],
+      "columns": [
+        {
+          "label": "Document number",
+          "kind": "text"
+        },
+        {
+          "label": "Total",
+          "kind": "amount"
+        }
+      ],
+      "rows": [
+        {
+          "File": "digit-boundary-v1.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Document number": "SYN-BOUNDARY-01",
+          "Total": "684"
+        },
+        {
+          "File": "digit-boundary-v1.pdf",
+          "Pages": "2",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Document number": "SYN-BOUNDARY-02",
+          "Total": "1684"
+        },
+        {
+          "File": "digit-boundary-v1.pdf",
+          "Pages": "3",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Document number": "SYN-BOUNDARY-03",
+          "Total": null
+        }
+      ]
+    },
+    "Requested data": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence"
+      ],
+      "columns": [
+        {
+          "label": "Labelled total",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "digit-boundary-v1.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Labelled total": "684"
+        },
+        {
+          "File": "digit-boundary-v1.pdf",
+          "Pages": "2",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Labelled total": "1684"
+        },
+        {
+          "File": "digit-boundary-v1.pdf",
+          "Pages": "3",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Labelled total": null
+        }
+      ]
+    },
+    "Requested values": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence",
+        "Field key",
+        "Occurrence"
+      ],
+      "columns": [
+        {
+          "label": "Status",
+          "kind": "text"
+        },
+        {
+          "label": "Value (as printed)",
+          "kind": "text"
+        },
+        {
+          "label": "Pages",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "digit-boundary-v1.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Field key": "labelled_total",
+          "Occurrence": "1",
+          "Status": "printed",
+          "Value (as printed)": "684"
+        },
+        {
+          "File": "digit-boundary-v1.pdf",
+          "Pages": "2",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Field key": "labelled_total",
+          "Occurrence": "1",
+          "Status": "printed",
+          "Value (as printed)": "1684"
+        },
+        {
+          "File": "digit-boundary-v1.pdf",
+          "Pages": "3",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Field key": "labelled_total",
+          "Occurrence": "1",
+          "Status": "unclear",
+          "Value (as printed)": null
+        }
+      ]
+    }
+  },
+  "raw_tables": {
+    "Raw documents": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence"
+      ],
+      "columns": [
+        {
+          "label": "fields.document_number",
+          "kind": "text"
+        },
+        {
+          "label": "fields.total",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "digit-boundary-v1.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "fields.document_number": "SYN-BOUNDARY-01",
+          "fields.total": "684"
+        },
+        {
+          "File": "digit-boundary-v1.pdf",
+          "Pages": "2",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "fields.document_number": "SYN-BOUNDARY-02",
+          "fields.total": "1684"
+        },
+        {
+          "File": "digit-boundary-v1.pdf",
+          "Pages": "3",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "fields.document_number": "SYN-BOUNDARY-03",
+          "fields.total": null
+        }
+      ]
+    },
+    "Raw requested values": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence",
+        "Field key",
+        "Occurrence"
+      ],
+      "columns": [
+        {
+          "label": "observation.status",
+          "kind": "text"
+        },
+        {
+          "label": "observation.value",
+          "kind": "text"
+        },
+        {
+          "label": "observation.pages",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "digit-boundary-v1.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Field key": "labelled_total",
+          "Occurrence": "1",
+          "observation.status": "printed",
+          "observation.value": "684",
+          "observation.pages": "1"
+        },
+        {
+          "File": "digit-boundary-v1.pdf",
+          "Pages": "2",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Field key": "labelled_total",
+          "Occurrence": "1",
+          "observation.status": "printed",
+          "observation.value": "1684",
+          "observation.pages": "2"
+        },
+        {
+          "File": "digit-boundary-v1.pdf",
+          "Pages": "3",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Field key": "labelled_total",
+          "Occurrence": "1",
+          "observation.status": "unclear",
+          "observation.value": null,
+          "observation.pages": "3"
+        }
+      ]
+    }
+  }
+}

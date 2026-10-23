@@ -1,0 +1,278 @@
+{
+  "tables": {
+    "Billing documents": {
+      "identity": [
+        "File",
+        "Pages"
+      ],
+      "columns": [
+        {
+          "label": "Document number",
+          "kind": "text"
+        },
+        {
+          "label": "Total",
+          "kind": "amount"
+        }
+      ],
+      "rows": [
+        {
+          "File": "format-pack.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Document number": "SYN-842",
+          "Total": null
+        }
+      ]
+    },
+    "Payments": {
+      "identity": [
+        "File",
+        "Pages"
+      ],
+      "columns": [
+        {
+          "label": "Cheque number",
+          "kind": "text"
+        },
+        {
+          "label": "Amount",
+          "kind": "amount"
+        },
+        {
+          "label": "Date",
+          "kind": "date"
+        },
+        {
+          "label": "Payee",
+          "kind": "text"
+        },
+        {
+          "label": "Payer",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "format-pack.pdf",
+          "Pages": "2",
+          "Document type": "Cheque",
+          "Document occurrence": "1",
+          "Cheque number": "006204",
+          "Amount": "8750",
+          "Date": "2026-11-24",
+          "Payee": "Example Workshop Ltd",
+          "Payer": "Tallowmere Consulting Ltd"
+        }
+      ]
+    },
+    "Requested data": {
+      "identity": [
+        "File",
+        "Pages"
+      ],
+      "columns": [
+        {
+          "label": "Payment amount",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "format-pack.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Payment amount": null
+        },
+        {
+          "File": "format-pack.pdf",
+          "Pages": "2",
+          "Document type": "Cheque",
+          "Document occurrence": "1",
+          "Payment amount": "8,750/ HKD"
+        }
+      ]
+    },
+    "Requested values": {
+      "identity": [
+        "File",
+        "Document pages",
+        "Field key",
+        "Occurrence"
+      ],
+      "columns": [
+        {
+          "label": "Status",
+          "kind": "text"
+        },
+        {
+          "label": "Value (as printed)",
+          "kind": "text"
+        },
+        {
+          "label": "Pages",
+          "kind": "text"
+        },
+        {
+          "label": "Unit",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "format-pack.pdf",
+          "Document pages": "1",
+          "Field key": "payment_amount",
+          "Occurrence": "1",
+          "Status": "absent",
+          "Value (as printed)": null,
+          "Pages": null
+        },
+        {
+          "File": "format-pack.pdf",
+          "Document pages": "2",
+          "Field key": "payment_amount",
+          "Occurrence": "1",
+          "Status": "printed",
+          "Value (as printed)": "8,750/",
+          "Pages": "2",
+          "Unit": "HKD"
+        }
+      ]
+    },
+    "Line items": {
+      "identity": [
+        "File",
+        "Line"
+      ],
+      "columns": [
+        {
+          "label": "Line total",
+          "kind": "amount"
+        }
+      ],
+      "rows": [
+        {
+          "File": "format-pack.pdf",
+          "Line": "1",
+          "Line total": "8750"
+        }
+      ]
+    }
+  },
+  "raw_tables": {
+    "Raw documents": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence"
+      ],
+      "columns": [
+        {
+          "label": "fields.document_number",
+          "kind": "text"
+        },
+        {
+          "label": "fields.total",
+          "kind": "text"
+        },
+        {
+          "label": "fields.cheque_number",
+          "kind": "text"
+        },
+        {
+          "label": "fields.amount",
+          "kind": "text"
+        },
+        {
+          "label": "fields.payment_date",
+          "kind": "text"
+        },
+        {
+          "label": "fields.payee",
+          "kind": "text"
+        },
+        {
+          "label": "fields.payer",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "format-pack.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "fields.document_number": "SYN-842"
+        },
+        {
+          "File": "format-pack.pdf",
+          "Pages": "2",
+          "Document type": "Cheque",
+          "Document occurrence": "1",
+          "fields.cheque_number": "006204",
+          "fields.amount": "8,750/",
+          "fields.payment_date": "24 11 2026",
+          "fields.payee": "Example Workshop Ltd",
+          "fields.payer": "Tallowmere Consulting Ltd"
+        }
+      ]
+    },
+    "Raw requested values": {
+      "identity": [
+        "File",
+        "Pages",
+        "Document type",
+        "Document occurrence",
+        "Field key",
+        "Occurrence"
+      ],
+      "columns": [
+        {
+          "label": "observation.status",
+          "kind": "text"
+        },
+        {
+          "label": "observation.value",
+          "kind": "text"
+        },
+        {
+          "label": "observation.pages",
+          "kind": "text"
+        },
+        {
+          "label": "observation.unit",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "format-pack.pdf",
+          "Pages": "1",
+          "Document type": "Invoice",
+          "Document occurrence": "1",
+          "Field key": "payment_amount",
+          "Occurrence": "1",
+          "observation.status": "absent",
+          "observation.value": null,
+          "observation.pages": null
+        },
+        {
+          "File": "format-pack.pdf",
+          "Pages": "2",
+          "Document type": "Cheque",
+          "Document occurrence": "1",
+          "Field key": "payment_amount",
+          "Occurrence": "1",
+          "observation.status": "printed",
+          "observation.value": "8,750/",
+          "observation.pages": "2",
+          "observation.unit": "HKD"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-13",
+  "target_release": "2026-10-16",
+  "package": "invoice-reader-openai",
+  "version": "0.3.17",
+  "package_sha256": "e355b2548d97021fd1727b515e7d948d2c7c090f741f87176b6cc08f6bfaa07c",
+  "scope": "Windows copied package, existing uv/base Python, fresh uv cache; supplied known public transcription, not model accuracy or fresh OS/CLI installation.",
+  "environment": {
+    "python": "3.14.5",
+    "pdfium": "5.14.0",
+    "pillow": "12.3.0",
+    "openpyxl": "3.1.5"
+  },
+  "checks": {
+    "one_document": true,
+    "one_processed_input": true,
+    "invoice_classification": true,
+    "document_number": true,
+    "dates": true,
+    "totals": true,
+    "currency": true,
+    "arithmetic": true,
+    "three_line_items": true,
+    "custom_summary": true,
+    "printed_custom_unit": true,
+    "source_evidence": true,
+    "no_profile_review": true,
+    "model_not_invented": true,
+    "correct_package_version": true,
+    "installed_package_unchanged": true,
+    "source_unchanged": true,
+    "shared_interpreter": true,
+    "shared_libraries": true,
+    "native_route": true,
+    "recovery_image_created": true,
+    "custom_template_created": true,
+    "profile_template_created": true,
+    "eight_commands_succeeded": true
+  },
+  "passed": 24,
+  "total": 24,
+  "visual_review": "Prepared page inspected; public invoice readable and matches supplied transcription.",
+  "workbook_sha256": "6b1307be7eaf6047a7182f2c617a8bf0f60b066116c81079e999d458dc357793",
+  "source_sha256": "d6edd40a7e9d6616df21f56bbd161113857927bfb9a3362204211b58fa47fed3",
+  "bundle": {
+    "file": "invoice-reader-openai-0.3.17.zip",
+    "sha256": "60589005db30b52b39ccccb0d677f6e0f242b30361031eda087c5617ef91a8a4",
+    "files": 35,
+    "all_member_bytes_match": true
+  },
+  "full_suite": {
+    "tests": 326,
+    "passed": true,
+    "log_sha256": "9687704b2ccd974cb4bf8f2068e80cbc851387f93c89d82415772dde90bc72fb"
+  },
+  "publication": "not committed, tagged, pushed or published"
+}

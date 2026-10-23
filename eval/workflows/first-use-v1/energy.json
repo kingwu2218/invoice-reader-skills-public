@@ -1,0 +1,338 @@
+{
+  "tables": {
+    "Billing documents": {
+      "identity": [
+        "File",
+        "Pages"
+      ],
+      "columns": [
+        {
+          "label": "Document number",
+          "kind": "text"
+        },
+        {
+          "label": "Total",
+          "kind": "amount"
+        },
+        {
+          "label": "Subtotal",
+          "kind": "amount"
+        },
+        {
+          "label": "Tax amount",
+          "kind": "amount"
+        },
+        {
+          "label": "Arithmetic check",
+          "kind": "text"
+        },
+        {
+          "label": "Needs review",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "coal-ocr.pdf",
+          "Pages": "1",
+          "Document number": "COAL-001",
+          "Total": "105.00",
+          "Subtotal": "100.00",
+          "Tax amount": "0.00",
+          "Arithmetic check": "Failed",
+          "Needs review": "Yes"
+        }
+      ]
+    },
+    "Other": {
+      "identity": [
+        "File",
+        "Pages"
+      ],
+      "columns": [
+        {
+          "label": "Document title",
+          "kind": "text"
+        },
+        {
+          "label": "Needs review",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "coal-ocr.pdf",
+          "Pages": "2",
+          "Document title": "LAB CERTIFICATE",
+          "Needs review": "Yes"
+        }
+      ]
+    },
+    "Line items": {
+      "identity": [
+        "File",
+        "Line"
+      ],
+      "columns": [
+        {
+          "label": "Quantity",
+          "kind": "number"
+        },
+        {
+          "label": "Unit price",
+          "kind": "amount"
+        },
+        {
+          "label": "Line total",
+          "kind": "amount"
+        }
+      ],
+      "rows": [
+        {
+          "File": "coal-ocr.pdf",
+          "Line": "1",
+          "Quantity": "1",
+          "Unit price": "100.00",
+          "Line total": "100.00"
+        }
+      ]
+    },
+    "Requested data": {
+      "identity": [
+        "File",
+        "Pages"
+      ],
+      "columns": [
+        {
+          "label": "Energy Level of Coal",
+          "kind": "text"
+        },
+        {
+          "label": "Moisture",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "coal-ocr.pdf",
+          "Pages": "1"
+        },
+        {
+          "File": "coal-ocr.pdf",
+          "Pages": "2",
+          "Energy Level of Coal": "Sample C-01: 6,200 kcal/kg\nSample C-02: 6,100 kcal/kg"
+        }
+      ],
+      "exact_columns": [
+        "Document ID",
+        "File",
+        "Pages",
+        "Energy Level of Coal",
+        "Moisture",
+        "Needs review",
+        "Review reasons"
+      ]
+    },
+    "Requested values": {
+      "identity": [
+        "File",
+        "Document pages",
+        "Field",
+        "Occurrence"
+      ],
+      "columns": [
+        {
+          "label": "Value (as printed)",
+          "kind": "text"
+        },
+        {
+          "label": "Unit",
+          "kind": "text"
+        },
+        {
+          "label": "Context",
+          "kind": "text"
+        },
+        {
+          "label": "Pages",
+          "kind": "text"
+        },
+        {
+          "label": "Status",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "Occurrence": "1",
+          "Status": "absent",
+          "File": "coal-ocr.pdf",
+          "Document pages": "1",
+          "Field": "Energy Level of Coal"
+        },
+        {
+          "Occurrence": "1",
+          "Status": "absent",
+          "File": "coal-ocr.pdf",
+          "Document pages": "1",
+          "Field": "Moisture"
+        },
+        {
+          "Occurrence": "1",
+          "Value (as printed)": "6,200",
+          "Unit": "kcal/kg",
+          "Context": "Sample C-01",
+          "Pages": "2",
+          "Status": "printed",
+          "File": "coal-ocr.pdf",
+          "Document pages": "2",
+          "Field": "Energy Level of Coal"
+        },
+        {
+          "Occurrence": "2",
+          "Value (as printed)": "6,100",
+          "Unit": "kcal/kg",
+          "Context": "Sample C-02",
+          "Pages": "2",
+          "Status": "printed",
+          "File": "coal-ocr.pdf",
+          "Document pages": "2",
+          "Field": "Energy Level of Coal"
+        },
+        {
+          "Occurrence": "1",
+          "Status": "absent",
+          "File": "coal-ocr.pdf",
+          "Document pages": "2",
+          "Field": "Moisture"
+        }
+      ]
+    }
+  },
+  "raw_tables": {
+    "Raw documents": {
+      "identity": [
+        "File",
+        "Pages"
+      ],
+      "columns": [
+        {
+          "label": "fields.document_title",
+          "kind": "text"
+        },
+        {
+          "label": "fields.document_number",
+          "kind": "text"
+        },
+        {
+          "label": "fields.due_date",
+          "kind": "text"
+        },
+        {
+          "label": "fields.subtotal",
+          "kind": "text"
+        },
+        {
+          "label": "fields.tax_amount",
+          "kind": "text"
+        },
+        {
+          "label": "fields.total",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "coal-ocr.pdf",
+          "Pages": "1",
+          "fields.document_title": "INVOICE",
+          "fields.document_number": "COAL-001",
+          "fields.due_date": "15 Oct 2026",
+          "fields.subtotal": "100.00",
+          "fields.tax_amount": "0.00",
+          "fields.total": "105.00"
+        },
+        {
+          "File": "coal-ocr.pdf",
+          "Pages": "2",
+          "fields.document_title": "LAB CERTIFICATE"
+        }
+      ]
+    },
+    "Raw requested values": {
+      "identity": [
+        "File",
+        "Pages",
+        "Field",
+        "Occurrence"
+      ],
+      "columns": [
+        {
+          "label": "observation.value",
+          "kind": "text"
+        },
+        {
+          "label": "observation.unit",
+          "kind": "text"
+        },
+        {
+          "label": "observation.context",
+          "kind": "text"
+        },
+        {
+          "label": "observation.pages",
+          "kind": "text"
+        },
+        {
+          "label": "observation.status",
+          "kind": "text"
+        }
+      ],
+      "rows": [
+        {
+          "File": "coal-ocr.pdf",
+          "Pages": "1",
+          "Field": "Energy Level of Coal",
+          "Occurrence": "1",
+          "observation.status": "absent"
+        },
+        {
+          "File": "coal-ocr.pdf",
+          "Pages": "1",
+          "Field": "Moisture",
+          "Occurrence": "1",
+          "observation.status": "absent"
+        },
+        {
+          "File": "coal-ocr.pdf",
+          "Pages": "2",
+          "Field": "Energy Level of Coal",
+          "Occurrence": "1",
+          "observation.value": "6,200",
+          "observation.unit": "kcal/kg",
+          "observation.context": "Sample C-01",
+          "observation.pages": "2",
+          "observation.status": "printed"
+        },
+        {
+          "File": "coal-ocr.pdf",
+          "Pages": "2",
+          "Field": "Energy Level of Coal",
+          "Occurrence": "2",
+          "observation.value": "6,100",
+          "observation.unit": "kcal/kg",
+          "observation.context": "Sample C-02",
+          "observation.pages": "2",
+          "observation.status": "printed"
+        },
+        {
+          "File": "coal-ocr.pdf",
+          "Pages": "2",
+          "Field": "Moisture",
+          "Occurrence": "1",
+          "observation.status": "absent"
+        }
+      ]
+    }
+  }
+}

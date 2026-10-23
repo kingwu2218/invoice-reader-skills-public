@@ -1,0 +1,153 @@
+{
+  "date": "2026-10-12",
+  "publication_redaction": {
+    "chat_identifiers": "Stable report-local aliases chat-01 through chat-04; original identifiers omitted.",
+    "manifest_identifiers": "Stable report-local folder aliases run-01 through run-05; original identifiers omitted.",
+    "local_paths": "Workstation paths omitted. Evidence paths containing aliases are illustrative repository- or workspace-relative paths, not literal locations; original identifiers remain only in local evidence.",
+    "cash_memo_folder": "cash-memo-new-chat is a public alias for the original local folder.",
+    "evaluation_results_unchanged": true
+  },
+  "status": "artifact_scored_not_fresh_chat_baseline",
+  "accuracy_claim": "per_execution_artifact_score_only",
+  "fresh_chat_baseline": false,
+  "preparation_report": "docs/evaluations/2026-10-11-cursor-xai-baseline.md",
+  "preparation_left_prepared_only": true,
+  "scorer": "eval/runner/score.py",
+  "execution_batch": "eval/runs/2026-10-12-cursor-xai-execution",
+  "valid_flag_means": "Frozen package and dataset hashes matched and the linked workbook and raw extraction were admitted to the scorer. Not a CLI completion and not a verified fresh-chat baseline.",
+  "scorer_summary": {"runs": 6, "valid_runs": 5, "cells_differing_between_runs": 0, "exit_code": 1, "exit_reason": "Designated cash-memo run remains invalid."},
+  "reverified_on": "2026-10-13",
+  "hash_recompute": "matched_preparation_lock",
+  "scorer_rerun": {"runs": 6, "valid_runs": 5, "cells_differing_between_runs": 0, "exit_code": 1},
+  "package": "invoice-reader-xai-cursor",
+  "family": "xai",
+  "family_version": "0.1.1",
+  "family_prompt_edited": false,
+  "openai_0_3_16_edited": false,
+  "opening_v9_edited": false,
+  "digit_boundary_rerun": false,
+  "hashes": {
+    "cursor_package": "ba89c43560d1cfc8362135ea9465be5f44f4769f338ca6522501df1fa4527657",
+    "xai_source": "46dc6e841526797800aaec99b806514055965619ed5598de1615744ef66cb175",
+    "cursor_adapter": "d965459316b20034521c2ff0e572d7a874106f936fac81dfbea25ec8f64bb588",
+    "openai_package": "2f03d23ca01d755c4cf6ed94c752d809ef03df201a94a26d8b8c49dc11bd7743",
+    "codex_opening_v9": "4e4e083323835f3a8579b818a5b64b7af49e03e482aecd420b57a2dbd59a6c16"
+  },
+  "runtime": {
+    "python": "existing_python_interpreter",
+    "python_version": "3.14.5",
+    "pypdfium2": "4.30.0",
+    "pypdfium2_declared_range": ">=5.13,<6",
+    "pillow": "12.3.0",
+    "openpyxl": "3.1.5",
+    "uv": "not_used",
+    "clean_install_of_declared_range": false,
+    "evaluator_supplied_interpreter_in_prompt": true
+  },
+  "requested_model": "Grok 4.7",
+  "requested_effort": "High",
+  "model_reported_by_tool": "Unknown",
+  "effort_reported_by_tool": "Unknown",
+  "provider_account_route": "Unknown",
+  "opening": {
+    "grader": "cursor-opening-observation-v1",
+    "codex_v9_applied": false,
+    "result_md_used_as_opening_evidence": false
+  },
+  "executions": [
+    {
+      "case": "digit-boundary-v1",
+      "run": "run-1",
+      "chat_alias": "chat-01",
+      "evidence_status": "linked_execution_answer_generator_read",
+      "fresh_chat_baseline": false,
+      "opening": "user_reply_in_transcript",
+      "raw_reference": "configured",
+      "raw_status": "scored",
+      "workbook": {"correct": 15, "denominator": 15, "correct_blanks_excluded": 3, "miss": 0, "invented": 0, "wrong_flagged": 0, "silent_error": 0},
+      "raw": {"correct": 13, "denominator": 13, "correct_blanks_excluded": 2, "miss": 0, "invented": 0, "wrong_flagged": 0, "silent_error": 0},
+      "classification_errors": 0,
+      "documents_matched": "3/3"
+    },
+    {
+      "case": "coal-ocr-payment",
+      "run": "run-1",
+      "chat_alias": "chat-02",
+      "evidence_status": "linked_execution_shared_chat_opening_reply_not_in_transcript",
+      "fresh_chat_baseline": false,
+      "opening": "reply_not_in_stored_user_messages",
+      "raw_reference": "not_configured",
+      "raw_status": "not_configured",
+      "workbook": {"correct": 21, "denominator": 21, "correct_blanks_excluded": 14, "miss": 0, "invented": 0, "wrong_flagged": 0, "silent_error": 0},
+      "classification_errors": 0,
+      "documents_matched": "billing 1/1, other 1/1",
+      "review_flags": {"true_positive": 2, "false_positive": 0, "false_negative": 0}
+    },
+    {
+      "case": "coal-ocr-energy",
+      "run": "run-1",
+      "chat_alias": "chat-02",
+      "evidence_status": "linked_execution_shared_chat_opening_reply_not_in_transcript",
+      "fresh_chat_baseline": false,
+      "opening": "reply_not_in_stored_user_messages",
+      "raw_reference": "not_configured",
+      "raw_status": "not_configured",
+      "workbook": {"correct": 25, "denominator": 25, "correct_blanks_excluded": 15, "miss": 0, "invented": 0, "wrong_flagged": 0, "silent_error": 0},
+      "classification_errors": 0,
+      "documents_matched": "billing 1/1, other 1/1",
+      "review_flags": {"true_positive": 2, "false_positive": 0, "false_negative": 0}
+    },
+    {
+      "case": "coal-ocr-energy",
+      "run": "run-2",
+      "chat_alias": "chat-03",
+      "evidence_status": "linked_execution_repeat_saved_beside_existing_workbook_folder_choice_not_stored",
+      "fresh_chat_baseline": false,
+      "opening": "user_reply_in_transcript",
+      "raw_reference": "not_configured",
+      "raw_status": "not_configured",
+      "workbook": {"correct": 25, "denominator": 25, "correct_blanks_excluded": 15, "miss": 0, "invented": 0, "wrong_flagged": 0, "silent_error": 0},
+      "classification_errors": 0,
+      "documents_matched": "billing 1/1, other 1/1",
+      "review_flags": {"true_positive": 2, "false_positive": 0, "false_negative": 0},
+      "workbook_source": "output (2).xlsx",
+      "folder_question_selection": "not_in_transcript",
+      "workbook_link": "process.py command names the energy workspace and manifest folder alias run-04; process.py saves beside an existing workbook as output (2).xlsx"
+    },
+    {
+      "case": "cash-memo-classification-v1",
+      "run": "run-1",
+      "evidence_status": "designated_workspace_not_run",
+      "fresh_chat_baseline": false,
+      "opening": "not_applicable",
+      "raw_reference": "configured",
+      "raw_status": "not_run",
+      "workbook": "not_run"
+    },
+    {
+      "case": "cash-memo-classification-v1",
+      "run": "run-2",
+      "chat_alias": "chat-04",
+      "evidence_status": "provisional_repo_root_execution_answer_file_read_not_designated_workspace",
+      "fresh_chat_baseline": false,
+      "opening": "reply_not_in_stored_user_messages",
+      "raw_reference": "configured",
+      "raw_status": "scored",
+      "workbook": {"correct": 17, "denominator": 17, "correct_blanks_excluded": 0, "miss": 0, "invented": 0, "wrong_flagged": 0, "silent_error": 0},
+      "raw": {"correct": 9, "denominator": 9, "correct_blanks_excluded": 0, "miss": 0, "invented": 0, "wrong_flagged": 0, "silent_error": 0},
+      "classification_errors": 0,
+      "documents_matched": "3/3"
+    }
+  ],
+  "missing_opening_exports": [
+    "chat-02 user-role policy reply or AskQuestion result",
+    "chat-04 user-role policy reply or AskQuestion result",
+    "chat-03 folder-choice selection; policy reply is already stored"
+  ],
+  "cash_memo_new_chat": {
+    "workspace": "eval/runs/cash-memo-new-chat/workspace",
+    "paste": "eval/runs/cash-memo-new-chat/PASTE-OPENING.txt",
+    "contains_expected_json": false,
+    "contains_previous_output": false
+  }
+}

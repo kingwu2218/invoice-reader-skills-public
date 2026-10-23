@@ -1,0 +1,83 @@
+{
+  "version": "codex-opening-v3",
+  "contract_decision": "Owner permits one necessary Codex wait explanation with a source link, 2026-10-11.",
+  "timing": "Additional grading after these openings were observed; not a prospectively frozen v3 pass.",
+  "package_version": "0.3.15",
+  "package_sha256": "dbadd0982cb76f54bcbe2b2141996a6ead202878c0854de591c225fd8b75f7b2",
+  "plan_sha256": "e493f26935eb880c3268863b347951990612de49e505ea53773c434eb3dda2e6",
+  "grader_sha256": "8c65d1b17197a65a13ae6371466116aa8e757e37bffcfa51e3a24a608c3c91d8",
+  "reviewer_sha256": "351d79be4022a923e399643c98e9cf75b3b1cfe24d1a54f6f5d7af2e472a04df",
+  "planned_chats": 3,
+  "automatic_passes": 3,
+  "rows": [
+    {
+      "trial": 1,
+      "status": "reviewed",
+      "automatic_pass": true,
+      "version": "codex-opening-v3",
+      "strict_v2_format": "requires_review",
+      "exact_question_once": true,
+      "both_exact_choices_once": true,
+      "observed_pause": true,
+      "ordered_question_and_choices": true,
+      "format_status": "host_disclosure",
+      "allowed_disclosure": true,
+      "host_evidence": {
+        "disclosure_required": true,
+        "source": "session_meta.base_instructions",
+        "rule_sha256": "90158bea67d2e88da332cc0d308cba6b381c91044df9328992e33a3e129e1944"
+      },
+      "scope": "Opening format and observed pause only; not full host-instruction compliance, consent or extraction accuracy.",
+      "result_sha256": "3f008c8f06a48648fc83bd894d0f6803b8583be1a2fdb103cb8d299903c31aeb",
+      "turn_sha256": "bc726fc2947717eef884a6962199d62be9ea5e251e3b11ab9fdc531c1bd4dc82",
+      "snapshots_sha256": "92e1701a6ad663dfc67f957ac3713e23a4e3716cb989bd1863d54e414509489c",
+      "trace_sha256": "2b22ce88f78227940b9c81f1e49ef98d9efa6146600b599caa83085e6c67f3d1"
+    },
+    {
+      "trial": 2,
+      "status": "reviewed",
+      "automatic_pass": true,
+      "version": "codex-opening-v3",
+      "strict_v2_format": "requires_review",
+      "exact_question_once": true,
+      "both_exact_choices_once": true,
+      "observed_pause": true,
+      "ordered_question_and_choices": true,
+      "format_status": "host_disclosure",
+      "allowed_disclosure": true,
+      "host_evidence": {
+        "disclosure_required": true,
+        "source": "session_meta.base_instructions",
+        "rule_sha256": "90158bea67d2e88da332cc0d308cba6b381c91044df9328992e33a3e129e1944"
+      },
+      "scope": "Opening format and observed pause only; not full host-instruction compliance, consent or extraction accuracy.",
+      "result_sha256": "7b3a16f80a5c2d94d5ab9c0bd95f7f73e01c17881626050b234bbcd1a0f8f9f0",
+      "turn_sha256": "ffe202058143c4c0ea0b8f66924d5c7a8b5c84e8f1a969204889bba7c90b8a3b",
+      "snapshots_sha256": "92e1701a6ad663dfc67f957ac3713e23a4e3716cb989bd1863d54e414509489c",
+      "trace_sha256": "8979d72e4c53eb56117eb252ef83580ae14cd198a366bad936ab7d98304a1627"
+    },
+    {
+      "trial": 3,
+      "status": "reviewed",
+      "automatic_pass": true,
+      "version": "codex-opening-v3",
+      "strict_v2_format": "requires_review",
+      "exact_question_once": true,
+      "both_exact_choices_once": true,
+      "observed_pause": true,
+      "ordered_question_and_choices": true,
+      "format_status": "host_disclosure",
+      "allowed_disclosure": true,
+      "host_evidence": {
+        "disclosure_required": true,
+        "source": "session_meta.base_instructions",
+        "rule_sha256": "90158bea67d2e88da332cc0d308cba6b381c91044df9328992e33a3e129e1944"
+      },
+      "scope": "Opening format and observed pause only; not full host-instruction compliance, consent or extraction accuracy.",
+      "result_sha256": "6e4643c9ae1aa9b9da30ad1fd9f8aa9666b4607adf7c77619d2a04644b1a895c",
+      "turn_sha256": "45f252ce77528cf910134bdc3c154d6c82f9b0a7eb30e985f6698a4e1a7aad78",
+      "snapshots_sha256": "92e1701a6ad663dfc67f957ac3713e23a4e3716cb989bd1863d54e414509489c",
+      "trace_sha256": "ef2e02733d18fc51a9e9d01dc319b6b81c5e4681a1fe7bca011fd9482613f147"
+    }
+  ]
+}

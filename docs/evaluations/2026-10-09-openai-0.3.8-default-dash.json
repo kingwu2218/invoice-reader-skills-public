@@ -1,0 +1,811 @@
+{
+  "date": "2026-10-09",
+  "package_version": "0.3.8",
+  "tests_passed": 139,
+  "model_requested": "gpt-6.1-sol",
+  "model_reported": "Unknown",
+  "provider": "OpenAI via current Codex ChatGPT login",
+  "runs": [
+    {
+      "stage": "preliminary",
+      "case": "amount-dash-model-v1-negative",
+      "valid": true,
+      "package_hash": "e16aa1101b2ff0d313a99d2c677c51eb753f2b9a3a622df3450911e32124486c",
+      "dataset_hash": "624f8a8ffb79dbc9ad95fa593804cbfea520516c1633d871e64184522c447eb4",
+      "raw_hash": "5827b72726a7f12a6644c0074716e7097d06bee978dc6c2aaad2210d42b5ed7d",
+      "workbook_hash": "4bbdafc449a7f065d0b923f799f2b576800d190f10903a2176a940442828a930",
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "tool_version": "codex-cli 0.162.0-alpha.2",
+      "elapsed_seconds": 98.88,
+      "workbook_metrics": {
+        "field_accuracy": {
+          "numerator": 21,
+          "denominator": 21,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 21,
+          "denominator": 21,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 21,
+          "denominator": 21,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        }
+      },
+      "raw_metrics": {
+        "field_accuracy": {
+          "numerator": 14,
+          "denominator": 14,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 14,
+          "denominator": 14,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 14,
+          "denominator": 14,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "line_item_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "line_item_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "statement_line_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "statement_line_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "workbook_cells": {
+        "correct": 21
+      },
+      "raw_cells": {
+        "correct": 14,
+        "correct_blank": 6
+      },
+      "flags": {
+        "true_positive": 2
+      },
+      "details": [],
+      "amount_dash": "negative",
+      "amount_dash_basis": "explicit batch option",
+      "image_input_audit": {
+        "status": "not_captured",
+        "numerator": null,
+        "denominator": null
+      }
+    },
+    {
+      "stage": "preliminary",
+      "case": "amount-dash-model-v1-unknown",
+      "valid": true,
+      "package_hash": "e16aa1101b2ff0d313a99d2c677c51eb753f2b9a3a622df3450911e32124486c",
+      "dataset_hash": "3fc2ba1b08cbed3fe89cc659326bf1e10e9f324a56991fef6a4de40e0ebfd530",
+      "raw_hash": "07aea787c26e5483244dabc4b730399799d0ec1f770fe485e4e9d0b237673152",
+      "workbook_hash": "5584ae1fed626103dc7a2209b4e4227333472a13f0baf9ddb790d831dd402e02",
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "tool_version": "codex-cli 0.162.0-alpha.2",
+      "elapsed_seconds": 101.17,
+      "workbook_metrics": {
+        "field_accuracy": {
+          "numerator": 21,
+          "denominator": 21,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 21,
+          "denominator": 21,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 21,
+          "denominator": 21,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        }
+      },
+      "raw_metrics": {
+        "field_accuracy": {
+          "numerator": 14,
+          "denominator": 14,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 14,
+          "denominator": 14,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 14,
+          "denominator": 14,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "line_item_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "line_item_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "statement_line_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "statement_line_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "workbook_cells": {
+        "correct": 21
+      },
+      "raw_cells": {
+        "correct": 14,
+        "correct_blank": 6
+      },
+      "flags": {
+        "true_positive": 2
+      },
+      "details": [],
+      "amount_dash": "unknown",
+      "amount_dash_basis": "explicit batch option",
+      "image_input_audit": {
+        "status": "not_captured",
+        "numerator": null,
+        "denominator": null
+      }
+    },
+    {
+      "stage": "preliminary",
+      "case": "amount-dash-model-v2-default",
+      "valid": true,
+      "package_hash": "e16aa1101b2ff0d313a99d2c677c51eb753f2b9a3a622df3450911e32124486c",
+      "dataset_hash": "b2613a9ab3839ba4153db7abbf368da2d721e9a94c9946e018d53af9c1ba9dc3",
+      "raw_hash": "97a2edab0d59c8e2eb43117f10f34a6ca2555b88c8259bdc79bb1b23ed4793e9",
+      "workbook_hash": "8af8b87345dab156ef0909ab0c720def634db69aa221b496fd99426ee7ef0119",
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "tool_version": "codex-cli 0.162.0-alpha.2",
+      "elapsed_seconds": 111.52,
+      "workbook_metrics": {
+        "field_accuracy": {
+          "numerator": 21,
+          "denominator": 21,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 21,
+          "denominator": 21,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 21,
+          "denominator": 21,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        }
+      },
+      "raw_metrics": {
+        "field_accuracy": {
+          "numerator": 14,
+          "denominator": 14,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 14,
+          "denominator": 14,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 14,
+          "denominator": 14,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "line_item_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "line_item_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "statement_line_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "statement_line_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "workbook_cells": {
+        "correct": 21
+      },
+      "raw_cells": {
+        "correct": 14,
+        "correct_blank": 6
+      },
+      "flags": {
+        "true_positive": 2
+      },
+      "details": [],
+      "amount_dash": "end-mark",
+      "amount_dash_basis": "default positive assumption",
+      "image_input_audit": {
+        "status": "not_captured",
+        "numerator": null,
+        "denominator": null
+      }
+    },
+    {
+      "stage": "preliminary",
+      "case": "format-parties-v1",
+      "valid": true,
+      "package_hash": "e16aa1101b2ff0d313a99d2c677c51eb753f2b9a3a622df3450911e32124486c",
+      "dataset_hash": "62dc29ff0e9240ad9709d59b5353b81eaa74dbd65df6811669afff5e1efed19e",
+      "raw_hash": "647c13b67f074fb7a3781cbb9a5c350a933aff4b15c3915b290f2043dffc6216",
+      "workbook_hash": "2b7348655e18ecd15ed40c71def641548df676abd91fb02b91d3b2f732837b56",
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "tool_version": "codex-cli 0.162.0-alpha.2",
+      "elapsed_seconds": 104.97,
+      "workbook_metrics": {
+        "field_accuracy": {
+          "numerator": 11,
+          "denominator": 12,
+          "rate": 0.9166666666666666
+        },
+        "field_precision": {
+          "numerator": 11,
+          "denominator": 12,
+          "rate": 0.9166666666666666
+        },
+        "printed_value_recall": {
+          "numerator": 11,
+          "denominator": 12,
+          "rate": 0.9166666666666666
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        }
+      },
+      "raw_metrics": {
+        "field_accuracy": {
+          "numerator": 10,
+          "denominator": 10,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 10,
+          "denominator": 10,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 10,
+          "denominator": 10,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "line_item_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "line_item_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "statement_line_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "statement_line_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "workbook_cells": {
+        "correct": 11,
+        "correct_blank": 4,
+        "silent_error": 1
+      },
+      "raw_cells": {
+        "correct": 10,
+        "correct_blank": 10
+      },
+      "flags": {},
+      "details": [
+        {
+          "where": "Requested data/1/Payment amount",
+          "outcome": "silent_error",
+          "expected": "8,750/",
+          "got": "8,750/ HKD"
+        }
+      ],
+      "amount_dash": "end-mark",
+      "amount_dash_basis": "default positive assumption",
+      "image_input_audit": {
+        "status": "not_captured",
+        "numerator": null,
+        "denominator": null
+      }
+    },
+    {
+      "stage": "final",
+      "case": "amount-dash-model-v2-default",
+      "valid": true,
+      "package_hash": "7d42c3f34d605205616feaf14451e81cc12e1664cdad22375fd10dd1e775b710",
+      "dataset_hash": "b2613a9ab3839ba4153db7abbf368da2d721e9a94c9946e018d53af9c1ba9dc3",
+      "raw_hash": "a1212ceb8b2c0c170dcac6c5104b72ab0d932a77632d57877598e4d8dbcb24bd",
+      "workbook_hash": "3edc49805dbd87fb5fa93b2b7bd60500a4546c7194e1e69cab7fbd06a1c0dbf9",
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "tool_version": "codex-cli 0.162.0-alpha.2",
+      "elapsed_seconds": 100.84,
+      "workbook_metrics": {
+        "field_accuracy": {
+          "numerator": 21,
+          "denominator": 21,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 21,
+          "denominator": 21,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 21,
+          "denominator": 21,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        }
+      },
+      "raw_metrics": {
+        "field_accuracy": {
+          "numerator": 14,
+          "denominator": 14,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 14,
+          "denominator": 14,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 14,
+          "denominator": 14,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "line_item_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "line_item_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "statement_line_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "statement_line_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "workbook_cells": {
+        "correct": 21
+      },
+      "raw_cells": {
+        "correct": 14,
+        "correct_blank": 6
+      },
+      "flags": {
+        "true_positive": 2
+      },
+      "details": [],
+      "amount_dash": "end-mark",
+      "amount_dash_basis": "default positive assumption",
+      "image_input_audit": {
+        "status": "not_captured",
+        "numerator": null,
+        "denominator": null
+      }
+    },
+    {
+      "stage": "final",
+      "case": "format-parties-v2",
+      "valid": true,
+      "package_hash": "7d42c3f34d605205616feaf14451e81cc12e1664cdad22375fd10dd1e775b710",
+      "dataset_hash": "4362308db68dc53a38e2fdbb66cc9cfe0d4d859f012ec3f81d9c456737e72b70",
+      "raw_hash": "66f34c4990554b7f2fb90308676747bb2f852ad5dc4bbde4e9875e76dd406511",
+      "workbook_hash": "e4c272dd0d5cae002dbc729dad6714aecc0aaf9fe4137c1d224ac892bde009e5",
+      "package_unchanged": true,
+      "dataset_unchanged": true,
+      "tool_version": "codex-cli 0.162.0-alpha.2",
+      "elapsed_seconds": 88.34,
+      "workbook_metrics": {
+        "field_accuracy": {
+          "numerator": 13,
+          "denominator": 13,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 13,
+          "denominator": 13,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 13,
+          "denominator": 13,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "document_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        }
+      },
+      "raw_metrics": {
+        "field_accuracy": {
+          "numerator": 11,
+          "denominator": 11,
+          "rate": 1.0
+        },
+        "field_precision": {
+          "numerator": 11,
+          "denominator": 11,
+          "rate": 1.0
+        },
+        "printed_value_recall": {
+          "numerator": 11,
+          "denominator": 11,
+          "rate": 1.0
+        },
+        "document_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "document_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "line_item_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "line_item_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "statement_line_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "statement_line_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "workbook_cells": {
+        "correct": 13,
+        "correct_blank": 5
+      },
+      "raw_cells": {
+        "correct": 11,
+        "correct_blank": 11
+      },
+      "flags": {},
+      "details": [],
+      "amount_dash": "end-mark",
+      "amount_dash_basis": "default positive assumption",
+      "image_input_audit": {
+        "status": "not_captured",
+        "numerator": null,
+        "denominator": null
+      }
+    }
+  ],
+  "onboarding": [
+    {
+      "stage": "preliminary",
+      "turns": [
+        {
+          "kind": "start",
+          "audit": {
+            "onboarding_contract": "any-response-v1",
+            "opening_status": "invalid",
+            "question_first": false,
+            "question_occurrences": 1,
+            "workspace_unchanged": true,
+            "changed_files": [],
+            "no_document_work_observed": false,
+            "observable_pause_pass": false,
+            "scope": "CLI messages, shell commands and file snapshots; not proof of unlogged reads.",
+            "maintainer_review": {
+              "stream_sha256": "9dda169dee22106eff0c53765d7d9d69d3c55b6c025e9670a5649073bf8ed2d3",
+              "reviewer": "Maintainer agent; manual trace review",
+              "onboarding_contract": "any-response-v1",
+              "opening_matches_contract": true,
+              "no_document_work_observed": true,
+              "notes": "Exact question and both reply options followed by a brief explanation that any response continues. Only SKILL.md and chat-start.md read; workspace unchanged. Automatic layout result remains invalid because extra explanatory text exceeds the narrow accepted layout. Not proof of unlogged reads."
+            },
+            "commands_requiring_review_count": 1
+          }
+        },
+        {
+          "kind": "policy_response",
+          "audit": {
+            "question_repeated": false,
+            "extraction_started": true
+          }
+        },
+        {
+          "kind": "same_chat_batch",
+          "audit": {
+            "question_repeated": false,
+            "extraction_started": true,
+            "same_session": true
+          }
+        },
+        {
+          "kind": "same_chat_batch",
+          "audit": {
+            "question_repeated": false,
+            "extraction_started": true,
+            "same_session": true
+          }
+        },
+        {
+          "kind": "same_chat_batch",
+          "audit": {
+            "question_repeated": false,
+            "extraction_started": true,
+            "same_session": true
+          }
+        }
+      ]
+    },
+    {
+      "stage": "final",
+      "turns": [
+        {
+          "kind": "start",
+          "audit": {
+            "onboarding_contract": "any-response-v1",
+            "opening_status": "invalid",
+            "question_first": false,
+            "question_occurrences": 1,
+            "workspace_unchanged": true,
+            "changed_files": [],
+            "no_document_work_observed": false,
+            "observable_pause_pass": false,
+            "scope": "CLI messages, shell commands and file snapshots; not proof of unlogged reads.",
+            "maintainer_review": {
+              "stream_sha256": "6ece80488d6fca2d0acc44a7043e24899665327cb7afbae8df4caa15763fc336",
+              "reviewer": "Maintainer agent; manual trace review",
+              "onboarding_contract": "any-response-v1",
+              "opening_matches_contract": true,
+              "no_document_work_observed": true,
+              "notes": "Exact question and both options, brief skill/pause explanation. Only skill and chat-start instructions read; unchanged snapshot. Automatic invalid layout retained; not proof of unlogged reads."
+            },
+            "commands_requiring_review_count": 1
+          }
+        },
+        {
+          "kind": "policy_response",
+          "audit": {
+            "question_repeated": false,
+            "extraction_started": true
+          }
+        },
+        {
+          "kind": "same_chat_batch",
+          "audit": {
+            "question_repeated": false,
+            "extraction_started": true,
+            "same_session": true
+          }
+        }
+      ]
+    }
+  ],
+  "reference_locks": [
+    {
+      "stage": "preliminary",
+      "files": {
+        "eval/scenarios/amount-dash-model-v2-default/case.toml": "2130e406b4d2a459ae3e21471985c2cd5eaf04b9578eb10e01736724a6440073",
+        "eval/scenarios/amount-dash-model-v2-default/custom.md": "66c440c40f08260c0f34468bc13de96b39f1e388fe2b502015be17a57b22fe1b",
+        "eval/scenarios/amount-dash-model-v2-default/expected.json": "e5edd0ee8c5743078b581ece923c1a469f25c183ed425e6cbf594425ee81b6f6",
+        "eval/scenarios/amount-dash-model-v1-negative/case.toml": "2130e406b4d2a459ae3e21471985c2cd5eaf04b9578eb10e01736724a6440073",
+        "eval/scenarios/amount-dash-model-v1-negative/custom.md": "aecfdca0ee1eed8acc7fa7e4a9c953707617c1852e833fde5e6bd12924e8dbae",
+        "eval/scenarios/amount-dash-model-v1-negative/expected.json": "334ab0f545cb25eaf474aaed834215736071ecea1f2ec8e4403ef509ee2c2ac9",
+        "eval/scenarios/amount-dash-model-v1-unknown/case.toml": "2130e406b4d2a459ae3e21471985c2cd5eaf04b9578eb10e01736724a6440073",
+        "eval/scenarios/amount-dash-model-v1-unknown/custom.md": "cf1f7ed5ec11bd81c2cd910561313463d0c953edf551a3a60bef5efc334ea68c",
+        "eval/scenarios/amount-dash-model-v1-unknown/expected.json": "b9f4c70b5d8582b419690b79beb5aab9ad2326e6fc1a39677425004823fcb980",
+        "eval/scenarios/format-parties-v1/case.toml": "fa0b051430728740e5e25688452a2d8e2fce1479dd0d1b4a4db3d9e4bcd817e8",
+        "eval/scenarios/format-parties-v1/custom.md": "233a485c3fded0ee3159a6942ebed4ef4774dd09d24b8ceb5d58d881ba0ea7d3",
+        "eval/scenarios/format-parties-v1/expected.json": "b8ad29269b06934d1cda0d2c582049f79f1c7333fe9da706e681d110aa59bf0a",
+        "eval/fixtures/amount-dash-model-v1.pdf": "b9d49358880e514f1f8b9ac7ef6cabac531bfbcd0f6c31b5278ea2cfa6303d4d",
+        "eval/fixtures/format-pack.pdf": "1c0ca8e96b3597c7784bffe96adba45994f70c1798351519e80013d40f6f1d88"
+      },
+      "package_hash": "e16aa1101b2ff0d313a99d2c677c51eb753f2b9a3a622df3450911e32124486c",
+      "reply_type": "scripted negative fixture No; public synthetic sources only; not human policy-reading consent",
+      "case_order": [
+        "amount-dash-model-v2-default",
+        "amount-dash-model-v1-negative",
+        "amount-dash-model-v1-unknown",
+        "format-parties-v1"
+      ]
+    },
+    {
+      "stage": "final",
+      "files": {
+        "eval/scenarios/amount-dash-model-v2-default/case.toml": "2130e406b4d2a459ae3e21471985c2cd5eaf04b9578eb10e01736724a6440073",
+        "eval/scenarios/amount-dash-model-v2-default/custom.md": "66c440c40f08260c0f34468bc13de96b39f1e388fe2b502015be17a57b22fe1b",
+        "eval/scenarios/amount-dash-model-v2-default/expected.json": "e5edd0ee8c5743078b581ece923c1a469f25c183ed425e6cbf594425ee81b6f6",
+        "eval/fixtures/amount-dash-model-v1.pdf": "b9d49358880e514f1f8b9ac7ef6cabac531bfbcd0f6c31b5278ea2cfa6303d4d"
+      },
+      "package_hash": "7d42c3f34d605205616feaf14451e81cc12e1664cdad22375fd10dd1e775b710",
+      "reply_type": "Scripted read-later fixture, not a human acknowledgement",
+      "case_order": [
+        "amount-dash-model-v2-default"
+      ]
+    },
+    {
+      "stage": "final",
+      "files": {
+        "eval/scenarios/format-parties-v2/case.toml": "fa0b051430728740e5e25688452a2d8e2fce1479dd0d1b4a4db3d9e4bcd817e8",
+        "eval/scenarios/format-parties-v2/custom.md": "233a485c3fded0ee3159a6942ebed4ef4774dd09d24b8ceb5d58d881ba0ea7d3",
+        "eval/scenarios/format-parties-v2/expected.json": "09f40b22ba57455bceded2f5435fe5fb2695a69cc8704ca5d7c59058f19d8741",
+        "eval/fixtures/format-pack.pdf": "1c0ca8e96b3597c7784bffe96adba45994f70c1798351519e80013d40f6f1d88"
+      },
+      "package_hash": "7d42c3f34d605205616feaf14451e81cc12e1664cdad22375fd10dd1e775b710",
+      "reference_reason": "Current documented unit rule and printed Amount (HKD) label; v1 omitted the displayed unit. Preserve v1 score and answers."
+    }
+  ],
+  "limitations": [
+    "Four unique public printed pages reused in six runs across two conversations; no new holdout or handwriting test.",
+    "Preliminary and final artifacts differ in audit text; their hashes are separate and results are not pooled.",
+    "Scripted No/read-later fixtures are not human acknowledgements.",
+    "No supplied-image receipts or verified image-attention claim.",
+    "Anthropic package not live-tested."
+  ]
+}
